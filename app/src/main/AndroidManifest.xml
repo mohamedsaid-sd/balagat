@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.equipation.balagat">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Balagat.NoActionBar"
+        tools:targetApi="31">
+        <activity
+            android:name=".my_requests"
+            android:exported="false" />
+        <activity
+            android:name=".profile"
+            android:exported="false" /> <!-- stock requests -->
+        <activity
+            android:name=".stocks.return_bill_request"
+            android:exported="false" />
+        <activity
+            android:name=".stocks.withdraw_bill_request"
+            android:exported="false" />
+        <activity
+            android:name=".stocks.add_items_request"
+            android:exported="false" /> <!-- human resuores requests -->
+        <activity
+            android:name=".humans.request_vacation"
+            android:exported="false" />
+        <activity
+            android:name=".humans.salary_request"
+            android:exported="true" />
+        <activity
+            android:name=".humans.borrow_request"
+            android:exported="true" />
+        <activity
+            android:name=".humans.resignation_request"
+            android:exported="true" /> <!-- contracts requests -->
+        <activity
+            android:name=".contracts.request_new_contract"
+            android:exported="false" />
+        <activity
+            android:name=".contracts.request_deportation"
+            android:exported="false" />
+        <activity
+            android:name=".contracts.request_settlement_contract"
+            android:exported="false" />
+        <activity
+            android:name=".contracts.request_renew_contract"
+            android:exported="false" /> <!-- Maintenance requests -->
+        <activity
+            android:name=".maintenances.asper_deportation_request"
+            android:exported="false" />
+        <activity
+            android:name=".maintenances.automated_deportation_request"
+            android:exported="false" />
+        <activity
+            android:name=".maintenances.employee_deportation_request"
+            android:exported="false" />
+        <activity
+            android:name=".maintenances.therapeutic_maintenance_request"
+            android:exported="false" />
+        <activity
+            android:name=".maintenances.periodic_maintenance_request"
+            android:exported="false" />
+        <activity
+            android:name=".maintenances.asper_request"
+            android:exported="false" /> <!-- main departments -->
+        <activity
+            android:name=".maintenances.travel_outlay_request"
+            android:exported="false" /> <!-- 0000000000000000000000000000000000000000000000000000000000000000000 -->
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
+            android:name=".expenses"
+            android:exported="false" />
+        <activity
+            android:name=".purchases"
+            android:exported="false" />
+        <activity
+            android:name=".maintenance"
+            android:exported="false" />
+        <activity
+            android:name=".fleet"
+            android:exported="false" />
+        <activity
+            android:name=".location"
+            android:exported="false" />
+        <activity
+            android:name=".stock"
+            android:exported="false" />
+        <activity
+            android:name=".time"
+            android:exported="false" />
+        <activity
+            android:name=".contract"
+            android:exported="false" />
+        <activity
+            android:name=".splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".home"
+            android:exported="false"
+            android:label="@string/title_activity_home" />
+        <activity
+            android:name=".human"
+            android:exported="true" />
+    </application>
+
+</manifest>

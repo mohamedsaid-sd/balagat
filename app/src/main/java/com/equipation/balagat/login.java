@@ -1,0 +1,42 @@
+package com.equipation.balagat;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+import android.widget.Toast;
+
+public class login extends AppCompatActivity {
+
+    EditText ed_user , ed_pass ;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login);
+
+        // cast the view with the screen
+        Casting();
+
+    }
+
+    private void Casting() {
+        ed_user = findViewById(R.id.user);
+        ed_pass = findViewById(R.id.pass);
+    }
+
+    public void fun_login(View view) {
+
+        startActivity(new Intent(this, home.class));
+
+//        if(ed_user.getText().toString().equals("admin")) {
+//            startActivity(new Intent(this, home.class));
+//            finish();
+//        }
+//        else
+//            Toast.makeText(this, "خطا في تسجيل الدخول", Toast.LENGTH_SHORT).show();
+
+    }
+}

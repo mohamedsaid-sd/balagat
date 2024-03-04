@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/trans"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/round"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="220dp"
+                    android:layout_height="100dp"
+                    app:srcCompat="@drawable/logo" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/jana"
+                    android:gravity="center"
+                    android:text="تطبيق البلاغات"
+                    android:textColor="#040404"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_baseline_person_24"
+                    android:ems="10"
+                    android:fontFamily="@font/jana"
+                    android:gravity="center"
+                    android:hint="إسم المستخدم"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/grayfont"
+                    android:textColorHint="@color/gray"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_baseline_lock_24"
+                    android:ems="10"
+                    android:fontFamily="@font/jana"
+                    android:gravity="center"
+                    android:hint="كلمة المرور"
+                    android:inputType="textPersonName"
+                    android:password="true"
+                    android:textColor="@color/grayfont"
+                    android:textColorHint="@color/gray"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/goaldround"
+                    android:fontFamily="@font/jana"
+                    android:gravity="center"
+                    android:onClick="fun_login"
+                    android:text="تسجيل دخول"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:theme="@style/Theme.Balagat" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/jana"
+                    android:gravity="center"
+                    android:text="إتصال بالإدارة"
+                    android:textColor="@color/gold"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/trans"
+                android:fontFamily="@font/jana"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="قم بتسجيل الدخول للإستمرار"
+                android:textColor="@color/lite" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
