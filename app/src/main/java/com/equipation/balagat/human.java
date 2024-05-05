@@ -7,9 +7,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import com.equipation.balagat.contracts.PPE_request;
-import com.equipation.balagat.contracts.prose_request;
-import com.equipation.balagat.contracts.shift_request;
+import com.equipation.balagat.humans.PPE_request;
+import com.equipation.balagat.humans.prose_request;
+import com.equipation.balagat.humans.shift_request;
 import com.equipation.balagat.humans.salary_request;
 import com.equipation.balagat.humans.borrow_request;
 import com.equipation.balagat.humans.resignation_request;

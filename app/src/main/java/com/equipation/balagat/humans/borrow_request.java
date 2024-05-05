@@ -112,7 +112,7 @@ public class borrow_request extends AppCompatActivity {
     }
 
     private void Casting() {
-        sp_borrow_type = findViewById(R.id.sp_borrow_type);
+        sp_borrow_type = findViewById(R.id.sp_shift_time);
         sp_request_time = findViewById(R.id.sp_request_time);
         seek_long = findViewById(R.id.seek_long);
         seek_short = findViewById(R.id.seek_short);

@@ -38,7 +38,7 @@ public class salary_request extends AppCompatActivity {
         Casting();
 
         ar_request_type.add("راتب كامل");
-        ar_request_type.add(" راتب جزئى ");
+        ar_request_type.add("راتب جزئي");
 
         ar_request_time.add("عادي");
         ar_request_time.add("عاجل");
@@ -52,7 +52,7 @@ public class salary_request extends AppCompatActivity {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                 //Toast.makeText(salary_request.this, ""+i, Toast.LENGTH_SHORT).show();
-                if(ar_request_type.get(i).equals("مرتب كامل")){
+                if(ar_request_type.get(i).equals("راتب كامل")){
                     part_layout.setVisibility(View.GONE);
                     full_layout.setVisibility(View.VISIBLE);
                 }else{
