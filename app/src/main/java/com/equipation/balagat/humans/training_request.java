@@ -7,17 +7,16 @@ import android.view.View;
 
 import com.equipation.balagat.R;
 
-public class prose_request extends AppCompatActivity {
+public class training_request extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_prose_request);
+        setContentView(R.layout.activity_training_request);
     }
 
     public void fun_back(View view) {
         super.onBackPressed();
-
 
     }
 }

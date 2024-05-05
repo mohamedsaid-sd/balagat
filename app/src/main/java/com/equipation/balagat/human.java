@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Toast;
 
 
+import com.equipation.balagat.humans.complaint_request;
 import com.equipation.balagat.humans.evaluation_request;
 
 
@@ -18,6 +19,7 @@ import com.equipation.balagat.humans.borrow_request;
 import com.equipation.balagat.humans.resignation_request;
 import com.equipation.balagat.humans.request_vacation;
 import com.equipation.balagat.humans.shift_request;
+import com.equipation.balagat.humans.training_request;
 
 public class human extends AppCompatActivity {
 
@@ -83,6 +85,16 @@ public class human extends AppCompatActivity {
 
     public void fun_evaluation_request(View view) {
         startActivity(new Intent( this , evaluation_request.class ));
+
+    }
+
+    public void fun_complant_request(View view) {
+        startActivity(new Intent( this , complaint_request.class ));
+
+    }
+
+    public void fun_training_request(View view) {
+        startActivity(new Intent( this , training_request.class ));
 
     }
 }
