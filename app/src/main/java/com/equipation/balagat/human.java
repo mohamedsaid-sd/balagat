@@ -59,4 +59,19 @@ public class human extends AppCompatActivity {
     public void fun_vacation_request(View view) {
         startActivity(new Intent( this , request_vacation.class ));
     }
+
+    public void fun_PPE_request(View view) {
+        Toast.makeText(this, "طلب معدات سلامة", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent( this , PPE_request.class ));
+    }
+
+    public void fun_shift_request(View view) {
+        Toast.makeText(this, "طلب  وردية ", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent( this , shift_request.class ));
+    }
+
+    public void fun_prose_request(View view) {
+        Toast.makeText(this, "طلب نثرية ", Toast.LENGTH_SHORT).show();
+        startActivity(new Intent( this , prose_request.class ));
+    }
 }

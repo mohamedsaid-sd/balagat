@@ -25,7 +25,7 @@ public class request_vacation extends AppCompatActivity {
 
         ar_vication_type.add(" إجازة سنوية ");
         ar_vication_type.add(" إجازة مرضية ");
-        ar_vication_type.add(" إجازة إستثنائيى ");
+        ar_vication_type.add(" إجازة إستثنائية ");
         ar_vication_type.add(" إجازة عارضة ");
 
        // ar_vication_type.add(" إجازة طارئة ");

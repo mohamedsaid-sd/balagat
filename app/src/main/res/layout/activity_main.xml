@@ -84,6 +84,7 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             android:layout_weight="1"
+                            android:onClick="fun_PPE_request"
                             android:background="@drawable/round">
 
                             <TextView
@@ -110,6 +111,7 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             android:layout_weight="1"
+                            android:onClick="fun_shift_request"
                             android:background="@drawable/round">
 
                             <TextView
@@ -236,6 +238,7 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             android:layout_weight="1"
+                            android:onClick="fun_prose_request"
                             android:background="@drawable/round">
 
                             <TextView
