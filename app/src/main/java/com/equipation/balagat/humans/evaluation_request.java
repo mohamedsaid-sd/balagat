@@ -1,5 +1,5 @@
 
-package com.equipation.balagat.contracts;
+package com.equipation.balagat.humans;
 
 import androidx.appcompat.app.AppCompatActivity;
 
