@@ -6,12 +6,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
+
+import com.equipation.balagat.contracts.PPE_request;
+import com.equipation.balagat.contracts.prose_request;
+import com.equipation.balagat.contracts.shift_request;
 import com.equipation.balagat.humans.salary_request;
 import com.equipation.balagat.humans.borrow_request;
 import com.equipation.balagat.humans.resignation_request;
 import com.equipation.balagat.humans.request_vacation;
-
-import com.equipation.balagat.humans.salary_request;
 
 public class human extends AppCompatActivity {
 

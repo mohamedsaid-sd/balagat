@@ -1,8 +1,10 @@
-package com.equipation.balagat;
+package com.equipation.balagat.contracts;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.equipation.balagat.R;
 
 public class PPE_request extends AppCompatActivity {
 

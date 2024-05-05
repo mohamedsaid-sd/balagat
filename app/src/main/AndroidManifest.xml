@@ -14,13 +14,13 @@
         android:theme="@style/Theme.Balagat.NoActionBar"
         tools:targetApi="31">
         <activity
-            android:name=".prose_request"
+            android:name=".contracts.prose_request"
             android:exported="false" />
         <activity
-            android:name=".shift_request"
+            android:name=".contracts.shift_request"
             android:exported="false" />
         <activity
-            android:name=".PPE_request"
+            android:name=".contracts.PPE_request"
             android:exported="false" />
         <activity
             android:name=".my_requests"
