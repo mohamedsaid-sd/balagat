@@ -61,6 +61,18 @@
                     android:orientation="vertical">
 
                     <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/date2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="تاريخ بدء العمل" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
                         android:id="@+id/date1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -69,8 +81,24 @@
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="تاريخ ترك العمل" />
+                            android:hint="تاريخ نهاية الخدمة المقترح " />
                     </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/textView40"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        android:text="سبب الطلب" />
+
+                    <Spinner
+                        android:id="@+id/sp_request_reson"
+                        style="@android:style/Widget.Spinner.DropDown"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:layout_weight="1" />
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
@@ -80,7 +108,7 @@
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="سبب الاستقالة" />
+                            android:hint="كتابة الاسباب" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout

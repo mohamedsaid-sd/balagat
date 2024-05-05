@@ -37,8 +37,8 @@ public class salary_request extends AppCompatActivity {
 
         Casting();
 
-        ar_request_type.add("مرتب كامل");
-        ar_request_type.add("جزء من مرتب");
+        ar_request_type.add("راتب كامل");
+        ar_request_type.add(" راتب جزئى ");
 
         ar_request_time.add("عادي");
         ar_request_time.add("عاجل");

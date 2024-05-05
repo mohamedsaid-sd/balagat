@@ -22,12 +22,16 @@ public class request_vacation extends AppCompatActivity {
         setContentView(R.layout.activity_request_vacation);
 
         ar_vication_type = new ArrayList<>();
-        ar_vication_type.add(" إجازة طارئة ");
-        ar_vication_type.add(" إجازة مرضية ");
+
         ar_vication_type.add(" إجازة سنوية ");
-        ar_vication_type.add("  إجازة خاصة (أمومة-ولادة-زواج-وفاة-يوم صحي) ");
-        ar_vication_type.add(" إجازة من غير مرتب ");
-        ar_vication_type.add("أخرى ");
+        ar_vication_type.add(" إجازة مرضية ");
+        ar_vication_type.add(" إجازة إستثنائيى ");
+        ar_vication_type.add(" إجازة عارضة ");
+
+       // ar_vication_type.add(" إجازة طارئة ");
+       // ar_vication_type.add("  إجازة خاصة (أمومة-ولادة-زواج-وفاة-يوم صحي) ");
+       // ar_vication_type.add(" إجازة من غير مرتب ");
+       // ar_vication_type.add("أخرى ");
 
         Casing();
 

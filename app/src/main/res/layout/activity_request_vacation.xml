@@ -78,13 +78,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
-                            android:padding="3dp">
-
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="تاريخ التوظيف" />
-                        </com.google.android.material.textfield.TextInputLayout>
+                            android:padding="3dp"/>
 
                         <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
@@ -95,20 +89,14 @@
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:hint="تاريخ آخر إجازة" />
+                                android:hint="تاريخ بدء العمل" />
                         </com.google.android.material.textfield.TextInputLayout>
 
                         <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
-                            android:padding="3dp">
-
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="رصيد الإجازات" />
-                        </com.google.android.material.textfield.TextInputLayout>
+                            android:padding="3dp"/>
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -164,6 +152,47 @@
                                 android:layout_height="wrap_content"
                                 android:hint="تاريخ بداية الإجازة" />
                         </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:padding="3dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="تاريخ نهاية الإجازة" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:padding="3dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="ملاحظات" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@drawable/grayround"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_baseline_mic_none_24"></ImageView>
+                        </LinearLayout>
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
