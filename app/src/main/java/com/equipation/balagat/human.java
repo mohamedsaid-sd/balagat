@@ -8,7 +8,6 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.equipation.balagat.contracts.PPE_request;
-import com.equipation.balagat.contracts.evaluation_request;
 import com.equipation.balagat.contracts.prose_request;
 import com.equipation.balagat.contracts.shift_request;
 import com.equipation.balagat.humans.salary_request;
@@ -76,10 +75,5 @@ public class human extends AppCompatActivity {
     public void fun_prose_request(View view) {
         Toast.makeText(this, "طلب نثرية ", Toast.LENGTH_SHORT).show();
         startActivity(new Intent( this , prose_request.class ));
-    }
-
-    public void fun_evaluation_request(View view) {
-        startActivity(new Intent( this , evaluation_request.class ));
-
     }
 }

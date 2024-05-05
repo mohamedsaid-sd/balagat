@@ -34,7 +34,7 @@
                     android:textColor="@color/black"
                     android:textSize="20dp"
                     android:textStyle="bold"
-                    tools:ignore="SpUsage" />
+                    tools:ignore="HardcodedText,SpUsage" />
 
                 <ImageView
                     android:id="@+id/imageView2"
@@ -53,6 +53,126 @@
                 android:orientation="vertical"
                 android:padding="5dp">
 
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:padding="3dp"
+                    android:textColorHint="@color/green">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="تاريخ الطلب"
+                        android:inputType="textPersonName"
+                        tools:ignore="HardcodedText" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:padding="3dp"
+                    android:textColorHint="@color/green">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="اسم مقدم الطلب"
+                        android:inputType="textPersonName"
+                        tools:ignore="HardcodedText" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:padding="3dp"
+                    android:textColorHint="@color/green">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="الآليه ( مركز التكلفة )"
+                        android:inputType="textPersonName"
+                        tools:ignore="HardcodedText" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:padding="3dp"
+                    android:textColorHint="@color/green">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="الموقع"
+                        android:inputType="textPersonName"
+                        tools:ignore="HardcodedText" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:padding="3dp"
+                    android:textColorHint="@color/green">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="تاريخ التعيين"
+                        android:inputType="textPersonName"
+                        tools:ignore="HardcodedText" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:padding="3dp"
+                    android:textColorHint="@color/green">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="القسم"
+                        android:inputType="textPersonName"
+                        tools:ignore="HardcodedText" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:padding="3dp"
+                    android:textColorHint="@color/green">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="الوظيفة"
+                        android:inputType="textPersonName"
+                        tools:ignore="HardcodedText" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:padding="3dp"
+                    android:textColorHint="@color/green">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="رقم الموظف"
+                        android:inputType="textPersonName"
+                        tools:ignore="HardcodedText" />
+                </com.google.android.material.textfield.TextInputLayout>
+
                 <TextView
                     android:id="@+id/textView20"
                     android:layout_width="match_parent"
@@ -61,7 +181,8 @@
                     android:fontFamily="@font/jana"
                     android:padding="5dp"
                     android:text="نوع الطلب"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
 
                 <Spinner
                     android:id="@+id/sp_request_type"
@@ -80,8 +201,9 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/jana"
-                        android:text="مرتب كامل :"
-                        android:textStyle="bold" />
+                        android:text="راتب كامل :"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
 
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
@@ -106,7 +228,8 @@
                                     android:fontFamily="@font/jana"
                                     android:padding="5dp"
                                     android:text="عدد الشهور"
-                                    android:textStyle="bold" />
+                                    android:textStyle="bold"
+                                    tools:ignore="HardcodedText" />
 
                                 <TextView
                                     android:id="@+id/txt_salaries"
@@ -114,8 +237,9 @@
                                     android:layout_height="match_parent"
                                     android:layout_weight="2"
                                     android:gravity="center"
-                                    android:text="1 مرتب"
-                                    android:textStyle="bold" />
+                                    android:text="1 شهر"
+                                    android:textStyle="bold"
+                                    tools:ignore="HardcodedText" />
                             </LinearLayout>
 
                             <SeekBar
@@ -125,7 +249,8 @@
                                 android:layout_height="wrap_content"
                                 android:max="12"
                                 android:min="1"
-                                android:progress="1" />
+                                android:progress="1"
+                                tools:targetApi="o" />
 
                         </LinearLayout>
 
@@ -147,8 +272,9 @@
                                 android:layout_margin="5dp"
                                 android:fontFamily="@font/jana"
                                 android:padding="5dp"
-                                android:text=" تحديد الشهر "
-                                android:textStyle="bold" />
+                                android:text="شهور المرتبات"
+                                android:textStyle="bold"
+                                tools:ignore="HardcodedText" />
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -161,7 +287,8 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="يناير" />
+                                    android:text="يناير"
+                                    tools:ignore="HardcodedText" />
 
                                 <CheckBox
                                     android:id="@+id/checkBox2"
@@ -169,7 +296,8 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="فبراير" />
+                                    android:text="فبراير"
+                                    tools:ignore="HardcodedText" />
 
                                 <CheckBox
                                     android:id="@+id/checkBox3"
@@ -177,7 +305,8 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="مارس" />
+                                    android:text="مارس"
+                                    tools:ignore="HardcodedText" />
 
                             </LinearLayout>
 
@@ -192,7 +321,8 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="ابريل" />
+                                    android:text="ابريل"
+                                    tools:ignore="HardcodedText" />
 
                                 <CheckBox
                                     android:id="@+id/checkBox5"
@@ -200,7 +330,8 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="مايو" />
+                                    android:text="مايو"
+                                    tools:ignore="HardcodedText" />
 
                                 <CheckBox
                                     android:id="@+id/checkBox6"
@@ -208,7 +339,8 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="يونيو" />
+                                    android:text="يونيو"
+                                    tools:ignore="HardcodedText" />
                             </LinearLayout>
 
                             <LinearLayout
@@ -222,7 +354,8 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="يوليو" />
+                                    android:text="يوليو"
+                                    tools:ignore="HardcodedText" />
 
                                 <CheckBox
                                     android:id="@+id/checkBox8"
@@ -230,7 +363,8 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="اغسطس" />
+                                    android:text="اغسطس"
+                                    tools:ignore="HardcodedText" />
 
                                 <CheckBox
                                     android:id="@+id/checkBox9"
@@ -238,7 +372,8 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="سبتمبر" />
+                                    android:text="سبتمبر"
+                                    tools:ignore="HardcodedText" />
                             </LinearLayout>
 
                             <LinearLayout
@@ -252,7 +387,8 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="اكتوبر" />
+                                    android:text="اكتوبر"
+                                    tools:ignore="HardcodedText" />
 
                                 <CheckBox
                                     android:id="@+id/checkBox11"
@@ -260,7 +396,8 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="نوفمبر" />
+                                    android:text="نوفمبر"
+                                    tools:ignore="HardcodedText" />
 
                                 <CheckBox
                                     android:id="@+id/checkBox12"
@@ -268,7 +405,8 @@
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:layout_weight="1"
-                                    android:text="ديسمبر" />
+                                    android:text="ديسمبر"
+                                    tools:ignore="HardcodedText" />
                             </LinearLayout>
 
                         </LinearLayout>
@@ -297,9 +435,10 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/jana"
-                                android:text="جزء من مرتب :"
+                                android:text=" راتب جزئي :"
 
-                                android:textStyle="bold" />
+                                android:textStyle="bold"
+                                tools:ignore="HardcodedText" />
 
                             <LinearLayout
                                 android:layout_width="match_parent"
@@ -316,7 +455,8 @@
                                     android:padding="5dp"
                                     android:text="تحديد شهر المرتب"
 
-                                    android:textStyle="bold" />
+                                    android:textStyle="bold"
+                                    tools:ignore="HardcodedText" />
 
                                 <TextView
                                     android:id="@+id/txt_month"
@@ -326,7 +466,8 @@
                                     android:gravity="center"
                                     android:text="شهر 1"
 
-                                    android:textStyle="bold" />
+                                    android:textStyle="bold"
+                                    tools:ignore="HardcodedText" />
                             </LinearLayout>
 
                             <SeekBar
@@ -336,7 +477,8 @@
                                 android:layout_height="wrap_content"
                                 android:max="12"
                                 android:min="1"
-                                android:progress="1" />
+                                android:progress="1"
+                                tools:targetApi="o" />
 
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
@@ -352,7 +494,7 @@
 
                             <LinearLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="match_parent"
+                                android:layout_height="0dp"
                                 android:layout_weight="1"
                                 android:orientation="horizontal">
 
@@ -366,7 +508,8 @@
                                     android:padding="5dp"
                                     android:text="تحديد عدد الايام"
 
-                                    android:textStyle="bold" />
+                                    android:textStyle="bold"
+                                    tools:ignore="HardcodedText,NestedWeights" />
 
                                 <TextView
                                     android:id="@+id/txt_days"
@@ -376,7 +519,8 @@
                                     android:gravity="center"
                                     android:text="1 يوم "
 
-                                    android:textStyle="bold" />
+                                    android:textStyle="bold"
+                                    tools:ignore="HardcodedText" />
                             </LinearLayout>
 
                             <SeekBar
@@ -386,7 +530,8 @@
                                 android:layout_height="wrap_content"
                                 android:max="30"
                                 android:min="1"
-                                android:progress="1" />
+                                android:progress="1"
+                                tools:targetApi="o" />
 
                         </LinearLayout>
                     </androidx.cardview.widget.CardView>
@@ -405,7 +550,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="رقم الحساب"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    tools:ignore="HardcodedText" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -418,7 +564,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="رقم الهاتف"
-                    android:inputType="number" />
+                    android:inputType="number"
+                    tools:ignore="HardcodedText" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -431,7 +578,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="الاسم"
-                    android:inputType="textPersonName" />
+                    android:inputType="textPersonName"
+                    tools:ignore="HardcodedText" />
             </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -443,7 +591,8 @@
                 android:fontFamily="@font/jana"
                 android:padding="5dp"
                 android:text="مهلة الطلب"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
 
             <Spinner
                 android:id="@+id/sp_request_time"
@@ -460,8 +609,26 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="الملاحظات" />
+                    android:hint="الملاحظات"
+                    tools:ignore="HardcodedText" />
             </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@drawable/grayround"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_mic_none_24"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
 
             <Button
 
@@ -476,7 +643,8 @@
                 android:text="تاكيد الطلب"
                 android:textColor="@color/black"
                 android:textStyle="bold"
-                android:theme="@style/Theme.Balagat" />
+                android:theme="@style/Theme.Balagat"
+                tools:ignore="HardcodedText" />
 
         </LinearLayout>
     </ScrollView>

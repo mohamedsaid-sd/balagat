@@ -14,9 +14,6 @@
         android:theme="@style/Theme.Balagat.NoActionBar"
         tools:targetApi="31">
         <activity
-            android:name=".contracts.evaluation_request"
-            android:exported="false" />
-        <activity
             android:name=".contracts.prose_request"
             android:exported="false" />
         <activity
