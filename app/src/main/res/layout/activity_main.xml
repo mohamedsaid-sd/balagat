@@ -162,7 +162,9 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             android:layout_weight="1"
-                            android:background="@drawable/round">
+                            android:background="@drawable/round"
+                            android:onClick="fun_evaluation_request"
+                            >
 
                             <TextView
                                 android:id="@+id/textView1590"
