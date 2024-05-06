@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 
 import com.equipation.balagat.humans.complaint_request;
+import com.equipation.balagat.humans.edit_profile_request;
 import com.equipation.balagat.humans.evaluation_request;
 
 
@@ -29,11 +30,6 @@ public class human extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-    }
-
-    public void go(View view) {
-        startActivity( new Intent( this , home.class ) );
     }
 
     public void fun_open_resignation_request(View view) {
@@ -102,8 +98,6 @@ public class human extends AppCompatActivity {
 
     public void fun_incentive_request(View view) {
         startActivity(new Intent( this , incentive_request.class ));
-
-
     }
 
     public void fun_moretidy_request(View view) {
@@ -113,5 +107,6 @@ public class human extends AppCompatActivity {
 
 
     public void fun_profile_request(View view) {
+        startActivity(new Intent( this , edit_profile_request.class ));
     }
 }

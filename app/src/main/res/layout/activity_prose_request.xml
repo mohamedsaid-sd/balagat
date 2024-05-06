@@ -188,67 +188,253 @@
                         </com.google.android.material.textfield.TextInputLayout>
 
 
-                        <com.google.android.material.textfield.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3dp"
-                            android:padding="3dp">
-
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="تاريخ السفر المتوقع"
-                                android:inputType="number"
-                                tools:ignore="HardcodedText" />
-                        </com.google.android.material.textfield.TextInputLayout>
-
-
                         <TextView
-                            android:id="@+id/textView20"
+                            android:id="@+id/textView201"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="3dp"
                             android:fontFamily="@font/jana"
                             android:padding="3dp"
-                            android:text=" المكان المقصود للسفر "
+                            android:text=" نوع النثرية "
                             android:textStyle="bold"
                             tools:ignore="HardcodedText" />
 
                         <Spinner
-                            android:id="@+id/sp_prose_location"
+                            android:id="@+id/sp_prose_type"
                             style="@android:style/Widget.Spinner.DropDown"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="3dp" />
 
-                        <com.google.android.material.textfield.TextInputLayout
+
+                        <LinearLayout
+                            android:id="@+id/layout_travel"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_margin="3dp"
-                            android:padding="3dp">
+                            android:orientation="vertical">
 
-                            <com.google.android.material.textfield.TextInputEditText
+                            <TextView
+                                android:id="@+id/textView47"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:hint="الغرض من السفر"
-                                android:inputType="number"
+                                android:layout_margin="3dp"
+                                android:fontFamily="@font/jana"
+                                android:padding="3dp"
+                                android:text="نثرية سفر"
+                                android:textStyle="bold"
                                 tools:ignore="HardcodedText" />
-                        </com.google.android.material.textfield.TextInputLayout>
 
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:padding="3dp">
 
-                        <com.google.android.material.textfield.TextInputLayout
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="تاريخ السفر المتوقع"
+                                    android:inputType="textPersonName"
+                                    tools:ignore="HardcodedText" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:padding="3dp">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="موقع الانطلاق"
+                                    android:inputType="textPersonName"
+                                    tools:ignore="HardcodedText" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:padding="3dp">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="موقع الوصول"
+                                    android:inputType="textPersonName"
+                                    tools:ignore="HardcodedText" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:padding="3dp">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="الزمن المتوقع للوصول"
+                                    android:inputType="textPersonName"
+                                    tools:ignore="HardcodedText" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:padding="3dp">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="الغرض من السفر"
+                                    android:inputType="textPersonName"
+                                    tools:ignore="HardcodedText" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:padding="3dp">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="المبلغ المتوقع للسفر"
+                                    android:inputType="number"
+                                    tools:ignore="HardcodedText" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_feed"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_margin="3dp"
-                            android:padding="3dp">
+                            android:orientation="vertical">
 
-                            <com.google.android.material.textfield.TextInputEditText
+                            <TextView
+                                android:id="@+id/textView46"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:hint="المبلغ المتوقع للسفر"
-                                android:inputType="number"
+                                android:layout_margin="3dp"
+                                android:fontFamily="@font/jana"
+                                android:padding="3dp"
+                                android:text="نثرية إعاشة"
+                                android:textStyle="bold"
                                 tools:ignore="HardcodedText" />
-                        </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:padding="3dp"
+                                android:textColorHint="@color/green">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="تاريخ آخر نثرية"
+                                    android:inputType="number"
+                                    tools:ignore="HardcodedText" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:padding="3dp"
+                                android:textColorHint="@color/green">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="مبلغ آخر نثرية"
+                                    android:inputType="number"
+                                    tools:ignore="HardcodedText" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <TextView
+                                android:id="@+id/textView20"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:fontFamily="@font/jana"
+                                android:padding="3dp"
+                                android:text="نوع النثرية"
+                                android:textStyle="bold"
+                                tools:ignore="HardcodedText" />
+
+                            <Spinner
+                                android:id="@+id/sp_prose_feed_type"
+                                style="@android:style/Widget.Spinner.DropDown"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp" />
+
+                            <TextView
+                                android:id="@+id/textView48"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:fontFamily="@font/jana"
+                                android:padding="3dp"
+                                android:text="سبب زيادة النثرية"
+                                android:textStyle="bold"
+                                tools:ignore="HardcodedText" />
+
+                            <Spinner
+                                android:id="@+id/sp_prose_reasone"
+                                style="@android:style/Widget.Spinner.DropDown"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp" />
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:padding="3dp">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="مبلغ النثرية المطلوب"
+                                    android:inputType="number"
+                                    tools:ignore="HardcodedText" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:padding="3dp">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="الغرض من السفر"
+                                    android:inputType="number"
+                                    tools:ignore="HardcodedText" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:padding="3dp">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="المبلغ المتوقع للسفر"
+                                    android:inputType="number"
+                                    tools:ignore="HardcodedText" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
 
 
                         <com.google.android.material.textfield.TextInputLayout
