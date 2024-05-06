@@ -13,6 +13,8 @@ import com.equipation.balagat.humans.evaluation_request;
 
 
 import com.equipation.balagat.humans.PPE_request;
+import com.equipation.balagat.humans.incentive_request;
+import com.equipation.balagat.humans.moretidy_request;
 import com.equipation.balagat.humans.prose_request;
 import com.equipation.balagat.humans.salary_request;
 import com.equipation.balagat.humans.borrow_request;
@@ -96,5 +98,20 @@ public class human extends AppCompatActivity {
     public void fun_training_request(View view) {
         startActivity(new Intent( this , training_request.class ));
 
+    }
+
+    public void fun_incentive_request(View view) {
+        startActivity(new Intent( this , incentive_request.class ));
+
+
+    }
+
+    public void fun_moretidy_request(View view) {
+        startActivity(new Intent( this , moretidy_request.class ));
+
+    }
+
+
+    public void fun_profile_request(View view) {
     }
 }
