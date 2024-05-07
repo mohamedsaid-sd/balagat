@@ -30,7 +30,7 @@
                     android:background="@color/gold"
                     android:fontFamily="@font/jana"
                     android:padding="5dp"
-                    android:text="طلب وردية"
+                    android:text="طلب تغيير وردية"
                     android:textColor="@color/black"
                     android:textSize="20dp"
                     android:textStyle="bold"
@@ -187,23 +187,23 @@
                                 tools:ignore="HardcodedText" />
                         </com.google.android.material.textfield.TextInputLayout>
 
-                        <TextView
-                            android:id="@+id/textView41"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="3dp"
-                            android:fontFamily="@font/jana"
-                            android:padding="3dp"
-                            android:text="تحديد الوردية الحاليه"
-                            android:textStyle="bold"
-                            tools:ignore="HardcodedText" />
 
-                        <Spinner
-                            android:id="@+id/sp_shift"
-                            style="@android:style/Widget.Spinner.DropDown"
+                        <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="3dp" />
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:padding="3dp"
+                            android:textColorHint="@color/green">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="تحديد الورديه الحاليه "
+                                android:inputType="textPersonName"
+                                tools:ignore="HardcodedText" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
 
 
                         <TextView
@@ -213,12 +213,12 @@
                             android:layout_margin="3dp"
                             android:fontFamily="@font/jana"
                             android:padding="3dp"
-                            android:text="مدة الوردية"
+                            android:text="الورديه المطلوبه "
                             android:textStyle="bold"
                             tools:ignore="HardcodedText" />
 
                         <Spinner
-                            android:id="@+id/sp_shift_time"
+                            android:id="@+id/sp_shift"
                             style="@android:style/Widget.Spinner.DropDown"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"

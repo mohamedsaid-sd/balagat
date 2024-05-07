@@ -9,6 +9,7 @@ import android.widget.Toast;
 
 
 import com.equipation.balagat.humans.complaint_request;
+import com.equipation.balagat.humans.delegate_request;
 import com.equipation.balagat.humans.edit_profile_request;
 import com.equipation.balagat.humans.evaluation_request;
 
@@ -108,5 +109,10 @@ public class human extends AppCompatActivity {
 
     public void fun_profile_request(View view) {
         startActivity(new Intent( this , edit_profile_request.class ));
+    }
+
+    public void fun_delegate_request(View view) {
+        startActivity(new Intent( this , delegate_request.class ));
+
     }
 }

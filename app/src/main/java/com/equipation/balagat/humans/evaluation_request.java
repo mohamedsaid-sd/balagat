@@ -36,10 +36,6 @@ public class evaluation_request extends AppCompatActivity {
         ar_evaluationtime_type.add(" سنوي  ");
 
 
-        // ar_vication_type.add(" إجازة طارئة ");
-        // ar_vication_type.add("  إجازة خاصة (أمومة-ولادة-زواج-وفاة-يوم صحي) ");
-        // ar_vication_type.add(" إجازة من غير مرتب ");
-        // ar_vication_type.add("أخرى ");
 
 
           Casing();
