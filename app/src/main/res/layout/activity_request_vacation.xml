@@ -281,12 +281,54 @@
                             android:text="نوع الإجازة"
                             tools:ignore="HardcodedText" />
 
+
+
                         <Spinner
                             android:id="@+id/sp_vacation_type"
                             style="@android:style/Widget.Spinner.DropDown"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="3dp" />
+
+                        <LinearLayout
+                            android:id="@+id/layout_relative"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView420"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:padding="3dp"
+                                android:text="وفاة من الدرجة الاولى ؟ "
+                                tools:ignore="HardcodedText" />
+
+                            <Spinner
+                                android:id="@+id/sp_relative"
+                                style="@android:style/Widget.Spinner.DropDown"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp" />
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:id="@+id/ti_relative"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:padding="3dp">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint=" تحديد صلة القرابة "
+                                    android:inputType="textPersonName"
+                                    tools:ignore="HardcodedText" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
+                        </LinearLayout>
 
 
                         <LinearLayout
