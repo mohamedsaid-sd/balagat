@@ -13,6 +13,7 @@ import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.equipation.balagat.home_sub1;
 import com.equipation.balagat.human;
 import com.equipation.balagat.contract;
 import com.equipation.balagat.main_contract;
@@ -61,7 +62,7 @@ public class HomeFragment extends Fragment {
 
         // الضغط علي العقودات
         card2.setOnClickListener(view ->
-                startActivity(new Intent(getActivity() , contract.class)));
+                startActivity(new Intent(getActivity() , home_sub1.class)));
 
         // الضغط علي المشتريات
         card3.setOnClickListener(view ->

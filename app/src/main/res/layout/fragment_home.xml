@@ -134,7 +134,7 @@
                                 android:fontFamily="@font/jana"
                                 android:gravity="center|center_vertical"
                                 android:padding="10dp"
-                                android:text="العقودات"
+                                android:text="العقودات - مواقع العمل-ساعات العمل"
                                 android:textSize="14sp"
                                 android:textStyle="bold" />
                         </androidx.cardview.widget.CardView>
@@ -172,7 +172,7 @@
                             android:background="@drawable/round"
                             android:foregroundGravity="center"
                             android:padding="5dp"
-                            android:visibility="visible">
+                            android:visibility="gone">
 
                             <TextView
                                 android:id="@+id/textView8"
@@ -197,7 +197,7 @@
                             android:background="@drawable/round"
                             android:foregroundGravity="center"
                             android:padding="5dp"
-                            android:visibility="visible">
+                            android:visibility="gone">
 
                             <TextView
                                 android:id="@+id/textView9"

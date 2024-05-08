@@ -2,6 +2,7 @@ package com.equipation.balagat;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.equipation.balagat.contracts.contract_location;
 import com.equipation.balagat.contracts.contract_time;
 import com.equipation.balagat.contracts.request_renew_contract;
 import com.equipation.balagat.contracts.request_settlement_contract;
@@ -41,7 +42,7 @@ public class contract extends AppCompatActivity {
     }
 
     public void fun_contract_contract(View view) {
-       // startActivity(new Intent( this , request_new_contract.class ));
+//        startActivity(new Intent( this , contract_time.class ));
     }
 
     public void fun_contract_time(View view) {
@@ -49,6 +50,6 @@ public class contract extends AppCompatActivity {
     }
 
     public void fun_contract_location(View view) {
-      //  startActivity(new Intent( this , request_new_contract.class ));
+       startActivity(new Intent( this , contract_location.class ));
     }
 }
