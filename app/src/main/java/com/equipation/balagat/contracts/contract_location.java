@@ -26,6 +26,8 @@ public class contract_location extends AppCompatActivity {
     }
 
     public void fiun_add(View view) {
+        startActivity(new Intent(this , add_operator.class));
+
     }
 
     public void fiun_complaint(View view) {

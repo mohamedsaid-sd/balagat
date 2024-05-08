@@ -14,6 +14,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.equipation.balagat.home_sub1;
+import com.equipation.balagat.home_sub2;
 import com.equipation.balagat.human;
 import com.equipation.balagat.contract;
 import com.equipation.balagat.main_contract;
@@ -45,13 +46,7 @@ public class HomeFragment extends Fragment {
         CardView card3 = binding.card3;
         // ساعات العمل
         CardView card4 = binding.card4;
-        // موقع العمل
-        CardView card5 = binding.card5;
-        // الصيانة
-        CardView card6 = binding.card6;
-        // الاسطول
-        CardView card7 = binding.card7;
-        // المنصرفات
+
         CardView card8 = binding.card8;
         // المخزن
         CardView card9 = binding.card9;
@@ -72,17 +67,6 @@ public class HomeFragment extends Fragment {
         card4.setOnClickListener(view ->
                 startActivity(new Intent(getActivity() , time.class)));
 
-        // الضغط علي موقع العمل
-        card5.setOnClickListener(view ->
-                startActivity(new Intent( getActivity() , location.class )));
-
-        // الضغط علي الصيانة
-        card6.setOnClickListener(view ->
-                startActivity(new Intent( getActivity() , maintenance.class) ));
-
-        // الضغط علي الاسطول
-        card7.setOnClickListener(view ->
-                startActivity(new Intent( getActivity() , fleet.class  )));
 
         // الضغط علي المنصرفات الادارية
         card8.setOnClickListener(view ->
@@ -90,7 +74,7 @@ public class HomeFragment extends Fragment {
 
         // الضغط علي المخزن
         card9.setOnClickListener(view ->
-                startActivity(new Intent(getActivity() , stock.class)));
+                startActivity(new Intent(getActivity() , home_sub2.class)));
 
         final TextView textView = binding.textHome;
 

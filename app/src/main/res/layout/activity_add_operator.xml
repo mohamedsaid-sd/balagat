@@ -79,44 +79,6 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="3dp" />
 
-                        <com.google.android.material.textfield.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3dp"
-                            android:padding="3dp">
-
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="موقع الوصول  " />
-                        </com.google.android.material.textfield.TextInputLayout>
-
-                        <com.google.android.material.textfield.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3dp"
-                            android:padding="3dp">
-
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint=" الزمن المقترح للوصول  "
-                                android:inputType="number" />
-                        </com.google.android.material.textfield.TextInputLayout>
-
-                        <com.google.android.material.textfield.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3dp"
-                            android:padding="3dp">
-
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint=" تفاصيل الموقع الجديد" />
-                        </com.google.android.material.textfield.TextInputLayout>
-
-
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -127,12 +89,12 @@
                     android:padding="3dp">
 
                     <LinearLayout
-                        android:id="@+id/sp_whytravel_layout"
+                        android:id="@+id/sp_addoperator_layout"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="3dp"
                         android:orientation="vertical"
-                        android:visibility="gone"
+                        android:visibility="visible"
                         android:padding="3dp">
 
 
@@ -141,14 +103,39 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="3dp"
                             android:padding="3dp"
-                            android:text=" الغرض من الانتقال   " />
+                            android:text="  نوع الالية    " />
 
                         <Spinner
-                            android:id="@+id/sp_whytravel_type"
+                            android:id="@+id/sp_operator_type"
                             style="@android:style/Widget.Spinner.DropDown"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="3dp" />
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:padding="3dp">
+
+                    <LinearLayout
+                        android:id="@+id/sp_updateoperator_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        android:padding="3dp">
 
 
                         <com.google.android.material.textfield.TextInputLayout
@@ -160,15 +147,49 @@
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:hint=" اخري    "
+                                android:hint="  اسم المشغل المراد تغييرة"
                                 android:inputType="number" />
                         </com.google.android.material.textfield.TextInputLayout>
 
 
 
 
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp"
+                            android:padding="3dp"
+                            android:text="   سبب التغيير    " />
+
+                        <Spinner
+                            android:id="@+id/sp_whyupdateoperator_type"
+                            style="@android:style/Widget.Spinner.DropDown"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp" />
+
+
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
+
+
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp"
+                    android:padding="3dp"
+                    android:text="  مهلة الطلب     " />
+
+                <Spinner
+                    android:id="@+id/sp_timeaddoperator_type"
+                    style="@android:style/Widget.Spinner.DropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="3dp" />
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
