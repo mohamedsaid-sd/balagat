@@ -15,6 +15,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.equipation.balagat.human;
 import com.equipation.balagat.contract;
+import com.equipation.balagat.main_contract;
 import com.equipation.balagat.time;
 import com.equipation.balagat.stock;
 import com.equipation.balagat.location;
@@ -60,7 +61,7 @@ public class HomeFragment extends Fragment {
 
         // الضغط علي العقودات
         card2.setOnClickListener(view ->
-                startActivity(new Intent(getActivity() , contract.class)));
+                startActivity(new Intent(getActivity() , main_contract.class)));
 
         // الضغط علي المشتريات
         card3.setOnClickListener(view ->

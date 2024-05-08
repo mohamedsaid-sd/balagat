@@ -14,6 +14,9 @@
         android:theme="@style/Theme.Balagat.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".main_contract"
+            android:exported="false" />
+        <activity
             android:name=".humans.delegate_request"
             android:exported="false" />
         <activity
