@@ -61,7 +61,7 @@ public class HomeFragment extends Fragment {
 
         // الضغط علي العقودات
         card2.setOnClickListener(view ->
-                startActivity(new Intent(getActivity() , main_contract.class)));
+                startActivity(new Intent(getActivity() , contract.class)));
 
         // الضغط علي المشتريات
         card3.setOnClickListener(view ->

@@ -14,7 +14,13 @@
         android:theme="@style/Theme.Balagat.NoActionBar"
         tools:targetApi="31">
         <activity
-            android:name=".decrease_time"
+            android:name=".contracts.contract_time"
+            android:exported="false" />
+        <activity
+            android:name=".contracts.change_shift"
+            android:exported="false" />
+        <activity
+            android:name=".contracts.decrease_time"
             android:exported="false" />
         <activity
             android:name=".contracts.increase_time"

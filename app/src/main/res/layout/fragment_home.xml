@@ -172,7 +172,7 @@
                             android:background="@drawable/round"
                             android:foregroundGravity="center"
                             android:padding="5dp"
-                            android:visibility="gone">
+                            android:visibility="visible">
 
                             <TextView
                                 android:id="@+id/textView8"
@@ -197,7 +197,7 @@
                             android:background="@drawable/round"
                             android:foregroundGravity="center"
                             android:padding="5dp"
-                            android:visibility="gone">
+                            android:visibility="visible">
 
                             <TextView
                                 android:id="@+id/textView9"
@@ -246,7 +246,7 @@
                             android:background="@drawable/round"
                             android:foregroundGravity="center"
                             android:padding="5dp"
-                            android:visibility="gone">
+                            android:visibility="visible">
 
                             <TextView
                                 android:id="@+id/textView11"
@@ -295,7 +295,7 @@
                             android:background="@drawable/round"
                             android:foregroundGravity="center"
                             android:padding="5dp"
-                            android:visibility="gone">
+                            android:visibility="visible">
 
                             <TextView
                                 android:id="@+id/textView13"
