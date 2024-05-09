@@ -14,6 +14,15 @@
         android:theme="@style/Theme.Balagat.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".contracts.product_system"
+            android:exported="false" />
+        <activity
+            android:name=".contracts.hour_system"
+            android:exported="false" />
+        <activity
+            android:name=".contract_time_sheet"
+            android:exported="false" />
+        <activity
             android:name=".home_sub2"
             android:exported="false" />
         <activity

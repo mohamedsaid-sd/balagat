@@ -52,4 +52,8 @@ public class contract extends AppCompatActivity {
     public void fun_contract_location(View view) {
        startActivity(new Intent( this , contract_location.class ));
     }
+
+    public void fun_time_sheet(View view) {
+        startActivity(new Intent( this , contract_time_sheet.class ));
+    }
 }
