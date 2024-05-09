@@ -3,10 +3,10 @@ package com.equipation.balagat;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.equipation.balagat.contracts.contract_location;
+import com.equipation.balagat.contracts.contract_terms;
 import com.equipation.balagat.contracts.contract_time;
 import com.equipation.balagat.contracts.request_renew_contract;
-import com.equipation.balagat.contracts.request_settlement_contract;
-import com.equipation.balagat.contracts.request_deportation;
+
 import com.equipation.balagat.contracts.request_new_contract;
 
 import android.content.Intent;
@@ -25,24 +25,10 @@ public class contract extends AppCompatActivity {
         super.onBackPressed();
     }
 
-    public void fun_renew_contract(View view) {
-        startActivity(new Intent( this , request_renew_contract.class ));
-    }
 
-    public void fun_settlement_contract(View view) {
-        startActivity(new Intent( this , request_settlement_contract.class ));
-    }
-
-    public void fun_deportation(View view){
-        startActivity(new Intent( this , request_deportation.class ));
-    }
-
-    public void fun_request_new_contract(View view) {
-        startActivity(new Intent( this , request_new_contract.class ));
-    }
 
     public void fun_contract_contract(View view) {
-//        startActivity(new Intent( this , contract_time.class ));
+        startActivity(new Intent( this , contract_terms.class ));
     }
 
     public void fun_contract_time(View view) {

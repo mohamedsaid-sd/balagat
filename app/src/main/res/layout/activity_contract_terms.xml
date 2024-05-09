@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".contract">
+    tools:context=".contracts.contract_terms">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,32 +14,29 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            tools:ignore="UseCompoundDrawables">
+            android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView14"
-                android:layout_width="0dp"
+                android:id="@+id/textViewr14"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@color/gold"
                 android:fontFamily="@font/jana"
                 android:padding="5dp"
-                android:text="قسم العقودات"
+                android:text="  بنود العقد"
                 android:textColor="@color/black"
                 android:textSize="20dp"
-                android:textStyle="bold"
-                tools:ignore="HardcodedText,SpUsage" />
+                android:textStyle="bold" />
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/imageViyew2"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:background="@color/gray"
                 android:onClick="fun_back"
                 android:padding="5dp"
-                app:srcCompat="@drawable/ic_baseline_arrow_forward_ios_24"
-                tools:ignore="ContentDescription" />
+                app:srcCompat="@drawable/ic_baseline_arrow_forward_ios_24" />
         </LinearLayout>
 
         <ScrollView
@@ -54,8 +51,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    tools:ignore="UselessParent">
+                    android:orientation="vertical">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -68,20 +64,26 @@
                             android:layout_margin="5dp"
                             android:layout_weight="1"
                             android:background="@drawable/round"
-                            android:onClick="fun_contract_contract">
+                            android:onClick="fun_renew_contract">
 
                             <TextView
                                 android:id="@+id/textView151"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:drawableTop="@drawable/ic_baseline_person_pin_24"
                                 android:fontFamily="@font/jana"
                                 android:gravity="center"
                                 android:padding="5dp"
-                                android:text=" بنود العقد "
-                                android:textSize="12sp"
-                                app:drawableTopCompat="@drawable/ic_baseline_poll_24"
-                                tools:ignore="HardcodedText" />
+                                android:text=" طلب تجديد عقد"
+                                android:textSize="12sp" />
                         </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
 
                         <androidx.cardview.widget.CardView
                             android:layout_width="match_parent"
@@ -89,19 +91,18 @@
                             android:layout_margin="5dp"
                             android:layout_weight="1"
                             android:background="@drawable/round"
-                            android:onClick="fun_contract_time">
+                            android:onClick="fun_rechange">
 
                             <TextView
                                 android:id="@+id/textView161"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:drawableTop="@drawable/ic_baseline_local_shipping_24"
                                 android:fontFamily="@font/jana"
                                 android:gravity="center"
                                 android:padding="5dp"
-                                android:text=" احتياج الساعات  "
-                                android:textSize="12sp"
-                                app:drawableTopCompat="@drawable/ic_baseline_access_time_filled_24"
-                                tools:ignore="HardcodedText" />
+                                android:text="طلب تغيير الية"
+                                android:textSize="12sp" />
                         </androidx.cardview.widget.CardView>
                     </LinearLayout>
 
@@ -110,50 +111,29 @@
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
 
-
                         <androidx.cardview.widget.CardView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             android:layout_weight="1"
                             android:background="@drawable/round"
-                            android:onClick="fun_contract_location">
+                            android:onClick="fun_terminate">
 
                             <TextView
-                                android:id="@+id/textView15"
+                                android:id="@+id/textView152"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:drawableTop="@drawable/ic_baseline_poll_24"
                                 android:fontFamily="@font/jana"
                                 android:gravity="center"
                                 android:padding="5dp"
-                                android:text="احتياجات الموقع "
-                                android:textSize="12sp"
-                                app:drawableTopCompat="@drawable/ic_baseline_location_on_24"
-                                tools:ignore="HardcodedText" />
+                                android:text=" طلب فسخ عقد    "
+                                android:textSize="12sp" />
                         </androidx.cardview.widget.CardView>
 
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="5dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/round"
-                            android:onClick="fun_time_sheet">
 
-                            <TextView
-                                android:id="@+id/textView0"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="@font/jana"
-                                android:gravity="center"
-                                android:padding="5dp"
-                                android:text=" التايم شيت "
-                                android:textSize="12sp"
-                                app:drawableTopCompat="@drawable/ic_baseline_access_time_filled_24"
-                                tools:ignore="HardcodedText" />
-
-                        </androidx.cardview.widget.CardView>
                     </LinearLayout>
+
 
 
 

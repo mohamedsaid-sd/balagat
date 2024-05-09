@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".contracts.request_renew_contract">
+    tools:context=".contracts.rechange_machin">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -23,13 +23,14 @@
                 tools:ignore="UseCompoundDrawables">
 
                 <TextView
+                    android:id="@+id/textView14"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="@color/gold"
                     android:fontFamily="@font/jana"
                     android:padding="5dp"
-                    android:text="طلب تجديد عقد"
+                    android:text="طلب تغيير الية"
                     android:textColor="@color/black"
                     android:textSize="20dp"
                     android:textStyle="bold"
@@ -270,179 +271,166 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-
-            <LinearLayout
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_margin="3dp"
-                android:orientation="vertical"
                 android:padding="3dp">
 
-                <androidx.cardview.widget.CardView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="3dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/textView3412"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        android:text="نوع الالية المطلوبة" />
+
+                    <Spinner
+                        android:id="@+id/sp_change_type"
+                        style="@android:style/Widget.Spinner.DropDown"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                         </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:padding="3dp">
+
+                <LinearLayout
+                    android:id="@+id/sp_switch_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:orientation="vertical"
+                    android:visibility="gone"
                     android:padding="3dp">
 
-                    <LinearLayout
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        android:text="    تبديل النوع     " />
+
+                    <Spinner
+                        android:id="@+id/sp_switch_type"
+                        style="@android:style/Widget.Spinner.DropDown"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp" />
+
+
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="3dp"
+                android:padding="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textVie66w3412"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        android:text="سبب التغيير  " />
+
+                    <Spinner
+                        android:id="@+id/sp_reason_type"
+                        style="@android:style/Widget.Spinner.DropDown"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                    <TextView
+                        android:id="@+id/textVie66yw3412"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        android:text="مهلة التغيير   " />
+
+                    <Spinner
+                        android:id="@+id/sp_timechange_type"
+                        style="@android:style/Widget.Spinner.DropDown"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="3dp"
-                        android:orientation="vertical"
+                        android:id="@+id/day"
+                        android:background="@drawable/round"
                         android:padding="3dp">
 
-                        <TextView
+                        <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="3dp"
-                            android:padding="3dp"
-                            android:text=" نوع التجديد " />
-                        <Spinner
-                            android:id="@+id/sp_renew_type"
-                            style="@android:style/Widget.Spinner.DropDown"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="3dp" />
+                            android:hint="كتابه اليوم " />
+                    </com.google.android.material.textfield.TextInputLayout>
 
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="3dp"
-                    android:padding="3dp">
-
-                    <LinearLayout
-                        android:id="@+id/sp_partial_layout"
+                    <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="3dp"
-                        android:orientation="vertical"
-                        android:visibility="gone"
+                        android:background="@drawable/round"
                         android:padding="3dp">
 
-
-                        <TextView
+                        <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="3dp"
-                            android:padding="3dp"
-                            android:text="  تجديد عقد جزئي     " />
+                            android:hint="ملاجظات " />
+                    </com.google.android.material.textfield.TextInputLayout>
 
-                        <Spinner
-                            android:id="@+id/sp_partial_type"
-                            style="@android:style/Widget.Spinner.DropDown"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="3dp" />
+                </LinearLayout>
 
-
-                        <com.google.android.material.textfield.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3dp"
-                            android:id="@+id/hours"
-                            android:padding="3dp">
-
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-
-                                android:hint="     كتابه عدد الساعات"
-                                android:inputType="number" />
-                        </com.google.android.material.textfield.TextInputLayout>
-
-                        <com.google.android.material.textfield.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:id="@+id/days"
-                            android:layout_margin="3dp"
-                            android:visibility="gone"
-                            android:padding="3dp">
-
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="     كتابه عدد الايام"
-                                android:inputType="number" />
-                        </com.google.android.material.textfield.TextInputLayout>
+            </androidx.cardview.widget.CardView>
 
 
 
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
+            <Button
 
-
-
-
-
-
-
-
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="3dp"
-                    android:padding="3dp"
-                    android:text="   الموقع      " />
-
-                <Spinner
-                    android:id="@+id/sp_location_type"
-                    style="@android:style/Widget.Spinner.DropDown"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="3dp" />
-
-
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="3dp"
-                    android:padding="3dp">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="    كتابه الموقع الجديد"
-                        android:inputType="number" />
-                </com.google.android.material.textfield.TextInputLayout>
-
-
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="3dp"
-                    android:padding="3dp">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="  ملاحظات"
-                        android:inputType="number" />
-                </com.google.android.material.textfield.TextInputLayout>
-
-
-
-                <Button
-
-                    android:id="@+id/button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="3dp"
-                    android:background="@drawable/goaldround"
-                    android:backgroundTint="@color/gold"
-                    android:fontFamily="@font/jana"
-                    android:padding="3dp"
-                    android:text="تاكيد الطلب"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:theme="@style/Theme.Balagat" />
-
-            </LinearLayout>
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/goaldround"
+                android:backgroundTint="@color/gold"
+                android:fontFamily="@font/jana"
+                android:padding="5dp"
+                android:text="تاكيد الطلب"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:theme="@style/Theme.Balagat" />
 
         </LinearLayout>
     </ScrollView>
