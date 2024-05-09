@@ -23,7 +23,7 @@ public class request_renew_contract extends AppCompatActivity {
 
     LinearLayout sp_partial_layout  ;
 
-    TextInputLayout days,hours;
+    TextInputLayout days,hours , new_location;
 
     Spinner sp_renew_type,sp_partial_type,sp_location_type;
     ArrayList<String> ar_renew_type,ar_partial_type,ar_location_type ;
@@ -66,6 +66,20 @@ public class request_renew_contract extends AppCompatActivity {
                 androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, ar_location_type);
         sp_location_type.setAdapter(adapter_spinner_borrow_type3);
 
+        sp_location_type.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                new_location.setVisibility(View.GONE);
+                if(ar_location_type.get(i).equals("موقع جديد"))
+                    new_location.setVisibility(View.VISIBLE);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
+
 
 
 
@@ -92,6 +106,7 @@ public class request_renew_contract extends AppCompatActivity {
         sp_partial_type.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+
                 if(ar_partial_type.get(i).equals("بالايام")){
                     days.setVisibility(View.VISIBLE);
                     hours.setVisibility(View.GONE);
@@ -120,6 +135,7 @@ public class request_renew_contract extends AppCompatActivity {
         sp_partial_layout = findViewById(R.id.sp_partial_layout);
         days = findViewById(R.id.days);
         hours = findViewById(R.id.hours);
+        new_location = findViewById(R.id.new_location);
     }
 
     public void fun_back(View view) {

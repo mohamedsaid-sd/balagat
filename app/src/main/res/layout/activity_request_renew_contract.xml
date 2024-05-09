@@ -396,8 +396,8 @@
                     android:layout_margin="3dp" />
 
 
-
                 <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/new_location"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="3dp"
