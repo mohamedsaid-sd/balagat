@@ -68,125 +68,489 @@
                         android:orientation="vertical"
                         android:padding="3dp">
 
-                        <com.google.android.material.textfield.TextInputLayout
+                        <LinearLayout
+                            android:id="@+id/layout_default"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_margin="3dp"
-                            android:padding="3dp"
-                            android:textColorHint="@color/green">
+                            android:orientation="vertical"
+                            android:visibility="visible">
 
-                            <com.google.android.material.textfield.TextInputEditText
+                            <com.google.android.material.textfield.TextInputLayout
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="تاريخ الطلب"
-                                android:inputType="textPersonName"
-                                tools:ignore="HardcodedText" />
-                        </com.google.android.material.textfield.TextInputLayout>
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:padding="3dp"
+                                android:textColorHint="@color/green">
 
-                        <com.google.android.material.textfield.TextInputLayout
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="تاريخ الطلب"
+                                    android:inputType="textPersonName"
+                                    tools:ignore="HardcodedText" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:padding="3dp"
+                                android:textColorHint="@color/green">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="اسم مقدم الطلب"
+                                    android:inputType="textPersonName"
+                                    tools:ignore="HardcodedText" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:padding="3dp"
+                                android:textColorHint="@color/green">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="الآليه ( مركز التكلفة )"
+                                    android:inputType="textPersonName"
+                                    tools:ignore="HardcodedText" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:padding="3dp"
+                                android:textColorHint="@color/green">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="الموقع"
+                                    android:inputType="textPersonName"
+                                    tools:ignore="HardcodedText" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:padding="3dp"
+                                android:textColorHint="@color/green">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="تاريخ التعيين"
+                                    android:inputType="textPersonName"
+                                    tools:ignore="HardcodedText" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:padding="3dp"
+                                android:textColorHint="@color/green">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="القسم"
+                                    android:inputType="textPersonName"
+                                    tools:ignore="HardcodedText" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:padding="3dp"
+                                android:textColorHint="@color/green">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="الوظيفة"
+                                    android:inputType="textPersonName"
+                                    tools:ignore="HardcodedText" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:padding="3dp"
+                                android:textColorHint="@color/green">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="رقم الموظف"
+                                    android:inputType="textPersonName"
+                                    tools:ignore="HardcodedText" />
+                            </com.google.android.material.textfield.TextInputLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_margin="3dp"
-                            android:padding="3dp"
-                            android:textColorHint="@color/green">
+                            android:orientation="vertical">
 
-                            <com.google.android.material.textfield.TextInputEditText
+                            <TextView
+                                android:id="@+id/txt_visable"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:hint="اسم مقدم الطلب"
-                                android:inputType="textPersonName"
+                                android:layout_margin="3dp"
+                                android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_down_24"
+                                android:fontFamily="@font/jana"
+                                android:onClick="fun_toggle"
+                                android:padding="3dp"
+                                android:text="المعلومات السابقة"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
                                 tools:ignore="HardcodedText" />
-                        </com.google.android.material.textfield.TextInputLayout>
 
-                        <com.google.android.material.textfield.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3dp"
-                            android:padding="3dp"
-                            android:textColorHint="@color/green">
-
-                            <com.google.android.material.textfield.TextInputEditText
+                            <TextView
+                                android:id="@+id/txt_gone"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:hint="الآليه ( مركز التكلفة )"
-                                android:inputType="textPersonName"
+                                android:layout_margin="3dp"
+                                android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_up_24"
+                                android:fontFamily="@font/jana"
+                                android:onClick="fun_toggle"
+                                android:padding="3dp"
+                                android:text="المعلومات السابقة"
+                                android:textSize="16sp"
+                                android:textStyle="bold"
+                                android:visibility="gone"
                                 tools:ignore="HardcodedText" />
-                        </com.google.android.material.textfield.TextInputLayout>
 
-                        <com.google.android.material.textfield.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3dp"
-                            android:padding="3dp"
-                            android:textColorHint="@color/green">
-
-                            <com.google.android.material.textfield.TextInputEditText
+                            <LinearLayout
+                                android:id="@+id/layout_toggle"
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="الموقع"
-                                android:inputType="textPersonName"
-                                tools:ignore="HardcodedText" />
-                        </com.google.android.material.textfield.TextInputLayout>
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:visibility="gone">
 
-                        <com.google.android.material.textfield.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3dp"
-                            android:padding="3dp"
-                            android:textColorHint="@color/green">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
 
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="تاريخ التعيين"
-                                android:inputType="textPersonName"
-                                tools:ignore="HardcodedText" />
-                        </com.google.android.material.textfield.TextInputLayout>
+                                    <TextView
+                                        android:id="@+id/textView63"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="3dp"
+                                        android:layout_weight="2"
+                                        android:fontFamily="@font/jana"
+                                        android:padding="3dp"
+                                        android:text="الاسم"
+                                        android:textColor="@color/black"
+                                        android:textSize="13sp"
+                                        android:textStyle="bold"
+                                        tools:ignore="HardcodedText" />
 
-                        <com.google.android.material.textfield.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3dp"
-                            android:padding="3dp"
-                            android:textColorHint="@color/green">
+                                    <TextView
+                                        android:id="@+id/textView65"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="3dp"
+                                        android:layout_weight="1"
+                                        android:background="@color/grayfont"
+                                        android:fontFamily="@font/jana"
+                                        android:paddingLeft="5dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingEnd="5dp"
+                                        android:paddingRight="10dp"
+                                        android:paddingBottom="5dp"
+                                        android:text="من السيرفر"
+                                        android:textColor="@color/lite"
+                                        android:textSize="13sp"
+                                        android:textStyle="bold"
+                                        tools:ignore="HardcodedText" />
+                                </LinearLayout>
 
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="القسم"
-                                android:inputType="textPersonName"
-                                tools:ignore="HardcodedText" />
-                        </com.google.android.material.textfield.TextInputLayout>
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
 
-                        <com.google.android.material.textfield.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3dp"
-                            android:padding="3dp"
-                            android:textColorHint="@color/green">
+                                    <TextView
+                                        android:id="@+id/textView67"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="3dp"
+                                        android:layout_weight="2"
+                                        android:fontFamily="@font/jana"
+                                        android:padding="3dp"
+                                        android:text="رقم الهوية"
+                                        android:textSize="13sp"
+                                        android:textStyle="bold"
+                                        tools:ignore="HardcodedText"
+                                        android:textColor="@color/black" />
 
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="الوظيفة"
-                                android:inputType="textPersonName"
-                                tools:ignore="HardcodedText" />
-                        </com.google.android.material.textfield.TextInputLayout>
+                                    <TextView
+                                        android:id="@+id/textView68"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="3dp"
+                                        android:layout_weight="1"
+                                        android:background="@color/grayfont"
+                                        android:fontFamily="@font/jana"
+                                        android:paddingLeft="5dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingEnd="5dp"
+                                        android:paddingRight="10dp"
+                                        android:paddingBottom="5dp"
+                                        android:text="من السيرفر"
+                                        android:textColor="@color/lite"
+                                        android:textSize="13sp"
+                                        android:textStyle="bold"
+                                        tools:ignore="HardcodedText" />
+                                </LinearLayout>
 
-                        <com.google.android.material.textfield.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3dp"
-                            android:padding="3dp"
-                            android:textColorHint="@color/green">
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
 
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="رقم الموظف"
-                                android:inputType="textPersonName"
-                                tools:ignore="HardcodedText" />
-                        </com.google.android.material.textfield.TextInputLayout>
+                                    <TextView
+                                        android:id="@+id/textView69"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="3dp"
+                                        android:layout_weight="2"
+                                        android:fontFamily="@font/jana"
+                                        android:padding="3dp"
+                                        android:text="الحالة الاجتماعية"
+                                        android:textColor="@color/black"
+                                        android:textSize="13sp"
+                                        android:textStyle="bold"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        android:id="@+id/textView71"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="3dp"
+                                        android:layout_weight="1"
+                                        android:background="@color/grayfont"
+                                        android:fontFamily="@font/jana"
+                                        android:paddingLeft="5dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingEnd="5dp"
+                                        android:paddingRight="10dp"
+                                        android:paddingBottom="5dp"
+                                        android:text="من السيرفر"
+                                        android:textColor="@color/lite"
+                                        android:textSize="13sp"
+                                        android:textStyle="bold"
+                                        tools:ignore="HardcodedText" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/textView70"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="3dp"
+                                        android:layout_weight="2"
+                                        android:fontFamily="@font/jana"
+                                        android:padding="3dp"
+                                        android:text="تاريخ الميلاد"
+                                        android:textColor="@color/black"
+                                        android:textSize="13sp"
+                                        android:textStyle="bold"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        android:id="@+id/textView77"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="3dp"
+                                        android:layout_weight="1"
+                                        android:background="@color/grayfont"
+                                        android:fontFamily="@font/jana"
+                                        android:paddingLeft="5dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingEnd="5dp"
+                                        android:paddingRight="10dp"
+                                        android:paddingBottom="5dp"
+                                        android:text="من السيرفر"
+                                        android:textColor="@color/lite"
+                                        android:textSize="13sp"
+                                        android:textStyle="bold"
+                                        tools:ignore="HardcodedText" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/textView73"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="3dp"
+                                        android:layout_weight="2"
+                                        android:fontFamily="@font/jana"
+                                        android:padding="3dp"
+                                        android:text="العنوان"
+                                        android:textColor="@color/black"
+                                        android:textSize="13sp"
+                                        android:textStyle="bold"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        android:id="@+id/textView78"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="3dp"
+                                        android:layout_weight="1"
+                                        android:background="@color/grayfont"
+                                        android:fontFamily="@font/jana"
+                                        android:paddingLeft="5dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingEnd="5dp"
+                                        android:paddingRight="10dp"
+                                        android:paddingBottom="5dp"
+                                        android:text="من السيرفر"
+                                        android:textColor="@color/lite"
+                                        android:textSize="13sp"
+                                        android:textStyle="bold"
+                                        tools:ignore="HardcodedText" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/textView75"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="3dp"
+                                        android:layout_weight="2"
+                                        android:fontFamily="@font/jana"
+                                        android:padding="3dp"
+                                        android:text="رقم الهاتف"
+                                        android:textColor="@color/black"
+                                        android:textSize="13sp"
+                                        android:textStyle="bold"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        android:id="@+id/textView74"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="3dp"
+                                        android:layout_weight="1"
+                                        android:background="@color/grayfont"
+                                        android:fontFamily="@font/jana"
+                                        android:paddingLeft="5dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingEnd="5dp"
+                                        android:paddingRight="10dp"
+                                        android:paddingBottom="5dp"
+                                        android:text="من السيرفر"
+                                        android:textColor="@color/lite"
+                                        android:textSize="13sp"
+                                        android:textStyle="bold"
+                                        tools:ignore="HardcodedText" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/textView80"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="3dp"
+                                        android:layout_weight="2"
+                                        android:fontFamily="@font/jana"
+                                        android:padding="3dp"
+                                        android:text="الحساب البنكى"
+                                        android:textColor="@color/black"
+                                        android:textSize="13sp"
+                                        android:textStyle="bold"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        android:id="@+id/textView62"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="3dp"
+                                        android:layout_weight="1"
+                                        android:background="@color/grayfont"
+                                        android:fontFamily="@font/jana"
+                                        android:paddingLeft="5dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingEnd="5dp"
+                                        android:paddingRight="10dp"
+                                        android:paddingBottom="5dp"
+                                        android:text="من السيرفر"
+                                        android:textColor="@color/lite"
+                                        android:textSize="13sp"
+                                        android:textStyle="bold"
+                                        tools:ignore="HardcodedText" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:id="@+id/textView61"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="3dp"
+                                        android:layout_weight="2"
+                                        android:fontFamily="@font/jana"
+                                        android:padding="3dp"
+                                        android:text="رخصة القيادة"
+                                        android:textColor="@color/black"
+                                        android:textSize="13sp"
+                                        android:textStyle="bold"
+                                        tools:ignore="HardcodedText" />
+
+                                    <TextView
+                                        android:id="@+id/textView79"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_margin="3dp"
+                                        android:layout_weight="1"
+                                        android:background="@color/grayfont"
+                                        android:fontFamily="@font/jana"
+                                        android:paddingLeft="5dp"
+                                        android:paddingTop="5dp"
+                                        android:paddingEnd="5dp"
+                                        android:paddingRight="10dp"
+                                        android:paddingBottom="5dp"
+                                        android:text="من السيرفر"
+                                        android:textColor="@color/lite"
+                                        android:textSize="13sp"
+                                        android:textStyle="bold"
+                                        tools:ignore="HardcodedText" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
 
 
                         <TextView
@@ -195,14 +559,122 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="3dp"
                             android:padding="3dp"
-                            android:text="المعلومات الشخصية"
+                            android:text="الحقل المراد تغييره"
                             tools:ignore="HardcodedText" />
+
+                        <Spinner
+                            android:id="@+id/sp_profile"
+                            style="@android:style/Widget.Spinner.DropDown"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp" />
+
+                        <TextView
+                            android:id="@+id/textView66"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp"
+                            android:padding="3dp"
+                            android:text="العملية"
+                            tools:ignore="HardcodedText" />
+
+                        <Spinner
+                            android:id="@+id/sp_opration"
+                            style="@android:style/Widget.Spinner.DropDown"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp" />
+
+                        <TextView
+                            android:id="@+id/textView72"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp"
+                            android:padding="3dp"
+                            android:text="البيانات الجديدة"
+                            android:textColor="@color/red"
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/ti_profile"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:padding="3dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="الاسم"
+                                tools:ignore="HardcodedText" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                tools:ignore="UselessParent">
+
+                                <Button
+                                    android:id="@+id/button6"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="إضافة"
+                                    android:textColor="@color/black"
+                                    android:visibility="invisible"
+                                    tools:ignore="HardcodedText" />
+
+                                <LinearLayout
+                                    android:id="@+id/layout_attach"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical"
+                                    tools:ignore="UseCompoundDrawables">
+
+                                    <ImageView
+                                        android:id="@+id/imageView10"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        app:srcCompat="@android:drawable/ic_input_add"
+                                        android:contentDescription="TODO"
+                                        tools:ignore="ContentDescription,HardcodedText,TooDeepLayout" />
+
+                                    <TextView
+                                        android:id="@+id/textView60"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center"
+                                        android:text="ارفاق وثائق"
+                                        tools:ignore="HardcodedText" />
+                                </LinearLayout>
+
+                                <Button
+                                    android:id="@+id/button7"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="تعديل"
+                                    android:textColor="@color/black"
+                                    android:visibility="invisible"
+                                    tools:ignore="HardcodedText" />
+                            </LinearLayout>
+
+                        </LinearLayout>
 
                         <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
-                            android:padding="3dp">
+                            android:padding="3dp"
+                            android:visibility="gone">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
@@ -217,7 +689,8 @@
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
                             android:padding="3dp"
-                            android:textColorHint="@color/green">
+                            android:textColorHint="@color/green"
+                            android:visibility="gone">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
@@ -226,7 +699,7 @@
                                 android:hint="رقم الهوية"
                                 android:inputType="textPersonName"
                                 android:text="ID030930903"
-                                tools:ignore="HardcodedText" />
+                                tools:ignore="HardcodedText,RtlHardcoded" />
                         </com.google.android.material.textfield.TextInputLayout>
 
                         <com.google.android.material.textfield.TextInputLayout
@@ -234,7 +707,8 @@
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
                             android:padding="3dp"
-                            android:textColorHint="@color/green">
+                            android:textColorHint="@color/green"
+                            android:visibility="gone">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
@@ -249,6 +723,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text=""
+                            android:visibility="gone"
                             tools:ignore="HardcodedText" />
 
                         <com.google.android.material.textfield.TextInputLayout
@@ -256,7 +731,8 @@
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
                             android:padding="3dp"
-                            android:textColorHint="@color/green">
+                            android:textColorHint="@color/green"
+                            android:visibility="gone">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
@@ -272,7 +748,8 @@
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
                             android:padding="3dp"
-                            android:textColorHint="@color/green">
+                            android:textColorHint="@color/green"
+                            android:visibility="gone">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
@@ -288,7 +765,8 @@
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
                             android:padding="3dp"
-                            android:textColorHint="@color/green">
+                            android:textColorHint="@color/green"
+                            android:visibility="gone">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
@@ -304,7 +782,8 @@
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
                             android:padding="3dp"
-                            android:textColorHint="@color/green">
+                            android:textColorHint="@color/green"
+                            android:visibility="gone">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
@@ -320,7 +799,8 @@
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
                             android:padding="3dp"
-                            android:textColorHint="@color/green">
+                            android:textColorHint="@color/green"
+                            android:visibility="gone">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
@@ -329,7 +809,7 @@
                                 android:hint="رخصة القيادة"
                                 android:inputType="textPersonName"
                                 android:text="ID0290930334"
-                                tools:ignore="HardcodedText" />
+                                tools:ignore="HardcodedText,RtlHardcoded,TooManyViews" />
                         </com.google.android.material.textfield.TextInputLayout>
 
                         <com.google.android.material.textfield.TextInputLayout
@@ -344,7 +824,6 @@
                                 android:layout_height="wrap_content"
                                 android:hint="الملاحظات"
                                 android:inputType="textPersonName"
-                                android:text="محمد سيد موظف في قسم ال HR"
                                 tools:ignore="HardcodedText" />
                         </com.google.android.material.textfield.TextInputLayout>
 
