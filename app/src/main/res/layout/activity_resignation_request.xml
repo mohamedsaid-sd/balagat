@@ -231,12 +231,14 @@
                         <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
+                            android:id="@+id/whyreson"
+                            android:visibility="gone"
                             android:layout_margin="5dp">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:hint="كتابة الاسباب"
+                                android:hint="كتابة الاسباب "
                                 tools:ignore="HardcodedText" />
                         </com.google.android.material.textfield.TextInputLayout>
 

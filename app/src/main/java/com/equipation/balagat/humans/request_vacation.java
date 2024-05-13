@@ -20,7 +20,7 @@ public class request_vacation extends AppCompatActivity {
     Spinner sp_vacation_type , sp_relative ;
     ArrayList<String> ar_vication_type , ar_relative ;
 
-    TextInputLayout ti_relative ;
+    TextInputLayout ti_relative ,reasonlayout,filedotor;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,14 +64,33 @@ public class request_vacation extends AppCompatActivity {
                     ti_relative.setVisibility(View.GONE);
                     layout_hag.setVisibility(View.VISIBLE);
                     layout_relative.setVisibility(View.GONE);
+                    reasonlayout.setVisibility(View.GONE);
+                    filedotor.setVisibility(View.GONE);
                 }else if(ar_vication_type.get(i).equals("وفاة")){
                     ti_relative.setVisibility(View.GONE);
                     layout_hag.setVisibility(View.GONE);
+                    reasonlayout.setVisibility(View.GONE);
+                    filedotor.setVisibility(View.GONE);
                     layout_relative.setVisibility(View.VISIBLE);
-                }else{
+                }else  if(ar_vication_type.get(i).equals(" إجازة عارضة ")||ar_vication_type.get(i).equals(" إجازة إستثنائية ")){
+                    ti_relative.setVisibility(View.GONE);
+                    layout_hag.setVisibility(View.GONE);
+                    layout_relative.setVisibility(View.GONE);
+                    filedotor.setVisibility(View.GONE);
+                    reasonlayout.setVisibility(View.VISIBLE);
+
+                }else if(ar_vication_type.get(i).equals(" إجازة مرضية ")){
+                    ti_relative.setVisibility(View.GONE);
+                    layout_hag.setVisibility(View.GONE);
+                    reasonlayout.setVisibility(View.GONE);
+                    layout_relative.setVisibility(View.GONE);
+                    filedotor.setVisibility(View.VISIBLE);
+                }else {
                     layout_hag.setVisibility(View.GONE);
                     layout_relative.setVisibility(View.GONE);
                     ti_relative.setVisibility(View.GONE);
+                    reasonlayout.setVisibility(View.GONE);
+                    filedotor.setVisibility(View.GONE);
 
 
                 }
@@ -107,6 +126,10 @@ public class request_vacation extends AppCompatActivity {
         layout_hag= findViewById(R.id.layout_hag);
         layout_relative = findViewById(R.id.layout_relative);
         ti_relative = findViewById(R.id.ti_relative);
+        reasonlayout = findViewById(R.id.reasonlayout);
+        filedotor = findViewById(R.id.filedotor);
+
+
     }
 
     public void fun_back(View view) {
