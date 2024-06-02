@@ -9,12 +9,16 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1">
 
             <LinearLayout
@@ -33,7 +37,7 @@
                     android:orientation="horizontal">
 
                     <TextView
-                        android:id="@+id/textView54"
+                        android:id="@+id/txt_name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="20dp"
@@ -69,7 +73,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/textView15"
+                            android:id="@+id/txt_salary"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="10dp"
@@ -78,16 +82,15 @@
                             android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
+                            android:onClick="fun_salary_request"
                             android:padding="5dp"
                             android:text="طلب مرتب"
                             android:textColor="@color/black"
                             android:textSize="12sp"
-                            android:textStyle="bold"
-                            android:onClick="fun_salary_request"/>
+                            android:textStyle="bold" />
 
                         <TextView
-                            android:onClick="fun_PPE_request"
-                            android:id="@+id/textView16"
+                            android:id="@+id/txt_resignation"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="10dp"
@@ -96,48 +99,7 @@
                             android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
-                            android:padding="5dp"
-                            android:text="طلب معدات سلامة PPE"
-                            android:textColor="@color/black"
-                            android:textSize="12sp"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:onClick="fun_shift_request"
-                            android:id="@+id/textView190"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/grayroundlight"
-                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
-                            android:fontFamily="sans-serif"
-                            android:gravity="center"
-                            android:padding="5dp"
-                            android:text="تغيير وردية"
-                            android:textColor="@color/black"
-                            android:textSize="12sp"
-                            android:textStyle="bold" />
-
-                        <TextView
                             android:onClick="fun_open_resignation_request"
-                            android:id="@+id/textView20"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/grayroundlight"
-                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
-                            android:fontFamily="sans-serif"
-                            android:gravity="center"
                             android:padding="5dp"
                             android:text="طلب إستقالة "
                             android:textColor="@color/black"
@@ -146,6 +108,48 @@
 
                     </LinearLayout>
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_delegate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/grayroundlight"
+                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:onClick="fun_delegate_request"
+                            android:padding="5dp"
+                            android:text=" تفويض لاستلام مستحقات  "
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_profile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/grayroundlight"
+                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:onClick="fun_profile_request"
+                            android:padding="5dp"
+                            android:text=" تعديل معلومات شخصيه"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -154,8 +158,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:onClick="fun_evaluation_request"
-                            android:id="@+id/textView1590"
+                            android:id="@+id/txt_complant"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="10dp"
@@ -164,40 +167,15 @@
                             android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
-                            android:padding="5dp"
-                            android:text="طلب تقييم اداء "
-                            android:textColor="@color/black"
-                            android:textSize="12sp"
-                            android:textStyle="bold" />
-
-                        <TextView
                             android:onClick="fun_complant_request"
-                            android:id="@+id/textView230"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/grayroundlight"
-                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
-                            android:fontFamily="sans-serif"
-                            android:gravity="center"
                             android:padding="5dp"
                             android:text="تقديم شكوي  "
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
-                    </LinearLayout>
-
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
                         <TextView
-                            android:onClick="fun_borrow_request"
-                            android:id="@+id/textView17"
+                            android:id="@+id/txt_prose"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="10dp"
@@ -206,23 +184,7 @@
                             android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
-                            android:padding="5dp"
-                            android:text="طلب سلفية"
-                            android:textColor="@color/black"
-                            android:textSize="12sp"
-                            android:textStyle="bold" />
-
-                        <TextView
                             android:onClick="fun_prose_request"
-                            android:id="@+id/textView18"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/grayroundlight"
-                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
-                            android:fontFamily="sans-serif"
-                            android:gravity="center"
                             android:padding="5dp"
                             android:text="طلب نثرية"
                             android:textColor="@color/black"
@@ -231,14 +193,14 @@
 
                     </LinearLayout>
 
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
 
                         <TextView
-                            android:onClick="fun_vacation_request"
-                            android:id="@+id/textView19"
+                            android:id="@+id/txt_borrow"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="10dp"
@@ -247,6 +209,48 @@
                             android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
+                            android:onClick="fun_borrow_request"
+                            android:padding="5dp"
+                            android:text="طلب سلفية"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_evaluation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/grayroundlight"
+                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:onClick="fun_evaluation_request"
+                            android:padding="5dp"
+                            android:text="طلب تقييم اداء "
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/txt_vacation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/grayroundlight"
+                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:onClick="fun_vacation_request"
                             android:padding="5dp"
                             android:text="طلب إجازة"
                             android:textColor="@color/black"
@@ -254,8 +258,7 @@
                             android:textStyle="bold" />
 
                         <TextView
-                            android:onClick="fun_training_request"
-                            android:id="@+id/textView1449"
+                            android:id="@+id/txt_training"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="10dp"
@@ -264,6 +267,7 @@
                             android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
+                            android:onClick="fun_training_request"
                             android:padding="5dp"
                             android:text="طلب تدريب وتأهيل"
                             android:textColor="@color/black"
@@ -279,8 +283,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:onClick="fun_moretidy_request"
-                            android:id="@+id/textVieاw19"
+                            android:id="@+id/txt_incentive"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="10dp"
@@ -289,15 +292,15 @@
                             android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
+                            android:onClick="fun_incentive_request"
                             android:padding="5dp"
-                            android:text="طلب زياده مرتب"
+                            android:text="طلب حافز "
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
                         <TextView
-                            android:onClick="fun_incentive_request"
-                            android:id="@+id/textView14469"
+                            android:id="@+id/txt_PPE"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="10dp"
@@ -306,8 +309,9 @@
                             android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
+                            android:onClick="fun_PPE_request"
                             android:padding="5dp"
-                            android:text="طلب حافز "
+                            android:text="طلب معدات سلامة PPE"
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold" />
@@ -321,8 +325,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:onClick="fun_profile_request"
-                            android:id="@+id/textVi66ew19"
+                            android:id="@+id/txt_moretidy"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="10dp"
@@ -331,15 +334,15 @@
                             android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
+                            android:onClick="fun_moretidy_request"
                             android:padding="5dp"
-                            android:text=" تعديل معلومات شخصيه"
+                            android:text="طلب زياده مرتب"
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold" />
 
                         <TextView
-                            android:onClick="fun_delegate_request"
-                            android:id="@+id/textV9i66ew19"
+                            android:id="@+id/txt_shift"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="10dp"
@@ -348,8 +351,9 @@
                             android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
+                            android:onClick="fun_shift_request"
                             android:padding="5dp"
-                            android:text=" تفويض لاستلام مستحقات  "
+                            android:text="تغيير وردية"
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold" />

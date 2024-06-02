@@ -19,6 +19,7 @@ import com.equipation.balagat.home_sub2;
 import com.equipation.balagat.human;
 import com.equipation.balagat.contract;
 import com.equipation.balagat.main_contract;
+import com.equipation.balagat.main_human;
 import com.equipation.balagat.time;
 import com.equipation.balagat.stock;
 import com.equipation.balagat.location;
@@ -59,7 +60,7 @@ public class HomeFragment extends Fragment {
 
         // الضغط علي الموارد البشرية
         card1.setOnClickListener(view ->
-                startActivity(new Intent(getActivity() , human.class)));
+                startActivity(new Intent(getActivity() , main_human.class)));
 
         // الضغط علي العقودات
         card2.setOnClickListener(view ->
