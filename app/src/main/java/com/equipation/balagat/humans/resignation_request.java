@@ -9,6 +9,7 @@ import android.view.View;
 import android.app.DatePickerDialog;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.EditText;
 import android.widget.Spinner;
 
@@ -26,12 +27,9 @@ public class resignation_request extends AppCompatActivity implements Navigation
     DatePickerDialog.OnDateSetListener dateSetListener;
 //    EditText date1 ;
     private Date checkindate;
-
-
     TextInputLayout date1 ,whyreson;
-    Spinner sp_request_reson ;
     ArrayList<String> ar_request_reson;
-
+    AutoCompleteTextView at_request_reson ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,29 +43,6 @@ public class resignation_request extends AppCompatActivity implements Navigation
         ar_request_reson.add(" نهاية خدمة فورية ");
 
         Casting();
-
-        ArrayAdapter<String> adapter_spinner_borrow_type = new ArrayAdapter<>(this,
-                androidx.appcompat.R.layout.support_simple_spinner_dropdown_item , ar_request_reson);
-        sp_request_reson.setAdapter(adapter_spinner_borrow_type);
-
-
-
-        sp_request_reson.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                if(ar_request_reson.get(i).equals(" نهاية خدمة فورية ")){
-                    whyreson.setVisibility(View.VISIBLE);
-                }else{
-                    whyreson.setVisibility(View.GONE);
-
-                }
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
-
-            }
-        });
 
         Calendar calendar = Calendar.getInstance();
 
@@ -105,6 +80,24 @@ public class resignation_request extends AppCompatActivity implements Navigation
         };
 
 
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(
+                this ,
+                R.layout.nice_select_item ,
+                ar_request_reson
+        );
+        at_request_reson.setAdapter(adapter);
+        at_request_reson.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                if(ar_request_reson.get(i).equals(" نهاية خدمة فورية ")){
+                    whyreson.setVisibility(View.VISIBLE);
+                }else{
+                    whyreson.setVisibility(View.GONE);
+
+                }
+            }
+        });
+
 
 
     }
@@ -112,10 +105,8 @@ public class resignation_request extends AppCompatActivity implements Navigation
     private void Casting() {
         //date1 = findViewById(R.id.date1);
         date1 = findViewById(R.id.date1);
-        sp_request_reson = findViewById(R.id.sp_request_reson);
         whyreson = findViewById(R.id.whyreson);
-
-
+        at_request_reson = findViewById(R.id.at_request_reson);
     }
 
     public void fun_back(View view) {

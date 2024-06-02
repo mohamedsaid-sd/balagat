@@ -4,11 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".ui.home.HomeFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/trans"
         android:orientation="vertical">
 
         <ScrollView
@@ -21,227 +23,324 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical">
 
-                        <androidx.cardview.widget.CardView
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="5dp"
-                            android:padding="5dp">
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="50dp"
+                            android:background="@drawable/circle_white"
+                            android:foregroundGravity="center"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:paddingLeft="10dp"
+                            android:paddingTop="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingBottom="10dp">
+
+                            <TextView
+                                android:id="@+id/maintitle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:drawableStart="@drawable/ic_baseline_supervised_user_circle_24"
+                                android:fontFamily="@font/jana"
+                                android:gravity="center"
+                                android:text="الاقسام الرئيسية"
+                                android:textColor="@color/black"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <ImageView
+                                android:id="@+id/imageView11"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:src="@drawable/logo" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@color/white"
+                                android:orientation="vertical"
+                                android:visibility="visible">
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/presonal_info"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_margin="5dp"
+                                    android:padding="5dp">
+
+                                    <LinearLayout
+
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginBottom="5dp"
+                                        android:background="@drawable/grayround"
+                                        android:orientation="vertical"
+                                        android:padding="5dp"
+                                        android:visibility="visible">
+
+                                        <TextView
+                                            android:id="@+id/textView23"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="1dp"
+                                            android:layout_weight="1"
+                                            android:drawableStart="@drawable/baseline_info_24"
+                                            android:drawablePadding="5dp"
+                                            android:fontFamily="sans-serif"
+                                            android:gravity="right|center_vertical"
+                                            android:padding="2dp"
+                                            android:paddingStart="5dp"
+                                            android:text="التفانى والعمل الجاد هما مفتاح النجاح استمرو في الابداع"
+                                            android:textColor="@color/white" />
+
+                                        <TextView
+                                            android:id="@+id/textView27"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="1dp"
+                                            android:layout_weight="1"
+                                            android:drawableStart="@drawable/baseline_info_24"
+                                            android:drawablePadding="5dp"
+                                            android:fontFamily="sans-serif"
+                                            android:gravity="right|center_vertical"
+                                            android:padding="2dp"
+                                            android:text="ان كل جهد تبذلونه هو خطوة نحو التقدم والابتكار"
+                                            android:textColor="@color/white" />
+
+                                        <TextView
+                                            android:id="@+id/textView32"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_margin="1dp"
+                                            android:layout_weight="1"
+                                            android:drawableStart="@drawable/baseline_info_24"
+                                            android:drawablePadding="5dp"
+                                            android:fontFamily="sans-serif"
+                                            android:gravity="right|center_vertical"
+                                            android:padding="2dp"
+                                            android:text="أنتم مفتاح النجاح دعونا نحقق المزيد معا"
+                                            android:textColor="@color/white" />
+                                    </LinearLayout>
+                                </androidx.cardview.widget.CardView>
+                            </LinearLayout>
 
                             <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginBottom="5dp"
-                                android:orientation="vertical"
-                                android:padding="5dp"
-                                android:visibility="visible">
+                                android:orientation="horizontal">
 
-                                <TextView
-                                    android:id="@+id/textView23"
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/card1"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="5dp"
                                     android:layout_weight="1"
-                                    android:drawableStart="@drawable/ic_baseline_person_pin_24"
-                                    android:fontFamily="@font/jana"
-                                    android:gravity="right|center_vertical"
-                                    android:paddingStart="10dp"
-                                    android:text="  محمد سيد حسن غنيم" />
+                                    android:background="@drawable/round"
+                                    android:foregroundGravity="center"
+                                    android:padding="5dp">
 
-                                <TextView
-                                    android:id="@+id/textView27"
+                                    <TextView
+                                        android:id="@+id/textView5"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/whiteroundblack"
+                                        android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
+                                        android:drawablePadding="10dp"
+                                        android:fontFamily="sans-serif"
+                                        android:gravity="center|center_vertical"
+                                        android:padding="10dp"
+                                        android:text="الموارد البشرية"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/card2"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="5dp"
                                     android:layout_weight="1"
-                                    android:fontFamily="@font/jana"
-                                    android:gravity="right|center_vertical"
-                                    android:paddingStart="44dp"
-                                    android:text="المسمى الوظيفى  :  سائق" />
+                                    android:background="@drawable/round"
+                                    android:foregroundGravity="center"
+                                    android:padding="5dp">
 
-                                <TextView
-                                    android:id="@+id/textView32"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:layout_weight="1"
-                                    android:fontFamily="@font/jana"
-                                    android:gravity="right|center_vertical"
-                                    android:paddingStart="44dp"
-                                    android:text="الرقم الوظيفي : 98798889" />
+                                    <TextView
+                                        android:id="@+id/textView6"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/whiteroundblack"
+                                        android:drawableTop="@drawable/ic_baseline_poll_24"
+                                        android:drawablePadding="10dp"
+                                        android:fontFamily="sans-serif"
+                                        android:gravity="center|center_vertical"
+                                        android:padding="10dp"
+                                        android:text="العقودات "
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+                                </androidx.cardview.widget.CardView>
+
                             </LinearLayout>
-                        </androidx.cardview.widget.CardView>
-                    </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="100dp"
-                        android:foregroundGravity="center"
-                        android:gravity="center"
-                        android:orientation="vertical">
-
-                        <androidx.cardview.widget.CardView
-                            android:id="@+id/card1"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="center"
-                            android:layout_margin="5dp"
-                            android:background="@drawable/round"
-                            android:foregroundGravity="center"
-                            android:padding="5dp">
-
-                            <TextView
-                                android:id="@+id/textView5"
+                            <LinearLayout
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:drawableStart="@drawable/ic_baseline_supervised_user_circle_24"
-                                android:drawablePadding="10dp"
-                                android:fontFamily="@font/jana"
-                                android:gravity="center|center_vertical"
-                                android:padding="10dp"
-                                android:text="الموارد البشرية"
-                                android:textSize="14sp"
-                                android:textStyle="bold" />
-                        </androidx.cardview.widget.CardView>
+                                android:orientation="horizontal">
 
-                        <androidx.cardview.widget.CardView
-                            android:id="@+id/card2"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="center"
-                            android:layout_margin="5dp"
-                            android:background="@drawable/round"
-                            android:foregroundGravity="center"
-                            android:padding="5dp">
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/card3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/round"
+                                    android:foregroundGravity="center"
+                                    android:padding="5dp">
+
+                                    <TextView
+                                        android:id="@+id/textView7"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/whiteroundblack"
+                                        android:drawableTop="@drawable/ic_baseline_shopping_cart_24"
+                                        android:drawablePadding="10dp"
+                                        android:fontFamily="sans-serif"
+                                        android:gravity="center|center_vertical"
+                                        android:padding="10dp"
+                                        android:text="المشتروات"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/card9"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/round"
+                                    android:foregroundGravity="center"
+                                    android:padding="5dp"
+                                    android:visibility="visible">
+
+                                    <TextView
+                                        android:id="@+id/textView13"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/whiteroundblack"
+                                        android:drawableTop="@drawable/ic_baseline_home_repair_service_24"
+                                        android:drawablePadding="10dp"
+                                        android:fontFamily="sans-serif"
+                                        android:gravity="center|center_vertical"
+                                        android:padding="10dp"
+                                        android:text="الصيانة"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+                                </androidx.cardview.widget.CardView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/card8"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/round"
+                                    android:foregroundGravity="center"
+                                    android:padding="5dp">
+
+                                    <TextView
+                                        android:id="@+id/textView12"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@drawable/whiteroundblack"
+                                        android:drawableTop="@drawable/ic_baseline_monetization_on_24"
+                                        android:drawablePadding="10dp"
+                                        android:fontFamily="sans-serif"
+                                        android:gravity="center|center_vertical"
+                                        android:padding="10dp"
+                                        android:text="المنصرفات الإدارية"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/card4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_margin="5dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/round"
+                                    android:foregroundGravity="center"
+                                    android:padding="5dp"
+                                    android:visibility="invisible">
+
+                                    <TextView
+                                        android:id="@+id/textView8"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:drawableStart="@drawable/ic_baseline_access_time_filled_24"
+                                        android:drawablePadding="10dp"
+                                        android:fontFamily="@font/jana"
+                                        android:gravity="center|center_vertical"
+                                        android:padding="10dp"
+                                        android:text="ساعات العمل"
+                                        android:textSize="14sp"
+                                        android:textStyle="bold" />
+                                </androidx.cardview.widget.CardView>
+
+                            </LinearLayout>
+
 
                             <TextView
-                                android:id="@+id/textView6"
+                                android:id="@+id/textView76"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:drawableStart="@drawable/ic_baseline_poll_24"
-                                android:drawablePadding="10dp"
-                                android:fontFamily="@font/jana"
-                                android:gravity="center|center_vertical"
-                                android:padding="10dp"
-                                android:text="العقودات - مواقع العمل-ساعات العمل"
-                                android:textSize="14sp"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_marginBottom="8dp"
+                                android:background="@drawable/grayround"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:text="Copy@right2024by Equpation Team"
+                                android:textColor="@color/lite"
                                 android:textStyle="bold" />
-                        </androidx.cardview.widget.CardView>
-
-                        <androidx.cardview.widget.CardView
-                            android:id="@+id/card9"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="center"
-                            android:layout_margin="5dp"
-                            android:background="@drawable/round"
-                            android:foregroundGravity="center"
-                            android:padding="5dp"
-                            android:visibility="visible">
-
-                            <TextView
-                                android:id="@+id/textView13"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:drawableStart="@drawable/ic_baseline_home_work_24"
-                                android:drawablePadding="10dp"
-                                android:fontFamily="@font/jana"
-                                android:gravity="center|center_vertical"
-                                android:padding="10dp"
-                                android:text="المخزن-الصيانة-الاسطول"
-                                android:textSize="14sp"
-                                android:textStyle="bold" />
-                        </androidx.cardview.widget.CardView>
-
-                        <androidx.cardview.widget.CardView
-                            android:id="@+id/card3"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="center"
-                            android:layout_margin="5dp"
-                            android:background="@drawable/round"
-                            android:foregroundGravity="center"
-                            android:padding="5dp">
-
-                            <TextView
-                                android:id="@+id/textView7"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:drawableStart="@drawable/ic_baseline_shopping_cart_24"
-                                android:drawablePadding="10dp"
-                                android:fontFamily="@font/jana"
-                                android:gravity="center|center_vertical"
-                                android:padding="10dp"
-                                android:text="المشتروات"
-                                android:textSize="14sp"
-                                android:textStyle="bold" />
-                        </androidx.cardview.widget.CardView>
-
-                        <androidx.cardview.widget.CardView
-                            android:id="@+id/card4"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="center"
-                            android:layout_margin="5dp"
-                            android:background="@drawable/round"
-                            android:foregroundGravity="center"
-                            android:padding="5dp"
-                            android:visibility="gone">
-
-                            <TextView
-                                android:id="@+id/textView8"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:drawableStart="@drawable/ic_baseline_access_time_filled_24"
-                                android:drawablePadding="10dp"
-                                android:fontFamily="@font/jana"
-                                android:gravity="center|center_vertical"
-                                android:padding="10dp"
-                                android:text="ساعات العمل"
-                                android:textSize="14sp"
-                                android:textStyle="bold" />
-                        </androidx.cardview.widget.CardView>
 
 
-
-                        <androidx.cardview.widget.CardView
-                            android:id="@+id/card8"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="center"
-                            android:layout_margin="5dp"
-                            android:background="@drawable/round"
-                            android:foregroundGravity="center"
-                            android:padding="5dp">
-
-                            <TextView
-                                android:id="@+id/textView12"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:drawableStart="@drawable/ic_baseline_monetization_on_24"
-                                android:drawablePadding="10dp"
-                                android:fontFamily="@font/jana"
-                                android:gravity="center|center_vertical"
-                                android:padding="10dp"
-                                android:text="المنصرفات الإدارية"
-                                android:textSize="14sp"
-                                android:textStyle="bold" />
-                        </androidx.cardview.widget.CardView>
-
+                        </LinearLayout>
 
                     </LinearLayout>
-
                 </LinearLayout>
 
             </LinearLayout>

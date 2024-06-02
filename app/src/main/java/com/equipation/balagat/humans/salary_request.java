@@ -8,6 +8,7 @@ import android.text.Layout;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.LinearLayout;
 import android.widget.SeekBar;
 import android.widget.Spinner;
@@ -20,12 +21,13 @@ import java.util.ArrayList;
 
 public class salary_request extends AppCompatActivity {
 
-    Spinner sp_request_type , sp_request_time;
     ArrayList<String> ar_request_type  , ar_request_time;
     TextView txt_salaries , txt_month , txt_days ;
     SeekBar seek_salaries , seek_month , seek_days ;
 
     LinearLayout full_layout , part_layout ;
+
+    AutoCompleteTextView at_request_type , at_request_time ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,37 +45,6 @@ public class salary_request extends AppCompatActivity {
         ar_request_time.add("عادي");
         ar_request_time.add("عاجل");
         ar_request_time.add("عاجل جدا");
-
-
-        ArrayAdapter<String> adapter_spinner_request_type = new ArrayAdapter<>(this,
-                androidx.appcompat.R.layout.support_simple_spinner_dropdown_item , ar_request_type);
-        sp_request_type.setAdapter(adapter_spinner_request_type);
-        sp_request_type.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                //Toast.makeText(salary_request.this, ""+i, Toast.LENGTH_SHORT).show();
-                if(ar_request_type.get(i).equals("راتب كامل")){
-                    part_layout.setVisibility(View.GONE);
-                    full_layout.setVisibility(View.VISIBLE);
-                }else{
-                    part_layout.setVisibility(View.VISIBLE);
-                    full_layout.setVisibility(View.GONE);
-                }
-            }
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {}});
-
-        ArrayAdapter<String> adapter_spinner_request_time = new ArrayAdapter<>(this,
-                androidx.appcompat.R.layout.support_simple_spinner_dropdown_item , ar_request_time);
-        sp_request_time.setAdapter(adapter_spinner_request_time);
-        sp_request_time.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-              //  Toast.makeText(salary_request.this, ""+i, Toast.LENGTH_SHORT).show();
-            }
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {}});
-
 
         seek_days.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @SuppressLint("SetTextI18n")
@@ -126,12 +97,43 @@ public class salary_request extends AppCompatActivity {
             }
         });
 
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(
+                this ,
+                R.layout.nice_select_item ,
+                ar_request_type
+        );
+        at_request_type.setAdapter(adapter);
+        at_request_type.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                if(ar_request_type.get(i).equals("راتب كامل")){
+                    part_layout.setVisibility(View.GONE);
+                    full_layout.setVisibility(View.VISIBLE);
+                }else{
+                    part_layout.setVisibility(View.VISIBLE);
+                    full_layout.setVisibility(View.GONE);
+                }
+            }
+        });
+
+        ArrayAdapter<String> adapter2 = new ArrayAdapter<>(
+                this ,
+                R.layout.nice_select_item ,
+                ar_request_time
+        );
+        at_request_time.setAdapter(adapter2);
+        at_request_time.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+            }
+        });
+
+
 
     }
 
     private void Casting() {
-        sp_request_type = findViewById(R.id.sp_request_type);
-        sp_request_time = findViewById(R.id.sp_request_time);
         txt_days = findViewById(R.id.txt_days);
         seek_days = findViewById(R.id.seek_days);
         txt_month = findViewById(R.id.txt_month);
@@ -140,6 +142,8 @@ public class salary_request extends AppCompatActivity {
         seek_salaries = findViewById(R.id.seek_salaries);
         full_layout = findViewById(R.id.full_layout);
         part_layout = findViewById(R.id.part_layout);
+        at_request_type = findViewById(R.id.at_request_type);
+        at_request_time = findViewById(R.id.at_request_time);
     }
 
     public void fun_back(View view) {

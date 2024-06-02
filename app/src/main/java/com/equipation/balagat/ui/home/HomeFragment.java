@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -51,6 +52,11 @@ public class HomeFragment extends Fragment {
         // المخزن
         CardView card9 = binding.card9;
 
+        CardView ly_personal_info = binding.presonalInfo;
+//        ly_personal_info.setVisibility(View.INVISIBLE);
+
+        TextView tv_maintitle = binding.maintitle ;
+
         // الضغط علي الموارد البشرية
         card1.setOnClickListener(view ->
                 startActivity(new Intent(getActivity() , human.class)));
@@ -77,6 +83,14 @@ public class HomeFragment extends Fragment {
                 startActivity(new Intent(getActivity() , home_sub2.class)));
 
         final TextView textView = binding.textHome;
+
+//        tv_maintitle.setOnClickListener(view -> {
+//            if(ly_personal_info.getVisibility() == View.VISIBLE){
+//                ly_personal_info.setVisibility(View.INVISIBLE);
+//            }else {
+//                ly_personal_info.setVisibility(View.VISIBLE);
+//            }
+//        });
 
         homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;

@@ -4,40 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".human">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView14"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@color/gold"
-                android:fontFamily="@font/jana"
-                android:padding="5dp"
-                android:text="الموارد البشرية"
-                android:textColor="@color/black"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:background="@color/gray"
-                android:onClick="fun_back"
-                android:padding="5dp"
-                app:srcCompat="@drawable/ic_baseline_arrow_forward_ios_24" />
-        </LinearLayout>
 
         <ScrollView
             android:layout_width="match_parent"
@@ -47,7 +20,43 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/circle_white"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView54"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:layout_weight="1"
+                        android:drawableStart="@drawable/ic_baseline_supervised_user_circle_24"
+                        android:fontFamily="@font/jana"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="الموارد البشرية"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/whiteroundblack"
+                        android:onClick="fun_back"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/ic_baseline_arrow_forward_ios_24" />
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -59,45 +68,40 @@
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
 
-                        <androidx.cardview.widget.CardView
+                        <TextView
+                            android:id="@+id/textView15"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="5dp"
+                            android:layout_margin="10dp"
                             android:layout_weight="1"
-                            android:background="@drawable/round"
-                            android:onClick="fun_salary_request">
+                            android:background="@drawable/grayroundlight"
+                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="طلب مرتب"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:onClick="fun_salary_request"/>
 
-                            <TextView
-                                android:id="@+id/textView15"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
-                                android:fontFamily="@font/jana"
-                                android:gravity="center"
-                                android:padding="5dp"
-                                android:text="طلب مرتب"
-                                android:textSize="12sp" />
-                        </androidx.cardview.widget.CardView>
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="5dp"
-                            android:layout_weight="1"
+                        <TextView
                             android:onClick="fun_PPE_request"
-                            android:background="@drawable/round">
+                            android:id="@+id/textView16"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/grayroundlight"
+                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="طلب معدات سلامة PPE"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
 
-                            <TextView
-                                android:id="@+id/textView16"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
-                                android:fontFamily="@font/jana"
-                                android:gravity="center"
-                                android:padding="5dp"
-                                android:text="طلب معدات سلامة PPE"
-                                android:textSize="12sp" />
-                        </androidx.cardview.widget.CardView>
                     </LinearLayout>
 
                     <LinearLayout
@@ -106,49 +110,41 @@
                         android:layout_weight="1"
                         android:orientation="horizontal">
 
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="5dp"
-                            android:layout_weight="1"
+                        <TextView
                             android:onClick="fun_shift_request"
-                            android:background="@drawable/round">
-
-                            <TextView
-                                android:id="@+id/textView190"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
-                                android:fontFamily="@font/jana"
-                                android:gravity="center"
-                                android:padding="5dp"
-                                android:text="تغيير وردية"
-                                android:textSize="12sp" />
-                        </androidx.cardview.widget.CardView>
-
-                        <androidx.cardview.widget.CardView
+                            android:id="@+id/textView190"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="5dp"
+                            android:layout_margin="10dp"
                             android:layout_weight="1"
-                            android:background="@drawable/round"
-                            android:onClick="fun_open_resignation_request">
+                            android:background="@drawable/grayroundlight"
+                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="تغيير وردية"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
 
-                            <TextView
-                                android:id="@+id/textView20"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
-                                android:fontFamily="@font/jana"
-                                android:gravity="center"
-                                android:padding="5dp"
-                                android:text="طلب إستقالة "
-                                android:textSize="12sp" />
-                        </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:onClick="fun_open_resignation_request"
+                            android:id="@+id/textView20"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/grayroundlight"
+                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="طلب إستقالة "
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
 
                     </LinearLayout>
-
-
 
 
                     <LinearLayout
@@ -157,57 +153,41 @@
                         android:layout_weight="1"
                         android:orientation="horizontal">
 
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="5dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/round"
+                        <TextView
                             android:onClick="fun_evaluation_request"
-                            >
-
-                            <TextView
-                                android:id="@+id/textView1590"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
-                                android:fontFamily="@font/jana"
-                                android:gravity="center"
-                                android:padding="5dp"
-                                android:text="طلب تقييم اداء "
-                                android:textSize="12sp" />
-                        </androidx.cardview.widget.CardView>
-
-                        <androidx.cardview.widget.CardView
+                            android:id="@+id/textView1590"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="5dp"
+                            android:layout_margin="10dp"
                             android:layout_weight="1"
-                            android:background="@drawable/round"
-                            android:onClick="fun_complant_request">
+                            android:background="@drawable/grayroundlight"
+                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="طلب تقييم اداء "
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
 
-                            <TextView
-                                android:id="@+id/textView230"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
-                                android:fontFamily="@font/jana"
-                                android:gravity="center"
-                                android:padding="5dp"
-                                android:text="تقديم شكوي  "
-                                android:textSize="12sp" />
-                        </androidx.cardview.widget.CardView>
+                        <TextView
+                            android:onClick="fun_complant_request"
+                            android:id="@+id/textView230"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/grayroundlight"
+                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="تقديم شكوي  "
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
 
                     </LinearLayout>
-
-
-
-
-
-
-
-
-
 
 
                     <LinearLayout
@@ -215,45 +195,40 @@
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
 
-                        <androidx.cardview.widget.CardView
+                        <TextView
+                            android:onClick="fun_borrow_request"
+                            android:id="@+id/textView17"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="5dp"
+                            android:layout_margin="10dp"
                             android:layout_weight="1"
-                            android:background="@drawable/round"
-                            android:onClick="fun_borrow_request">
+                            android:background="@drawable/grayroundlight"
+                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="طلب سلفية"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
 
-                            <TextView
-                                android:id="@+id/textView17"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
-                                android:fontFamily="@font/jana"
-                                android:gravity="center"
-                                android:padding="5dp"
-                                android:text="طلب سلفية"
-                                android:textSize="12sp" />
-                        </androidx.cardview.widget.CardView>
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="5dp"
-                            android:layout_weight="1"
+                        <TextView
                             android:onClick="fun_prose_request"
-                            android:background="@drawable/round">
+                            android:id="@+id/textView18"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/grayroundlight"
+                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="طلب نثرية"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
 
-                            <TextView
-                                android:id="@+id/textView18"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
-                                android:fontFamily="@font/jana"
-                                android:gravity="center"
-                                android:padding="5dp"
-                                android:text="طلب نثرية"
-                                android:textSize="12sp" />
-                        </androidx.cardview.widget.CardView>
                     </LinearLayout>
 
                     <LinearLayout
@@ -261,49 +236,41 @@
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
 
-                        <androidx.cardview.widget.CardView
+                        <TextView
+                            android:onClick="fun_vacation_request"
+                            android:id="@+id/textView19"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="5dp"
+                            android:layout_margin="10dp"
                             android:layout_weight="1"
-                            android:background="@drawable/round"
-                            android:onClick="fun_vacation_request">
+                            android:background="@drawable/grayroundlight"
+                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="طلب إجازة"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
 
-                            <TextView
-                                android:id="@+id/textView19"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
-                                android:fontFamily="@font/jana"
-                                android:gravity="center"
-                                android:padding="5dp"
-                                android:text="طلب إجازة"
-                                android:textSize="12sp" />
-                        </androidx.cardview.widget.CardView>
-
-                        <androidx.cardview.widget.CardView
+                        <TextView
+                            android:onClick="fun_training_request"
+                            android:id="@+id/textView1449"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="5dp"
+                            android:layout_margin="10dp"
                             android:layout_weight="1"
-                            android:background="@drawable/round"
-                            android:onClick="fun_training_request">
+                            android:background="@drawable/grayroundlight"
+                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="طلب تدريب وتأهيل"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
 
-                            <TextView
-                                android:id="@+id/textView1449"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
-                                android:fontFamily="@font/jana"
-                                android:gravity="center"
-                                android:padding="5dp"
-                                android:text="طلب تدريب وتأهيل"
-                                android:textSize="12sp" />
-                        </androidx.cardview.widget.CardView>
                     </LinearLayout>
-
-
-
 
 
                     <LinearLayout
@@ -311,48 +278,41 @@
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
 
-                        <androidx.cardview.widget.CardView
+                        <TextView
+                            android:onClick="fun_moretidy_request"
+                            android:id="@+id/textVieاw19"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="5dp"
+                            android:layout_margin="10dp"
                             android:layout_weight="1"
-                            android:background="@drawable/round"
-                            android:onClick="fun_moretidy_request">
+                            android:background="@drawable/grayroundlight"
+                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="طلب زياده مرتب"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
 
-                            <TextView
-                                android:id="@+id/textVieاw19"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
-                                android:fontFamily="@font/jana"
-                                android:gravity="center"
-                                android:padding="5dp"
-                                android:text="طلب زياده مرتب"
-                                android:textSize="12sp" />
-                        </androidx.cardview.widget.CardView>
-
-                        <androidx.cardview.widget.CardView
+                        <TextView
+                            android:onClick="fun_incentive_request"
+                            android:id="@+id/textView14469"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="5dp"
+                            android:layout_margin="10dp"
                             android:layout_weight="1"
-                            android:background="@drawable/round"
-                            android:onClick="fun_incentive_request">
+                            android:background="@drawable/grayroundlight"
+                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="طلب حافز "
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
 
-                            <TextView
-                                android:id="@+id/textView14469"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
-                                android:fontFamily="@font/jana"
-                                android:gravity="center"
-                                android:padding="5dp"
-                                android:text="طلب حافز "
-                                android:textSize="12sp" />
-                        </androidx.cardview.widget.CardView>
                     </LinearLayout>
-
-
 
 
                     <LinearLayout
@@ -360,50 +320,60 @@
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
 
-                        <androidx.cardview.widget.CardView
+                        <TextView
+                            android:onClick="fun_profile_request"
+                            android:id="@+id/textVi66ew19"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="5dp"
+                            android:layout_margin="10dp"
                             android:layout_weight="1"
-                            android:background="@drawable/round"
-                            android:onClick="fun_profile_request">
+                            android:background="@drawable/grayroundlight"
+                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text=" تعديل معلومات شخصيه"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
 
-                            <TextView
-                                android:id="@+id/textVi66ew19"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
-                                android:fontFamily="@font/jana"
-                                android:gravity="center"
-                                android:padding="5dp"
-                                android:text="طلب تعديل معلومات شخصيه"
-                                android:textSize="12sp" />
-                        </androidx.cardview.widget.CardView>
-
-                        <androidx.cardview.widget.CardView
+                        <TextView
+                            android:onClick="fun_delegate_request"
+                            android:id="@+id/textV9i66ew19"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="5dp"
+                            android:layout_margin="10dp"
                             android:layout_weight="1"
-                            android:background="@drawable/round"
-                            android:onClick="fun_delegate_request">
+                            android:background="@drawable/grayroundlight"
+                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text=" تفويض لاستلام مستحقات  "
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
 
-                            <TextView
-                                android:id="@+id/textV9i66ew19"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
-                                android:fontFamily="@font/jana"
-                                android:gravity="center"
-                                android:padding="5dp"
-                                android:text="طلب تفويض لاستلام مستحقات  "
-                                android:textSize="12sp" />
-
-                        </androidx.cardview.widget.CardView>
                     </LinearLayout>
 
 
                 </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/grayround"
+                    android:fontFamily="@font/jana"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="مع تحيات فريق الموارد البشرية"
+                    android:textColor="@color/lite"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
             </LinearLayout>
         </ScrollView>
 
