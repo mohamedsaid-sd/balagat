@@ -73,20 +73,9 @@
                             android:layout_height="wrap_content"
                             android:layout_margin="3dp"
                             android:padding="3dp"
-                            android:text="بيانات الآليه وموقعها" />
+                            android:text="بيانات الآليه " />
 
-                        <com.google.android.material.textfield.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3dp"
-                            android:padding="3dp"
-                            android:textColorHint="@color/green">
 
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="رقم الآلية" />
-                        </com.google.android.material.textfield.TextInputLayout>
 
                         <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
@@ -101,30 +90,49 @@
                                 android:inputType="number" />
                         </com.google.android.material.textfield.TextInputLayout>
 
+
+                        <TextView
+                            android:id="@+id/textViewW20"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp"
+                            android:fontFamily="@font/jana"
+                            android:padding="3dp"
+                            android:text="طبيعه عمل الالية  "
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText" />
+
+                        <Spinner
+                            android:id="@+id/sp_machine_type"
+                            style="@android:style/Widget.Spinner.DropDown"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp" />
+
+
                         <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
-                            android:padding="3dp"
-                            android:textColorHint="@color/green">
+                            android:padding="3dp">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:hint="طبيعة عمل الآليه" />
+                                android:hint="  رقم هانف للمتابعة 1" />
                         </com.google.android.material.textfield.TextInputLayout>
 
+
                         <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
-                            android:padding="3dp"
-                            android:textColorHint="@color/green">
+                            android:padding="3dp">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:hint="مكان الآليه" />
+                                android:hint=" رقم هانف للمتابعة 2" />
                         </com.google.android.material.textfield.TextInputLayout>
 
                     </LinearLayout>
@@ -218,6 +226,18 @@
                                 android:hint="المتبقى للصيانة (س,كم(" />
                         </com.google.android.material.textfield.TextInputLayout>
 
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:padding="3dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="الملاحظات"
+                                tools:ignore="HardcodedText" />
+                        </com.google.android.material.textfield.TextInputLayout>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 

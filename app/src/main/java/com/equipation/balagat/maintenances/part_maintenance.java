@@ -7,12 +7,12 @@ import android.view.View;
 
 import com.equipation.balagat.R;
 
-public class travel_outlay_request extends AppCompatActivity {
+public class part_maintenance extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_travel_outlay_request);
+        setContentView(R.layout.activity_part_maintenance);
     }
 
     public void fun_back(View view) {

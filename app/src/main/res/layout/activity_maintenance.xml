@@ -125,7 +125,7 @@
                                 android:fontFamily="@font/jana"
                                 android:gravity="center"
                                 android:padding="5dp"
-                                android:text="قطع غيار"
+                                android:text=" طلب قطع غيار"
                                 android:textSize="12sp" />
                         </androidx.cardview.widget.CardView>
 
@@ -146,7 +146,7 @@
                                 android:fontFamily="@font/jana"
                                 android:gravity="center"
                                 android:padding="5dp"
-                                android:text="نثرية سفر"
+                                android:text=" طلب صيانة قطع غيار"
 
                                 android:textSize="12sp" />
                         </androidx.cardview.widget.CardView>
@@ -173,7 +173,7 @@
                                 android:fontFamily="@font/jana"
                                 android:gravity="center"
                                 android:padding="5dp"
-                                android:text=" ترحيل موظف"
+                                android:text="  طلب شراء قطع غيار"
                                 android:textSize="12sp"
                                 android:visibility="visible" />
                         </androidx.cardview.widget.CardView>

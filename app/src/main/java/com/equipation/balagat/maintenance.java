@@ -8,8 +8,8 @@ import android.view.View;
 import com.equipation.balagat.maintenances.asper_request;
 import com.equipation.balagat.maintenances.periodic_maintenance_request;
 import com.equipation.balagat.maintenances.therapeutic_maintenance_request;
-import com.equipation.balagat.maintenances.travel_outlay_request;
-import com.equipation.balagat.maintenances.employee_deportation_request;
+import com.equipation.balagat.maintenances.part_maintenance;
+import com.equipation.balagat.maintenances.pay_parts;
 import com.equipation.balagat.maintenances.automated_deportation_request;
 import com.equipation.balagat.maintenances.asper_deportation_request;
 
@@ -38,11 +38,11 @@ public class maintenance extends AppCompatActivity {
     }
 
     public void fun_outlay_request(View view) {
-        startActivity(new Intent(this , travel_outlay_request.class ));
+        startActivity(new Intent(this , part_maintenance.class ));
     }
 
     public void fun_employee_deportation(View view) {
-        startActivity(new Intent(this , employee_deportation_request.class ));
+        startActivity(new Intent(this , pay_parts.class ));
     }
 
     public void fun_automated_deportation(View view) {
