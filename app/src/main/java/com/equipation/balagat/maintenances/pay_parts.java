@@ -11,19 +11,23 @@ import com.equipation.balagat.R;
 
 import java.util.ArrayList;
 
-public class asper_request extends AppCompatActivity {
+public class pay_parts extends AppCompatActivity {
+
+    Spinner sp_machine_type ,sp_location_type;
 
 
-    Spinner sp_machine_type ,sp_perpose,sp_condition;
-    ArrayList ar_machine_type,ar_perpose,ar_condition ;
+    ArrayList ar_machine_type,ar_location_type ;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_asper_request);
+        setContentView(R.layout.activity_pay_parts);
+
+
 
         ar_machine_type = new ArrayList<>();
-        ar_perpose = new ArrayList<>();
-        ar_condition = new ArrayList<>();
+        ar_location_type = new ArrayList<>();
 
         ar_machine_type.add("جردل");
         ar_machine_type.add("جردل+جاك همر");
@@ -32,16 +36,8 @@ public class asper_request extends AppCompatActivity {
         ar_machine_type.add("تشوين");
 
 
-        ar_perpose.add("   اسبير   ");
-        ar_perpose.add("   تبديل بقطعه تالفه   ");
-
-
-
-        ar_condition.add("عادي");
-        ar_condition.add("عاجل");
-        ar_condition.add("عاجل جدا");
-
-
+        ar_location_type.add("   يحتاج ترحيل   ");
+        ar_location_type.add("   لا يحتاج   ");
         Casting();
 
         ArrayAdapter adapter_machine_type = new ArrayAdapter<>(this,
@@ -49,22 +45,17 @@ public class asper_request extends AppCompatActivity {
         sp_machine_type.setAdapter(adapter_machine_type);
 
         ArrayAdapter adapter_machine_type1 = new ArrayAdapter<>(this,
-                androidx.appcompat.R.layout.support_simple_spinner_dropdown_item , ar_perpose);
-        sp_perpose.setAdapter(adapter_machine_type1);
-
-        ArrayAdapter adapter_machine_type2 = new ArrayAdapter<>(this,
-                androidx.appcompat.R.layout.support_simple_spinner_dropdown_item , ar_condition);
-        sp_condition.setAdapter(adapter_machine_type2);
-
+                androidx.appcompat.R.layout.support_simple_spinner_dropdown_item , ar_location_type);
+        sp_location_type.setAdapter(adapter_machine_type1);
     }
-
     private void Casting() {
         sp_machine_type = findViewById(R.id.sp_machine_type);
-        sp_perpose = findViewById(R.id.sp_perpose);
-        sp_condition = findViewById(R.id.sp_condition);
+        sp_location_type = findViewById(R.id.sp_location_type);
+
 
 
     }
+
 
     public void fun_back(View view) {
         super.onBackPressed();

@@ -137,7 +137,7 @@
             android:name=".maintenances.automated_deportation_request"
             android:exported="false" />
         <activity
-            android:name=".maintenances.employee_deportation_request"
+            android:name=".maintenances.pay_parts"
             android:exported="false" />
         <activity
             android:name=".maintenances.therapeutic_maintenance_request"
@@ -149,7 +149,7 @@
             android:name=".maintenances.asper_request"
             android:exported="false" /> <!-- main departments -->
         <activity
-            android:name=".maintenances.travel_outlay_request"
+            android:name=".maintenances.part_maintenance"
             android:exported="false" /> <!-- 0000000000000000000000000000000000000000000000000000000000000000000 -->
         <activity
             android:name=".login"
