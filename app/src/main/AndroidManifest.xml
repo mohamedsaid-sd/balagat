@@ -29,6 +29,10 @@
             android:name=".contract_time_sheet"
             android:exported="false" />
         <activity
+        android:name=".main_human"
+        android:exported="false" />
+
+        <activity
             android:name=".home_sub2"
             android:exported="false" />
         <activity

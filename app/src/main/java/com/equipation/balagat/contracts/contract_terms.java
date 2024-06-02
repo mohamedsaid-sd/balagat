@@ -31,4 +31,7 @@ public class contract_terms extends AppCompatActivity {
         startActivity(new Intent( this , rechange_machin.class ));
 
     }
+
+    public void fun_back(View view) {
+    }
 }

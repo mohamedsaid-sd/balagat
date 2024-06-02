@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context=".contracts.contract_location">
 
     <LinearLayout
@@ -11,42 +12,51 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textViewr14"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@color/gold"
-                android:fontFamily="@font/jana"
-                android:padding="5dp"
-                android:text=" احتياجات الموقع"
-                android:textColor="@color/black"
-                android:textSize="20dp"
-                android:textStyle="bold" />
-
-            <ImageView
-                android:id="@+id/imageViyew2"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:background="@color/gray"
-                android:onClick="fun_back"
-                android:padding="5dp"
-                app:srcCompat="@drawable/ic_baseline_arrow_forward_ios_24" />
-        </LinearLayout>
-
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:layout_weight="1">
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:layout_height="match_parent"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/circle_white"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView54"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:layout_weight="1"
+                        android:drawableStart="@drawable/ic_baseline_supervised_user_circle_24"
+                        android:fontFamily="@font/jana"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text=" احتياجات الموقع"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_margin="15dp"
+                        android:background="@drawable/whiteroundblack"
+                        android:onClick="fun_back"
+                        android:padding="5dp"
+                        app:srcCompat="@drawable/ic_baseline_arrow_forward_ios_24" />
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -58,78 +68,23 @@
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
 
-                        <androidx.cardview.widget.CardView
+                        <TextView
+                            android:id="@+id/textView15"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="5dp"
+                            android:layout_margin="10dp"
                             android:layout_weight="1"
-                            android:background="@drawable/round"
-                            android:onClick="fun_need">
+                            android:background="@drawable/grayroundlight"
+                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="احتياجات الية"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:onClick="fun_need"/>
 
-                            <TextView
-                                android:id="@+id/textView151"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:drawableTop="@drawable/ic_baseline_local_shipping_24"
-                                android:fontFamily="@font/jana"
-                                android:gravity="center"
-                                android:padding="5dp"
-                                android:text="احتياجات الية"
-                                android:textSize="12sp" />
-                        </androidx.cardview.widget.CardView>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="5dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/round"
-                            android:onClick="fun_travel">
-
-                            <TextView
-                                android:id="@+id/textView161"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:drawableTop="@drawable/ic_baseline_location_on_24"
-                                android:fontFamily="@font/jana"
-                                android:gravity="center"
-                                android:padding="5dp"
-                                android:text="طلب ترحيل"
-                                android:textSize="12sp" />
-                        </androidx.cardview.widget.CardView>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="5dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/round"
-                            android:onClick="fiun_add">
-
-                            <TextView
-                                android:id="@+id/textView152"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:drawableTop="@drawable/ic_baseline_poll_24"
-                                android:fontFamily="@font/jana"
-                                android:gravity="center"
-                                android:padding="5dp"
-                                android:text=" طلب اضافة او تغيير مشغل"
-                                android:textSize="12sp" />
-                        </androidx.cardview.widget.CardView>
 
 
                     </LinearLayout>
@@ -139,35 +94,96 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:layout_weight="1"
                         android:orientation="horizontal">
 
-                        <androidx.cardview.widget.CardView
+                        <TextView
+                            android:onClick="fun_travel"
+                            android:id="@+id/textView16"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="5dp"
+                            android:layout_margin="10dp"
                             android:layout_weight="1"
-                            android:background="@drawable/round"
-                            android:onClick="fiun_complaint">
+                            android:background="@drawable/grayroundlight"
+                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="طلب ترحيل"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
 
-                            <TextView
-                                android:id="@+id/textViewu152"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:drawableTop="@drawable/ic_baseline_person_24"
-                                android:fontFamily="@font/jana"
-                                android:gravity="center"
-                                android:padding="5dp"
-                                android:text="  تقديم شكوي"
-                                android:textSize="12sp" />
-                        </androidx.cardview.widget.CardView>
 
 
                     </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:onClick="fiun_add"
+                            android:id="@+id/textView190"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/grayroundlight"
+                            android:drawableTop="@drawable/ic_baseline_poll_24"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text=" طلب اضافة او تغيير مشغل"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:onClick="fiun_complaint"
+                            android:id="@+id/textVieiuw190"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/grayroundlight"
+                            android:drawableTop="@drawable/ic_baseline_poll_24"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="  تقديم شكوي"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
 
 
                 </LinearLayout>
+
+
+
             </LinearLayout>
         </ScrollView>
 
+
+
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
