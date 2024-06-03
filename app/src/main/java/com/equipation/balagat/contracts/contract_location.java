@@ -33,4 +33,8 @@ public class contract_location extends AppCompatActivity {
     public void fiun_complaint(View view) {
         startActivity(new Intent(this , complaint.class));
     }
+
+    public void fun_back(View view) {
+        super.onBackPressed();
+    }
 }
