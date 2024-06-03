@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Spinner;
 
 import com.equipation.balagat.R;
@@ -14,7 +15,8 @@ import java.util.ArrayList;
 public class complaint_request extends AppCompatActivity {
 
 
-    Spinner sp_complant_type , sp_evidence ;
+    AutoCompleteTextView at_evidence , at_complant_type  ;
+
     ArrayList<String> ar_complant_type , ar_evidence;
 
     @Override
@@ -35,18 +37,18 @@ public class complaint_request extends AppCompatActivity {
 
         Casing();
         ArrayAdapter<String> adapter_spinner_borrow_type = new ArrayAdapter<>(this,
-                androidx.appcompat.R.layout.support_simple_spinner_dropdown_item , ar_complant_type);
-        sp_complant_type.setAdapter(adapter_spinner_borrow_type);
+                R.layout.nice_select_item, ar_complant_type);
+        at_complant_type.setAdapter(adapter_spinner_borrow_type);
 
         ArrayAdapter<String> adapter_evidence = new ArrayAdapter<>(this,
-                androidx.appcompat.R.layout.support_simple_spinner_dropdown_item , ar_evidence);
-        sp_evidence.setAdapter(adapter_evidence);
+                R.layout.nice_select_item , ar_evidence);
+        at_evidence.setAdapter(adapter_evidence);
+
     }
 
     private void Casing() {
-        sp_complant_type = findViewById(R.id.sp_complant_type);
-        sp_evidence = findViewById(R.id.sp_evidence);
-
+        at_evidence = findViewById(R.id.at_evidence);
+        at_complant_type = findViewById(R.id.at_complant_type);
     }
 
     public void fun_back(View view) {

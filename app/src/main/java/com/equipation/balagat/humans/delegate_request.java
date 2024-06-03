@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Spinner;
 
 import com.equipation.balagat.R;
@@ -13,7 +14,7 @@ import java.util.ArrayList;
 
 public class delegate_request extends AppCompatActivity {
 
-    Spinner sp_delegate_type, sp_delegateinfo ;
+    AutoCompleteTextView at_delegate_type, at_delegateinfo ;
     ArrayList<String> ar_delegate_type, ar_delegateinfo_type;
 
 
@@ -35,22 +36,20 @@ public class delegate_request extends AppCompatActivity {
         ar_delegateinfo_type.add(" رقم وطني  ");
         ar_delegateinfo_type.add(" رخصة   ");
 
-
-
-
         Casing();
+
         ArrayAdapter<String> adapter_spinner_borrow_type = new ArrayAdapter<>(this,
-                androidx.appcompat.R.layout.support_simple_spinner_dropdown_item , ar_delegate_type);
-        sp_delegate_type.setAdapter(adapter_spinner_borrow_type);
+                R.layout.nice_select_item , ar_delegate_type);
+        at_delegate_type.setAdapter(adapter_spinner_borrow_type);
 
         ArrayAdapter<String> adapter_spinner_borrow_type2 = new ArrayAdapter<>(this,
-                androidx.appcompat.R.layout.support_simple_spinner_dropdown_item , ar_delegateinfo_type);
-        sp_delegateinfo.setAdapter(adapter_spinner_borrow_type2);
+                R.layout.nice_select_item , ar_delegateinfo_type);
+        at_delegateinfo.setAdapter(adapter_spinner_borrow_type2);
 
     }
     private void Casing() {
-        sp_delegate_type = findViewById(R.id.sp_delegate_type);
-        sp_delegateinfo = findViewById(R.id.sp_delegateinfo);
+        at_delegate_type = findViewById(R.id.at_delegate_type);
+        at_delegateinfo = findViewById(R.id.at_delegateinfo);
     }
 
     public void fun_back(View view) {
