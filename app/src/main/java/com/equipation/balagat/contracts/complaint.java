@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 
@@ -16,7 +17,7 @@ import java.util.ArrayList;
 
 public class complaint extends AppCompatActivity {
 
-    Spinner sp_complainant_type , sp_complaint_type , sp_management_complaint
+    AutoCompleteTextView sp_complainant_type , sp_complaint_type , sp_management_complaint
             , sp_opration_complaint , sp_evidence , sp_complaint_status ;
 
     ArrayList<String> ar_complainant_type , ar_complaint_type , ar_management_complaint
@@ -62,15 +63,16 @@ public class complaint extends AppCompatActivity {
         Casting();
 
         ArrayAdapter<String> adapter_complainant_type = new ArrayAdapter<>(
-                this , androidx.appcompat.R.layout.support_simple_spinner_dropdown_item
+                this ,   R.layout.nice_select_item
                 , ar_complainant_type);sp_complainant_type.setAdapter(adapter_complainant_type);
 
         ArrayAdapter<String> adapter_complaint_type = new ArrayAdapter<>(
-                this , androidx.appcompat.R.layout.support_simple_spinner_dropdown_item
-                , ar_complaint_type);sp_complaint_type.setAdapter(adapter_complaint_type);
-        sp_complaint_type.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                this ,  R.layout.nice_select_item
+                , ar_complaint_type);
+        sp_complaint_type.setAdapter(adapter_complaint_type);
+        sp_complaint_type.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
                 layout_management.setVisibility(View.GONE);
                 layout_opration.setVisibility(View.GONE);
@@ -84,35 +86,33 @@ public class complaint extends AppCompatActivity {
                 }
 
             }
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {}
+
         });
 
         ArrayAdapter<String> adapter_management_complaint = new ArrayAdapter<>(
-                this , androidx.appcompat.R.layout.support_simple_spinner_dropdown_item
+                this ,   R.layout.nice_select_item
                 , ar_management_complaint);sp_management_complaint.setAdapter(adapter_management_complaint);
 
         ArrayAdapter<String> adapter_opration_complaint = new ArrayAdapter<>(
-                this , androidx.appcompat.R.layout.support_simple_spinner_dropdown_item
+                this ,  R.layout.nice_select_item
                 , ar_opration_complaint);sp_opration_complaint.setAdapter(adapter_opration_complaint);
 
         ArrayAdapter<String> adapter_evidence = new ArrayAdapter<>(
-                this , androidx.appcompat.R.layout.support_simple_spinner_dropdown_item
+                this ,  R.layout.nice_select_item
                 , ar_evidence);sp_evidence.setAdapter(adapter_evidence);
-        sp_evidence.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        sp_evidence.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 ti_evidence.setVisibility(View.GONE);
                 if(ar_evidence.get(i).equals("شهود")){
                     ti_evidence.setVisibility(View.VISIBLE);
                 }
             }
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {}
+
         });
 
         ArrayAdapter<String> adapter_complaint_status = new ArrayAdapter<>(
-                this , androidx.appcompat.R.layout.support_simple_spinner_dropdown_item
+                this ,  R.layout.nice_select_item
                 , ar_complaint_status);sp_complaint_status.setAdapter(adapter_complaint_status);
 
     }

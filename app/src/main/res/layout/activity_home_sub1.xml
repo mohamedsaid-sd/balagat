@@ -151,9 +151,7 @@
                                 android:drawablePadding="10dp"
                                 android:fontFamily="sans-serif"
                                 android:gravity="center|center_vertical"
-
                                 android:padding="10dp"
-
                                 android:text="مواقع العمل "
                                 android:textSize="14sp" />
                         </androidx.cardview.widget.CardView>

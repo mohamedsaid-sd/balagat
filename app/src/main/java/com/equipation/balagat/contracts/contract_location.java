@@ -15,6 +15,7 @@ public class contract_location extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contract_location);
+
     }
 
     public void fun_need(View view) {

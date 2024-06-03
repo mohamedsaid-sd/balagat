@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 
@@ -17,7 +18,7 @@ public class machin_travel extends AppCompatActivity {
 
 
     LinearLayout sp_whytravel_layout  ;
-    Spinner sp_travel_type, sp_whytravel_type ;
+    AutoCompleteTextView sp_travel_type, sp_whytravel_type ;
     ArrayList<String> ar_travel_type, ar_whytravel_type;
 
 
@@ -40,18 +41,18 @@ public class machin_travel extends AppCompatActivity {
         Casing();
 
         ArrayAdapter<String> adapter_spinner_borrow_type = new ArrayAdapter<>(this,
-                androidx.appcompat.R.layout.support_simple_spinner_dropdown_item , ar_travel_type);
+                R.layout.nice_select_item, ar_travel_type);
         sp_travel_type.setAdapter(adapter_spinner_borrow_type);
 
         ArrayAdapter<String> adapter_spinner_borrow_type2 = new ArrayAdapter<>(this,
-                androidx.appcompat.R.layout.support_simple_spinner_dropdown_item , ar_whytravel_type);
+                R.layout.nice_select_item, ar_whytravel_type);
         sp_whytravel_type.setAdapter(adapter_spinner_borrow_type2);
 
 
 
-        sp_travel_type.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        sp_travel_type.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 if(ar_travel_type.get(i).equals("انتقال الي موقع جديد")){
                     sp_whytravel_layout.setVisibility(View.VISIBLE);
                 }else{
@@ -60,10 +61,7 @@ public class machin_travel extends AppCompatActivity {
                 }
             }
 
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
 
-            }
         });
     }
 

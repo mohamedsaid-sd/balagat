@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 
@@ -21,7 +22,7 @@ public class rechange_machin extends AppCompatActivity {
     LinearLayout sp_switch_layout  ;
     TextInputLayout day;
 
-    Spinner sp_change_type,sp_reason_type,sp_timechange_type,sp_switch_type;
+    AutoCompleteTextView sp_change_type,sp_reason_type,sp_timechange_type,sp_switch_type;
     ArrayList<String> ar_renew_type,ar_reason_type,ar_timechange_type,ar_switch_type ;
 
     @Override
@@ -57,39 +58,33 @@ public class rechange_machin extends AppCompatActivity {
         ar_timechange_type.add("عاجل جدا   ");
 
         ArrayAdapter<String> adapter_spinner_borrow_type = new ArrayAdapter<>(this,
-                androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, ar_renew_type);
+                R.layout.nice_select_item, ar_renew_type);
         sp_change_type.setAdapter(adapter_spinner_borrow_type);
 
 
         ArrayAdapter<String> adapter_spinner_borrow_type2 = new ArrayAdapter<>(this,
-                androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, ar_switch_type);
+                R.layout.nice_select_item, ar_switch_type);
         sp_switch_type.setAdapter(adapter_spinner_borrow_type2);
 
         ArrayAdapter<String> adapter_spinner_borrow_type3 = new ArrayAdapter<>(this,
-                androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, ar_reason_type);
+                R.layout.nice_select_item, ar_reason_type);
         sp_reason_type.setAdapter(adapter_spinner_borrow_type3);
 
 
         ArrayAdapter<String> adapter_spinner_borrow_type4 = new ArrayAdapter<>(this,
-                androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, ar_timechange_type);
+                R.layout.nice_select_item, ar_timechange_type);
         sp_timechange_type.setAdapter(adapter_spinner_borrow_type4);
 
 
-        sp_change_type.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        sp_change_type.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 if(ar_renew_type.get(i).equals("تبديل النوع")){
                     sp_switch_layout.setVisibility(View.VISIBLE);
 
                 }else{
                     sp_switch_layout.setVisibility(View.GONE);
-
                 }
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
-
             }
         });
 

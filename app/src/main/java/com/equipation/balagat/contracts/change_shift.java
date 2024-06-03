@@ -6,14 +6,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.LinearLayout;
-import android.widget.Spinner;
+
 
 import java.util.ArrayList;
 
 public class change_shift extends AppCompatActivity {
 
-    Spinner  sp_work_system , sp_shift ;
+    AutoCompleteTextView sp_work_system , sp_shift ;
     ArrayList<String> ar_work_system , ar_shift ;
     LinearLayout  layout_shift ;
 
@@ -34,16 +35,16 @@ public class change_shift extends AppCompatActivity {
         Casting();
 
         ArrayAdapter<String> adapter_work_system = new ArrayAdapter<>(
-                this , androidx.appcompat.R.layout.support_simple_spinner_dropdown_item
+                this ,   R.layout.nice_select_item
                 , ar_work_system);sp_work_system.setAdapter(adapter_work_system);
 
         ArrayAdapter<String> adapter_shift = new ArrayAdapter<>(
-                this , androidx.appcompat.R.layout.support_simple_spinner_dropdown_item
+                this ,    R.layout.nice_select_item
                 , ar_shift);sp_shift.setAdapter(adapter_shift);
 
-        sp_shift.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        sp_shift.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 if(ar_shift.get(i).equals("مؤقت")){
                     layout_shift.setVisibility(View.VISIBLE);
                 }else{
@@ -51,10 +52,6 @@ public class change_shift extends AppCompatActivity {
                 }
             }
 
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
-
-            }
         });
 
     }

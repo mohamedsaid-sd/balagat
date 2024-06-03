@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Spinner;
 
 import com.equipation.balagat.R;
@@ -14,7 +15,7 @@ import java.util.ArrayList;
 public class machin_need extends AppCompatActivity {
 
 
-    Spinner sp_request_need ;
+    AutoCompleteTextView sp_request_need ;
     ArrayList<String> ar_request_need;
 
     @Override
@@ -39,7 +40,7 @@ public class machin_need extends AppCompatActivity {
         Casting();
 
         ArrayAdapter<String> adapter_spinner_borrow_type = new ArrayAdapter<>(this,
-                androidx.appcompat.R.layout.support_simple_spinner_dropdown_item , ar_request_need);
+                R.layout.nice_select_item, ar_request_need);
         sp_request_need.setAdapter(adapter_spinner_borrow_type);
     }
 

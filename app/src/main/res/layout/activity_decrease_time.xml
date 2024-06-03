@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".contracts.decrease_time">
 
     <ScrollView
@@ -14,33 +15,39 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/circle_white"
+            android:paddingBottom="30dp"
             tools:ignore="MissingConstraints">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:layout_margin="20dp"
+
                 tools:ignore="UseCompoundDrawables">
 
+
                 <TextView
-                    android:id="@+id/textView14"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@color/gold"
+                    android:drawableStart="@drawable/ic_baseline_supervised_user_circle_24"
                     android:fontFamily="@font/jana"
+                    android:gravity="center"
                     android:padding="5dp"
                     android:text="طلب خصم ساعات"
                     android:textColor="@color/black"
                     android:textSize="20dp"
                     android:textStyle="bold"
-                    tools:ignore="HardcodedText,SpUsage" />
+                    tools:ignore="SpUsage" />
 
                 <ImageView
                     android:id="@+id/imageView2"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:background="@color/red"
+                    android:background="@drawable/whiteroundblack"
                     android:onClick="fun_back"
                     android:padding="5dp"
                     app:srcCompat="@drawable/ic_baseline_close_24"
@@ -65,7 +72,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical"
-                        android:visibility="visible">
+                        android:visibility="gone">
 
                         <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
@@ -294,83 +301,95 @@
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
                             android:padding="3dp"
-                            android:textColorHint="@color/green">
+                            app:boxStrokeWidth="0dp">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:hint="عدد الورديات الحالية"
                                 android:inputType="textPersonName"
+                                android:background="@drawable/formbackground"
                                 tools:ignore="HardcodedText" />
                         </com.google.android.material.textfield.TextInputLayout>
 
-                        <TextView
-                            android:id="@+id/textView51"
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="3dp"
-                            android:fontFamily="@font/jana"
-                            android:padding="3dp"
-                            android:text="نوع الساعات"
-                            android:textStyle="bold"
-                            tools:ignore="HardcodedText" />
+                            android:layout_margin="10dp"
+                            android:hint="  نوع الساعات   "
+                            app:boxStrokeWidth="0dp">
 
-                        <Spinner
-                            android:id="@+id/sp_hour_type"
-                            style="@android:style/Widget.Spinner.DropDown"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="3dp" />
+                            <AutoCompleteTextView
+                                android:id="@+id/sp_hour_type"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/formbackground"
+                                android:inputType="none">
+
+                            </AutoCompleteTextView>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
 
                         <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
-                            android:padding="3dp">
+                            android:padding="3dp"
+                            app:boxStrokeWidth="0dp">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:hint="عدد الساعات"
-                                android:inputType="number"
+                                android:background="@drawable/formbackground"
                                 tools:ignore="HardcodedText" />
                         </com.google.android.material.textfield.TextInputLayout>
 
-                        <TextView
-                            android:id="@+id/textView52"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="3dp"
-                            android:fontFamily="@font/jana"
-                            android:padding="3dp"
-                            android:text="سبب الخصم"
-                            android:textStyle="bold"
-                            tools:ignore="HardcodedText" />
 
-                        <Spinner
-                            android:id="@+id/sp_reason"
-                            style="@android:style/Widget.Spinner.DropDown"
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="3dp" />
+                            android:layout_margin="10dp"
+                            android:hint="  سبب الخصم   "
+                            app:boxStrokeWidth="0dp">
 
-                        <TextView
-                            android:id="@+id/textView53"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="3dp"
-                            android:fontFamily="@font/jana"
-                            android:padding="3dp"
-                            android:text="الورديات"
-                            android:textStyle="bold"
-                            tools:ignore="HardcodedText" />
+                            <AutoCompleteTextView
+                                android:id="@+id/sp_reason"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/formbackground"
+                                android:inputType="none">
 
-                        <Spinner
-                            android:id="@+id/sp_work_way"
-                            style="@android:style/Widget.Spinner.DropDown"
+                            </AutoCompleteTextView>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="3dp" />
+                            android:layout_margin="10dp"
+                            android:hint="  الورديات   "
+                            app:boxStrokeWidth="0dp">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/sp_work_way"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/formbackground"
+                                android:inputType="none">
+
+                            </AutoCompleteTextView>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
 
                         <LinearLayout
                             android:id="@+id/layout_shift"
@@ -394,13 +413,14 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_margin="3dp"
-                                android:padding="3dp">
+                                android:padding="3dp"
+                                app:boxStrokeWidth="0dp">
 
                                 <com.google.android.material.textfield.TextInputEditText
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:hint="حدد عدد الورديات"
-                                    android:inputType="number"
+                                    android:background="@drawable/formbackground"
                                     tools:ignore="HardcodedText" />
                             </com.google.android.material.textfield.TextInputLayout>
 
@@ -408,13 +428,15 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
                                 android:layout_margin="3dp"
-                                android:padding="3dp">
+                                android:padding="3dp"
+                                app:boxStrokeWidth="0dp">
 
                                 <com.google.android.material.textfield.TextInputEditText
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:hint="ساعات عمل الوردية الواحدة"
-                                    android:inputType="number"
+                                    android:background="@drawable/formbackground"
+
                                     tools:ignore="HardcodedText" />
                             </com.google.android.material.textfield.TextInputLayout>
 
@@ -424,12 +446,15 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
-                            android:padding="3dp">
+                            android:padding="3dp"
+                            app:boxStrokeWidth="0dp">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:hint="الملاحظات"
+                                android:background="@drawable/formbackground"
+
                                 tools:ignore="HardcodedText" />
                         </com.google.android.material.textfield.TextInputLayout>
 

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".contracts.request_renew_contract">
 
     <ScrollView
@@ -14,20 +15,27 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/circle_white"
+            android:paddingBottom="30dp"
             tools:ignore="MissingConstraints">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:layout_margin="20dp"
+
                 tools:ignore="UseCompoundDrawables">
+
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@color/gold"
+                    android:drawableStart="@drawable/ic_baseline_supervised_user_circle_24"
                     android:fontFamily="@font/jana"
+                    android:gravity="center"
                     android:padding="5dp"
                     android:text="طلب تجديد عقد"
                     android:textColor="@color/black"
@@ -39,7 +47,7 @@
                     android:id="@+id/imageView2"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:background="@color/red"
+                    android:background="@drawable/whiteroundblack"
                     android:onClick="fun_back"
                     android:padding="5dp"
                     app:srcCompat="@drawable/ic_baseline_close_24"
@@ -50,6 +58,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="3dp"
+                android:visibility="gone"
                 android:padding="3dp">
 
                 <LinearLayout
@@ -291,18 +300,26 @@
                         android:orientation="vertical"
                         android:padding="3dp">
 
-                        <TextView
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="3dp"
-                            android:padding="3dp"
-                            android:text=" نوع التجديد " />
-                        <Spinner
-                            android:id="@+id/sp_renew_type"
-                            style="@android:style/Widget.Spinner.DropDown"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="3dp" />
+                            android:layout_margin="10dp"
+                            android:hint=" نوع التجديد   "
+                            app:boxStrokeWidth="0dp">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/sp_renew_type"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/formbackground"
+                                android:inputType="none">
+
+                            </AutoCompleteTextView>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -322,20 +339,24 @@
                         android:visibility="gone"
                         android:padding="3dp">
 
-
-                        <TextView
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="3dp"
-                            android:padding="3dp"
-                            android:text="  تجديد عقد جزئي     " />
+                            android:layout_margin="10dp"
+                            android:hint=" تجديد عقد جزئي   "
+                            app:boxStrokeWidth="0dp">
 
-                        <Spinner
-                            android:id="@+id/sp_partial_type"
-                            style="@android:style/Widget.Spinner.DropDown"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="3dp" />
+                            <AutoCompleteTextView
+                                android:id="@+id/sp_partial_type"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/formbackground"
+                                android:inputType="none">
+
+                            </AutoCompleteTextView>
+
+                        </com.google.android.material.textfield.TextInputLayout>
 
 
                         <com.google.android.material.textfield.TextInputLayout
@@ -343,12 +364,13 @@
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
                             android:id="@+id/hours"
-                            android:padding="3dp">
+                            android:padding="3dp"
+                            app:boxStrokeWidth="0dp">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-
+                                android:background="@drawable/formbackground"
                                 android:hint="     كتابه عدد الساعات"
                                 android:inputType="number" />
                         </com.google.android.material.textfield.TextInputLayout>
@@ -359,13 +381,16 @@
                             android:id="@+id/days"
                             android:layout_margin="3dp"
                             android:visibility="gone"
-                            android:padding="3dp">
+                            android:padding="3dp"
+                            app:boxStrokeWidth="0dp">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:hint="     كتابه عدد الايام"
-                                android:inputType="number" />
+                                android:background="@drawable/formbackground"
+
+                                />
                         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -374,26 +399,24 @@
                 </androidx.cardview.widget.CardView>
 
 
-
-
-
-
-
-
-
-                <TextView
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="3dp"
-                    android:padding="3dp"
-                    android:text="   الموقع      " />
+                    android:layout_margin="10dp"
+                    android:hint=" الموقع    "
+                    app:boxStrokeWidth="0dp">
 
-                <Spinner
-                    android:id="@+id/sp_location_type"
-                    style="@android:style/Widget.Spinner.DropDown"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="3dp" />
+                    <AutoCompleteTextView
+                        android:id="@+id/sp_location_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/formbackground"
+                        android:inputType="none">
+
+                    </AutoCompleteTextView>
+
+                </com.google.android.material.textfield.TextInputLayout>
 
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -401,13 +424,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="3dp"
-                    android:padding="3dp">
+                    android:padding="3dp"
+                    app:boxStrokeWidth="0dp">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="    كتابه الموقع الجديد"
-                        android:inputType="number" />
+                        android:background="@drawable/formbackground"
+
+                       />
                 </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -416,13 +442,16 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="3dp"
-                    android:padding="3dp">
+                    android:padding="3dp"
+                    app:boxStrokeWidth="0dp">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="  ملاحظات"
-                        android:inputType="number" />
+                        android:background="@drawable/formbackground"
+
+                       />
                 </com.google.android.material.textfield.TextInputLayout>
 
 

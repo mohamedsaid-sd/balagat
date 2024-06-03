@@ -2,16 +2,16 @@ package com.equipation.balagat.contracts;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.LinearLayout;
-import android.widget.Spinner;
-import android.widget.TextView;
 
-import com.equipation.balagat.contract;
+
+
 
 import com.equipation.balagat.R;
 import com.google.android.material.textfield.TextInputLayout;
@@ -25,7 +25,7 @@ public class request_renew_contract extends AppCompatActivity {
 
     TextInputLayout days,hours , new_location;
 
-    Spinner sp_renew_type,sp_partial_type,sp_location_type;
+    AutoCompleteTextView sp_renew_type,sp_partial_type,sp_location_type;
     ArrayList<String> ar_renew_type,ar_partial_type,ar_location_type ;
 
     @Override
@@ -53,39 +53,35 @@ public class request_renew_contract extends AppCompatActivity {
 
 
         ArrayAdapter<String> adapter_spinner_borrow_type = new ArrayAdapter<>(this,
-                androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, ar_renew_type);
+                R.layout.nice_select_item, ar_renew_type);
         sp_renew_type.setAdapter(adapter_spinner_borrow_type);
 
 
 
         ArrayAdapter<String> adapter_spinner_borrow_type2 = new ArrayAdapter<>(this,
-                androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, ar_partial_type);
+                R.layout.nice_select_item, ar_partial_type);
         sp_partial_type.setAdapter(adapter_spinner_borrow_type2);
 
         ArrayAdapter<String> adapter_spinner_borrow_type3 = new ArrayAdapter<>(this,
-                androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, ar_location_type);
+                R.layout.nice_select_item, ar_location_type);
         sp_location_type.setAdapter(adapter_spinner_borrow_type3);
 
-        sp_location_type.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        sp_location_type.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 new_location.setVisibility(View.GONE);
                 if(ar_location_type.get(i).equals("موقع جديد"))
                     new_location.setVisibility(View.VISIBLE);
             }
 
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
-
-            }
         });
 
 
 
 
-        sp_renew_type.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        sp_renew_type.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 if(ar_renew_type.get(i).equals("عقد جزئي")){
                     sp_partial_layout.setVisibility(View.VISIBLE);
 
@@ -95,17 +91,13 @@ public class request_renew_contract extends AppCompatActivity {
                 }
             }
 
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
-
-            }
         });
 
 
 
-        sp_partial_type.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        sp_partial_type.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
 
                 if(ar_partial_type.get(i).equals("بالايام")){
                     days.setVisibility(View.VISIBLE);
@@ -119,10 +111,6 @@ public class request_renew_contract extends AppCompatActivity {
                 }
             }
 
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
-
-            }
         });
 
     }

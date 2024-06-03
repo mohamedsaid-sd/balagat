@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".contracts.complaint">
 
     <ScrollView
@@ -14,33 +15,38 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/circle_white"
+            android:paddingBottom="30dp"
             tools:ignore="MissingConstraints">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:layout_margin="20dp"
                 tools:ignore="UseCompoundDrawables">
 
+
                 <TextView
-                    android:id="@+id/textView14"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@color/gold"
+                    android:drawableStart="@drawable/ic_baseline_supervised_user_circle_24"
                     android:fontFamily="@font/jana"
+                    android:gravity="center"
                     android:padding="5dp"
                     android:text="طلب تقديم شكوى"
                     android:textColor="@color/black"
                     android:textSize="20dp"
                     android:textStyle="bold"
-                    tools:ignore="HardcodedText,SpUsage" />
+                    tools:ignore="SpUsage" />
 
                 <ImageView
                     android:id="@+id/imageView2"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:background="@color/red"
+                    android:background="@drawable/whiteroundblack"
                     android:onClick="fun_back"
                     android:padding="5dp"
                     app:srcCompat="@drawable/ic_baseline_close_24"
@@ -289,41 +295,46 @@
                         android:layout_height="match_parent"
                         android:orientation="vertical">
 
-                        <TextView
-                            android:id="@+id/textView55"
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="3dp"
-                            android:fontFamily="@font/jana"
-                            android:padding="3dp"
-                            android:text="نوع الشاكي"
-                            android:textStyle="bold"
-                            tools:ignore="HardcodedText" />
+                            android:layout_margin="10dp"
+                            android:hint=" نوع الشاكي  "
+                            app:boxStrokeWidth="0dp">
 
-                        <Spinner
-                            android:id="@+id/sp_complainant_type"
-                            style="@android:style/Widget.Spinner.DropDown"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="3dp" />
+                            <AutoCompleteTextView
+                                android:id="@+id/sp_complainant_type"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/formbackground"
+                                android:inputType="none">
 
-                        <TextView
-                            android:id="@+id/textView56"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="3dp"
-                            android:fontFamily="@font/jana"
-                            android:padding="3dp"
-                            android:text="نوع الشكوى"
-                            android:textStyle="bold"
-                            tools:ignore="HardcodedText" />
+                            </AutoCompleteTextView>
 
-                        <Spinner
-                            android:id="@+id/sp_complaint_type"
-                            style="@android:style/Widget.Spinner.DropDown"
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="3dp" />
+                            android:layout_margin="10dp"
+                            android:hint=" نوع الشكوى   "
+                            app:boxStrokeWidth="0dp">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/sp_complaint_type"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/formbackground"
+                                android:inputType="none">
+
+                            </AutoCompleteTextView>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
 
                         <LinearLayout
                             android:id="@+id/management"
@@ -331,23 +342,27 @@
                             android:layout_height="match_parent"
                             android:orientation="vertical">
 
-                            <TextView
-                                android:id="@+id/textView57"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="3dp"
-                                android:fontFamily="@font/jana"
-                                android:padding="3dp"
-                                android:text="شكوى ادارية"
-                                android:textStyle="bold"
-                                tools:ignore="HardcodedText" />
 
-                            <Spinner
-                                android:id="@+id/sp_management_complaint"
-                                style="@android:style/Widget.Spinner.DropDown"
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="3dp" />
+                                android:layout_margin="10dp"
+                                android:hint="شكوى ادارية  "
+                                app:boxStrokeWidth="0dp">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/sp_management_complaint"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/formbackground"
+                                    android:inputType="none">
+
+                                </AutoCompleteTextView>
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
                         </LinearLayout>
 
                         <LinearLayout
@@ -356,36 +371,43 @@
                             android:layout_height="match_parent"
                             android:orientation="vertical">
 
-                            <TextView
-                                android:id="@+id/textView58"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="3dp"
-                                android:fontFamily="@font/jana"
-                                android:padding="3dp"
-                                android:text="شكوى تشغيلية"
-                                android:textStyle="bold"
-                                tools:ignore="HardcodedText" />
 
-                            <Spinner
-                                android:id="@+id/sp_opration_complaint"
-                                style="@android:style/Widget.Spinner.DropDown"
+                            <com.google.android.material.textfield.TextInputLayout
+                                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_margin="3dp" />
+                                android:layout_margin="10dp"
+                                android:hint="  شكوى تشغيلية   "
+                                app:boxStrokeWidth="0dp">
+
+                                <AutoCompleteTextView
+                                    android:id="@+id/sp_opration_complaint"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/formbackground"
+                                    android:inputType="none">
+
+                                </AutoCompleteTextView>
+
+                            </com.google.android.material.textfield.TextInputLayout>
+
+
                         </LinearLayout>
 
                         <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
-                            android:padding="3dp">
+                            android:padding="3dp"
+                            app:boxStrokeWidth="0dp">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:hint="وصف الشكوى"
                                 android:inputType="textPersonName"
+                                android:background="@drawable/formbackground"
+
                                 tools:ignore="HardcodedText" />
                         </com.google.android.material.textfield.TextInputLayout>
 
@@ -393,13 +415,16 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
-                            android:padding="3dp">
+                            android:padding="3dp"
+                            app:boxStrokeWidth="0dp">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:hint="تاريخ الحدث"
                                 android:inputType="textPersonName"
+                                android:background="@drawable/formbackground"
+
                                 tools:ignore="HardcodedText" />
                         </com.google.android.material.textfield.TextInputLayout>
 
@@ -407,13 +432,14 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
-                            android:padding="3dp">
+                            android:padding="3dp"
+                            app:boxStrokeWidth="0dp">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:hint="موقع الحدث"
-                                android:inputType="number"
+                                android:background="@drawable/formbackground"
                                 tools:ignore="HardcodedText" />
                         </com.google.android.material.textfield.TextInputLayout>
 
@@ -421,46 +447,52 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
-                            android:padding="3dp">
+                            android:padding="3dp"
+                            app:boxStrokeWidth="0dp">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:hint="المشكو ضده"
-                                android:inputType="number"
+                                android:background="@drawable/formbackground"
                                 tools:ignore="HardcodedText" />
                         </com.google.android.material.textfield.TextInputLayout>
 
-                        <TextView
-                            android:id="@+id/textView52"
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="3dp"
-                            android:fontFamily="@font/jana"
-                            android:padding="3dp"
-                            android:text="الادلة المتاحة"
-                            android:textStyle="bold"
-                            tools:ignore="HardcodedText" />
+                            android:layout_margin="10dp"
+                            android:hint="الادلة المتاحة  "
+                            app:boxStrokeWidth="0dp">
 
-                        <Spinner
-                            android:id="@+id/sp_evidence"
-                            style="@android:style/Widget.Spinner.DropDown"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="3dp" />
+                            <AutoCompleteTextView
+                                android:id="@+id/sp_evidence"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/formbackground"
+                                android:inputType="none">
+
+                            </AutoCompleteTextView>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
 
                         <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
                             android:id="@+id/ti_evidence"
-                            android:padding="3dp">
+                            android:padding="3dp"
+                            app:boxStrokeWidth="0dp">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:hint=" اسماء الشهود "
-                                android:inputType="number"
+                                android:background="@drawable/formbackground"
+
                                 tools:ignore="HardcodedText" />
                         </com.google.android.material.textfield.TextInputLayout>
 
@@ -468,13 +500,15 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
-                            android:padding="3dp">
+                            android:padding="3dp"
+                            app:boxStrokeWidth="0dp">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:hint=" تحديد الضرر "
-                                android:inputType="number"
+                                android:background="@drawable/formbackground"
+
                                 tools:ignore="HardcodedText" />
                         </com.google.android.material.textfield.TextInputLayout>
 
@@ -482,45 +516,53 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
-                            android:padding="3dp">
+                            android:padding="3dp"
+                            app:boxStrokeWidth="0dp">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:hint=" الحلول المقترحة "
-                                android:inputType="number"
+                                android:background="@drawable/formbackground"
+
                                 tools:ignore="HardcodedText" />
                         </com.google.android.material.textfield.TextInputLayout>
 
-                        <TextView
-                            android:id="@+id/textView53"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="3dp"
-                            android:fontFamily="@font/jana"
-                            android:padding="3dp"
-                            android:text="حالة الشكوى"
-                            android:textStyle="bold"
-                            tools:ignore="HardcodedText" />
 
-                        <Spinner
-                            android:id="@+id/sp_complaint_status"
-                            style="@android:style/Widget.Spinner.DropDown"
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="3dp" />
+                            android:layout_margin="10dp"
+                            android:hint=" حالة الشكوى   "
+                            app:boxStrokeWidth="0dp">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/sp_complaint_status"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/formbackground"
+                                android:inputType="none">
+
+                            </AutoCompleteTextView>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
 
                         <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
-                            android:padding="3dp">
+                            android:padding="3dp"
+                            app:boxStrokeWidth="0dp">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:hint="  مهلة الرد علي الشكوى "
-                                android:inputType="number"
+                                android:background="@drawable/formbackground"
+
                                 tools:ignore="HardcodedText" />
                         </com.google.android.material.textfield.TextInputLayout>
 
@@ -528,12 +570,15 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
-                            android:padding="3dp">
+                            android:padding="3dp"
+                            app:boxStrokeWidth="0dp">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:hint="الملاحظات"
+                                android:background="@drawable/formbackground"
+
                                 tools:ignore="HardcodedText" />
                         </com.google.android.material.textfield.TextInputLayout>
 

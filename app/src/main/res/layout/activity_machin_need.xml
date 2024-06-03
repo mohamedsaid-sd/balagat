@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:theme="@style/Theme.Balagat.NoActionBar"
+    android:background="@color/black"
+
     tools:context=".contracts.machin_need">
 
     <ScrollView
@@ -15,33 +16,37 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/circle_white"
+            android:paddingBottom="30dp"
             tools:ignore="MissingConstraints">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
+                android:layout_margin="20dp"
                 tools:ignore="UseCompoundDrawables">
 
                 <TextView
-                    android:id="@+id/textView14"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@color/gold"
+                    android:drawableStart="@drawable/ic_baseline_supervised_user_circle_24"
                     android:fontFamily="@font/jana"
+                    android:gravity="center"
                     android:padding="5dp"
                     android:text="  احتياجات ألية "
                     android:textColor="@color/black"
                     android:textSize="20dp"
                     android:textStyle="bold"
-                    tools:ignore="HardcodedText,SpUsage" />
+                    tools:ignore="SpUsage" />
 
                 <ImageView
                     android:id="@+id/imageView2"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:background="@color/red"
+                    android:background="@drawable/whiteroundblack"
                     android:onClick="fun_back"
                     android:padding="5dp"
                     app:srcCompat="@drawable/ic_baseline_close_24"
@@ -65,7 +70,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="vertical"
-                        android:visibility="visible">
+                        android:visibility="gone">
 
                         <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
@@ -292,13 +297,16 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
-                            android:padding="3dp">
+                            android:padding="3dp"
+                            app:boxStrokeWidth="0dp">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:hint=" التاريخ المتوقع لرفع الالية"
                                 android:inputType="textPersonName"
+                                android:background="@drawable/formbackground"
+
                                 tools:ignore="HardcodedText" />
                         </com.google.android.material.textfield.TextInputLayout>
 
@@ -306,45 +314,53 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
-                            android:padding="3dp">
+                            android:padding="3dp"
+                            app:boxStrokeWidth="0dp">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:hint="التاريخ المتوقع لبدء العمل  "
                                 android:inputType="textPersonName"
+                                android:background="@drawable/formbackground"
+
                                 tools:ignore="HardcodedText" />
                         </com.google.android.material.textfield.TextInputLayout>
 
 
 
-                        <TextView
-                            android:id="@+id/textView40"
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="3dp"
-                            android:padding="3dp"
-                            android:text=" نوع الاحتياجات المطلوبة"
-                            tools:ignore="HardcodedText" />
+                            android:layout_margin="10dp"
+                            android:hint="  نوع الاحتياجات المطلوبة    "
+                            app:boxStrokeWidth="0dp">
 
-                        <Spinner
-                            android:id="@+id/sp_request_need"
-                            style="@android:style/Widget.Spinner.DropDown"
-                            android:layout_width="match_parent"
-                            android:layout_height="0dp"
-                            android:layout_margin="3dp"
-                            android:layout_weight="1" />
+                            <AutoCompleteTextView
+                                android:id="@+id/sp_request_need"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/formbackground"
+                                android:inputType="none">
+
+                            </AutoCompleteTextView>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
 
 
                         <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="5dp">
+                            android:layout_margin="5dp"
+                            app:boxStrokeWidth="0dp">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:hint="ملاحظات"
+                                android:background="@drawable/formbackground"
                                 tools:ignore="HardcodedText" />
                         </com.google.android.material.textfield.TextInputLayout>
 

@@ -5,7 +5,108 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
-import android.widget.Spinner;
+import android.widget.AutoCompleteTextView;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 import com.equipation.balagat.R;
 
@@ -15,7 +116,7 @@ public class terminat_contract extends AppCompatActivity {
 //,,;
 
 
-    Spinner sp_terminat_type,sp_ready_type,sp_timeorder_type;
+    AutoCompleteTextView sp_terminat_type,sp_ready_type,sp_timeorder_type;
     ArrayList<String> ar_terminat_typ,ar_ready_type,ar_timeorder_type ;
 
 
@@ -48,17 +149,17 @@ public class terminat_contract extends AppCompatActivity {
 
 
         ArrayAdapter<String> adapter_spinner_borrow_type = new ArrayAdapter<>(this,
-                androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, ar_terminat_typ);
+                R.layout.nice_select_item, ar_terminat_typ);
         sp_terminat_type.setAdapter(adapter_spinner_borrow_type);
 
 
         ArrayAdapter<String> adapter_spinner_borrow_type1 = new ArrayAdapter<>(this,
-                androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, ar_ready_type);
+                R.layout.nice_select_item, ar_ready_type);
         sp_ready_type.setAdapter(adapter_spinner_borrow_type1);
 
 
         ArrayAdapter<String> adapter_spinner_borrow_type2 = new ArrayAdapter<>(this,
-                androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, ar_timeorder_type);
+                R.layout.nice_select_item, ar_timeorder_type);
         sp_timeorder_type.setAdapter(adapter_spinner_borrow_type2);
 
 
