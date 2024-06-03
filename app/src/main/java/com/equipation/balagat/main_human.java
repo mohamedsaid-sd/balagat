@@ -71,6 +71,29 @@ public class main_human extends AppCompatActivity {
         startActivity(new Intent( this , human.class ).putExtra( "FLAG" , "employee" ) , b);
     }
 
+    public void fun_contract(View view) {
+        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(new Intent( this , home_sub1.class ).putExtra( "FLAG" , "employee" ) , b);
+    }
+
+    public void fiun_stock(View view) {
+        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(new Intent( this , stock.class ).putExtra( "FLAG" , "employee" ) , b);
+    }
+    public void fun_purchases(View view) {
+        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(new Intent( this , purchases.class ).putExtra( "FLAG" , "employee" ) , b);
+    }
+
+
+    public void fun_maintenance(View view) {
+        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(new Intent( this , maintenance.class ).putExtra( "FLAG" , "employee" ) , b);
+    }
+
+
+
+
     public void fun_cat_borrow(View view) {
         Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
         startActivity(new Intent( this , human.class ).putExtra( "FLAG" , "borrow" ) , b  );
