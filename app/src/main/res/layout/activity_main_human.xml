@@ -61,9 +61,11 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/lay_human"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:visibility="gone">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -195,6 +197,396 @@
 
                 </LinearLayout>
 
+                <LinearLayout
+                    android:id="@+id/lay_opration"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/whiteroundblack"
+                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="التاجير"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/whiteroundblack"
+                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="الإنتاج"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/whiteroundblack"
+                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="المقاولة"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/whiteroundblack"
+                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:onClick="fun_cat_trainig"
+                            android:padding="5dp"
+                            android:text="الحضور والاداء"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:visibility="invisible" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_fleet"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/whiteroundblack"
+                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="المعدات الثقيلة"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/whiteroundblack"
+                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="الشاحنات والقلابات"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/whiteroundblack"
+                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:onClick="fun_maintenance"
+                            android:padding="5dp"
+                            android:text="الصيانة"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/whiteroundblack"
+                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="قطع الغيار"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:visibility="visible" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_supply"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/whiteroundblack"
+                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:onClick="fun_purchases"
+                            android:padding="5dp"
+                            android:text="المشتروات"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/whiteroundblack"
+                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="الترحيل"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/whiteroundblack"
+                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:onClick="fiun_stock"
+                            android:padding="5dp"
+                            android:text="المخزن"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/whiteroundblack"
+                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="عقودات المعدات الخارجية"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/whiteroundblack"
+                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:onClick="fun_contract"
+                            android:padding="5dp"
+                            android:text="العقودات"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/whiteroundblack"
+                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="العقودات"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:visibility="invisible" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_office"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/whiteroundblack"
+                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="مكتب عطبرة"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/whiteroundblack"
+                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="موقع قبقبة"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/lay_clients"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/whiteroundblack"
+                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text=" التواصل المستمر "
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/whiteroundblack"
+                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text=" الشكاوى والمقترحات "
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
                 <TextView
                     android:id="@+id/textView14"
                     android:layout_width="match_parent"
@@ -209,6 +601,9 @@
                     android:textColor="@color/lite"
                     android:textSize="14sp"
                     android:textStyle="bold" />
+
+
+
 
             </LinearLayout>
         </ScrollView>

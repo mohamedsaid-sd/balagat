@@ -220,4 +220,24 @@ public class human extends AppCompatActivity {
         Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
         startActivity(new Intent( this , delegate_request.class ) , b);
     }
+
+    public void fun_maintenance(View view) {
+        Bundle b = ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(new Intent(this , maintenance.class) , b );
+    }
+
+    public void fun_purchases(View view) {
+        Bundle b = ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(new Intent(this, purchases.class) , b);
+    }
+
+    public void fiun_stock(View view) {
+        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(new Intent( this , stock.class ) , b);
+    }
+
+    public void fun_contract(View view) {
+        Bundle b = ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(new Intent(this , contract.class) , b );
+    }
 }
