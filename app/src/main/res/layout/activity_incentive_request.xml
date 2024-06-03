@@ -9,30 +9,32 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
-            android:background="@drawable/circle_white"
-            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/circle_white"
             android:orientation="vertical"
             tools:ignore="MissingConstraints">
 
             <LinearLayout
-                android:layout_margin="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="20dp"
                 android:orientation="horizontal"
                 tools:ignore="UseCompoundDrawables">
 
                 <TextView
-                    android:drawableStart="@drawable/ic_baseline_supervised_user_circle_24"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:gravity="center"
+                    android:drawableStart="@drawable/ic_baseline_supervised_user_circle_24"
                     android:fontFamily="@font/jana"
+                    android:gravity="center"
                     android:padding="5dp"
                     android:text="طلب  حافز  "
                     android:textColor="@color/black"
@@ -62,7 +64,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="3dp"
-                    android:padding="3dp">
+                    android:padding="3dp"
+                    android:visibility="gone">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -142,6 +145,7 @@
                                 android:layout_height="wrap_content"
                                 android:hint="تاريخ التعيين " />
                         </com.google.android.material.textfield.TextInputLayout>
+
                         <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -186,19 +190,6 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
-                            android:padding="3dp">
-
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="تاريخ بدء العمل  " />
-                        </com.google.android.material.textfield.TextInputLayout>
-
-
-                        <com.google.android.material.textfield.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3dp"
                             android:padding="3dp"
                             android:textColorHint="@color/green">
 
@@ -212,82 +203,100 @@
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
-                <androidx.cardview.widget.CardView
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="3dp"
+                    android:orientation="vertical"
                     android:padding="3dp">
 
-                    <LinearLayout
+
+                    <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="3dp"
-                        android:orientation="vertical"
-                        android:padding="3dp">
+                        android:padding="3dp"
+                        app:boxStrokeWidth="0dp">
 
-
-
-                        <TextView
+                        <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="3dp"
-                            android:padding="3dp"
-                            android:text="  المبررات للزيادة " />
+                            android:background="@drawable/formbackground"
+                            android:hint="تاريخ بدء العمل  " />
+                    </com.google.android.material.textfield.TextInputLayout>
 
-                        <Spinner
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:hint="  المبررات للزيادة  "
+                        app:boxStrokeWidth="0dp">
+
+                        <AutoCompleteTextView
                             android:id="@+id/sp_incentive_type"
-                            style="@android:style/Widget.Spinner.DropDown"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="3dp" />
+                            android:background="@drawable/formbackground"
+                            android:inputType="none">
 
-                        <com.google.android.material.textfield.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3dp"
-                            android:padding="3dp"
-                            >
+                        </AutoCompleteTextView>
 
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="     ذكر أمثلة علي المبرر الذي تم اختياره  " />
-                        </com.google.android.material.textfield.TextInputLayout>
+                    </com.google.android.material.textfield.TextInputLayout>
 
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        app:boxStrokeWidth="0dp">
 
-                        <TextView
+                        <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="3dp"
-                            android:padding="3dp"
-                            android:text=" نوع الحافز المطلوب   " />
+                            android:background="@drawable/formbackground"
+                            android:hint="     ذكر أمثلة علي المبرر الذي تم اختياره  " />
+                    </com.google.android.material.textfield.TextInputLayout>
 
-                        <Spinner
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:hint=" نوع الحافز المطلوب "
+                        app:boxStrokeWidth="0dp">
+
+                        <AutoCompleteTextView
                             android:id="@+id/sp_typeofinsentive_type"
-                            style="@android:style/Widget.Spinner.DropDown"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="3dp" />
+                            android:background="@drawable/formbackground"
+                            android:inputType="none">
 
-                        <com.google.android.material.textfield.TextInputLayout
+                        </AutoCompleteTextView>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        app:boxStrokeWidth="0dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3dp"
-                            android:padding="3dp">
-
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="ملاحظات"
-                                android:inputType="number" />
-                        </com.google.android.material.textfield.TextInputLayout>
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:hint="ملاحظات"
+                            android:inputType="number" />
+                    </com.google.android.material.textfield.TextInputLayout>
 
 
-
-
-
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
+                </LinearLayout>
 
                 <Button
 

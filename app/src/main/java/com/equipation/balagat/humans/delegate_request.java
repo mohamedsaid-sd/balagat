@@ -29,8 +29,6 @@ public class delegate_request extends AppCompatActivity {
         ar_delegate_type.add("   استلام راتب ");
         ar_delegate_type.add("    استلام حافز  ");
 
-
-
         ar_delegateinfo_type.add("جواز سفر");
         ar_delegateinfo_type.add("   بطاقة قومية ");
         ar_delegateinfo_type.add(" رقم وطني  ");

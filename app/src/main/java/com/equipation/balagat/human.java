@@ -1,6 +1,8 @@
 package com.equipation.balagat;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -128,9 +130,8 @@ public class human extends AppCompatActivity {
     }
 
     public void fun_open_resignation_request(View view) {
-        startActivity( new Intent( this , resignation_request.class ) );
-//        overridePendingTransition(androidx.transition.R.anim.abc_popup_enter, androidx.transition.R.anim.abc_fade_out);
-//
+        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity( new Intent( this , resignation_request.class )  , b );
     }
 
     public void fun_back(View view) {
@@ -150,63 +151,73 @@ public class human extends AppCompatActivity {
     }
 
     public void fun_salary_request(View view) {
-        startActivity(new Intent( this , salary_request.class ));
+        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(new Intent( this , salary_request.class ) , b);
     }
 
     public void fun_borrow_request(View view) {
-        startActivity(new Intent( this , borrow_request.class ));
+        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(new Intent( this , borrow_request.class ) , b);
     }
 
 
     public void fun_vacation_request(View view) {
-        startActivity(new Intent( this , request_vacation.class ));
+        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(new Intent( this , request_vacation.class ) , b);
     }
 
     public void fun_PPE_request(View view) {
-        Toast.makeText(this, "طلب معدات سلامة", Toast.LENGTH_SHORT).show();
-        startActivity(new Intent( this , PPE_request.class ));
+        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(new Intent( this , PPE_request.class ) , b );
     }
 
     public void fun_shift_request(View view) {
-        Toast.makeText(this, "طلب  وردية ", Toast.LENGTH_SHORT).show();
-        startActivity(new Intent( this , shift_request.class ));
+        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(new Intent( this , shift_request.class ) , b);
     }
 
     public void fun_prose_request(View view) {
-        Toast.makeText(this, "طلب نثرية ", Toast.LENGTH_SHORT).show();
-        startActivity(new Intent( this , prose_request.class ));
+        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(new Intent( this , prose_request.class ) , b);
     }
 
     public void fun_evaluation_request(View view) {
-        startActivity(new Intent( this , evaluation_request.class ));
+        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(new Intent( this , evaluation_request.class ) , b);
 
     }
 
     public void fun_complant_request(View view) {
-        startActivity(new Intent( this , complaint_request.class ));
+        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(new Intent( this , complaint_request.class ) , b);
 
     }
 
     public void fun_training_request(View view) {
-        startActivity(new Intent( this , training_request.class ));
+        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(new Intent( this , training_request.class ) , b);
 
     }
 
     public void fun_incentive_request(View view) {
-        startActivity(new Intent( this , incentive_request.class ));
+        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(new Intent( this , incentive_request.class ) , b);
     }
 
     public void fun_moretidy_request(View view) {
-        startActivity(new Intent( this , moretidy_request.class ));
+        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(new Intent( this , moretidy_request.class ) , b);
 
     }
 
 
     public void fun_profile_request(View view) {
-        startActivity(new Intent( this , edit_profile_request.class ));
+        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(new Intent( this , edit_profile_request.class ) , b);
     }
 
     public void fun_delegate_request(View view) {
-        startActivity(new Intent( this , delegate_request.class ));
+        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(new Intent( this , delegate_request.class ) , b);
     }
 }

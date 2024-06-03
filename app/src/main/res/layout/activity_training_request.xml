@@ -9,30 +9,32 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
-            android:background="@drawable/circle_white"
-            android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/circle_white"
             android:orientation="vertical"
             tools:ignore="MissingConstraints">
 
             <LinearLayout
-                android:layout_margin="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="20dp"
                 android:orientation="horizontal"
                 tools:ignore="UseCompoundDrawables">
 
                 <TextView
-                    android:drawableStart="@drawable/ic_baseline_supervised_user_circle_24"
-                    android:gravity="center"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:drawableStart="@drawable/ic_baseline_supervised_user_circle_24"
                     android:fontFamily="@font/jana"
+                    android:gravity="center"
                     android:padding="5dp"
                     android:text="طلب تدريب وتأهيل    "
                     android:textColor="@color/black"
@@ -225,8 +227,8 @@
                             android:id="@+id/layout_offline"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:visibility="gone"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            android:visibility="gone">
 
                             <TextView
                                 android:id="@+id/textVie55w47"
@@ -280,9 +282,6 @@
                                     android:inputType="textPersonName"
                                     tools:ignore="HardcodedText" />
                             </com.google.android.material.textfield.TextInputLayout>
-
-
-
 
 
                         </LinearLayout>
@@ -443,13 +442,11 @@
                         android:padding="3dp">
 
 
-
                         <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
-                            android:padding="3dp"
-                          >
+                            android:padding="3dp">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
@@ -459,7 +456,6 @@
                                 android:inputType="number"
                                 tools:ignore="HardcodedText" />
                         </com.google.android.material.textfield.TextInputLayout>
-
 
 
                     </LinearLayout>

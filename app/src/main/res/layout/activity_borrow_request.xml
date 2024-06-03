@@ -9,7 +9,9 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -208,8 +210,8 @@
                             android:layout_margin="10dp"
                             android:hint=" حدد نوع السلفية "
                             app:boxStrokeColor="@color/black"
-                            app:hintTextColor="@color/black"
-                            app:boxStrokeWidth="0dp">
+                            app:boxStrokeWidth="0dp"
+                            app:hintTextColor="@color/black">
 
                             <AutoCompleteTextView
                                 android:id="@+id/at_borrow_type"
@@ -228,8 +230,8 @@
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
                             android:padding="3dp"
-                            app:hintTextColor="@color/black"
-                            app:boxStrokeWidth="0dp">
+                            app:boxStrokeWidth="0dp"
+                            app:hintTextColor="@color/black">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
@@ -245,8 +247,8 @@
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
                             android:padding="3dp"
-                            app:hintTextColor="@color/black"
-                            app:boxStrokeWidth="0dp">
+                            app:boxStrokeWidth="0dp"
+                            app:hintTextColor="@color/black">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
@@ -262,8 +264,8 @@
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
                             android:padding="3dp"
-                            app:hintTextColor="@color/black"
-                            app:boxStrokeWidth="0dp">
+                            app:boxStrokeWidth="0dp"
+                            app:hintTextColor="@color/black">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
@@ -279,8 +281,8 @@
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
                             android:padding="3dp"
-                            app:hintTextColor="@color/black"
-                            app:boxStrokeWidth="0dp">
+                            app:boxStrokeWidth="0dp"
+                            app:hintTextColor="@color/black">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"

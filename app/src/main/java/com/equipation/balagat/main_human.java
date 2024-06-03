@@ -1,5 +1,7 @@
 package com.equipation.balagat;
 
+import android.app.Activity;
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -17,13 +19,7 @@ public class main_human extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main_human);
-//        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-//            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-//            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-//            return insets;
-//        });
     }
 
     public void fun_back(View view) {
@@ -31,23 +27,28 @@ public class main_human extends AppCompatActivity {
     }
 
     public void fun_cat_employee(View view) {
-        startActivity(new Intent( this , human.class ).putExtra( "FLAG" , "employee" ));
+        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(new Intent( this , human.class ).putExtra( "FLAG" , "employee" ) , b);
     }
 
     public void fun_cat_borrow(View view) {
-        startActivity(new Intent( this , human.class ).putExtra( "FLAG" , "borrow" ));
+        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(new Intent( this , human.class ).putExtra( "FLAG" , "borrow" ) , b  );
     }
 
     public void fun_cat_prose(View view) {
-        startActivity(new Intent( this , human.class ).putExtra( "FLAG" , "prose" ));
+        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(new Intent( this , human.class ).putExtra( "FLAG" , "prose" ) , b);
     }
 
     public void fun_cat_trainig(View view) {
-        startActivity(new Intent( this , human.class ).putExtra( "FLAG" , "trainig" ));
+        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(new Intent( this , human.class ).putExtra( "FLAG" , "trainig" ) , b);
     }
 
     public void fun_cat_development(View view) {
-        startActivity(new Intent( this , human.class ).putExtra( "FLAG" , "development" ));
+        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(new Intent( this , human.class ).putExtra( "FLAG" , "development" ) , b);
     }
 
 }

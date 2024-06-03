@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Spinner;
 
 import com.equipation.balagat.R;
@@ -14,8 +15,7 @@ import java.util.ArrayList;
 public class incentive_request extends AppCompatActivity {
 
 
-    Spinner sp_incentive_type ,sp_typeofinsentive_type ;
-
+    AutoCompleteTextView sp_incentive_type ,sp_typeofinsentive_type ;
 
     ArrayList<String> ar_incentive_type,ar_typeofinsentive_type;
 
@@ -42,13 +42,13 @@ public class incentive_request extends AppCompatActivity {
 
         Casing();
         ArrayAdapter<String> adapter_spinner_borrow_type = new ArrayAdapter<>(this,
-                androidx.appcompat.R.layout.support_simple_spinner_dropdown_item , ar_incentive_type);
+                R.layout.nice_select_item , ar_incentive_type);
         sp_incentive_type.setAdapter(adapter_spinner_borrow_type);
 
 
 
         ArrayAdapter<String> adapter_spinner_borrow_type2 = new ArrayAdapter<>(this,
-                androidx.appcompat.R.layout.support_simple_spinner_dropdown_item , ar_typeofinsentive_type);
+                R.layout.nice_select_item  , ar_typeofinsentive_type);
         sp_typeofinsentive_type.setAdapter(adapter_spinner_borrow_type2);
     }
 
@@ -56,10 +56,7 @@ public class incentive_request extends AppCompatActivity {
 
     private void Casing() {
         sp_incentive_type = findViewById(R.id.sp_incentive_type);
-
         sp_typeofinsentive_type = findViewById(R.id.sp_typeofinsentive_type);
-
-
     }
 
     public void fun_back(View view) {

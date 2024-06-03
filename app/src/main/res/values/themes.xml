@@ -17,9 +17,17 @@
     <style name="Theme.Balagat.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:windowEnterTransition">@transition/trans_anim</item>
+        <item name="android:windowExitTransition">@transition/trans_anim</item>
+
     </style>
 
     <style name="Theme.Balagat.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.Balagat.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+
 </resources>

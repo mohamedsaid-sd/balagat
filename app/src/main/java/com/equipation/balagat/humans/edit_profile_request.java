@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -15,7 +16,7 @@ import java.util.ArrayList;
 
 public class edit_profile_request extends AppCompatActivity {
 
-    Spinner sp_profile , sp_opration ;
+    AutoCompleteTextView at_profile , at_opration ;
     ArrayList<String> ar_profile , ar_opration ;
     TextInputLayout ti_profile ;
     LinearLayout layout_attach , layout_toggle ;
@@ -43,17 +44,25 @@ public class edit_profile_request extends AppCompatActivity {
         casting();
 
         ArrayAdapter<String> adapter_profile = new ArrayAdapter<>(this,
-                androidx.appcompat.R.layout.support_simple_spinner_dropdown_item , ar_profile);
-        sp_profile.setAdapter(adapter_profile);
-        sp_profile.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                R.layout.nice_select_item , ar_profile);
+        at_profile.setAdapter(adapter_profile);
+
+        at_profile.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 layout_attach.setVisibility(View.INVISIBLE);
                 ti_profile.setHint(ar_profile.get(i));
                 if(ar_profile.get(i).equals("الاسم") || ar_profile.get(i).equals("رقم الهوية") ||
                         ar_profile.get(i).equals("تاريخ الميلاد") || ar_profile.get(i).equals("رخصة القيادة")){
                     layout_attach.setVisibility(View.VISIBLE);
                 }
+            }
+        });
+
+        at_profile.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+
             }
 
             @Override
@@ -63,14 +72,14 @@ public class edit_profile_request extends AppCompatActivity {
         });
 
         ArrayAdapter<String> adapter_opration = new ArrayAdapter<>(this,
-                androidx.appcompat.R.layout.support_simple_spinner_dropdown_item , ar_opration);
-        sp_opration.setAdapter(adapter_opration);
+                R.layout.nice_select_item , ar_opration);
+        at_opration.setAdapter(adapter_opration);
 
     }
 
     private void casting() {
-        sp_profile = findViewById(R.id.sp_profile);
-        sp_opration = findViewById(R.id.sp_opration);
+        at_profile = findViewById(R.id.at_profile);
+        at_opration = findViewById(R.id.at_opration);
         ti_profile = findViewById(R.id.ti_profile);
         layout_attach = findViewById(R.id.layout_attach);
         layout_toggle = findViewById(R.id.layout_toggle);

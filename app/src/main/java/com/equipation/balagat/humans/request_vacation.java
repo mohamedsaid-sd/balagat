@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 
@@ -17,7 +18,9 @@ import java.util.ArrayList;
 public class request_vacation extends AppCompatActivity {
 
     LinearLayout layout_hag , layout_relative  ;
-    Spinner sp_vacation_type , sp_relative ;
+
+    AutoCompleteTextView sp_vacation_type  , sp_relative;
+
     ArrayList<String> ar_vication_type , ar_relative ;
 
     TextInputLayout ti_relative ,reasonlayout,filedotor;
@@ -57,64 +60,49 @@ public class request_vacation extends AppCompatActivity {
         sp_relative.setAdapter(adapter_relative);
 
 
-        sp_vacation_type.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                if(ar_vication_type.get(i).equals("حج")){
-                    ti_relative.setVisibility(View.GONE);
-                    layout_hag.setVisibility(View.VISIBLE);
-                    layout_relative.setVisibility(View.GONE);
-                    reasonlayout.setVisibility(View.GONE);
-                    filedotor.setVisibility(View.GONE);
-                }else if(ar_vication_type.get(i).equals("وفاة")){
-                    ti_relative.setVisibility(View.GONE);
-                    layout_hag.setVisibility(View.GONE);
-                    reasonlayout.setVisibility(View.GONE);
-                    filedotor.setVisibility(View.GONE);
-                    layout_relative.setVisibility(View.VISIBLE);
-                }else  if(ar_vication_type.get(i).equals(" إجازة عارضة ")||ar_vication_type.get(i).equals(" إجازة إستثنائية ")){
-                    ti_relative.setVisibility(View.GONE);
-                    layout_hag.setVisibility(View.GONE);
-                    layout_relative.setVisibility(View.GONE);
-                    filedotor.setVisibility(View.GONE);
-                    reasonlayout.setVisibility(View.VISIBLE);
+        sp_vacation_type.setOnItemClickListener((adapterView, view, i, l) -> {
+            if(ar_vication_type.get(i).equals("حج")){
+                ti_relative.setVisibility(View.GONE);
+                layout_hag.setVisibility(View.VISIBLE);
+                layout_relative.setVisibility(View.GONE);
+                reasonlayout.setVisibility(View.GONE);
+                filedotor.setVisibility(View.GONE);
+            }else if(ar_vication_type.get(i).equals("وفاة")){
+                ti_relative.setVisibility(View.GONE);
+                layout_hag.setVisibility(View.GONE);
+                reasonlayout.setVisibility(View.GONE);
+                filedotor.setVisibility(View.GONE);
+                layout_relative.setVisibility(View.VISIBLE);
+            }else  if(ar_vication_type.get(i).equals(" إجازة عارضة ")||ar_vication_type.get(i).equals(" إجازة إستثنائية ")){
+                ti_relative.setVisibility(View.GONE);
+                layout_hag.setVisibility(View.GONE);
+                layout_relative.setVisibility(View.GONE);
+                filedotor.setVisibility(View.GONE);
+                reasonlayout.setVisibility(View.VISIBLE);
 
-                }else if(ar_vication_type.get(i).equals(" إجازة مرضية ")){
-                    ti_relative.setVisibility(View.GONE);
-                    layout_hag.setVisibility(View.GONE);
-                    reasonlayout.setVisibility(View.GONE);
-                    layout_relative.setVisibility(View.GONE);
-                    filedotor.setVisibility(View.VISIBLE);
-                }else {
-                    layout_hag.setVisibility(View.GONE);
-                    layout_relative.setVisibility(View.GONE);
-                    ti_relative.setVisibility(View.GONE);
-                    reasonlayout.setVisibility(View.GONE);
-                    filedotor.setVisibility(View.GONE);
-
-
-                }
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
-
+            }else if(ar_vication_type.get(i).equals(" إجازة مرضية ")){
+                ti_relative.setVisibility(View.GONE);
+                layout_hag.setVisibility(View.GONE);
+                reasonlayout.setVisibility(View.GONE);
+                layout_relative.setVisibility(View.GONE);
+                filedotor.setVisibility(View.VISIBLE);
+            }else {
+                layout_hag.setVisibility(View.GONE);
+                layout_relative.setVisibility(View.GONE);
+                ti_relative.setVisibility(View.GONE);
+                reasonlayout.setVisibility(View.GONE);
+                filedotor.setVisibility(View.GONE);
             }
         });
 
-        sp_relative.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+        sp_relative.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 if(ar_relative.get(i).equals("نعم")){
                     ti_relative.setVisibility(View.VISIBLE);
                 }else{
                     ti_relative.setVisibility(View.GONE);
                 }
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
-
             }
         });
 
@@ -128,8 +116,6 @@ public class request_vacation extends AppCompatActivity {
         ti_relative = findViewById(R.id.ti_relative);
         reasonlayout = findViewById(R.id.reasonlayout);
         filedotor = findViewById(R.id.filedotor);
-
-
     }
 
     public void fun_back(View view) {

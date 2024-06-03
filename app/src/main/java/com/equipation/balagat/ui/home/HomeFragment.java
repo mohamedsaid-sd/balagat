@@ -1,5 +1,6 @@
 package com.equipation.balagat.ui.home;
 
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -59,29 +60,42 @@ public class HomeFragment extends Fragment {
         TextView tv_maintitle = binding.maintitle ;
 
         // الضغط علي الموارد البشرية
-        card1.setOnClickListener(view ->
-                startActivity(new Intent(getActivity() , main_human.class)));
+        card1.setOnClickListener(view -> {
+                    Bundle b = ActivityOptions.makeSceneTransitionAnimation(getActivity()).toBundle();
+                    startActivity(new Intent(getActivity(), main_human.class) , b);
+                }
+        );
 
         // الضغط علي العقودات
-        card2.setOnClickListener(view ->
-                startActivity(new Intent(getActivity() , home_sub1.class)));
+        card2.setOnClickListener(view ->{
+            Bundle b = ActivityOptions.makeSceneTransitionAnimation(getActivity()).toBundle();
+            startActivity(new Intent(getActivity() , home_sub1.class) , b);
+        });
 
         // الضغط علي المشتريات
         card3.setOnClickListener(view ->
-                startActivity(new Intent(getActivity() , purchases.class)));
+        {
+            Bundle b = ActivityOptions.makeSceneTransitionAnimation(getActivity()).toBundle();
+            startActivity(new Intent(getActivity(), purchases.class) , b);
+        });
 
         // الضغط علي ساعات العمل
-        card4.setOnClickListener(view ->
-                startActivity(new Intent(getActivity() , time.class)));
-
+        card4.setOnClickListener(view ->{
+            Bundle b = ActivityOptions.makeSceneTransitionAnimation(getActivity()).toBundle();
+            startActivity(new Intent(getActivity() , time.class) , b );
+        });
 
         // الضغط علي المنصرفات الادارية
-        card8.setOnClickListener(view ->
-                startActivity(new Intent(getActivity() , expenses.class)));
+        card8.setOnClickListener(view -> {
+            Bundle b = ActivityOptions.makeSceneTransitionAnimation(getActivity()).toBundle();
+            startActivity(new Intent(getActivity(), expenses.class) , b);
+        });
 
         // الضغط علي المخزن
-        card9.setOnClickListener(view ->
-                startActivity(new Intent(getActivity() , home_sub2.class)));
+        card9.setOnClickListener(view -> {
+            Bundle b = ActivityOptions.makeSceneTransitionAnimation(getActivity()).toBundle();
+            startActivity(new Intent(getActivity(), home_sub2.class), b);
+        });
 
         final TextView textView = binding.textHome;
 
@@ -95,6 +109,7 @@ public class HomeFragment extends Fragment {
 
         homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
+
     }
 
     @Override

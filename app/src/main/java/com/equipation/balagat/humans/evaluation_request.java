@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Spinner;
 
 import com.equipation.balagat.R;
@@ -15,7 +16,7 @@ import java.util.ArrayList;
 public class evaluation_request extends AppCompatActivity {
 
 
-    Spinner sp_evaluation_type, sp_evaluationtime_type ;
+    AutoCompleteTextView at_evaluation_type, at_evaluationtime_type ;
     ArrayList<String> ar_evaluation_type, ar_evaluationtime_type;
 
     @Override
@@ -41,16 +42,16 @@ public class evaluation_request extends AppCompatActivity {
           Casing();
         ArrayAdapter<String> adapter_spinner_borrow_type = new ArrayAdapter<>(this,
                 androidx.appcompat.R.layout.support_simple_spinner_dropdown_item , ar_evaluation_type);
-        sp_evaluation_type.setAdapter(adapter_spinner_borrow_type);
+        at_evaluation_type.setAdapter(adapter_spinner_borrow_type);
 
         ArrayAdapter<String> adapter_spinner_borrow_type2 = new ArrayAdapter<>(this,
                 androidx.appcompat.R.layout.support_simple_spinner_dropdown_item , ar_evaluationtime_type);
-        sp_evaluationtime_type.setAdapter(adapter_spinner_borrow_type2);
+        at_evaluationtime_type.setAdapter(adapter_spinner_borrow_type2);
 
     }
     private void Casing() {
-        sp_evaluation_type = findViewById(R.id.sp_evaluation_type);
-        sp_evaluationtime_type = findViewById(R.id.sp_evaluationtime_type);
+        at_evaluation_type = findViewById(R.id.at_evaluation_type);
+        at_evaluationtime_type = findViewById(R.id.at_evaluationtime_type);
     }
 
     public void fun_back(View view) {

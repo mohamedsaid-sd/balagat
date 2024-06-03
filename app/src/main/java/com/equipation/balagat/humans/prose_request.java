@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 
@@ -18,7 +19,8 @@ public class prose_request extends AppCompatActivity {
 
     LinearLayout layout_travel , layout_feed ;
 
-    Spinner sp_prose_type , sp_prose_feed_type , sp_prose_reasone ;
+    AutoCompleteTextView sp_prose_type , sp_prose_feed_type  , sp_prose_reasone ;
+
     ArrayList<String>  ar_prose_type , ar_prose_feed_type , ar_prose_reason ;
 
     @Override
@@ -62,21 +64,13 @@ public class prose_request extends AppCompatActivity {
         // hide the feed layout when lunch activity
         layout_feed.setVisibility(View.GONE);
 
-        sp_prose_type.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-            @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                if(ar_prose_type.get(i).equals("نثرية إعاشة")){
-                    layout_feed.setVisibility(View.VISIBLE);
-                    layout_travel.setVisibility(View.GONE);
-                }else{
-                    layout_feed.setVisibility(View.GONE);
-                    layout_travel.setVisibility(View.VISIBLE);
-                }
-            }
-
-            @Override
-            public void onNothingSelected(AdapterView<?> adapterView) {
-
+        sp_prose_type.setOnItemClickListener((adapterView, view, i, l) -> {
+            if(ar_prose_type.get(i).equals("نثرية إعاشة")){
+                layout_feed.setVisibility(View.VISIBLE);
+                layout_travel.setVisibility(View.GONE);
+            }else{
+                layout_feed.setVisibility(View.GONE);
+                layout_travel.setVisibility(View.VISIBLE);
             }
         });
 

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Spinner;
 
 import com.equipation.balagat.R;
@@ -13,7 +14,7 @@ import java.util.ArrayList;
 
 public class moretidy_request extends AppCompatActivity {
 
-    Spinner sp_moretidy_type ;
+    AutoCompleteTextView sp_moretidy_type ;
     ArrayList<String> ar_moretidy_type;
 
     @Override
