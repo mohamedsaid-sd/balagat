@@ -4,39 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".fleet">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:background="@drawable/circle_white"
+        android:orientation="vertical"
+        android:paddingBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:layout_margin="20dp"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
 
             <TextView
                 android:id="@+id/textView14"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="@color/gold"
                 android:fontFamily="@font/jana"
+                android:gravity="center"
                 android:padding="5dp"
                 android:text="الاسطول"
                 android:textColor="@color/black"
-                android:textSize="20dp"
-                android:textStyle="bold" />
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
 
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:background="@color/gray"
+                android:background="@drawable/whiteroundblack"
                 android:onClick="fun_back"
                 android:padding="5dp"
-                app:srcCompat="@drawable/ic_baseline_arrow_forward_ios_24" />
+                app:srcCompat="@drawable/ic_baseline_arrow_forward_ios_24"
+                tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
         </LinearLayout>
 
         <ScrollView
@@ -51,53 +60,44 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    tools:ignore="UselessParent">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
 
-                        <androidx.cardview.widget.CardView
+                        <TextView
+                            android:id="@+id/textView15"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             android:layout_weight="1"
-                            android:background="@drawable/round"
-                           >
+                            android:background="@drawable/whiteroundblack"
+                            android:fontFamily="@font/jana"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="إضافة معدة"
+                            android:textSize="12sp"
+                            app:drawableTopCompat="@drawable/ic_baseline_local_shipping_24"
+                            tools:ignore="HardcodedText" />
 
-                            <TextView
-                                android:id="@+id/textView15"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:drawableTop="@drawable/ic_baseline_local_shipping_24"
-                                android:fontFamily="@font/jana"
-                                android:gravity="center"
-                                android:padding="5dp"
-                                android:text="إضافة معدة"
-                                android:textSize="12sp" />
-                        </androidx.cardview.widget.CardView>
-
-                        <androidx.cardview.widget.CardView
+                        <TextView
+                            android:id="@+id/textView16"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             android:layout_weight="1"
-                            android:background="@drawable/round"
-                           >
+                            android:background="@drawable/whiteroundblack"
+                            android:drawableTop="@drawable/ic_baseline_local_shipping_24"
+                            android:fontFamily="@font/jana"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="إضافة ملحق آالية"
+                            android:textSize="12sp"
+                            tools:ignore="HardcodedText,UseCompatTextViewDrawableXml" />
 
-                            <TextView
-                                android:id="@+id/textView16"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:drawableTop="@drawable/ic_baseline_local_shipping_24"
-                                android:fontFamily="@font/jana"
-                                android:gravity="center"
-                                android:padding="5dp"
-                                android:text="إضافة ملحق آالية"
-
-                                android:textSize="12sp" />
-                        </androidx.cardview.widget.CardView>
                     </LinearLayout>
 
                     <LinearLayout
@@ -105,47 +105,37 @@
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
 
-                        <androidx.cardview.widget.CardView
+                        <TextView
+                            android:id="@+id/textView17"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             android:layout_weight="1"
-                            android:background="@drawable/round"
-                            >
+                            android:background="@drawable/whiteroundblack"
+                            android:fontFamily="@font/jana"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="التفتيش الشهرى"
+                            android:textSize="12sp"
+                            app:drawableTopCompat="@drawable/ic_baseline_local_shipping_24"
+                            tools:ignore="HardcodedText" />
 
-                            <TextView
-                                android:id="@+id/textView17"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:drawableTop="@drawable/ic_baseline_local_shipping_24"
-                                android:fontFamily="@font/jana"
-                                android:gravity="center"
-                                android:padding="5dp"
-                                android:text="التفتيش الشهرى"
-
-                                android:textSize="12sp" />
-                        </androidx.cardview.widget.CardView>
-
-                        <androidx.cardview.widget.CardView
+                        <TextView
+                            android:id="@+id/textView18"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             android:layout_weight="1"
-                            android:background="@drawable/round"
-                           >
+                            android:background="@drawable/whiteroundblack"
+                            android:drawableTop="@drawable/ic_baseline_local_shipping_24"
+                            android:fontFamily="@font/jana"
 
-                            <TextView
-                                android:id="@+id/textView18"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:drawableTop="@drawable/ic_baseline_local_shipping_24"
-                                android:fontFamily="@font/jana"
-                                android:gravity="center"
-                                android:padding="5dp"
-                                android:text="احتياجات المعدة"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="احتياجات المعدة"
+                            android:textSize="12sp"
+                            tools:ignore="HardcodedText,UseCompatTextViewDrawableXml" />
 
-                                android:textSize="12sp" />
-                        </androidx.cardview.widget.CardView>
                     </LinearLayout>
 
                     <LinearLayout
@@ -153,34 +143,27 @@
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
 
-                        <androidx.cardview.widget.CardView
+                        <TextView
+                            android:id="@+id/textView19"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             android:layout_weight="1"
-                            android:background="@drawable/round"
-                            >
-
-                            <TextView
-                                android:id="@+id/textView19"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:drawableTop="@drawable/ic_baseline_local_shipping_24"
-                                android:fontFamily="@font/jana"
-                                android:gravity="center"
-                                android:padding="5dp"
-                                android:text="الترخيص والتأمين"
-
-                                android:textSize="12sp" />
-                        </androidx.cardview.widget.CardView>
+                            android:background="@drawable/whiteroundblack"
+                            android:fontFamily="@font/jana"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="الترخيص والتأمين"
+                            android:textSize="12sp"
+                            app:drawableTopCompat="@drawable/ic_baseline_local_shipping_24"
+                            tools:ignore="HardcodedText" />
 
                         <androidx.cardview.widget.CardView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             android:layout_weight="1"
-                            android:background="@drawable/round"
-                            android:onClick="fun_open_resignation_request"
+                            android:background="@drawable/whiteroundblack"
                             app:cardBackgroundColor="@color/white" />
 
                     </LinearLayout>

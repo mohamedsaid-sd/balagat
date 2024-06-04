@@ -17,7 +17,8 @@
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            tools:ignore="UselessParent">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -32,22 +33,24 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="left"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    tools:ignore="RtlHardcoded,UseCompoundDrawables">
 
                     <TextView
                         android:id="@+id/txt_name"
-                        android:layout_width="match_parent"
+                        android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_margin="20dp"
                         android:layout_weight="1"
-                        android:drawableStart="@drawable/ic_baseline_supervised_user_circle_24"
                         android:fontFamily="@font/jana"
                         android:gravity="center"
                         android:padding="5dp"
                         android:text="الموارد البشرية"
                         android:textColor="@color/black"
-                        android:textSize="20dp"
-                        android:textStyle="bold" />
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:drawableStartCompat="@drawable/ic_baseline_supervised_user_circle_24"
+                        tools:ignore="HardcodedText,UseCompatTextViewDrawableXml" />
 
                     <ImageView
                         android:id="@+id/imageView2"
@@ -55,9 +58,11 @@
                         android:layout_height="50dp"
                         android:layout_margin="15dp"
                         android:background="@drawable/whiteroundblack"
+                        android:contentDescription="@string/Image"
                         android:onClick="fun_back"
                         android:padding="5dp"
-                        app:srcCompat="@drawable/ic_baseline_arrow_forward_ios_24" />
+                        app:srcCompat="@drawable/ic_baseline_arrow_forward_ios_24"
+                        tools:ignore="ContentDescription,TouchTargetSizeCheck" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -79,7 +84,6 @@
                             android:layout_margin="10dp"
                             android:layout_weight="1"
                             android:background="@drawable/whiteroundblack"
-                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
                             android:onClick="fun_cat_employee"
@@ -87,7 +91,9 @@
                             android:text="التوظيف"
                             android:textColor="@color/black"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
+                            tools:ignore="HardcodedText" />
 
                         <TextView
                             android:id="@+id/textView16"
@@ -96,7 +102,6 @@
                             android:layout_margin="10dp"
                             android:layout_weight="1"
                             android:background="@drawable/whiteroundblack"
-                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
                             android:onClick="fun_cat_borrow"
@@ -104,7 +109,9 @@
                             android:text="المستحقات والسلفيات"
                             android:textColor="@color/black"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
+                            tools:ignore="HardcodedText" />
 
                     </LinearLayout>
 
@@ -129,7 +136,8 @@
                             android:text="العهد والنثريات"
                             android:textColor="@color/black"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText,NestedWeights,UseCompatTextViewDrawableXml" />
 
                         <TextView
                             android:id="@+id/txt_resignation"
@@ -138,7 +146,6 @@
                             android:layout_margin="10dp"
                             android:layout_weight="1"
                             android:background="@drawable/whiteroundblack"
-                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
                             android:onClick="fun_cat_trainig"
@@ -146,7 +153,9 @@
                             android:text="الحضور والاداء"
                             android:textColor="@color/black"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
+                            tools:ignore="HardcodedText" />
 
                     </LinearLayout>
 
@@ -164,7 +173,6 @@
                             android:layout_margin="10dp"
                             android:layout_weight="1"
                             android:background="@drawable/whiteroundblack"
-                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
                             android:onClick="fun_cat_development"
@@ -172,7 +180,9 @@
                             android:text="التدريب والتطوير"
                             android:textColor="@color/black"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
+                            tools:ignore="HardcodedText,NestedWeights" />
 
                         <TextView
                             android:id="@+id/txt_complant"
@@ -181,7 +191,6 @@
                             android:layout_margin="10dp"
                             android:layout_weight="1"
                             android:background="@drawable/whiteroundblack"
-                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
                             android:onClick="fun_complant_request"
@@ -190,7 +199,9 @@
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold"
-                            android:visibility="invisible" />
+                            android:visibility="invisible"
+                            app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
+                            tools:ignore="HardcodedText" />
 
                     </LinearLayout>
 
@@ -222,7 +233,8 @@
                             android:text="التاجير"
                             android:textColor="@color/black"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            tools:ignore="HardcodedText,UseCompatTextViewDrawableXml" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -230,20 +242,21 @@
                             android:layout_margin="10dp"
                             android:layout_weight="1"
                             android:background="@drawable/whiteroundblack"
-                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
                             android:padding="5dp"
                             android:text="الإنتاج"
                             android:textColor="@color/black"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
+                            tools:ignore="HardcodedText" />
 
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="0dp"
                         android:layout_weight="1"
                         android:orientation="horizontal">
 
@@ -253,14 +266,15 @@
                             android:layout_margin="10dp"
                             android:layout_weight="1"
                             android:background="@drawable/whiteroundblack"
-                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
                             android:padding="5dp"
                             android:text="المقاولة"
                             android:textColor="@color/black"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
+                            tools:ignore="HardcodedText,NestedWeights" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -268,16 +282,16 @@
                             android:layout_margin="10dp"
                             android:layout_weight="1"
                             android:background="@drawable/whiteroundblack"
-                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
-                            android:onClick="fun_cat_trainig"
                             android:padding="5dp"
                             android:text="الحضور والاداء"
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold"
-                            android:visibility="invisible" />
+                            android:visibility="invisible"
+                            app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
+                            tools:ignore="HardcodedText" />
 
                     </LinearLayout>
 
@@ -302,14 +316,15 @@
                             android:layout_margin="10dp"
                             android:layout_weight="1"
                             android:background="@drawable/whiteroundblack"
-                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
                             android:padding="5dp"
                             android:text="المعدات الثقيلة"
                             android:textColor="@color/black"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
+                            tools:ignore="HardcodedText" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -317,20 +332,21 @@
                             android:layout_margin="10dp"
                             android:layout_weight="1"
                             android:background="@drawable/whiteroundblack"
-                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
                             android:padding="5dp"
                             android:text="الشاحنات والقلابات"
                             android:textColor="@color/black"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
+                            tools:ignore="HardcodedText" />
 
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="0dp"
                         android:layout_weight="1"
                         android:orientation="horizontal">
 
@@ -340,7 +356,6 @@
                             android:layout_margin="10dp"
                             android:layout_weight="1"
                             android:background="@drawable/whiteroundblack"
-                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
                             android:onClick="fun_maintenance"
@@ -348,7 +363,9 @@
                             android:text="الصيانة"
                             android:textColor="@color/black"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
+                            tools:ignore="HardcodedText,NestedWeights" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -356,7 +373,6 @@
                             android:layout_margin="10dp"
                             android:layout_weight="1"
                             android:background="@drawable/whiteroundblack"
-                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
                             android:padding="5dp"
@@ -364,7 +380,9 @@
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold"
-                            android:visibility="visible" />
+                            android:visibility="visible"
+                            app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
+                            tools:ignore="HardcodedText" />
 
                     </LinearLayout>
 
@@ -389,7 +407,6 @@
                             android:layout_margin="10dp"
                             android:layout_weight="1"
                             android:background="@drawable/whiteroundblack"
-                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
                             android:onClick="fun_purchases"
@@ -397,7 +414,9 @@
                             android:text="المشتروات"
                             android:textColor="@color/black"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
+                            tools:ignore="HardcodedText" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -405,14 +424,15 @@
                             android:layout_margin="10dp"
                             android:layout_weight="1"
                             android:background="@drawable/whiteroundblack"
-                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
                             android:padding="5dp"
                             android:text="الترحيل"
                             android:textColor="@color/black"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
+                            tools:ignore="HardcodedText" />
 
                     </LinearLayout>
 
@@ -427,7 +447,6 @@
                             android:layout_margin="10dp"
                             android:layout_weight="1"
                             android:background="@drawable/whiteroundblack"
-                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
                             android:onClick="fiun_stock"
@@ -435,7 +454,9 @@
                             android:text="المخزن"
                             android:textColor="@color/black"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
+                            tools:ignore="HardcodedText" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -443,14 +464,15 @@
                             android:layout_margin="10dp"
                             android:layout_weight="1"
                             android:background="@drawable/whiteroundblack"
-                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
                             android:padding="5dp"
                             android:text="عقودات المعدات الخارجية"
                             android:textColor="@color/black"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
+                            tools:ignore="HardcodedText" />
 
                     </LinearLayout>
 
@@ -465,7 +487,6 @@
                             android:layout_margin="10dp"
                             android:layout_weight="1"
                             android:background="@drawable/whiteroundblack"
-                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
                             android:onClick="fun_contract"
@@ -473,7 +494,9 @@
                             android:text="العقودات"
                             android:textColor="@color/black"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
+                            tools:ignore="HardcodedText" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -481,7 +504,6 @@
                             android:layout_margin="10dp"
                             android:layout_weight="1"
                             android:background="@drawable/whiteroundblack"
-                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
                             android:padding="5dp"
@@ -489,7 +511,9 @@
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold"
-                            android:visibility="invisible" />
+                            android:visibility="invisible"
+                            app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
+                            tools:ignore="HardcodedText" />
 
                     </LinearLayout>
 
@@ -513,14 +537,15 @@
                             android:layout_margin="10dp"
                             android:layout_weight="1"
                             android:background="@drawable/whiteroundblack"
-                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
                             android:padding="5dp"
                             android:text="مكتب عطبرة"
                             android:textColor="@color/black"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
+                            tools:ignore="HardcodedText" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -528,14 +553,15 @@
                             android:layout_margin="10dp"
                             android:layout_weight="1"
                             android:background="@drawable/whiteroundblack"
-                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
                             android:padding="5dp"
                             android:text="موقع قبقبة"
                             android:textColor="@color/black"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
+                            tools:ignore="HardcodedText" />
 
                     </LinearLayout>
 
@@ -559,14 +585,15 @@
                             android:layout_margin="10dp"
                             android:layout_weight="1"
                             android:background="@drawable/whiteroundblack"
-                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
                             android:padding="5dp"
                             android:text=" التواصل المستمر "
                             android:textColor="@color/black"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
+                            tools:ignore="HardcodedText" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -574,14 +601,15 @@
                             android:layout_margin="10dp"
                             android:layout_weight="1"
                             android:background="@drawable/whiteroundblack"
-                            android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
                             android:padding="5dp"
                             android:text=" الشكاوى والمقترحات "
                             android:textColor="@color/black"
                             android:textSize="12sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"
+                            app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
+                            tools:ignore="HardcodedText" />
 
                     </LinearLayout>
 
@@ -600,7 +628,8 @@
                     android:text="مع تحيات فريق الموارد البشرية"
                     android:textColor="@color/lite"
                     android:textSize="14sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText,InefficientWeight" />
 
 
 

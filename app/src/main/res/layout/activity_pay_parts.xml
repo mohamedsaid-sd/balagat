@@ -4,21 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".maintenances.pay_parts">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/circle_white"
             android:orientation="vertical"
+            android:paddingBottom="30dp"
             tools:ignore="MissingConstraints">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="20dp"
                 android:orientation="horizontal"
                 tools:ignore="UseCompoundDrawables">
 
@@ -26,8 +33,8 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@color/gold"
                     android:fontFamily="@font/jana"
+                    android:gravity="center"
                     android:padding="5dp"
                     android:text="طلب  شراء قطع غيار"
                     android:textColor="@color/black"
@@ -39,7 +46,7 @@
                     android:id="@+id/imageView2"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:background="@color/red"
+                    android:background="@drawable/whiteroundblack"
                     android:onClick="fun_back"
                     android:padding="5dp"
                     app:srcCompat="@drawable/ic_baseline_close_24"
@@ -60,50 +67,50 @@
                     android:visibility="visible">
 
 
-
-
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="3dp"
-                        android:padding="3dp">
+                        android:padding="3dp"
+                        app:boxStrokeWidth="0dp">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
                             android:hint="العداد الحالي"
                             android:inputType="textPersonName"
                             tools:ignore="HardcodedText" />
                     </com.google.android.material.textfield.TextInputLayout>
 
-                    <TextView
-                        android:id="@+id/textViewW20"
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_margin="3dp"
-                        android:fontFamily="@font/jana"
-                        android:padding="3dp"
-                        android:text="طبيعه عمل الالية  "
-                        android:textStyle="bold"
-                        tools:ignore="HardcodedText" />
-
-                    <Spinner
-                        android:id="@+id/sp_machine_type"
-                        style="@android:style/Widget.Spinner.DropDown"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="3dp" />
+                        android:layout_margin="10dp"
+                        android:hint="طبيعه عمل الالية"
+                        app:boxStrokeWidth="0dp">
+                        <AutoCompleteTextView
+                            android:id="@+id/sp_machine_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:inputType="none">
+                        </AutoCompleteTextView>
+                    </com.google.android.material.textfield.TextInputLayout>
 
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="3dp"
-                        android:padding="3dp">
+                        android:padding="3dp"
+                        app:boxStrokeWidth="0dp">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
                             android:hint=" نوع الاسبير المطلوب"
                             android:inputType="textPersonName"
                             tools:ignore="HardcodedText" />
@@ -113,11 +120,13 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="3dp"
-                        android:padding="3dp">
+                        android:padding="3dp"
+                        app:boxStrokeWidth="0dp">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
                             android:hint=" الكمية المطلوبة  "
                             android:inputType="textPersonName"
                             tools:ignore="HardcodedText" />
@@ -127,11 +136,13 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="3dp"
-                        android:padding="3dp">
+                        android:padding="3dp"
+                        app:boxStrokeWidth="0dp">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
                             android:hint=" الزمن المقترح للشراء"
                             android:inputType="textPersonName"
                             tools:ignore="HardcodedText" />
@@ -141,11 +152,13 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="3dp"
-                        android:padding="3dp">
+                        android:padding="3dp"
+                        app:boxStrokeWidth="0dp">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
                             android:hint=" فاتوره مبدئية"
                             android:inputType="textPersonName"
                             tools:ignore="HardcodedText" />
@@ -174,18 +187,21 @@
                         android:orientation="vertical"
                         android:padding="3dp">
 
-                        <TextView
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_margin="3dp"
-                            android:padding="3dp"
-                            android:text="  موقع المحل التجاري " />
-                        <Spinner
-                            android:id="@+id/sp_location_type"
-                            style="@android:style/Widget.Spinner.DropDown"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="3dp" />
+                            android:layout_margin="10dp"
+                            android:hint="موقع المحل التجاري "
+                            app:boxStrokeWidth="0dp">
+                            <AutoCompleteTextView
+                                android:id="@+id/sp_location_type"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/formbackground"
+                                android:inputType="none">
+                            </AutoCompleteTextView>
+                        </com.google.android.material.textfield.TextInputLayout>
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -202,8 +218,8 @@
                         android:layout_height="match_parent"
                         android:layout_margin="3dp"
                         android:orientation="vertical"
-                        android:visibility="gone"
-                        android:padding="3dp">
+                        android:padding="3dp"
+                        android:visibility="gone">
 
 
                         <com.google.android.material.textfield.TextInputLayout
@@ -221,7 +237,6 @@
                         </com.google.android.material.textfield.TextInputLayout>
 
 
-
                         <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -237,11 +252,8 @@
                         </com.google.android.material.textfield.TextInputLayout>
 
 
-
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
-
-
 
 
                 <androidx.cardview.widget.CardView
@@ -266,36 +278,32 @@
                             android:text="  حساب بنكي" />
 
 
-
-
-
-
-
                         <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
-                            android:padding="3dp">
+                            android:padding="3dp"
+                            app:boxStrokeWidth="0dp">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:background="@drawable/formbackground"
                                 android:hint="الأسم " />
                         </com.google.android.material.textfield.TextInputLayout>
 
 
-
-
-
                         <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
-                            android:padding="3dp">
+                            android:padding="3dp"
+                            app:boxStrokeWidth="0dp">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:background="@drawable/formbackground"
                                 android:hint=" الرقم" />
                         </com.google.android.material.textfield.TextInputLayout>
 
@@ -304,11 +312,13 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
-                            android:padding="3dp">
+                            android:padding="3dp"
+                            app:boxStrokeWidth="0dp">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:background="@drawable/formbackground"
                                 android:hint="رقم الهاتف" />
                         </com.google.android.material.textfield.TextInputLayout>
 
@@ -317,28 +327,20 @@
                 </androidx.cardview.widget.CardView>
 
 
-
-
-
-
-
-
-
-
-
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="3dp"
-                    android:padding="3dp">
+                    android:padding="3dp"
+                    app:boxStrokeWidth="0dp">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="@drawable/formbackground"
                         android:hint="  ملاحظات"
                         android:inputType="number" />
                 </com.google.android.material.textfield.TextInputLayout>
-
 
 
                 <Button

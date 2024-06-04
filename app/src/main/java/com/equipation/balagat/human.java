@@ -240,4 +240,5 @@ public class human extends AppCompatActivity {
         Bundle b = ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
         startActivity(new Intent(this , contract.class) , b );
     }
+
 }

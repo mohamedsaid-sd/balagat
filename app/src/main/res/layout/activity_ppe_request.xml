@@ -245,16 +245,13 @@
                             android:layout_margin="10dp"
                             android:hint="نوع المعدة المطلوبة"
                             app:boxStrokeWidth="0dp">
-
                             <AutoCompleteTextView
                                 android:id="@+id/filed_exposed"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/formbackground"
                                 android:inputType="none">
-
                             </AutoCompleteTextView>
-
                         </com.google.android.material.textfield.TextInputLayout>
 
                         <com.google.android.material.textfield.TextInputLayout

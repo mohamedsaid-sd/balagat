@@ -20,7 +20,7 @@ public class stock extends AppCompatActivity {
     }
 
     public void fun_back(View view) {
-        super.onBackPressed();
+        super.getOnBackPressedDispatcher().onBackPressed();
     }
 
     public void fun_add_items(View view) {

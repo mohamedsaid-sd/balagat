@@ -22,7 +22,7 @@ public class maintenance extends AppCompatActivity {
     }
 
     public void fun_back(View view) {
-        super.onBackPressed();
+        super.getOnBackPressedDispatcher().onBackPressed();
     }
 
     public void fun_asper_request(View view) {

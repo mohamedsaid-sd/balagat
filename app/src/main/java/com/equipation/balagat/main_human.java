@@ -1,18 +1,12 @@
 package com.equipation.balagat;
 
-import android.app.Activity;
 import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-
-//import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 import java.util.Objects;
 
@@ -41,6 +35,7 @@ public class main_human extends AppCompatActivity {
 
         FLAG = Objects.requireNonNull(getIntent().getExtras()).getString("FLAG");
 
+        assert FLAG != null;
         if(FLAG.equals("الموارد البشرية")){txt_name.setText(FLAG);lay_human.setVisibility(View.VISIBLE);}
         if(FLAG.equals("التشغيل")){txt_name.setText(FLAG); lay_opration.setVisibility(View.VISIBLE);}
         if(FLAG.equals("الاسطول")){txt_name.setText(FLAG);lay_fleet.setVisibility(View.VISIBLE);}
@@ -63,55 +58,46 @@ public class main_human extends AppCompatActivity {
     }
 
     public void fun_back(View view) {
-        super.onBackPressed();
+        super.getOnBackPressedDispatcher().onBackPressed();
     }
 
     public void fun_cat_employee(View view) {
-        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
-        startActivity(new Intent( this , human.class ).putExtra( "FLAG" , "employee" ) , b);
+        startActivity(new Intent( this , human.class ).putExtra( "FLAG" , "employee" ));
     }
 
     public void fun_contract(View view) {
-        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
-        startActivity(new Intent( this , home_sub1.class ).putExtra( "FLAG" , "employee" ) , b);
+        startActivity(new Intent( this , home_sub1.class ).putExtra( "FLAG" , "employee" ));
     }
 
     public void fiun_stock(View view) {
-        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
-        startActivity(new Intent( this , stock.class ).putExtra( "FLAG" , "employee" ) , b);
+        startActivity(new Intent( this , stock.class ).putExtra( "FLAG" , "employee" ));
     }
     public void fun_purchases(View view) {
-        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
-        startActivity(new Intent( this , purchases.class ).putExtra( "FLAG" , "employee" ) , b);
+        startActivity(new Intent( this , purchases.class ).putExtra( "FLAG" , "employee" ));
     }
 
 
     public void fun_maintenance(View view) {
-        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
-        startActivity(new Intent( this , maintenance.class ).putExtra( "FLAG" , "employee" ) , b);
+        startActivity(new Intent( this , maintenance.class ).putExtra( "FLAG" , "employee" ));
     }
 
 
 
 
     public void fun_cat_borrow(View view) {
-        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
-        startActivity(new Intent( this , human.class ).putExtra( "FLAG" , "borrow" ) , b  );
+        startActivity(new Intent( this , human.class ).putExtra( "FLAG" , "borrow" ));
     }
 
     public void fun_cat_prose(View view) {
-        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
-        startActivity(new Intent( this , human.class ).putExtra( "FLAG" , "prose" ) , b);
+        startActivity(new Intent( this , human.class ).putExtra( "FLAG" , "prose" ));
     }
 
     public void fun_cat_trainig(View view) {
-        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
-        startActivity(new Intent( this , human.class ).putExtra( "FLAG" , "trainig" ) , b);
+        startActivity(new Intent( this , human.class ).putExtra( "FLAG" , "trainig" ) );
     }
 
     public void fun_cat_development(View view) {
-        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
-        startActivity(new Intent( this , human.class ).putExtra( "FLAG" , "development" ) , b);
+        startActivity(new Intent( this , human.class ).putExtra( "FLAG" , "development" ) );
     }
 
 }

@@ -14,6 +14,6 @@ public class purchases extends AppCompatActivity {
     }
 
     public void fun_back(View view) {
-        super.onBackPressed();
+        super.getOnBackPressedDispatcher().onBackPressed();
     }
 }

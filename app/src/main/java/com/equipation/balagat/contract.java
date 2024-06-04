@@ -5,10 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.equipation.balagat.contracts.contract_location;
 import com.equipation.balagat.contracts.contract_terms;
 import com.equipation.balagat.contracts.contract_time;
-import com.equipation.balagat.contracts.request_renew_contract;
-
-import com.equipation.balagat.contracts.request_new_contract;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -22,7 +18,7 @@ public class contract extends AppCompatActivity {
     }
 
     public void fun_back(View view) {
-        super.onBackPressed();
+        super.getOnBackPressedDispatcher().onBackPressed();
     }
 
 
