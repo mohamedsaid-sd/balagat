@@ -25,4 +25,7 @@ public class home_sub2 extends AppCompatActivity {
     public void fiun_stock(View view) {
         startActivity(new Intent(this , stock.class));
     }
+
+    public void fun_back(View view) {
+    }
 }

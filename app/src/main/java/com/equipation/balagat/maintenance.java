@@ -10,8 +10,8 @@ import com.equipation.balagat.maintenances.periodic_maintenance_request;
 import com.equipation.balagat.maintenances.therapeutic_maintenance_request;
 import com.equipation.balagat.maintenances.part_maintenance;
 import com.equipation.balagat.maintenances.pay_parts;
-import com.equipation.balagat.maintenances.automated_deportation_request;
-import com.equipation.balagat.maintenances.asper_deportation_request;
+import com.equipation.balagat.maintenances.malfunction_maintenace;
+import com.equipation.balagat.maintenances.monthly;
 
 public class maintenance extends AppCompatActivity {
 
@@ -46,11 +46,11 @@ public class maintenance extends AppCompatActivity {
     }
 
     public void fun_automated_deportation(View view) {
-        startActivity(new Intent(this , automated_deportation_request.class ));
+        startActivity(new Intent(this , malfunction_maintenace.class ));
     }
 
     public void fun_asper_deportation(View view) {
-        startActivity(new Intent(this , asper_deportation_request.class ));
+        startActivity(new Intent(this , monthly.class ));
     }
 
 

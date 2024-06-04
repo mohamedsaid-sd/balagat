@@ -131,7 +131,7 @@
                             tools:ignore="HardcodedText" />
 
                         <TextView
-                            android:id="@+id/textView161"
+                            android:id="@+id/textView1619"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"

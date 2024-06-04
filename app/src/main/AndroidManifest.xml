@@ -135,10 +135,10 @@
             android:name=".contracts.request_renew_contract"
             android:exported="false" /> <!-- Maintenance requests -->
         <activity
-            android:name=".maintenances.asper_deportation_request"
+            android:name=".maintenances.monthly"
             android:exported="false" />
         <activity
-            android:name=".maintenances.automated_deportation_request"
+            android:name=".maintenances.malfunction_maintenace"
             android:exported="false" />
         <activity
             android:name=".maintenances.pay_parts"
