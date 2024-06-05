@@ -8,6 +8,10 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.equipation.balagat.opration.Production_contract;
+import com.equipation.balagat.opration.constraction_contract;
+import com.equipation.balagat.opration.rental_contract;
+
 import java.util.Objects;
 
 //import com.equipation.balagat.humans.cat_employee;
@@ -100,4 +104,19 @@ public class main_human extends AppCompatActivity {
         startActivity(new Intent( this , human.class ).putExtra( "FLAG" , "development" ) );
     }
 
+    public void fun_rental(View view) {
+        startActivity(new Intent( this , rental_contract.class ).putExtra( "FLAG" , "" ) );
+
+    }
+
+    public void fun_production(View view) {
+        startActivity(new Intent( this , Production_contract.class ).putExtra( "FLAG" , "" ) );
+
+    }
+
+
+    public void fun_constraction(View view) {
+        startActivity(new Intent( this , constraction_contract.class ).putExtra( "FLAG" , "" ) );
+
+    }
 }

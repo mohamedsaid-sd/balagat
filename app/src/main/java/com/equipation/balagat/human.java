@@ -241,4 +241,5 @@ public class human extends AppCompatActivity {
         startActivity(new Intent(this , contract.class) , b );
     }
 
+
 }

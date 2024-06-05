@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".human">
+    tools:context=".main_human">
 
 
     <LinearLayout
@@ -234,6 +234,7 @@
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold"
+                            android:onClick="fun_rental"
                             tools:ignore="HardcodedText,UseCompatTextViewDrawableXml" />
 
                         <TextView
@@ -246,6 +247,7 @@
                             android:gravity="center"
                             android:padding="5dp"
                             android:text="الإنتاج"
+                            android:onClick="fun_production"
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold"
@@ -273,6 +275,8 @@
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold"
+                            android:onClick="fun_constraction"
+
                             app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
                             tools:ignore="HardcodedText,NestedWeights" />
 
@@ -495,6 +499,7 @@
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold"
+                            android:visibility="gone"
                             app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
                             tools:ignore="HardcodedText" />
 
