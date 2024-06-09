@@ -15,9 +15,7 @@
         <activity
             android:name=".out_equipment_contract.out_equipment_contract"
             android:exported="false" />
-        <activity
-            android:name=".humans.cat_employee"
-            android:exported="false" />
+
         <activity
             android:name=".main_human"
             android:exported="false" />
@@ -47,9 +45,6 @@
             android:exported="false" />
         <activity
             android:name=".contract_time_sheet"
-            android:exported="false" />
-        <activity
-            android:name=".main_human"
             android:exported="false" />
         <activity
             android:name=".home_sub2"
