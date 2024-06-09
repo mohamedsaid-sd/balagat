@@ -218,6 +218,10 @@
         <activity
             android:name=".human"
             android:exported="true" />
+
+        <activity android:name=".main_human"
+            android:exported="true"/>
+
     </application>
 
 </manifest>
