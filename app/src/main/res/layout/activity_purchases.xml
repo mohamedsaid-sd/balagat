@@ -76,6 +76,7 @@
                             android:drawableTop="@drawable/ic_baseline_shopping_cart_24"
                             android:fontFamily="@font/jana"
                             android:gravity="center"
+                            android:onClick="fun_purchasesorder"
                             android:padding="5dp"
                             android:text="طلب شراء"
                             android:textSize="12sp" />
@@ -90,6 +91,7 @@
                             android:drawableTop="@drawable/ic_baseline_shopping_cart_24"
                             android:fontFamily="@font/jana"
                             android:gravity="center"
+                            android:onClick="fun_refund"
                             android:padding="5dp"
                             android:text="طلب إسترداد"
                             android:textSize="12sp" />
@@ -112,6 +114,7 @@
                             android:fontFamily="@font/jana"
                             android:gravity="center"
                             android:padding="5dp"
+                            android:onClick="fun_surplus_order"
                             android:text="طلب تخلص فائض"
                             android:textSize="12sp" />
 

@@ -17,7 +17,13 @@
             android:exported="false" />
 
         <activity
-            android:name=".main_human"
+            android:name=".folderpurchases.surplus_order"
+            android:exported="false" />
+        <activity
+            android:name=".folderpurchases.refund_request"
+            android:exported="false" />
+        <activity
+            android:name=".folderpurchases.purchase_order"
             android:exported="false" />
         <activity
             android:name=".opration.constraction_contract"
