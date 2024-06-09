@@ -41,7 +41,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/jana"
                     android:gravity="center"
-                    android:text="تطبيق البلاغات"
+                    android:text=" إدارة العمليات"
                     android:textColor="#040404"
                     android:textSize="20sp"
                     android:textStyle="bold" />

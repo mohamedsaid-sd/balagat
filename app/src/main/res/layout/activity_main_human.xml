@@ -470,6 +470,7 @@
                             android:background="@drawable/whiteroundblack"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
+                            android:onClick="fun_out_equipment_contract"
                             android:padding="5dp"
                             android:text="عقودات المعدات الخارجية"
                             android:textColor="@color/black"

@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.equipation.balagat.opration.Production_contract;
 import com.equipation.balagat.opration.constraction_contract;
 import com.equipation.balagat.opration.rental_contract;
+import com.equipation.balagat.out_equipment_contract.out_equipment_contract;
 
 import java.util.Objects;
 
@@ -118,5 +119,9 @@ public class main_human extends AppCompatActivity {
     public void fun_constraction(View view) {
         startActivity(new Intent( this , constraction_contract.class ).putExtra( "FLAG" , "" ) );
 
+    }
+
+    public void fun_out_equipment_contract(View view) {
+        startActivity(new Intent( this , out_equipment_contract.class ).putExtra( "FLAG" , "" ) );
     }
 }

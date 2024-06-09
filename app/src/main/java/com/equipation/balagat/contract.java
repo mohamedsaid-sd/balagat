@@ -22,7 +22,6 @@ public class contract extends AppCompatActivity {
     }
 
 
-
     public void fun_contract_contract(View view) {
         startActivity(new Intent( this , contract_terms.class ));
     }

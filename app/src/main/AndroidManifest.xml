@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="com.equipation.balagat">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <application
         android:allowBackup="true"
@@ -13,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Balagat.NoActionBar"
         tools:targetApi="31">
+        <activity
+            android:name=".out_equipment_contract.out_equipment_contract"
+            android:exported="false" />
+        <activity
+            android:name=".humans.cat_employee"
+            android:exported="false" />
+        <activity
+            android:name=".main_human"
+            android:exported="false" />
         <activity
             android:name=".opration.constraction_contract"
             android:exported="false" />

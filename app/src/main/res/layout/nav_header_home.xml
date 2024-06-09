@@ -28,7 +28,7 @@
         android:drawableStart="@drawable/ic_baseline_engineering_24"
         android:fontFamily="@font/jana"
         android:gravity="center"
-        android:text="تطبيق البلاغات"
+        android:text=" إدارة العمليات"
         android:textColor="@color/gold"
         android:textStyle="bold" />
 
