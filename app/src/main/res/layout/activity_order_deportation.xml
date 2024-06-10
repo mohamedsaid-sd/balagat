@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".folderpurchases.purchase_order">
+    tools:context=".deportation.order_deportation">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -37,7 +37,7 @@
                     android:fontFamily="@font/jana"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="طلب  شراء"
+                    android:text="طلب  ترحيل"
                     android:textColor="@color/black"
                     android:textSize="20dp"
                     android:textStyle="bold"
@@ -68,7 +68,14 @@
                     android:orientation="vertical"
                     android:padding="3dp">
 
-
+                    <TextView
+                        android:id="@+id/textView421"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        android:text="  تفاصيل المواد المراد ترحيلة"
+                        tools:ignore="HardcodedText" />
 
 
                     <com.google.android.material.textfield.TextInputLayout
@@ -79,29 +86,12 @@
                         app:boxStrokeWidth="0dp">
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/formbackground"
-                            android:hint=" نوع الصنف"
-                            tools:ignore="HardcodedText,VisualLintTextFieldSize" />
-                    </com.google.android.material.textfield.TextInputLayout>
-
-
-
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="3dp"
-                        android:padding="3dp"
-                        app:boxStrokeWidth="0dp">
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/formbackground"
-                            android:hint=" الكمية"
-                            tools:ignore="HardcodedText,VisualLintTextFieldSize" />
-                    </com.google.android.material.textfield.TextInputLayout>
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/formbackground"
+                    android:hint="اسم الصنف "
+                    tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+                </com.google.android.material.textfield.TextInputLayout>
 
 
                     <com.google.android.material.textfield.TextInputLayout
@@ -110,14 +100,15 @@
                         android:layout_margin="3dp"
                         android:padding="3dp"
                         app:boxStrokeWidth="0dp">
-
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/formbackground"
-                            android:hint="   سعر الوحدة"
+                            android:hint=" الكمية "
                             tools:ignore="HardcodedText,VisualLintTextFieldSize" />
                     </com.google.android.material.textfield.TextInputLayout>
+
+
 
 
 
@@ -126,12 +117,12 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
-                        android:hint=" مهله الطلب"
+                        android:hint="  الوحدة"
                         app:boxStrokeWidth="0dp"
                         tools:ignore="HardcodedText">
 
                         <AutoCompleteTextView
-                            android:id="@+id/sp_time"
+                            android:id="@+id/sp_unit"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/formbackground"
@@ -140,6 +131,23 @@
                     </com.google.android.material.textfield.TextInputLayout>
 
 
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:hint="  حالة الصنف"
+                        app:boxStrokeWidth="0dp"
+                        tools:ignore="HardcodedText">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/sp_condiation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:inputType="none"
+                            tools:ignore="LabelFor,SpeakableTextPresentCheck,VisualLintTextFieldSize" />
+                    </com.google.android.material.textfield.TextInputLayout>
 
 
                     <com.google.android.material.textfield.TextInputLayout
@@ -153,9 +161,43 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/formbackground"
-                            android:hint=" الفاتوره المبدئية  "
+                            android:hint="  جهة الانطلاق"
                             tools:ignore="HardcodedText,VisualLintTextFieldSize" />
                     </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        app:boxStrokeWidth="0dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:hint="  جهة الوصول"
+                            tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        app:boxStrokeWidth="0dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:hint="  الزمن المتوقع للتنفيذ "
+                            tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
                 </LinearLayout>
 
                 <LinearLayout
@@ -165,17 +207,56 @@
                     android:orientation="vertical"
                     android:padding="3dp">
 
-                    <TextView
-                        android:id="@+id/textView42e1"
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:hint=" الوسائل المطلوبة للنقل"
+                        app:boxStrokeWidth="0dp"
+                        tools:ignore="HardcodedText">
+
+                        <AutoCompleteTextView
+                            android:id="@+id/sp_means"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:inputType="none"
+                            tools:ignore="LabelFor,SpeakableTextPresentCheck,VisualLintTextFieldSize" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
                         android:layout_margin="3dp"
                         android:padding="3dp"
-                        android:text="    الحساب :"
-                        android:textColor="#000"
-                        tools:ignore="HardcodedText" />
+                        app:boxStrokeWidth="0dp">
 
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:hint="  الشخص المسؤول عن التنفيذ "
+                            tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+                    </com.google.android.material.textfield.TextInputLayout>
 
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        app:boxStrokeWidth="0dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:hint="   التكلفه المتوقعه للترحيل   "
+                            tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+                    </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
