@@ -4,10 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 
 import com.equipation.balagat.R;
+import com.google.android.material.textfield.TextInputLayout;
 
 import java.util.ArrayList;
 
@@ -17,6 +19,7 @@ public class order_deportation extends AppCompatActivity {
 
     ArrayList<String> ar_unit,ar_condiation,ar_means ;
 
+    TextInputLayout number_poeple,mo3da_type;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,12 +64,29 @@ public class order_deportation extends AppCompatActivity {
                 R.layout.nice_select_item , ar_means);
         sp_means.setAdapter(adapter_sp_means);
 
+
+        sp_means.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                if(ar_means.get(i).equals("افراد")){
+                    mo3da_type.setVisibility(View.GONE);
+                    number_poeple.setVisibility(View.VISIBLE);
+
+                }else{
+                    mo3da_type.setVisibility(View.VISIBLE);
+                    number_poeple.setVisibility(View.GONE);
+                }
+            }
+        });
+
     }
 
     private void Casting() {
         sp_unit = findViewById(R.id.sp_unit);
         sp_condiation = findViewById(R.id.sp_condiation);
         sp_means = findViewById(R.id.sp_means);
+        mo3da_type = findViewById(R.id.mo3da_type);
+        number_poeple = findViewById(R.id.number_poeple);
     }
 
     public void fun_back(View view) {

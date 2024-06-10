@@ -227,6 +227,41 @@
                             tools:ignore="LabelFor,SpeakableTextPresentCheck,VisualLintTextFieldSize" />
                     </com.google.android.material.textfield.TextInputLayout>
 
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        android:id="@+id/mo3da_type"
+                        app:boxStrokeWidth="0dp"
+                        android:visibility="gone">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:hint=" حدد نوع المعدة "
+                            tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        android:id="@+id/number_poeple"
+                        app:boxStrokeWidth="0dp"
+                        android:visibility="gone">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:hint=" حدد عدد الافراد "
+                            tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+                    </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
