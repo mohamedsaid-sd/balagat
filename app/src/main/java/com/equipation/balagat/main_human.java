@@ -1,11 +1,14 @@
 package com.equipation.balagat;
 
-import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.view.View;
+import android.view.animation.AnimationUtils;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.equipation.balagat.deportation.order_deportation;
@@ -19,6 +22,8 @@ import java.util.Objects;
 //import com.equipation.balagat.humans.cat_employee;
 
 public class main_human extends AppCompatActivity {
+
+    LinearLayout lay_main ;
 
     LinearLayout lay_human , lay_opration , lay_fleet , lay_supply  , lay_office, lay_clients ;
 
@@ -49,6 +54,9 @@ public class main_human extends AppCompatActivity {
         if(FLAG.equals("المكاتب والمواقع")){txt_name.setText(FLAG);lay_office.setVisibility(View.VISIBLE);}
         if(FLAG.equals("إدارة العملاء والموردين")){txt_name.setText(FLAG);lay_clients.setVisibility(View.VISIBLE);}
 
+        lay_main.startAnimation(AnimationUtils.loadAnimation(
+                this , R.anim.move_up));
+
     }
 
     private void casting() {
@@ -61,10 +69,20 @@ public class main_human extends AppCompatActivity {
         lay_supply = findViewById(R.id.lay_supply);
         lay_office = findViewById(R.id.lay_office);
         lay_clients = findViewById(R.id.lay_clients);
+        lay_main    = findViewById(R.id.lay_main);
+
     }
 
     public void fun_back(View view) {
-        super.getOnBackPressedDispatcher().onBackPressed();
+
+        lay_main.startAnimation(AnimationUtils.loadAnimation(
+                this , R.anim.move_down));
+        new Handler(Looper.getMainLooper()).postDelayed(()->{
+                    // دالة فتح الصفحة الجديدة
+                    super.getOnBackPressedDispatcher().onBackPressed();
+                }
+                // الزمن المطلوب تاخيره وهو 5 ثوان
+                , 700 );
     }
 
     public void fun_cat_employee(View view) {
@@ -128,5 +146,17 @@ public class main_human extends AppCompatActivity {
 
     public void fun_order_deportation(View view) {
         startActivity(new Intent( this , order_deportation.class ) );
+    }
+
+    @Override
+    public void onBackPressed() {
+        lay_main.startAnimation(AnimationUtils.loadAnimation(
+                this , R.anim.move_down));
+        new Handler(Looper.getMainLooper()).postDelayed(()->{
+                    // دالة فتح الصفحة الجديدة
+                    super.onBackPressed();
+                }
+                // الزمن المطلوب تاخيره وهو 5 ثوان
+                , 700 );
     }
 }

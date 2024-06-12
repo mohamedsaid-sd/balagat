@@ -5,11 +5,15 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
+
+import com.equipation.balagat.R;
 import com.equipation.balagat.databinding.FragmentHomeBinding;
 import com.equipation.balagat.main_human;
 public class HomeFragment extends Fragment {
@@ -50,6 +54,39 @@ public class HomeFragment extends Fragment {
         // الضغط علي إدارة العملاء والموردين
         card6.setOnClickListener(view -> startActivity( new Intent( getActivity() , main_human.class ).putExtra("FLAG" , "إدارة العملاء والموردين")  ));
 
+        // Add zoom in animation to cards ***************
+        card1.startAnimation(AnimationUtils.loadAnimation(
+                getActivity() , R.anim.zoom_in));
+        card2.startAnimation(AnimationUtils.loadAnimation(
+                getActivity() , R.anim.zoom_in));
+        card3.startAnimation(AnimationUtils.loadAnimation(
+                getActivity() , R.anim.zoom_in));
+        card4.startAnimation(AnimationUtils.loadAnimation(
+                getActivity() , R.anim.zoom_in));
+        card5.startAnimation(AnimationUtils.loadAnimation(
+                getActivity() , R.anim.zoom_in));
+        card6.startAnimation(AnimationUtils.loadAnimation(
+                getActivity() , R.anim.zoom_in));
+
+        CardView presonal_info = binding.presonalInfo;
+
+        presonal_info.startAnimation(AnimationUtils.loadAnimation(
+                getActivity() , R.anim.move_up));
+
+        ImageView imageView11 = binding.imageView11;
+        imageView11.startAnimation(AnimationUtils.loadAnimation(
+                getActivity() , R.anim.zoom_in));
+
+        TextView maintitle = binding.maintitle;
+        maintitle.startAnimation(AnimationUtils.loadAnimation(
+                getActivity() , R.anim.zoom_in));
+
+        TextView copyright = binding.copyright;
+        copyright.startAnimation(AnimationUtils.loadAnimation(
+                getActivity() , R.anim.zoom_in));
+
+
+
         final TextView textView = binding.textHome;
         homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
@@ -60,5 +97,11 @@ public class HomeFragment extends Fragment {
     public void onDestroyView() {
         super.onDestroyView();
         binding = null;
+    }
+
+    @Override
+    public void onPause() {
+
+        super.onPause();
     }
 }
