@@ -1,4 +1,4 @@
-package com.equipation.balagat.contracts;
+package com.equipation.balagat.opration.production;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,9 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.equipation.balagat.R;
-import com.equipation.balagat.time;
 
-public class contract_location extends AppCompatActivity {
+public class production_contract_location extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,20 +18,20 @@ public class contract_location extends AppCompatActivity {
     }
 
     public void fun_need(View view) {
-        startActivity(new Intent(this , machin_need.class));
+        startActivity(new Intent(this , production_machin_need.class));
     }
 
     public void fun_travel(View view) {
-        startActivity(new Intent(this , machin_travel.class));
+        startActivity(new Intent(this , production_machin_travel.class));
     }
 
     public void fiun_add(View view) {
-        startActivity(new Intent(this , add_operator.class));
+        startActivity(new Intent(this , production_add_operator.class));
 
     }
 
     public void fiun_complaint(View view) {
-        startActivity(new Intent(this , complaint.class));
+        startActivity(new Intent(this , production_complaint.class));
     }
 
     public void fun_back(View view) {

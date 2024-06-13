@@ -6,8 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.equipation.balagat.contracts.contract_time;
-
 public class home_sub1 extends AppCompatActivity {
 
     @Override

@@ -1,7 +1,7 @@
-package com.equipation.balagat.contracts;
+package com.equipation.balagat.opration.rental;
 
 import androidx.appcompat.app.AppCompatActivity;
-import com.equipation.balagat.R;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -9,20 +9,22 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.LinearLayout;
 
+import com.equipation.balagat.R;
 
 import java.util.ArrayList;
 
-public class change_shift extends AppCompatActivity {
+public class rental_change_shift extends AppCompatActivity {
+
 
     AutoCompleteTextView sp_work_system , sp_shift ;
     ArrayList<String> ar_work_system , ar_shift ;
-    LinearLayout  layout_shift ;
+    LinearLayout layout_shift ;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_change_shift);
-
+        setContentView(R.layout.activity_rental_change_shift);
         ar_work_system = new ArrayList<>();
         ar_shift = new ArrayList<>();
 

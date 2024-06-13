@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/black"
 
-    tools:context=".contracts.rechange_machin">
+    tools:context=".opration.production.production_rechange_machin">
 
     <ScrollView
         android:layout_width="match_parent"

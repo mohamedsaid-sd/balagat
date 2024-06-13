@@ -1,4 +1,4 @@
-package com.equipation.balagat.contracts;
+package com.equipation.balagat.opration.rental;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,13 +8,12 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.LinearLayout;
-import android.widget.Spinner;
 
 import com.equipation.balagat.R;
 
 import java.util.ArrayList;
 
-public class machin_travel extends AppCompatActivity {
+public class rental_machin_travel extends AppCompatActivity {
 
 
     LinearLayout sp_whytravel_layout  ;
@@ -25,7 +24,7 @@ public class machin_travel extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_machin_travel);
+        setContentView(R.layout.activity_rental_machin_travel);
 
         ar_travel_type = new ArrayList<>();
         ar_whytravel_type = new ArrayList<>();

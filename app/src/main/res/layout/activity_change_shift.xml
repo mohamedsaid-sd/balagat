@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".contracts.change_shift">
+    tools:context=".opration.production.production_change_shift">
 
     <ScrollView
         android:layout_width="match_parent"

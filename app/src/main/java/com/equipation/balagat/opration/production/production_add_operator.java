@@ -1,4 +1,4 @@
-package com.equipation.balagat.contracts;
+package com.equipation.balagat.opration.production;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,13 +8,12 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.LinearLayout;
-import android.widget.Spinner;
 
 import com.equipation.balagat.R;
 
 import java.util.ArrayList;
 
-public class add_operator extends AppCompatActivity {
+public class production_add_operator extends AppCompatActivity {
 
 
     LinearLayout sp_updateoperator_layout ,sp_addoperator_layout ;

@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-
-    tools:context=".opration.production.production_machin_travel">
+    tools:context=".opration.rental.rental_change_shift">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -27,7 +26,6 @@
                 android:orientation="horizontal"
                 android:layout_margin="20dp"
                 tools:ignore="UseCompoundDrawables">
-
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -36,7 +34,7 @@
                     android:fontFamily="@font/jana"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="   طلب ترحيل ألية"
+                    android:text="طلب تغيير وردية"
                     android:textColor="@color/black"
                     android:textSize="20dp"
                     android:textStyle="bold"
@@ -55,7 +53,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_margin="3dp"
                 android:orientation="vertical"
                 android:padding="3dp">
@@ -293,103 +291,36 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_margin="3dp"
-                        android:orientation="vertical"
-                        android:padding="3dp">
+                        android:orientation="vertical">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:padding="3dp"
+                            app:boxStrokeWidth="0dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="عدد الورديات الحالية"
+                                android:inputType="textPersonName"
+                                android:background="@drawable/formbackground"
+
+                                tools:ignore="HardcodedText" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
 
                         <com.google.android.material.textfield.TextInputLayout
                             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="10dp"
-                            android:hint="  نوع الترحيل   "
+                            android:hint="  نظام العمل   "
                             app:boxStrokeWidth="0dp">
 
                             <AutoCompleteTextView
-                                android:id="@+id/sp_travel_type"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/formbackground"
-                                android:inputType="none">
-
-                            </AutoCompleteTextView>
-
-                        </com.google.android.material.textfield.TextInputLayout>
-
-
-                        <com.google.android.material.textfield.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3dp"
-                            android:padding="3dp"
-                            app:boxStrokeWidth="0dp">
-
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint="موقع الوصول  "
-                                android:background="@drawable/formbackground" />
-                        </com.google.android.material.textfield.TextInputLayout>
-
-                        <com.google.android.material.textfield.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3dp"
-                            android:padding="3dp"
-                            app:boxStrokeWidth="0dp">
-
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint=" الزمن المقترح للوصول  "
-                                android:background="@drawable/formbackground"
-
-                                 />
-                        </com.google.android.material.textfield.TextInputLayout>
-
-                        <com.google.android.material.textfield.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3dp"
-                            android:padding="3dp"
-                            app:boxStrokeWidth="0dp">
-
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:hint=" تفاصيل الموقع الجديد"
-                                android:background="@drawable/formbackground" />
-                        </com.google.android.material.textfield.TextInputLayout>
-
-
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="3dp"
-                    android:padding="3dp">
-
-                    <LinearLayout
-                        android:id="@+id/sp_whytravel_layout"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="3dp"
-                        android:orientation="vertical"
-                        android:visibility="gone"
-                        android:padding="3dp">
-
-                        <com.google.android.material.textfield.TextInputLayout
-                            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:hint="  الغرض من الانتقال    "
-                            app:boxStrokeWidth="0dp">
-
-                            <AutoCompleteTextView
-                                android:id="@+id/sp_whytravel_type"
+                                android:id="@+id/sp_work_system"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/formbackground"
@@ -411,49 +342,140 @@
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:hint=" اخري    "
-                                android:background="@drawable/formbackground" />
+                                android:hint="عدد ساعات الوردية"
+                                android:background="@drawable/formbackground"
+
+                                tools:ignore="HardcodedText" />
                         </com.google.android.material.textfield.TextInputLayout>
 
 
+                        <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:hint="  نوع الوردية   "
+                            app:boxStrokeWidth="0dp">
 
+                            <AutoCompleteTextView
+                                android:id="@+id/sp_shift"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/formbackground"
+                                android:inputType="none">
+
+                            </AutoCompleteTextView>
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/layout_shift"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:id="@+id/textView202"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="3dp"
+                                android:fontFamily="@font/jana"
+                                android:padding="3dp"
+                                android:text="وردية مؤقتة"
+                                android:textStyle="bold"
+                                tools:ignore="HardcodedText" />
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:padding="3dp"
+                                app:boxStrokeWidth="0dp">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="تاريخ البداية"
+                                    android:inputType="textPersonName"
+                                    android:background="@drawable/formbackground"
+
+                                    tools:ignore="HardcodedText" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                            <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:padding="3dp"
+                                app:boxStrokeWidth="0dp">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="تاريخ النهاية"
+                                    android:background="@drawable/formbackground"
+
+                                    tools:ignore="HardcodedText" />
+                            </com.google.android.material.textfield.TextInputLayout>
+
+                        </LinearLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:padding="3dp"
+                            app:boxStrokeWidth="0dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="الملاحظات"
+                                android:background="@drawable/formbackground"
+
+                                tools:ignore="HardcodedText" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@drawable/grayround"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_baseline_mic_none_24"
+                                tools:ignore="ContentDescription" />
+                        </LinearLayout>
+
+                        <Button
+
+                            android:id="@+id/button4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/goaldround"
+                            android:backgroundTint="@color/gold"
+                            android:fontFamily="@font/jana"
+                            android:padding="3dp"
+                            android:text="تاكيد الطلب"
+                            android:textColor="@color/black"
+                            android:textStyle="bold"
+                            android:theme="@style/Theme.Balagat"
+                            tools:ignore="HardcodedText" />
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="3dp"
-                    android:padding="3dp"
-                    app:boxStrokeWidth="0dp">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="  ملاحظات"
-                        android:background="@drawable/formbackground" />
-                </com.google.android.material.textfield.TextInputLayout>
-
-
-
-                <Button
-
-                    android:id="@+id/button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="3dp"
-                    android:background="@drawable/goaldround"
-                    android:backgroundTint="@color/gold"
-                    android:fontFamily="@font/jana"
-                    android:padding="3dp"
-                    android:text="تاكيد الطلب"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:theme="@style/Theme.Balagat" />
 
             </LinearLayout>
 
         </LinearLayout>
     </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

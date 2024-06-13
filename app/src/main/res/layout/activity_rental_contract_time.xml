@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context=".opration.production.production_contract_location">
+    tools:context=".opration.rental.rental_contract_time">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -42,7 +42,7 @@
                         android:fontFamily="@font/jana"
                         android:gravity="center"
                         android:padding="5dp"
-                        android:text=" احتياجات الموقع"
+                        android:text="ساعات العمل"
                         android:textColor="@color/black"
                         android:textSize="20dp"
                         android:textStyle="bold" />
@@ -79,11 +79,11 @@
                             android:fontFamily="sans-serif"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="احتياجات الية"
+                            android:text="زيادة ساعات العمل"
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold"
-                            android:onClick="fun_need"/>
+                            android:onClick="fun_increase_time"/>
 
 
 
@@ -98,7 +98,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:onClick="fun_travel"
+                            android:onClick="fun_decrease_time"
                             android:id="@+id/textView16"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -109,7 +109,7 @@
                             android:fontFamily="sans-serif"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="طلب ترحيل"
+                            android:text="خصم ساعات العمل"
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold" />
@@ -126,7 +126,7 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:onClick="fiun_add"
+                            android:onClick="fun_change_shift"
                             android:id="@+id/textView190"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -137,7 +137,7 @@
                             android:fontFamily="sans-serif"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text=" طلب اضافة او تغيير مشغل"
+                            android:text="طلب تعديل ورديات"
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold" />
@@ -147,31 +147,6 @@
 
 
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_weight="1"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:onClick="fiun_complaint"
-                            android:id="@+id/textVieiuw190"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/grayroundlight"
-                            android:drawableTop="@drawable/ic_baseline_poll_24"
-                            android:fontFamily="sans-serif"
-                            android:gravity="center"
-                            android:padding="5dp"
-                            android:text="  تقديم شكوي"
-                            android:textColor="@color/black"
-                            android:textSize="12sp"
-                            android:textStyle="bold" />
-
-
-                    </LinearLayout>
 
 
 

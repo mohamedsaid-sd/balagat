@@ -1,4 +1,4 @@
-package com.equipation.balagat.contracts;
+package com.equipation.balagat.opration.rental;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,14 +8,14 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.LinearLayout;
-import android.widget.Spinner;
 
 import com.equipation.balagat.R;
 import com.google.android.material.textfield.TextInputLayout;
 
 import java.util.ArrayList;
 
-public class complaint extends AppCompatActivity {
+public class rental_complaint extends AppCompatActivity {
+
 
     AutoCompleteTextView sp_complainant_type , sp_complaint_type , sp_management_complaint
             , sp_opration_complaint , sp_evidence , sp_complaint_status ;
@@ -30,7 +30,7 @@ public class complaint extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_complaint);
+        setContentView(R.layout.activity_rental_complaint);
 
         ar_complainant_type = new ArrayList<>();
         ar_complaint_type = new ArrayList<>();

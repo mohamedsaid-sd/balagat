@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".contracts.decrease_time">
+    tools:context=".opration.production.production_decrease_time">
 
     <ScrollView
         android:layout_width="match_parent"

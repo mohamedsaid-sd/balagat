@@ -6,8 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.equipation.balagat.contracts.hour_system;
-import com.equipation.balagat.contracts.product_system;
+import com.equipation.balagat.opration.production.hour_system;
+import com.equipation.balagat.opration.production.product_system;
 
 public class contract_time_sheet extends AppCompatActivity {
 

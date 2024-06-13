@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.equipation.balagat.contracts.contract_time;
+import com.equipation.balagat.opration.production.production_contract_time;
 
 public class main_contract extends AppCompatActivity {
 
@@ -21,7 +21,7 @@ public class main_contract extends AppCompatActivity {
     }
 
     public void fun_time(View view) {
-        startActivity(new Intent(this , contract_time.class));
+        startActivity(new Intent(this , production_contract_time.class));
     }
 
     public void fun_location(View view) {

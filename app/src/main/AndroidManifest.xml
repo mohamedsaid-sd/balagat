@@ -13,6 +13,64 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Balagat.NoActionBar"
         tools:targetApi="31">
+
+        <activity
+            android:name=".opration.production.production_sub_liquidation"
+            android:exported="false" />
+        <activity
+            android:name=".opration.production.production_updateOrder"
+            android:exported="false" />
+        <activity
+            android:name=".opration.production.production_weekly_liquidation"
+            android:exported="false" />
+        <activity
+            android:name=".opration.rental.sub_liquidation"
+            android:exported="false" />
+        <activity
+            android:name=".opration.rental.rental_updateOrder"
+            android:exported="false" />
+        <activity
+            android:name=".opration.rental.weekly_liquidation"
+            android:exported="false" />
+        <activity
+            android:name=".opration.rental.rental_contract_location"
+            android:exported="false" />
+        <activity
+            android:name=".opration.rental.rental_contract_time"
+            android:exported="false" />
+        <activity
+            android:name=".opration.rental.rental_sub_contract"
+            android:exported="false" />
+        <activity
+            android:name=".opration.rental.rental_complaint"
+            android:exported="false" />
+        <activity
+            android:name=".opration.rental.rental_add_operator"
+            android:exported="false" />
+        <activity
+            android:name=".opration.rental.rental_machin_travel"
+            android:exported="false" />
+        <activity
+            android:name=".opration.rental.rental_machin_need"
+            android:exported="false" />
+        <activity
+            android:name=".opration.rental.rental_change_shift"
+            android:exported="false" />
+        <activity
+            android:name=".opration.rental.rental_decrease_time"
+            android:exported="false" />
+        <activity
+            android:name=".opration.rental.rental_increase_time"
+            android:exported="false" />
+        <activity
+            android:name=".opration.rental.rental_terminat_contract"
+            android:exported="false" />
+        <activity
+            android:name=".opration.rental.rental_rechange_machin"
+            android:exported="false" />
+        <activity
+            android:name=".opration.rental.rental_renew_contract"
+            android:exported="false" />
         <activity
             android:name=".deportation.order_deportation"
             android:exported="false" />
@@ -41,16 +99,16 @@
             android:name=".opration.main_opration"
             android:exported="false" />
         <activity
-            android:name=".contracts.complaint"
+            android:name=".opration.production.production_complaint"
             android:exported="false" />
         <activity
-            android:name=".contracts.contract_terms"
+            android:name=".opration.production.production_contract_terms"
             android:exported="false" />
         <activity
-            android:name=".contracts.product_system"
+            android:name=".opration.production.product_system"
             android:exported="false" />
         <activity
-            android:name=".contracts.hour_system"
+            android:name=".opration.production.hour_system"
             android:exported="false" />
         <activity
             android:name=".contract_time_sheet"
@@ -62,28 +120,28 @@
             android:name=".home_sub1"
             android:exported="false" />
         <activity
-            android:name=".contracts.add_operator"
+            android:name=".opration.production.production_add_operator"
             android:exported="false" />
         <activity
-            android:name=".contracts.contract_location"
+            android:name=".opration.production.production_contract_location"
             android:exported="false" />
         <activity
-            android:name=".contracts.machin_travel"
+            android:name=".opration.production.production_machin_travel"
             android:exported="false" />
         <activity
-            android:name=".contracts.machin_need"
+            android:name=".opration.production.production_machin_need"
             android:exported="false" />
         <activity
-            android:name=".contracts.contract_time"
+            android:name=".opration.production.production_contract_time"
             android:exported="false" />
         <activity
-            android:name=".contracts.change_shift"
+            android:name=".opration.production.production_change_shift"
             android:exported="false" />
         <activity
-            android:name=".contracts.decrease_time"
+            android:name=".opration.production.production_decrease_time"
             android:exported="false" />
         <activity
-            android:name=".contracts.increase_time"
+            android:name=".opration.production.production_increase_time"
             android:exported="false" />
         <activity
             android:name=".main_contract"
@@ -146,16 +204,16 @@
             android:name=".humans.resignation_request"
             android:exported="true" /> <!-- contracts requests -->
         <activity
-            android:name=".contracts.request_new_contract"
+            android:name=".opration.production.production_new_contract"
             android:exported="false" />
         <activity
-            android:name=".contracts.rechange_machin"
+            android:name=".opration.production.production_rechange_machin"
             android:exported="false" />
         <activity
-            android:name=".contracts.terminat_contract"
+            android:name=".opration.production.production_terminat_contract"
             android:exported="false" />
         <activity
-            android:name=".contracts.request_renew_contract"
+            android:name=".opration.production.production_renew_contract"
             android:exported="false" /> <!-- Maintenance requests -->
         <activity
             android:name=".maintenances.monthly"

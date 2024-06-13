@@ -1,4 +1,4 @@
-package com.equipation.balagat.contracts;
+package com.equipation.balagat.opration.production;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -11,7 +11,7 @@ import com.equipation.balagat.R;
 
 import java.util.ArrayList;
 
-public class request_new_contract extends AppCompatActivity {
+public class production_new_contract extends AppCompatActivity {
 
     Spinner sp_requirement ;
     ArrayList<String> ar_requirement ;

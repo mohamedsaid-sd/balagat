@@ -1,4 +1,6 @@
-package com.equipation.balagat.contracts;
+package com.equipation.balagat.opration.rental;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
@@ -7,12 +9,11 @@ import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.LinearLayout;
 
-
-import androidx.appcompat.app.AppCompatActivity;
 import com.equipation.balagat.R;
+
 import java.util.ArrayList;
 
-public class increase_time extends AppCompatActivity {
+public class rental_increase_time extends AppCompatActivity {
 
     AutoCompleteTextView sp_hour_type , sp_work_way , sp_shift ;
     ArrayList<String> ar_hour_type , ar_work_way , ar_shift ;
@@ -21,7 +22,7 @@ public class increase_time extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_increase_time);
+        setContentView(R.layout.activity_rental_increase_time);
 
         ar_hour_type = new ArrayList<>();
         ar_work_way = new ArrayList<>();
@@ -47,17 +48,17 @@ public class increase_time extends AppCompatActivity {
                 this , R.layout.nice_select_item
                 , ar_work_way);sp_work_way.setAdapter(adapter_work_way);
 
-                sp_work_way.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                    @Override
-                    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                        if(ar_work_way.get(i).equals("تعديل الورديات")){
-                            layout_shift.setVisibility(View.VISIBLE);
-                        }else{
-                            layout_shift.setVisibility(View.GONE);
-                        }
-                    }
+        sp_work_way.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                if(ar_work_way.get(i).equals("تعديل الورديات")){
+                    layout_shift.setVisibility(View.VISIBLE);
+                }else{
+                    layout_shift.setVisibility(View.GONE);
+                }
+            }
 
-                });
+        });
 
         ArrayAdapter<String> adapter_shift =new ArrayAdapter<>(
                 this ,  R.layout.nice_select_item

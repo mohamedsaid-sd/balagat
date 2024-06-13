@@ -1,4 +1,4 @@
-package com.equipation.balagat.contracts;
+package com.equipation.balagat.opration.rental;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,27 +8,26 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.LinearLayout;
-import android.widget.Spinner;
 
 import com.equipation.balagat.R;
 import com.google.android.material.textfield.TextInputLayout;
 
 import java.util.ArrayList;
 
-public class rechange_machin extends AppCompatActivity {
+public class rental_rechange_machin extends AppCompatActivity {
 
-
-    //,day
     LinearLayout sp_switch_layout  ;
     TextInputLayout day;
 
     AutoCompleteTextView sp_change_type,sp_reason_type,sp_timechange_type,sp_switch_type;
     ArrayList<String> ar_renew_type,ar_reason_type,ar_timechange_type,ar_switch_type ;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rechange_machin);
+        setContentView(R.layout.activity_rental_rechange_machin);
+
         Casting();
         ar_renew_type = new ArrayList<>();
         ar_reason_type= new ArrayList<>();

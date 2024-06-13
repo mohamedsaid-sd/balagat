@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    tools:context=".contracts.contract_time">
+    tools:context=".opration.production.production_contract_time">
 
     <LinearLayout
         android:layout_width="match_parent"

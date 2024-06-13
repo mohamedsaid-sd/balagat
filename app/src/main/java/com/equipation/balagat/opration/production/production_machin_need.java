@@ -1,4 +1,4 @@
-package com.equipation.balagat.contracts;
+package com.equipation.balagat.opration.production;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,13 +6,12 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
-import android.widget.Spinner;
 
 import com.equipation.balagat.R;
 
 import java.util.ArrayList;
 
-public class machin_need extends AppCompatActivity {
+public class production_machin_need extends AppCompatActivity {
 
 
     AutoCompleteTextView sp_request_need ;

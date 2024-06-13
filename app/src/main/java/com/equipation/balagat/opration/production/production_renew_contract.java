@@ -1,4 +1,4 @@
-package com.equipation.balagat.contracts;
+package com.equipation.balagat.opration.production;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -18,7 +18,7 @@ import com.google.android.material.textfield.TextInputLayout;
 
 import java.util.ArrayList;
 
-public class request_renew_contract extends AppCompatActivity {
+public class production_renew_contract extends AppCompatActivity {
 
 
     LinearLayout sp_partial_layout  ;

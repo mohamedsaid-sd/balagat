@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".opration.production.production_renew_contract">
+    tools:context=".opration.rental.rental_renew_contract">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -433,7 +433,7 @@
                         android:hint="    كتابه الموقع الجديد"
                         android:background="@drawable/formbackground"
 
-                       />
+                        />
                 </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -451,7 +451,7 @@
                         android:hint="  ملاحظات"
                         android:background="@drawable/formbackground"
 
-                       />
+                        />
                 </com.google.android.material.textfield.TextInputLayout>
 
 
