@@ -72,6 +72,9 @@
             android:name=".opration.rental.rental_renew_contract"
             android:exported="false" />
         <activity
+            android:name=".opration.rental.rental_time_sheet"
+            android:exported="false" />
+        <activity
             android:name=".deportation.order_deportation"
             android:exported="false" />
         <activity
@@ -282,6 +285,11 @@
         <activity
             android:name=".main_human"
             android:exported="true" />
+
+        <activity
+            android:name=".opration.rental.rental_time_sheet"
+            android:exported="false" />
+
     </application>
 
 </manifest>

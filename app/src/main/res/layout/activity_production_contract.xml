@@ -223,6 +223,7 @@
                         </androidx.cardview.widget.CardView>
 
                         <androidx.cardview.widget.CardView
+                            android:onClick="fun_time_sheet"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_gravity="center"
@@ -232,8 +233,17 @@
                             android:foregroundGravity="center"
                             android:padding="5dp">
 
-
-
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/whiteroundblack"
+                                android:drawableTop="@drawable/ic_baseline_poll_24"
+                                android:drawablePadding="10dp"
+                                android:fontFamily="sans-serif"
+                                android:gravity="center|center_vertical"
+                                android:padding="10dp"
+                                android:text=" التايم شييت "
+                                android:textSize="14sp" />
 
                         </androidx.cardview.widget.CardView>
                     </LinearLayout>

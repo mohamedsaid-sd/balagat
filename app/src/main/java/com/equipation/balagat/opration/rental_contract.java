@@ -10,6 +10,7 @@ import com.equipation.balagat.R;
 import com.equipation.balagat.opration.rental.rental_contract_location;
 import com.equipation.balagat.opration.rental.rental_contract_time;
 import com.equipation.balagat.opration.rental.rental_sub_contract;
+import com.equipation.balagat.opration.rental.rental_time_sheet;
 import com.equipation.balagat.opration.rental.sub_liquidation;
 
 public class rental_contract extends AppCompatActivity {
@@ -37,7 +38,11 @@ public class rental_contract extends AppCompatActivity {
         startActivity(new Intent( this , rental_contract_location.class ));
     }
 
-    public void fun_time_sheet(View view) {
-        startActivity(new Intent( this , sub_liquidation.class ));
+//    public void fun_time_sheet(View view) {
+//        startActivity(new Intent( this , sub_liquidation.class ));
+//    }
+
+    public void fun_rental_time_sheet(View view) {
+        startActivity(new Intent( this , rental_time_sheet.class ));
     }
 }
