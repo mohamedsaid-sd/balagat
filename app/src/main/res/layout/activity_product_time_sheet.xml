@@ -234,7 +234,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical"
-                        android:visibility="visible">
+                        android:visibility="gone">
                         <!--Normal Input-->
                         <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
@@ -317,6 +317,66 @@
                         </com.google.android.material.textfield.TextInputLayout>
                     </LinearLayout>
 
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        app:boxStrokeWidth="0dp"
+                        app:hintTextColor="@color/green">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:hint="ساعات عادية"
+                            tools:ignore="HardcodedText" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        app:boxStrokeWidth="0dp"
+                        app:hintTextColor="@color/green">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:hint="ساعات الجردل"
+                            tools:ignore="HardcodedText" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        app:boxStrokeWidth="0dp"
+                        app:hintTextColor="@color/green">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:hint="ساعات الجاك همر"
+                            tools:ignore="HardcodedText" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        app:boxStrokeWidth="0dp"
+                        app:hintTextColor="@color/green">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:hint="ساعات الإستعداد"
+                            tools:ignore="HardcodedText" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
                     <!--Normal Input-->
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
@@ -324,7 +384,6 @@
                         android:layout_margin="3dp"
                         android:padding="3dp"
                         app:boxStrokeWidth="0dp">
-
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
