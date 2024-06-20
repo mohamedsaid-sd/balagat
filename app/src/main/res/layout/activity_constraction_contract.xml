@@ -9,13 +9,13 @@
     tools:context=".opration.constraction_contract">
 
     <LinearLayout
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="25dp"
-        android:layout_marginBottom="10dp"
         android:background="@drawable/circle_white"
+        android:orientation="vertical"
         android:paddingBottom="20dp"
-        android:orientation="vertical">
+        tools:layout_editor_absoluteY="25dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -79,9 +79,8 @@
                             android:layout_weight="1"
                             android:background="@drawable/round"
                             android:foregroundGravity="center"
-                            android:padding="5dp"
-                            android:onClick="fun_contract_contract">
-
+                            android:onClick="fun_contract_contract"
+                            android:padding="5dp">
 
 
                             <TextView
@@ -109,9 +108,8 @@
                             android:layout_weight="1"
                             android:background="@drawable/round"
                             android:foregroundGravity="center"
-                            android:padding="5dp"
-                            android:onClick="fun_contract_time">
-
+                            android:onClick="fun_contract_time"
+                            android:padding="5dp">
 
 
                             <TextView
@@ -143,8 +141,8 @@
                             android:layout_weight="1"
                             android:background="@drawable/round"
                             android:foregroundGravity="center"
-                            android:padding="5dp"
-                            android:onClick="fun_contract_location">
+                            android:onClick="fun_contract_location"
+                            android:padding="5dp">
 
 
                             <TextView
@@ -167,11 +165,10 @@
                             android:layout_gravity="center"
                             android:layout_margin="5dp"
                             android:layout_weight="1"
-                            android:onClick="fun_main_camp"
                             android:background="@drawable/round"
                             android:foregroundGravity="center"
+                            android:onClick="fun_main_camp"
                             android:padding="5dp">
-
 
 
                             <TextView
@@ -191,15 +188,6 @@
                     </LinearLayout>
 
 
-
-
-
-
-
-
-
-
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -214,8 +202,7 @@
                             android:layout_weight="1"
                             android:background="@drawable/round"
                             android:foregroundGravity="center"
-                            android:padding="5dp"
-                            >
+                            android:padding="5dp">
 
 
                             <TextView
@@ -243,7 +230,6 @@
                             android:padding="5dp">
 
 
-
                             <TextView
                                 android:id="@+id/textVi46ew0"
                                 android:layout_width="match_parent"
@@ -261,7 +247,6 @@
                     </LinearLayout>
 
 
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -276,9 +261,8 @@
                             android:layout_weight="1"
                             android:background="@drawable/round"
                             android:foregroundGravity="center"
-                            android:padding="5dp"
                             android:onClick="fun_main_report"
-                            >
+                            android:padding="5dp">
 
 
                             <TextView
@@ -305,6 +289,7 @@
                             android:foregroundGravity="center"
                             android:onClick="fun_weekly_liquidation"
                             android:padding="5dp">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -333,8 +318,9 @@
                             android:layout_weight="1"
                             android:background="@drawable/round"
                             android:foregroundGravity="center"
-                            android:padding="5dp"
-                            android:onClick="fun_main_time_sheet">
+                            android:onClick="fun_main_time_sheet"
+                            android:padding="5dp">
+
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
@@ -356,11 +342,9 @@
                             android:layout_weight="1"
                             android:background="@drawable/round"
                             android:foregroundGravity="center"
-                            android:padding="5dp">
-                        </androidx.cardview.widget.CardView>
+                            android:padding="5dp"></androidx.cardview.widget.CardView>
 
                     </LinearLayout>
-
 
 
                 </LinearLayout>

@@ -54,8 +54,7 @@ public class main_human extends AppCompatActivity {
         if(FLAG.equals("المكاتب والمواقع")){txt_name.setText(FLAG);lay_office.setVisibility(View.VISIBLE);}
         if(FLAG.equals("إدارة العملاء والموردين")){txt_name.setText(FLAG);lay_clients.setVisibility(View.VISIBLE);}
 
-        lay_main.startAnimation(AnimationUtils.loadAnimation(
-                this , R.anim.move_up));
+        //lay_main.startAnimation(AnimationUtils.loadAnimation(this , R.anim.move_up));
 
     }
 
@@ -75,14 +74,15 @@ public class main_human extends AppCompatActivity {
 
     public void fun_back(View view) {
 
-        lay_main.startAnimation(AnimationUtils.loadAnimation(
-                this , R.anim.move_down));
-        new Handler(Looper.getMainLooper()).postDelayed(()->{
-                    // دالة فتح الصفحة الجديدة
-                    super.getOnBackPressedDispatcher().onBackPressed();
-                }
-                // الزمن المطلوب تاخيره وهو 5 ثوان
-                , 700 );
+        super.getOnBackPressedDispatcher().onBackPressed();
+
+        //lay_main.startAnimation(AnimationUtils.loadAnimation(this , R.anim.move_down));
+//        new Handler(Looper.getMainLooper()).postDelayed(()->{
+//                    // دالة فتح الصفحة الجديدة
+//
+//                }
+//                // الزمن المطلوب تاخيره وهو 5 ثوان
+//                , 700 );
     }
 
     public void fun_cat_employee(View view) {
@@ -150,13 +150,16 @@ public class main_human extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        lay_main.startAnimation(AnimationUtils.loadAnimation(
-                this , R.anim.move_down));
-        new Handler(Looper.getMainLooper()).postDelayed(()->{
-                    // دالة فتح الصفحة الجديدة
-                    super.onBackPressed();
-                }
-                // الزمن المطلوب تاخيره وهو 5 ثوان
-                , 700 );
+        //lay_main.startAnimation(AnimationUtils.loadAnimation(this , R.anim.move_down));
+//        new Handler(Looper.getMainLooper()).postDelayed(()->{
+//                    // دالة فتح الصفحة الجديدة
+//
+//                }
+//                // الزمن المطلوب تاخيره وهو 5 ثوان
+//                , 700 );
+
+        super.onBackPressed();
+
+
     }
 }

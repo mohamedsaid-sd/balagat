@@ -7,10 +7,11 @@
     android:background="@color/black"
     tools:context=".main_human">
 
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circle_white"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -24,8 +25,6 @@
                 android:id="@+id/lay_main"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
-                android:layout_marginBottom="10dp"
                 android:background="@drawable/circle_white"
                 android:orientation="vertical"
                 android:paddingBottom="20dp">
@@ -230,12 +229,12 @@
                             android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
+                            android:onClick="fun_rental"
                             android:padding="5dp"
                             android:text="التاجير"
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold"
-                            android:onClick="fun_rental"
                             tools:ignore="HardcodedText,UseCompatTextViewDrawableXml" />
 
                         <TextView
@@ -246,9 +245,9 @@
                             android:background="@drawable/whiteroundblack"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
+                            android:onClick="fun_production"
                             android:padding="5dp"
                             android:text="الإنتاج"
-                            android:onClick="fun_production"
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold"
@@ -271,12 +270,12 @@
                             android:background="@drawable/whiteroundblack"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
+                            android:onClick="fun_constraction"
                             android:padding="5dp"
                             android:text="المقاولة"
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold"
-                            android:onClick="fun_constraction"
 
                             app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
                             tools:ignore="HardcodedText,NestedWeights" />
@@ -431,11 +430,11 @@
                             android:background="@drawable/whiteroundblack"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
+                            android:onClick="fun_order_deportation"
                             android:padding="5dp"
                             android:text="الترحيل"
                             android:textColor="@color/black"
                             android:textSize="12sp"
-                            android:onClick="fun_order_deportation"
                             android:textStyle="bold"
                             app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
                             tools:ignore="HardcodedText" />
@@ -595,9 +594,8 @@
                     android:textColor="@color/lite"
                     android:textSize="14sp"
                     android:textStyle="bold"
+                    android:visibility="gone"
                     tools:ignore="HardcodedText,InefficientWeight" />
-
-
 
 
             </LinearLayout>

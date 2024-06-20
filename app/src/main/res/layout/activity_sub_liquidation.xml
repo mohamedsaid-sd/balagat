@@ -5,12 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
+    android:background="@color/black"
     tools:context=".opration.rental.sub_liquidation">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circle_white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ScrollView
             android:layout_width="match_parent"
@@ -20,11 +25,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="25dp"
-                android:layout_marginBottom="10dp"
                 android:background="@drawable/circle_white"
-                android:orientation="vertical"
-                android:paddingBottom="20dp">
+                android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -78,17 +80,15 @@
                             android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
+                            android:onClick="fun_weekly"
                             android:padding="5dp"
                             android:text="نظام الساعات"
                             android:textColor="@color/black"
                             android:textSize="12sp"
-                            android:onClick="fun_weekly"
                             android:textStyle="bold" />
 
 
-
                     </LinearLayout>
-
 
 
                     <LinearLayout
@@ -108,32 +108,22 @@
                             android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
+                            android:onClick="fun_updateorder"
                             android:padding="5dp"
                             android:text="اضافة تعديل "
                             android:textColor="@color/black"
                             android:textSize="12sp"
-                            android:onClick="fun_updateorder"
                             android:textStyle="bold" />
-
 
 
                     </LinearLayout>
 
 
-
-
-
-
-
-
-
                 </LinearLayout>
-
 
 
             </LinearLayout>
         </ScrollView>
-
 
 
     </LinearLayout>

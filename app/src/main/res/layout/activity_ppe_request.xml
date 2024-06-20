@@ -7,6 +7,14 @@
     tools:context=".humans.PPE_request"
     android:background="@color/black">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circle_white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -16,8 +24,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginBottom="50dp"
             android:background="@drawable/circle_white"
             android:orientation="vertical"
             android:paddingBottom="30dp"
@@ -245,13 +251,13 @@
                             android:layout_margin="10dp"
                             android:hint="نوع المعدة المطلوبة"
                             app:boxStrokeWidth="0dp">
+
                             <AutoCompleteTextView
                                 android:id="@+id/filed_exposed"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/formbackground"
-                                android:inputType="none">
-                            </AutoCompleteTextView>
+                                android:inputType="none"></AutoCompleteTextView>
                         </com.google.android.material.textfield.TextInputLayout>
 
                         <com.google.android.material.textfield.TextInputLayout
@@ -327,4 +333,6 @@
 
         </LinearLayout>
     </ScrollView>
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

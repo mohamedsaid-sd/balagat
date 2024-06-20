@@ -5,11 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
+    android:background="@color/black"
     tools:context=".opration.production.production_contract_location">
 
     <LinearLayout
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/circle_white"
         android:orientation="vertical">
 
         <ScrollView
@@ -20,11 +23,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="25dp"
-                android:layout_marginBottom="10dp"
                 android:background="@drawable/circle_white"
-                android:orientation="vertical"
-                android:paddingBottom="20dp">
+                android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -78,17 +78,15 @@
                             android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
+                            android:onClick="fun_need"
                             android:padding="5dp"
                             android:text="احتياجات الية"
                             android:textColor="@color/black"
                             android:textSize="12sp"
-                            android:textStyle="bold"
-                            android:onClick="fun_need"/>
-
+                            android:textStyle="bold" />
 
 
                     </LinearLayout>
-
 
 
                     <LinearLayout
@@ -98,7 +96,6 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:onClick="fun_travel"
                             android:id="@+id/textView16"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -108,12 +105,12 @@
                             android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
+                            android:onClick="fun_travel"
                             android:padding="5dp"
                             android:text="طلب ترحيل"
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold" />
-
 
 
                     </LinearLayout>
@@ -126,7 +123,6 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:onClick="fiun_add"
                             android:id="@+id/textView190"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -136,6 +132,7 @@
                             android:drawableTop="@drawable/ic_baseline_poll_24"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
+                            android:onClick="fiun_add"
                             android:padding="5dp"
                             android:text=" طلب اضافة او تغيير مشغل"
                             android:textColor="@color/black"
@@ -146,7 +143,6 @@
                     </LinearLayout>
 
 
-
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -154,7 +150,6 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:onClick="fiun_complaint"
                             android:id="@+id/textVieiuw190"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -164,6 +159,7 @@
                             android:drawableTop="@drawable/ic_baseline_poll_24"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
+                            android:onClick="fiun_complaint"
                             android:padding="5dp"
                             android:text="  تقديم شكوي"
                             android:textColor="@color/black"
@@ -174,14 +170,11 @@
                     </LinearLayout>
 
 
-
                 </LinearLayout>
-
 
 
             </LinearLayout>
         </ScrollView>
-
 
 
     </LinearLayout>

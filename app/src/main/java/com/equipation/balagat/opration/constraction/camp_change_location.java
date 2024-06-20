@@ -3,6 +3,7 @@ package com.equipation.balagat.opration.constraction;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 
@@ -36,5 +37,9 @@ public class camp_change_location extends AppCompatActivity {
     private void Casting() {
         sp_changetype = findViewById(R.id.sp_changetype);
 
+    }
+
+    public void fun_back(View view) {
+        super.getOnBackPressedDispatcher().onBackPressed();
     }
 }

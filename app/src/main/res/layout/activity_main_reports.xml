@@ -5,12 +5,17 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".opration.constraction.main_reports">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circle_white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ScrollView
             android:layout_width="match_parent"
@@ -21,8 +26,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
-                android:layout_marginBottom="10dp"
                 android:background="@drawable/circle_white"
                 android:orientation="vertical"
                 android:paddingBottom="20dp">
@@ -87,7 +90,7 @@
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold"
-                            app:drawableTopCompat="@drawable/ic_baseline_poll_24"/>
+                            app:drawableTopCompat="@drawable/ic_baseline_poll_24" />
 
 
                     </LinearLayout>
@@ -114,7 +117,7 @@
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold"
-                            app:drawableTopCompat="@drawable/ic_baseline_poll_24"/>
+                            app:drawableTopCompat="@drawable/ic_baseline_poll_24" />
 
 
                     </LinearLayout>
@@ -141,7 +144,7 @@
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold"
-                            app:drawableTopCompat="@drawable/ic_baseline_poll_24"/>
+                            app:drawableTopCompat="@drawable/ic_baseline_poll_24" />
 
 
                     </LinearLayout>

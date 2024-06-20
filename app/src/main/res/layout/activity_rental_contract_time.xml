@@ -5,12 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
+    android:background="@color/black"
     tools:context=".opration.rental.rental_contract_time">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circle_white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ScrollView
             android:layout_width="match_parent"
@@ -20,11 +25,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="25dp"
-                android:layout_marginBottom="10dp"
                 android:background="@drawable/circle_white"
-                android:orientation="vertical"
-                android:paddingBottom="20dp">
+                android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -78,17 +80,15 @@
                             android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
+                            android:onClick="fun_increase_time"
                             android:padding="5dp"
                             android:text="زيادة ساعات العمل"
                             android:textColor="@color/black"
                             android:textSize="12sp"
-                            android:textStyle="bold"
-                            android:onClick="fun_increase_time"/>
-
+                            android:textStyle="bold" />
 
 
                     </LinearLayout>
-
 
 
                     <LinearLayout
@@ -98,7 +98,6 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:onClick="fun_decrease_time"
                             android:id="@+id/textView16"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -108,12 +107,12 @@
                             android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
+                            android:onClick="fun_decrease_time"
                             android:padding="5dp"
                             android:text="خصم ساعات العمل"
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold" />
-
 
 
                     </LinearLayout>
@@ -126,7 +125,6 @@
                         android:orientation="horizontal">
 
                         <TextView
-                            android:onClick="fun_change_shift"
                             android:id="@+id/textView190"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -136,6 +134,7 @@
                             android:drawableTop="@drawable/ic_baseline_poll_24"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
+                            android:onClick="fun_change_shift"
                             android:padding="5dp"
                             android:text="طلب تعديل ورديات"
                             android:textColor="@color/black"
@@ -146,17 +145,11 @@
                     </LinearLayout>
 
 
-
-
-
-
                 </LinearLayout>
-
 
 
             </LinearLayout>
         </ScrollView>
-
 
 
     </LinearLayout>

@@ -23,8 +23,7 @@ public class login extends AppCompatActivity {
         // cast the view with the screen
         Casting();
 
-        lay_login.startAnimation(AnimationUtils.loadAnimation(
-                this , R.anim.fade_in));
+       // lay_login.startAnimation(AnimationUtils.loadAnimation(this , R.anim.fade_in));
 
     }
 

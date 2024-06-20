@@ -8,7 +8,14 @@
 
     tools:context=".opration.constraction.camp_change_location">
 
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circle_white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -18,10 +25,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:background="@drawable/circle_white"
                 android:orientation="vertical"
-                android:paddingBottom="30dp"
                 tools:ignore="MissingConstraints">
 
                 <LinearLayout
@@ -71,8 +76,6 @@
                         android:padding="3dp">
 
 
-
-
                         <com.google.android.material.textfield.TextInputLayout
                             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
                             android:layout_width="match_parent"
@@ -92,7 +95,6 @@
                         </com.google.android.material.textfield.TextInputLayout>
 
 
-
                         <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -107,7 +109,6 @@
                                 android:hint=" رقم المعدة"
                                 tools:ignore="HardcodedText,VisualLintTextFieldSize" />
                         </com.google.android.material.textfield.TextInputLayout>
-
 
 
                     </LinearLayout>
@@ -132,7 +133,6 @@
                             android:textSize="12dp"
                             android:textStyle="bold"
                             tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
-
 
 
                         <com.google.android.material.textfield.TextInputLayout
@@ -176,7 +176,6 @@
                             tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
 
 
-
                         <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -194,8 +193,6 @@
 
 
                     </LinearLayout>
-
-
 
 
                     <com.google.android.material.textfield.TextInputLayout
@@ -234,4 +231,5 @@
 
             </LinearLayout>
         </ScrollView>
+    </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>

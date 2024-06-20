@@ -7,6 +7,14 @@
     android:background="@color/black"
     tools:context=".opration.rental.rental_decrease_time">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circle_white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -14,17 +22,16 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="20dp"
             android:background="@drawable/circle_white"
+            android:orientation="vertical"
             android:paddingBottom="30dp"
             tools:ignore="MissingConstraints">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_margin="20dp"
+                android:orientation="horizontal"
 
                 tools:ignore="UseCompoundDrawables">
 
@@ -306,9 +313,9 @@
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:background="@drawable/formbackground"
                                 android:hint="عدد الورديات الحالية"
                                 android:inputType="textPersonName"
-                                android:background="@drawable/formbackground"
                                 tools:ignore="HardcodedText" />
                         </com.google.android.material.textfield.TextInputLayout>
 
@@ -332,7 +339,6 @@
                         </com.google.android.material.textfield.TextInputLayout>
 
 
-
                         <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -343,8 +349,8 @@
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:hint="عدد الساعات"
                                 android:background="@drawable/formbackground"
+                                android:hint="عدد الساعات"
                                 tools:ignore="HardcodedText" />
                         </com.google.android.material.textfield.TextInputLayout>
 
@@ -369,7 +375,6 @@
                         </com.google.android.material.textfield.TextInputLayout>
 
 
-
                         <com.google.android.material.textfield.TextInputLayout
                             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
                             android:layout_width="match_parent"
@@ -388,7 +393,6 @@
                             </AutoCompleteTextView>
 
                         </com.google.android.material.textfield.TextInputLayout>
-
 
 
                         <LinearLayout
@@ -419,8 +423,8 @@
                                 <com.google.android.material.textfield.TextInputEditText
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:hint="حدد عدد الورديات"
                                     android:background="@drawable/formbackground"
+                                    android:hint="حدد عدد الورديات"
                                     tools:ignore="HardcodedText" />
                             </com.google.android.material.textfield.TextInputLayout>
 
@@ -434,8 +438,8 @@
                                 <com.google.android.material.textfield.TextInputEditText
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:hint="ساعات عمل الوردية الواحدة"
                                     android:background="@drawable/formbackground"
+                                    android:hint="ساعات عمل الوردية الواحدة"
 
                                     tools:ignore="HardcodedText" />
                             </com.google.android.material.textfield.TextInputLayout>
@@ -452,8 +456,8 @@
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:hint="الملاحظات"
                                 android:background="@drawable/formbackground"
+                                android:hint="الملاحظات"
 
                                 tools:ignore="HardcodedText" />
                         </com.google.android.material.textfield.TextInputLayout>
@@ -497,4 +501,5 @@
 
         </LinearLayout>
     </ScrollView>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

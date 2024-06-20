@@ -5,12 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
+    android:background="@color/black"
     tools:context=".contract_time_sheet">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circle_white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ScrollView
             android:layout_width="match_parent"
@@ -20,11 +25,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="25dp"
-                android:layout_marginBottom="10dp"
                 android:background="@drawable/circle_white"
-                android:orientation="vertical"
-                android:paddingBottom="20dp">
+                android:orientation="vertical">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -85,9 +87,7 @@
                             android:textStyle="bold" />
 
 
-
                     </LinearLayout>
-
 
 
                     <LinearLayout
@@ -114,24 +114,14 @@
                             android:textStyle="bold" />
 
 
-
                     </LinearLayout>
-
-
-
-
-
-
-
 
 
                 </LinearLayout>
 
 
-
             </LinearLayout>
         </ScrollView>
-
 
 
     </LinearLayout>

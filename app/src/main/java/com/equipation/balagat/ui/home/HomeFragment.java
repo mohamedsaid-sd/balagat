@@ -55,37 +55,25 @@ public class HomeFragment extends Fragment {
         card6.setOnClickListener(view -> startActivity( new Intent( getActivity() , main_human.class ).putExtra("FLAG" , "إدارة العملاء والموردين")  ));
 
         // Add zoom in animation to cards ***************
-        card1.startAnimation(AnimationUtils.loadAnimation(
-                getActivity() , R.anim.zoom_in));
-        card2.startAnimation(AnimationUtils.loadAnimation(
-                getActivity() , R.anim.zoom_in));
-        card3.startAnimation(AnimationUtils.loadAnimation(
-                getActivity() , R.anim.zoom_in));
-        card4.startAnimation(AnimationUtils.loadAnimation(
-                getActivity() , R.anim.zoom_in));
-        card5.startAnimation(AnimationUtils.loadAnimation(
-                getActivity() , R.anim.zoom_in));
-        card6.startAnimation(AnimationUtils.loadAnimation(
-                getActivity() , R.anim.zoom_in));
+        //card1.startAnimation(AnimationUtils.loadAnimation(getActivity() , R.anim.zoom_in));
+        //card2.startAnimation(AnimationUtils.loadAnimation(getActivity() , R.anim.zoom_in));
+        //card3.startAnimation(AnimationUtils.loadAnimation(getActivity() , R.anim.zoom_in));
+        //card4.startAnimation(AnimationUtils.loadAnimation(getActivity() , R.anim.zoom_in));
+        //card5.startAnimation(AnimationUtils.loadAnimation(getActivity() , R.anim.zoom_in));
+        //card6.startAnimation(AnimationUtils.loadAnimation(getActivity() , R.anim.zoom_in));
 
         CardView presonal_info = binding.presonalInfo;
 
-        presonal_info.startAnimation(AnimationUtils.loadAnimation(
-                getActivity() , R.anim.move_up));
+        //presonal_info.startAnimation(AnimationUtils.loadAnimation(getActivity() , R.anim.move_up));
 
         ImageView imageView11 = binding.imageView11;
-        imageView11.startAnimation(AnimationUtils.loadAnimation(
-                getActivity() , R.anim.zoom_in));
+        //imageView11.startAnimation(AnimationUtils.loadAnimation(getActivity() , R.anim.zoom_in));
 
         TextView maintitle = binding.maintitle;
-        maintitle.startAnimation(AnimationUtils.loadAnimation(
-                getActivity() , R.anim.zoom_in));
+        //maintitle.startAnimation(AnimationUtils.loadAnimation(getActivity() , R.anim.zoom_in));
 
         TextView copyright = binding.copyright;
-        copyright.startAnimation(AnimationUtils.loadAnimation(
-                getActivity() , R.anim.zoom_in));
-
-
+        //copyright.startAnimation(AnimationUtils.loadAnimation(getActivity() , R.anim.zoom_in));
 
         final TextView textView = binding.textHome;
         homeViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);

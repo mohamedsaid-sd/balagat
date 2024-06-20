@@ -7,7 +7,14 @@
     android:background="@color/black"
     tools:context=".opration.constraction.camp_fuel_store">
 
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circle_white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -17,7 +24,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
                 android:background="@drawable/circle_white"
                 android:orientation="vertical"
                 android:paddingBottom="30dp"
@@ -70,8 +76,6 @@
                         android:padding="3dp">
 
 
-
-
                         <com.google.android.material.textfield.TextInputLayout
                             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
                             android:layout_width="match_parent"
@@ -91,7 +95,6 @@
                         </com.google.android.material.textfield.TextInputLayout>
 
 
-
                         <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
@@ -106,7 +109,6 @@
                                 android:hint=" الكمية المتوفرة "
                                 tools:ignore="HardcodedText,VisualLintTextFieldSize" />
                         </com.google.android.material.textfield.TextInputLayout>
-
 
 
                         <com.google.android.material.textfield.TextInputLayout
@@ -125,10 +127,7 @@
                         </com.google.android.material.textfield.TextInputLayout>
 
 
-
-
                     </LinearLayout>
-
 
 
                     <LinearLayout
@@ -204,9 +203,6 @@
                     </LinearLayout>
 
 
-
-
-
                     <Button
 
                         android:id="@+id/button"
@@ -227,4 +223,5 @@
 
             </LinearLayout>
         </ScrollView>
+    </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>

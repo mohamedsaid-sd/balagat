@@ -7,6 +7,15 @@
     android:background="@color/black"
     tools:context=".opration.rental.rental_increase_time">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circle_white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -14,17 +23,15 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="20dp"
             android:background="@drawable/circle_white"
-            android:paddingBottom="30dp"
+            android:orientation="vertical"
             tools:ignore="MissingConstraints">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_margin="20dp"
+                android:orientation="horizontal"
                 tools:ignore="UseCompoundDrawables">
 
                 <TextView
@@ -306,9 +313,9 @@
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:background="@drawable/formbackground"
                                 android:hint="عدد الورديات"
                                 android:inputType="textPersonName"
-                                android:background="@drawable/formbackground"
 
                                 tools:ignore="HardcodedText" />
                         </com.google.android.material.textfield.TextInputLayout>
@@ -353,13 +360,12 @@
                         </com.google.android.material.textfield.TextInputLayout>
 
 
-
                         <LinearLayout
-                            android:visibility="gone"
                             android:id="@+id/layout_shift"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:orientation="vertical">
+                            android:orientation="vertical"
+                            android:visibility="gone">
 
                             <com.google.android.material.textfield.TextInputLayout
                                 style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
@@ -393,8 +399,8 @@
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:hint="عدد الساعات"
                                 android:background="@drawable/formbackground"
+                                android:hint="عدد الساعات"
                                 tools:ignore="HardcodedText" />
                         </com.google.android.material.textfield.TextInputLayout>
 
@@ -409,8 +415,8 @@
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:hint="الملاحظات"
                                 android:background="@drawable/formbackground"
+                                android:hint="الملاحظات"
                                 tools:ignore="HardcodedText" />
                         </com.google.android.material.textfield.TextInputLayout>
 
@@ -453,4 +459,6 @@
 
         </LinearLayout>
     </ScrollView>
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

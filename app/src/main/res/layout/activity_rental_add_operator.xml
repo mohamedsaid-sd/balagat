@@ -7,6 +7,15 @@
     android:background="@color/black"
     tools:context=".opration.rental.rental_add_operator">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/circle_white"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -14,17 +23,16 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginTop="20dp"
             android:background="@drawable/circle_white"
+            android:orientation="vertical"
             android:paddingBottom="30dp"
             tools:ignore="MissingConstraints">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
                 android:layout_margin="20dp"
+                android:orientation="horizontal"
                 tools:ignore="UseCompoundDrawables">
 
 
@@ -332,8 +340,8 @@
                         android:layout_height="match_parent"
                         android:layout_margin="3dp"
                         android:orientation="vertical"
-                        android:visibility="visible"
-                        android:padding="3dp">
+                        android:padding="3dp"
+                        android:visibility="visible">
 
 
                         <com.google.android.material.textfield.TextInputLayout
@@ -356,14 +364,8 @@
                         </com.google.android.material.textfield.TextInputLayout>
 
 
-
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
-
-
-
-
-
 
 
                 <androidx.cardview.widget.CardView
@@ -378,8 +380,8 @@
                         android:layout_height="match_parent"
                         android:layout_margin="3dp"
                         android:orientation="vertical"
-                        android:visibility="gone"
-                        android:padding="3dp">
+                        android:padding="3dp"
+                        android:visibility="gone">
 
 
                         <com.google.android.material.textfield.TextInputLayout
@@ -392,10 +394,9 @@
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:hint="  اسم المشغل المراد تغييرة"
-                                android:background="@drawable/formbackground" />
+                                android:background="@drawable/formbackground"
+                                android:hint="  اسم المشغل المراد تغييرة" />
                         </com.google.android.material.textfield.TextInputLayout>
-
 
 
                         <com.google.android.material.textfield.TextInputLayout
@@ -418,11 +419,8 @@
                         </com.google.android.material.textfield.TextInputLayout>
 
 
-
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
-
-
 
 
                 <com.google.android.material.textfield.TextInputLayout
@@ -455,10 +453,9 @@
                     <com.google.android.material.textfield.TextInputEditText
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="  ملاحظات"
-                        android:background="@drawable/formbackground" />
+                        android:background="@drawable/formbackground"
+                        android:hint="  ملاحظات" />
                 </com.google.android.material.textfield.TextInputLayout>
-
 
 
                 <Button
@@ -480,4 +477,6 @@
 
         </LinearLayout>
     </ScrollView>
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
