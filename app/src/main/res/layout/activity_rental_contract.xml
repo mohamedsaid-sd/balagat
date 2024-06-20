@@ -168,8 +168,6 @@
                             android:foregroundGravity="center"
                             android:onClick="fun_time_sheet"
                             android:padding="5dp">
-
-
                             <TextView
                                 android:id="@+id/textView0"
                                 android:layout_width="match_parent"
@@ -182,7 +180,6 @@
                                 android:padding="10dp"
                                 android:text="  التصفية الأسبوعية "
                                 android:textSize="14sp" />
-
                         </androidx.cardview.widget.CardView>
                     </LinearLayout>
 
