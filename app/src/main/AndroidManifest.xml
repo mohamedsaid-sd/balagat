@@ -13,7 +13,42 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Balagat.NoActionBar"
         tools:targetApi="31">
-
+        <activity
+            android:name=".opration.constraction.camp_complaint"
+            android:exported="false" />
+        <activity
+            android:name=".opration.constraction.camp_reports"
+            android:exported="false" />
+        <activity
+            android:name=".opration.constraction.camp_challenges"
+            android:exported="false" />
+        <activity
+            android:name=".opration.constraction.camp_material_store"
+            android:exported="false" />
+        <activity
+            android:name=".opration.constraction.camp_fuel_store"
+            android:exported="false" />
+        <activity
+            android:name=".opration.constraction.camp_daily_operations"
+            android:exported="false" />
+        <activity
+            android:name=".opration.constraction.camp_exclusion"
+            android:exported="false" />
+        <activity
+            android:name=".opration.constraction.camp_add_equipment"
+            android:exported="false" />
+        <activity
+            android:name=".opration.constraction.camp_change_location"
+            android:exported="false" />
+        <activity
+            android:name=".opration.constraction.camp_condiation_equipment"
+            android:exported="false" />
+        <activity
+            android:name=".opration.constraction.main_camp"
+            android:exported="false" />
+        <activity
+            android:name=".opration.constraction.camp_equipment_register"
+            android:exported="false" />
         <activity
             android:name=".opration.production.production_sub_liquidation"
             android:exported="false" />
@@ -285,10 +320,6 @@
         <activity
             android:name=".main_human"
             android:exported="true" />
-
-        <activity
-            android:name=".opration.rental.rental_time_sheet"
-            android:exported="false" />
 
     </application>
 
