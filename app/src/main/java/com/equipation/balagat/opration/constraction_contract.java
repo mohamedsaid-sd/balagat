@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.equipation.balagat.R;
 import com.equipation.balagat.contract_time_sheet;
+import com.equipation.balagat.opration.constraction.main_camp;
 import com.equipation.balagat.opration.constraction.main_liquidation;
 import com.equipation.balagat.opration.constraction.main_reports;
 import com.equipation.balagat.opration.constraction.main_time_sheet;
@@ -54,5 +55,11 @@ public class constraction_contract extends AppCompatActivity {
 
     public void fun_main_time_sheet(View view) {
         startActivity(new Intent( this , main_time_sheet.class ));
+    }
+
+    public void fun_main_camp(View view) {
+        startActivity(new Intent( this , main_camp.class ));
+
+
     }
 }

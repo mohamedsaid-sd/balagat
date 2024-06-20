@@ -167,6 +167,7 @@
                             android:layout_gravity="center"
                             android:layout_margin="5dp"
                             android:layout_weight="1"
+                            android:onClick="fun_main_camp"
                             android:background="@drawable/round"
                             android:foregroundGravity="center"
                             android:padding="5dp">
@@ -193,65 +194,7 @@
 
 
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
 
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_margin="5dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/round"
-                            android:foregroundGravity="center"
-                            android:padding="5dp"
-                           >
-
-
-                            <TextView
-                                android:id="@+id/textVioew15"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/whiteroundblack"
-                                android:drawableTop="@drawable/ic_baseline_local_shipping_24"
-                                android:drawablePadding="10dp"
-                                android:fontFamily="sans-serif"
-                                android:gravity="center|center_vertical"
-                                android:padding="10dp"
-                                android:text=" المعدات والقلابات "
-                                android:textSize="14sp" />
-                        </androidx.cardview.widget.CardView>
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_margin="5dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/round"
-                            android:foregroundGravity="center"
-                            android:padding="5dp">
-
-
-
-                            <TextView
-                                android:id="@+id/textVi6ew0"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/whiteroundblack"
-                                android:drawableTop="@drawable/ic_baseline_supervised_user_circle_24"
-                                android:drawablePadding="10dp"
-                                android:fontFamily="sans-serif"
-                                android:gravity="center|center_vertical"
-                                android:padding="10dp"
-                                android:text="   المعدات والقلابات"
-                                android:textSize="14sp" />
-
-                        </androidx.cardview.widget.CardView>
-                    </LinearLayout>
 
 
 
