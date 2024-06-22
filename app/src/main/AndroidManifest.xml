@@ -26,6 +26,18 @@
             android:name=".offices.offices_request_information"
             android:exported="false" />
         <activity
+            android:name=".offices.office_request_rental"
+            android:exported="false" />
+        <activity
+            android:name=".offices.office_petty_cash_request"
+            android:exported="false" />
+        <activity
+            android:name=".offices.office_request_hospitality"
+            android:exported="false" />
+        <activity
+            android:name=".offices.office_request_expense"
+            android:exported="false" />
+        <activity
             android:name=".offices.main_offices"
             android:exported="false" />
         <activity

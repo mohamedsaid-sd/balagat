@@ -5,9 +5,11 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context=".offices.main_offices">
 
     <LinearLayout
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/circle_white"
@@ -79,8 +81,8 @@
                             android:layout_weight="1"
                             android:background="@drawable/round"
                             android:foregroundGravity="center"
-                            android:padding="5dp"
-                            android:onClick="fun_current_office">
+                            android:onClick="fun_current_office"
+                            android:padding="5dp">
 
                             <TextView
                                 android:id="@+id/textView151"
@@ -140,8 +142,8 @@
                             android:layout_weight="1"
                             android:background="@drawable/round"
                             android:foregroundGravity="center"
-                            android:padding="5dp"
-                            android:onClick="fun_request_tools">
+                            android:onClick="fun_request_tools"
+                            android:padding="5dp">
 
 
                             <TextView
@@ -167,8 +169,8 @@
                             android:layout_weight="1"
                             android:background="@drawable/round"
                             android:foregroundGravity="center"
-                            android:padding="5dp"
-                            android:onClick="fun_request_bills">
+                            android:onClick="fun_request_bills"
+                            android:padding="5dp">
 
                             <TextView
                                 android:id="@+id/textView0"
@@ -202,8 +204,8 @@
                             android:layout_weight="1"
                             android:background="@drawable/round"
                             android:foregroundGravity="center"
-                            android:padding="5dp"
-                            android:onClick="fun_request_rental">
+                            android:onClick="fun_request_rental"
+                            android:padding="5dp">
 
 
                             <TextView
@@ -229,8 +231,8 @@
                             android:layout_weight="1"
                             android:background="@drawable/round"
                             android:foregroundGravity="center"
-                            android:padding="5dp"
-                            android:onClick="fun_petty_cash_request">
+                            android:onClick="fun_petty_cash_request"
+                            android:padding="5dp">
 
 
                             <TextView
@@ -265,8 +267,8 @@
                             android:layout_weight="1"
                             android:background="@drawable/round"
                             android:foregroundGravity="center"
-                            android:padding="5dp"
                             android:onClick="fun_request_hospitality"
+                            android:padding="5dp"
                             tools:ignore="OnClick">
 
 
@@ -293,8 +295,8 @@
                             android:layout_weight="1"
                             android:background="@drawable/round"
                             android:foregroundGravity="center"
-                            android:padding="5dp"
-                            android:onClick="fun_request_expense">
+                            android:onClick="fun_request_expense"
+                            android:padding="5dp">
 
                             <TextView
                                 android:layout_width="match_parent"
