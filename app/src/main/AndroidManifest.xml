@@ -14,6 +14,18 @@
         android:theme="@style/Theme.Balagat.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".offices.offices_request_bills"
+            android:exported="false" />
+        <activity
+            android:name=".offices.offices_request_add"
+            android:exported="false" />
+        <activity
+            android:name=".offices.offices_request_Tools"
+            android:exported="false" />
+        <activity
+            android:name=".offices.offices_request_information"
+            android:exported="false" />
+        <activity
             android:name=".offices.main_offices"
             android:exported="false" />
         <activity

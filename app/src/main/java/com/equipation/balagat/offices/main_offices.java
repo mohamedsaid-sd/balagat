@@ -1,10 +1,12 @@
 package com.equipation.balagat.offices;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import com.equipation.balagat.R;
+import com.equipation.balagat.opration.rental.rental_contract_location;
 
 public class main_offices extends AppCompatActivity {
 
@@ -20,21 +22,28 @@ public class main_offices extends AppCompatActivity {
 
     // المكاتب الحالية
     public void fun_current_office(View view) {
+        startActivity(new Intent( this , offices_request_information.class ));
 
     }
 
     // اضافة مكتب
     public void fun_add_office(View view) {
 
+        startActivity(new Intent( this , offices_request_add.class ));
+
     }
 
     // طلب ادوات مكتبية
     public void fun_request_tools(View view) {
+        startActivity(new Intent( this , offices_request_Tools.class ));
+
 
     }
 
     // طلب فواتير
     public void fun_request_bills(View view) {
+        startActivity(new Intent( this , offices_request_bills.class ));
+
 
     }
 
