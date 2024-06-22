@@ -504,6 +504,7 @@
                             android:background="@drawable/whiteroundblack"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
+                            android:onClick="fun_offices_atbara"
                             android:padding="5dp"
                             android:text="مكتب عطبرة"
                             android:textColor="@color/black"

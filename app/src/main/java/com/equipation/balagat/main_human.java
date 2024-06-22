@@ -12,6 +12,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.equipation.balagat.deportation.order_deportation;
+import com.equipation.balagat.offices.main_offices;
 import com.equipation.balagat.opration.Production_contract;
 import com.equipation.balagat.opration.constraction_contract;
 import com.equipation.balagat.opration.rental_contract;
@@ -161,5 +162,9 @@ public class main_human extends AppCompatActivity {
         super.onBackPressed();
 
 
+    }
+
+    public void fun_offices_atbara(View view) {
+        startActivity(new Intent( this , main_offices.class ));
     }
 }
