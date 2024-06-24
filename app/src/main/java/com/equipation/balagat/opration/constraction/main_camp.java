@@ -84,4 +84,17 @@ public class main_camp extends AppCompatActivity {
 
 
     }
+
+    public void fun_camp_main_tippers(View view) {
+
+        startActivity( new Intent( this , main_tippers.class ));
+
+
+    }
+
+    public void fun_camp_camp_security(View view) {
+        startActivity( new Intent( this , camp_security.class ));
+
+
+    }
 }

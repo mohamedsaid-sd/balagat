@@ -117,6 +117,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="3dp"
+                        android:id="@+id/layout_location"
                         android:orientation="vertical"
                         android:padding="3dp">
 
@@ -158,6 +159,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="3dp"
+                        android:id="@+id/layout_task"
+                        android:visibility="gone"
                         android:orientation="vertical"
                         android:padding="3dp">
 

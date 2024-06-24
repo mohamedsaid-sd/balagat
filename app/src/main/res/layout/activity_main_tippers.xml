@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".opration.constraction.main_tippers">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/circle_white"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                tools:ignore="UselessParent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle_white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:orientation="horizontal"
+                        tools:ignore="RtlHardcoded,UseCompoundDrawables">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="20dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/jana"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text=" المعدات والقلابات"
+                            android:textColor="@color/black"
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            app:drawableStartCompat="@drawable/ic_baseline_supervised_user_circle_24"
+                            tools:ignore="HardcodedText,InefficientWeight,SpUsage,TextSizeCheck" />
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="50dp"
+                            android:layout_margin="15dp"
+                            android:background="@drawable/whiteroundblack"
+                            android:importantForAccessibility="no"
+                            android:onClick="fun_back"
+                            android:padding="5dp"
+                            app:srcCompat="@drawable/ic_baseline_arrow_forward_ios_24" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView15"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/grayroundlight"
+                                android:fontFamily="sans-serif"
+                                android:gravity="center"
+                                android:onClick="fun_camp_equipment_register"
+                                android:padding="5dp"
+                                android:text="  سجل المعدات والقلابات "
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                app:drawableTopCompat="@drawable/ic_baseline_poll_24" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView16"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/grayroundlight"
+                                android:fontFamily="sans-serif"
+                                android:gravity="center"
+                                android:onClick="fun_camp_condiation_equipment"
+                                android:padding="5dp"
+                                android:text=" حالة المعدات والقلابات"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                app:drawableTopCompat="@drawable/ic_baseline_poll_24" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/textView190"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/grayroundlight"
+                                android:fontFamily="sans-serif"
+                                android:gravity="center"
+                                android:onClick="fun_camp_change_location"
+                                android:padding="5dp"
+                                android:text="تغيير موقع ومهام"
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                app:drawableTopCompat="@drawable/ic_baseline_poll_24" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/grayroundlight"
+                                android:fontFamily="sans-serif"
+                                android:gravity="center"
+                                android:onClick="fun_camp_add_equipment"
+                                android:padding="5dp"
+                                android:text=" طلب أضافة "
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                app:drawableTopCompat="@drawable/ic_baseline_poll_24" />
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <TextView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/grayroundlight"
+                                android:fontFamily="sans-serif"
+                                android:gravity="center"
+                                android:onClick="fun_camp_exclusion"
+                                android:padding="5dp"
+                                android:text="  طلب أبعاد "
+                                android:textColor="@color/black"
+                                android:textSize="12sp"
+                                android:textStyle="bold"
+                                app:drawableTopCompat="@drawable/ic_baseline_poll_24" />
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>

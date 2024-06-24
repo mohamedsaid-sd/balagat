@@ -97,19 +97,23 @@
 
 
                         <com.google.android.material.textfield.TextInputLayout
+                            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3dp"
-                            android:padding="3dp"
-                            app:boxStrokeWidth="0dp">
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:hint="    الحالة التشغيلية  "
+                            app:boxStrokeWidth="0dp"
+                            tools:ignore="HardcodedText">
 
-                            <com.google.android.material.textfield.TextInputEditText
+                            <AutoCompleteTextView
+                                android:id="@+id/sp_condiation"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/formbackground"
-                                android:hint="الحالة التشغيلية"
-                                tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+                                android:inputType="none"
+                                tools:ignore="LabelFor,SpeakableTextPresentCheck,VisualLintTextFieldSize" />
                         </com.google.android.material.textfield.TextInputLayout>
+
 
 
                     </LinearLayout>
@@ -118,6 +122,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="3dp"
+                        android:id="@+id/layout_condiation1"
                         android:orientation="vertical"
                         android:padding="3dp">
 
@@ -159,6 +164,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_margin="3dp"
+                        android:visibility="gone"
+                        android:id="@+id/layout_condiation2"
                         android:orientation="vertical"
                         android:padding="3dp">
 
