@@ -38,9 +38,9 @@ public class rental_contract extends AppCompatActivity {
         startActivity(new Intent( this , rental_contract_location.class ));
     }
 
-//    public void fun_time_sheet(View view) {
-//        startActivity(new Intent( this , sub_liquidation.class ));
-//    }
+    public void fun_time_sheet(View view) {
+        startActivity(new Intent( this , sub_liquidation.class ));
+    }
 
     public void fun_rental_time_sheet(View view) {
         startActivity(new Intent( this , rental_time_sheet.class ));

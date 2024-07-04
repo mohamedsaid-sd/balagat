@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.equipation.balagat.R;
+import com.equipation.balagat.opration.constraction.com_liq_pro_update_order;
+import com.equipation.balagat.opration.constraction.com_liq_pro_weekly_liquidation;
 import com.equipation.balagat.opration.rental.rental_updateOrder;
 import com.equipation.balagat.opration.rental.weekly_liquidation;
 
@@ -26,6 +28,16 @@ public class production_sub_liquidation extends AppCompatActivity {
 
     }
 
+
+    public void fun_pro_weekly(View view) {
+        startActivity(new Intent(this, pro_liq_pro_weekly_liquidation.class));
+    }
+
+    public void fun_pro_updateorder(View view) {
+        startActivity(new Intent(this, pro_liq_pro_update_order.class));
+    }
+
     public void fun_back(View view) {
+        super.getOnBackPressedDispatcher().onBackPressed();
     }
 }

@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.equipation.balagat.fleet.fleet_maintanance_main;
+
 public class home_sub2 extends AppCompatActivity {
 
     @Override
@@ -15,11 +17,11 @@ public class home_sub2 extends AppCompatActivity {
     }
 
     public void fun_maintenance(View view) {
-        startActivity(new Intent(this , maintenance.class));
+        startActivity(new Intent(this , fleet_maintanance_main.class));
     }
 
     public void fun_fleet(View view) {
-        startActivity(new Intent(this , fleet.class));
+       // startActivity(new Intent(this , fleet.class));
     }
 
     public void fiun_stock(View view) {

@@ -2,16 +2,17 @@ package com.equipation.balagat;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Looper;
 import android.view.View;
-import android.view.animation.AnimationUtils;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.equipation.balagat.deportation.order_deportation;
+import com.equipation.balagat.fleet.fleet_heavy_equioment;
+import com.equipation.balagat.fleet.fleet_spare_main;
+import com.equipation.balagat.fleet.fleet_trucks_main;
+import com.equipation.balagat.fleet.fleet_maintanance_main;
 import com.equipation.balagat.offices.main_offices;
 import com.equipation.balagat.opration.Production_contract;
 import com.equipation.balagat.opration.constraction_contract;
@@ -102,8 +103,8 @@ public class main_human extends AppCompatActivity {
     }
 
 
-    public void fun_maintenance(View view) {
-        startActivity(new Intent( this , maintenance.class ).putExtra( "FLAG" , "employee" ));
+    public void fun_fleet_maintenance(View view) {
+        startActivity(new Intent( this , fleet_maintanance_main.class ).putExtra( "FLAG" , "employee" ));
     }
 
 
@@ -166,5 +167,17 @@ public class main_human extends AppCompatActivity {
 
     public void fun_offices_atbara(View view) {
         startActivity(new Intent( this , main_offices.class ));
+    }
+
+    public void fun_fleet_heavy_equipment(View view) {
+        startActivity(new Intent( this , fleet_heavy_equioment.class ));
+    }
+
+    public void fun_fleet_trucks(View view) {
+        startActivity(new Intent( this , fleet_trucks_main.class ));
+    }
+
+    public void fun_fleet_spare(View view) {
+        startActivity(new Intent( this , fleet_spare_main.class ));
     }
 }

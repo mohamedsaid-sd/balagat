@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.equipation.balagat.fleet.fleet_maintanance_main;
 import com.equipation.balagat.humans.complaint_request;
 import com.equipation.balagat.humans.delegate_request;
 import com.equipation.balagat.humans.edit_profile_request;
@@ -223,7 +225,7 @@ public class human extends AppCompatActivity {
 
     public void fun_maintenance(View view) {
         Bundle b = ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
-        startActivity(new Intent(this , maintenance.class) , b );
+        startActivity(new Intent(this , fleet_maintanance_main.class) , b );
     }
 
     public void fun_purchases(View view) {

@@ -23,12 +23,12 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="150dp"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
         android:drawableStart="@drawable/ic_baseline_engineering_24"
         android:fontFamily="@font/jana"
         android:gravity="center"
-        android:text=" إدارة العمليات"
+        android:text="إنجاز"
         android:textColor="@color/gold"
         android:textStyle="bold" />
 

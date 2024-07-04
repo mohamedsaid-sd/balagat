@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".maintenances.pay_parts">
+    tools:context=".fleet.maintenances.pay_parts">
 
     <ScrollView
         android:layout_width="match_parent"

@@ -219,7 +219,7 @@
                                         android:fontFamily="sans-serif"
                                         android:gravity="center|center_vertical"
                                         android:padding="10dp"
-                                        android:text=" التشغيل "
+                                        android:text="الخدمات"
                                         android:textColor="@color/black"
                                         android:textSize="14sp"
                                         android:textStyle="bold"

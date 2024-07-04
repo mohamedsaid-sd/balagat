@@ -14,10 +14,49 @@
         android:theme="@style/Theme.Balagat.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".fleet.heavy_equipment.update_heavy_fleet"
+            android:exported="false" />
+        <activity
+            android:name=".fleet.heavy_equipment.heavy_fleet"
+            android:exported="false" />
+        <activity
+            android:name=".fleet.trucks.update_trucks_fleet"
+            android:exported="false" />
+        <activity
+            android:name=".fleet.trucks.trucks_fleet"
+            android:exported="false" />
+        <activity
+            android:name=".fleet.fleet_spare_main"
+            android:exported="false" />
+        <activity
+            android:name=".fleet.fleet_trucks_main"
+            android:exported="false" />
+        <activity
+            android:name=".fleet.fleet_heavy_equioment"
+            android:exported="false" />
+        <activity
             android:name=".opration.constraction.main_tippers"
             android:exported="false" />
         <activity
             android:name=".opration.constraction.camp_security"
+            android:exported="false" />
+        <activity
+            android:name=".opration.rental.rental_liq_pro_update_order"
+            android:exported="false" />
+        <activity
+            android:name=".opration.rental.rental_liq_pro_weekly_liquidation"
+            android:exported="false" />
+        <activity
+            android:name=".opration.production.pro_liq_pro_update_order"
+            android:exported="false" />
+        <activity
+            android:name=".opration.production.pro_liq_pro_weekly_liquidation"
+            android:exported="false" />
+        <activity
+            android:name=".opration.constraction.com_liq_pro_update_order"
+            android:exported="false" />
+        <activity
+            android:name=".opration.constraction.com_liq_pro_weekly_liquidation"
             android:exported="false" />
         <activity
             android:name=".offices.offices_request_bills"
@@ -317,25 +356,25 @@
             android:name=".opration.production.production_renew_contract"
             android:exported="false" /> <!-- Maintenance requests -->
         <activity
-            android:name=".maintenances.monthly"
+            android:name=".fleet.maintenances.monthly"
             android:exported="false" />
         <activity
-            android:name=".maintenances.malfunction_maintenace"
+            android:name=".fleet.maintenances.malfunction_maintenace"
             android:exported="false" />
         <activity
-            android:name=".maintenances.pay_parts"
+            android:name=".fleet.maintenances.pay_parts"
             android:exported="false" />
         <activity
-            android:name=".maintenances.therapeutic_maintenance_request"
+            android:name=".fleet.maintenances.therapeutic_maintenance_request"
             android:exported="false" />
         <activity
-            android:name=".maintenances.periodic_maintenance_request"
+            android:name=".fleet.maintenances.periodic_maintenance_request"
             android:exported="false" />
         <activity
-            android:name=".maintenances.asper_request"
+            android:name=".fleet.maintenances.asper_request"
             android:exported="false" /> <!-- main departments -->
         <activity
-            android:name=".maintenances.part_maintenance"
+            android:name=".fleet.maintenances.part_maintenance"
             android:exported="false" /> <!-- 0000000000000000000000000000000000000000000000000000000000000000000 -->
         <activity
             android:name=".login"
@@ -347,7 +386,7 @@
             android:name=".purchases"
             android:exported="false" />
         <activity
-            android:name=".maintenance"
+            android:name=".fleet.fleet_maintanance_main"
             android:exported="false" />
         <activity
             android:name=".fleet"

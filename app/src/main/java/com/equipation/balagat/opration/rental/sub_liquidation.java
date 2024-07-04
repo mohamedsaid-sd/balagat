@@ -8,6 +8,8 @@ import android.view.View;
 
 import com.equipation.balagat.R;
 import com.equipation.balagat.contract_time_sheet;
+import com.equipation.balagat.opration.production.pro_liq_pro_update_order;
+import com.equipation.balagat.opration.production.pro_liq_pro_weekly_liquidation;
 
 public class sub_liquidation extends AppCompatActivity {
 
@@ -24,5 +26,17 @@ public class sub_liquidation extends AppCompatActivity {
     public void fun_updateorder(View view) {
         startActivity(new Intent( this , rental_updateOrder.class ));
 
+    }
+
+    public void fun_back(View view) {
+        super.getOnBackPressedDispatcher().onBackPressed();
+    }
+
+    public void fun_pro_weekly(View view) {
+        startActivity(new Intent(this, rental_liq_pro_weekly_liquidation.class));
+    }
+
+    public void fun_pro_updateorder(View view) {
+        startActivity(new Intent(this, rental_liq_pro_update_order.class));
     }
 }

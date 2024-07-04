@@ -34,6 +34,7 @@
                     android:layout_height="wrap_content"
                     android:gravity="left"
                     android:orientation="horizontal"
+                    android:visibility="visible"
                     tools:ignore="RtlHardcoded,UseCompoundDrawables">
 
                     <TextView
@@ -307,7 +308,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:visibility="gone">
+                    android:visibility="visible">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -322,12 +323,13 @@
                             android:background="@drawable/whiteroundblack"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
+                            android:onClick="fun_fleet_heavy_equipment"
                             android:padding="5dp"
-                            android:text="المعدات الثقيلة"
+                            android:text=" الآليات الثقيلة"
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold"
-                            app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
+                            app:drawableTopCompat="@drawable/baseline_agriculture_24"
                             tools:ignore="HardcodedText" />
 
                         <TextView
@@ -338,12 +340,13 @@
                             android:background="@drawable/whiteroundblack"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
+                            android:onClick="fun_fleet_trucks"
                             android:padding="5dp"
                             android:text="الشاحنات والقلابات"
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold"
-                            app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
+                            app:drawableTopCompat="@drawable/baseline_agriculture_24"
                             tools:ignore="HardcodedText" />
 
                     </LinearLayout>
@@ -362,13 +365,13 @@
                             android:background="@drawable/whiteroundblack"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
-                            android:onClick="fun_maintenance"
+                            android:onClick="fun_fleet_maintenance"
                             android:padding="5dp"
                             android:text="الصيانة"
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold"
-                            app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
+                            app:drawableTopCompat="@drawable/ic_baseline_home_repair_service_24"
                             tools:ignore="HardcodedText,NestedWeights" />
 
                         <TextView
@@ -379,13 +382,14 @@
                             android:background="@drawable/whiteroundblack"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
+                            android:onClick="fun_fleet_spare"
                             android:padding="5dp"
                             android:text="قطع الغيار"
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold"
                             android:visibility="visible"
-                            app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
+                            app:drawableTopCompat="@drawable/ic_baseline_home_repair_service_24"
                             tools:ignore="HardcodedText" />
 
                     </LinearLayout>
@@ -398,7 +402,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
-                    android:visibility="visible">
+                    android:visibility="gone">
 
                     <LinearLayout
                         android:layout_width="match_parent"

@@ -1,4 +1,4 @@
-package com.equipation.balagat.maintenances;
+package com.equipation.balagat.fleet.maintenances;
 
 import android.os.Bundle;
 import android.view.View;

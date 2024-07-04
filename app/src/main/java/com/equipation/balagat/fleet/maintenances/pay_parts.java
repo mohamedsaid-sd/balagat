@@ -1,27 +1,25 @@
-package com.equipation.balagat.maintenances;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.equipation.balagat.fleet.maintenances;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
-
-
+import androidx.appcompat.app.AppCompatActivity;
 import com.equipation.balagat.R;
-
 import java.util.ArrayList;
 
-public class part_maintenance extends AppCompatActivity {
+public class pay_parts extends AppCompatActivity {
 
     AutoCompleteTextView sp_machine_type ,sp_location_type;
 
+    ArrayList<String> ar_machine_type,ar_location_type ;
 
-    ArrayList ar_machine_type,ar_location_type ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_part_maintenance);
+        setContentView(R.layout.activity_pay_parts);
+
+
 
         ar_machine_type = new ArrayList<>();
         ar_location_type = new ArrayList<>();
@@ -37,22 +35,21 @@ public class part_maintenance extends AppCompatActivity {
         ar_location_type.add("   لا يحتاج   ");
         Casting();
 
-        ArrayAdapter adapter_machine_type = new ArrayAdapter<>(this,
-                R.layout.nice_select_item, ar_machine_type);
+        ArrayAdapter<String> adapter_machine_type = new ArrayAdapter<>(this,
+                androidx.appcompat.R.layout.support_simple_spinner_dropdown_item , ar_machine_type);
         sp_machine_type.setAdapter(adapter_machine_type);
 
-        ArrayAdapter adapter_machine_type1 = new ArrayAdapter<>(this,
-                R.layout.nice_select_item , ar_location_type);
+        ArrayAdapter<String> adapter_machine_type1 = new ArrayAdapter<>(this,
+                androidx.appcompat.R.layout.support_simple_spinner_dropdown_item , ar_location_type);
         sp_location_type.setAdapter(adapter_machine_type1);
+
     }
     private void Casting() {
         sp_machine_type = findViewById(R.id.sp_machine_type);
         sp_location_type = findViewById(R.id.sp_location_type);
-
-
-
     }
+
     public void fun_back(View view) {
-        super.onBackPressed();
+        super.getOnBackPressedDispatcher().onBackPressed();
     }
 }

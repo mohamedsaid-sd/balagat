@@ -83,7 +83,8 @@
                             android:layout_height="match_parent"
                             android:layout_margin="3dp"
                             android:padding="3dp"
-                            android:visibility="gone"
+                            android:textColorHint="@color/green"
+                            android:visibility="visible"
                             app:boxStrokeWidth="0dp">
 
                             <com.google.android.material.textfield.TextInputEditText

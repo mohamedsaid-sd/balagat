@@ -24,14 +24,6 @@ public class main_reports extends AppCompatActivity {
         startActivity( new Intent( this , contract_weekly_liquidation.class ));
     }
 
-    public void fun_update_order(View view) {
-        startActivity( new Intent( this , contract_update_order.class ));
-    }
-
-    public void fun_reports(View view) {
-        startActivity( new Intent( this , contract_reports.class ));
-    }
-
     public void fun_back(View view) {
         super.getOnBackPressedDispatcher().onBackPressed();
     }
