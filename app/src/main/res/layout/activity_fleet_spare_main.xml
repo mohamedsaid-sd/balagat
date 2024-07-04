@@ -80,7 +80,7 @@
                             android:background="@drawable/whiteroundblack"
                             android:fontFamily="@font/jana"
                             android:gravity="center"
-                            android:onClick="fun_periodic_maintenance"
+                            android:onClick="fun_available_spare_fleet"
                             android:padding="5dp"
                             android:text="قطع الغيار المتوفرة"
                             android:textSize="12sp"
@@ -97,7 +97,7 @@
                             android:fontFamily="@font/jana"
 
                             android:gravity="center"
-                            android:onClick="fun_therapeutic_request"
+                            android:onClick="fun_update_spare_fleet"
                             android:padding="5dp"
                             android:text="تحديث"
                             android:textSize="12sp"

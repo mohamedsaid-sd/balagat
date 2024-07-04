@@ -115,21 +115,6 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/formbackground"
-                                android:hint=" ساعات العمل   "
-                                tools:ignore="HardcodedText,VisualLintTextFieldSize" />
-                        </com.google.android.material.textfield.TextInputLayout>
-
-                        <com.google.android.material.textfield.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_margin="3dp"
-                            android:padding="3dp"
-                            app:boxStrokeWidth="0dp">
-
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/formbackground"
                                 android:hint=" عدد النقلات "
                                 tools:ignore="HardcodedText,VisualLintTextFieldSize" />
                         </com.google.android.material.textfield.TextInputLayout>
