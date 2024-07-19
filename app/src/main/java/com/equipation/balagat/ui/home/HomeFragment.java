@@ -28,17 +28,17 @@ public class HomeFragment extends Fragment {
         binding = FragmentHomeBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
         // الموارد البشرية
-        CardView card1 = binding.card1;
+        TextView card1 = binding.card1;
         // العقودات
-        CardView card2 = binding.card2;
+        TextView card2 = binding.card2;
         // المشتريات
-        CardView card3 = binding.card3;
+        TextView card3 = binding.card3;
         // ساعات العمل
-        CardView card4 = binding.card4;
+        TextView card4 = binding.card4;
 
-        CardView card5 = binding.card5;
+        TextView card5 = binding.card5;
         // المخزن
-        CardView card6 = binding.card6;
+        TextView card6 = binding.card6;
 
 
         // الضغط علي الموارد البشرية
