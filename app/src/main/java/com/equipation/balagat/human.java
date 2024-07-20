@@ -4,12 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ActivityOptions;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.equipation.balagat.fleet.fleet_maintanance_main;
+import com.equipation.balagat.humans.Attendance;
 import com.equipation.balagat.humans.complaint_request;
 import com.equipation.balagat.humans.delegate_request;
 import com.equipation.balagat.humans.edit_profile_request;
@@ -36,7 +38,7 @@ public class human extends AppCompatActivity {
     // Employee
     TextView txt_resignation , txt_complant , txt_profile ;
     // Borrow
-    TextView txt_salary , txt_borrow , txt_moretidy , txt_incentive , txt_delegate ;
+    TextView txt_salary , txt_borrow , txt_moretidy , txt_incentive , txt_delegate ,txt_attendacne,txt_policies;
     // Prose
     TextView txt_PPE , txt_prose ;
     // Trainig
@@ -66,6 +68,8 @@ public class human extends AppCompatActivity {
         txt_vacation.setVisibility(View.GONE);
         txt_evaluation.setVisibility(View.GONE);
         txt_training.setVisibility(View.GONE);
+        txt_attendacne.setVisibility(View.GONE);
+        txt_policies.setVisibility(View.GONE);
 
 
         if(FLAG.equals("employee")){
@@ -73,6 +77,9 @@ public class human extends AppCompatActivity {
             txt_resignation.setVisibility(View.VISIBLE);
             txt_complant.setVisibility(View.VISIBLE);
             txt_profile.setVisibility(View.VISIBLE);
+            txt_policies.setVisibility(View.VISIBLE);
+
+
         }
 
         if(FLAG.equals("borrow")){
@@ -95,6 +102,7 @@ public class human extends AppCompatActivity {
             txt_shift.setVisibility(View.VISIBLE);
             txt_vacation.setVisibility(View.VISIBLE);
             txt_evaluation.setVisibility(View.VISIBLE);
+            txt_attendacne.setVisibility(View.VISIBLE);
         }
 
 
@@ -127,6 +135,12 @@ public class human extends AppCompatActivity {
         txt_shift = findViewById(R.id.txt_shift);
         txt_vacation = findViewById(R.id.txt_vacation);
         txt_evaluation = findViewById(R.id.txt_evaluation);
+        txt_attendacne = findViewById(R.id.txt_attendacne);
+        txt_policies = findViewById(R.id.txt_policies);
+
+
+
+
         // Development
         txt_training = findViewById(R.id.txt_training);
     }
@@ -196,8 +210,8 @@ public class human extends AppCompatActivity {
     }
 
     public void fun_training_request(View view) {
-        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
-        startActivity(new Intent( this , training_request.class ) , b);
+
+        startActivity(new Intent( this , training_request.class ) );
 
     }
 
@@ -219,13 +233,13 @@ public class human extends AppCompatActivity {
     }
 
     public void fun_delegate_request(View view) {
-        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
-        startActivity(new Intent( this , delegate_request.class ) , b);
+      //  Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(new Intent( this , delegate_request.class ) );
     }
 
     public void fun_maintenance(View view) {
-        Bundle b = ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
-        startActivity(new Intent(this , fleet_maintanance_main.class) , b );
+       // Bundle b = ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(new Intent(this , fleet_maintanance_main.class)  );
     }
 
     public void fun_purchases(View view) {
@@ -239,9 +253,25 @@ public class human extends AppCompatActivity {
     }
 
     public void fun_contract(View view) {
-        Bundle b = ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
-        startActivity(new Intent(this , contract.class) , b );
+      //  Bundle b = ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(new Intent(this , contract.class) );
     }
 
 
+    public void fun_attendance_requeendancest(View view) {
+     //   Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+        startActivity(new Intent( this , Attendance.class ) );
+
+
+    }
+
+    public void fun_policies(View view) {
+        // add the link of pdf
+        String value="https://equipation.sd/policies/policies.pdf";
+        Intent intent=new Intent(Intent.ACTION_VIEW, Uri.parse(value));
+
+        // start activity
+        startActivity(intent);
+
+    }
 }

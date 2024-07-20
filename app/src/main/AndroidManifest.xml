@@ -14,6 +14,9 @@
         android:theme="@style/Theme.Balagat.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".humans.Attendance"
+            android:exported="false" />
+        <activity
             android:name=".fleet.spare.update_spare_fleet"
             android:exported="false" />
         <activity
@@ -91,12 +94,7 @@
         <activity
             android:name=".offices.main_offices"
             android:exported="false" />
-        <activity
-            android:name=".opration.constraction.con_tim_production"
-            android:exported="false" />
-        <activity
-            android:name=".opration.constraction.con_tim_hours_work"
-            android:exported="false" />
+
         <activity
             android:name=".opration.constraction.main_time_sheet"
             android:exported="false" />
@@ -394,9 +392,7 @@
         <activity
             android:name=".fleet.fleet_maintanance_main"
             android:exported="false" />
-        <activity
-            android:name=".fleet"
-            android:exported="false" />
+
         <activity
             android:name=".location"
             android:exported="false" />
