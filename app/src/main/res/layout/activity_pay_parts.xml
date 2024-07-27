@@ -36,7 +36,7 @@
                     android:fontFamily="@font/jana"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="طلب  شراء قطع غيار"
+                    android:text="طلب شراء قطع غيار / سوائل / ملحقات"
                     android:textColor="@color/black"
                     android:textSize="20dp"
                     android:textStyle="bold"
@@ -78,7 +78,23 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/formbackground"
+                            android:drawableEnd="@drawable/ic_menu_camera"
                             android:hint="العداد الحالي"
+                            android:inputType="textPersonName"
+                            tools:ignore="HardcodedText" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        app:boxStrokeWidth="0dp">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:hint=" الرقم التعريفي"
                             android:inputType="textPersonName"
                             tools:ignore="HardcodedText" />
                     </com.google.android.material.textfield.TextInputLayout>
@@ -99,7 +115,6 @@
                         </AutoCompleteTextView>
                     </com.google.android.material.textfield.TextInputLayout>
 
-
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -111,7 +126,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/formbackground"
-                            android:hint=" نوع الاسبير المطلوب"
+                            android:hint=" إسم القطعة "
                             android:inputType="textPersonName"
                             tools:ignore="HardcodedText" />
                     </com.google.android.material.textfield.TextInputLayout>
@@ -127,10 +142,75 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/formbackground"
-                            android:hint=" الكمية المطلوبة  "
+                            android:drawableEnd="@drawable/ic_menu_camera"
+                            android:hint=" صورة للقطعة القديمة ان وجدت  "
                             android:inputType="textPersonName"
                             tools:ignore="HardcodedText" />
                     </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        app:boxStrokeWidth="0dp">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:hint=" رقم القطعة "
+                            android:inputType="textPersonName"
+                            tools:ignore="HardcodedText" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        app:boxStrokeWidth="0dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:hint=" الوحدة "
+                            android:inputType="textPersonName"
+                            tools:ignore="HardcodedText" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        app:boxStrokeWidth="0dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:hint=" الكمية المطلوبة "
+                            android:inputType="textPersonName"
+                            tools:ignore="HardcodedText" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        app:boxStrokeWidth="0dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:hint="  المواصفات "
+                            android:inputType="textPersonName"
+                            tools:ignore="HardcodedText" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"

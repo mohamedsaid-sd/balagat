@@ -2,10 +2,11 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".fleet.maintenances.periodic_maintenance_request">
+    tools:context=".fleet.maintenances.periodic_maintenance_table">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -17,10 +18,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:layout_marginBottom="20dp"
             android:background="@drawable/circle_white"
             android:orientation="vertical"
-            android:paddingBottom="20dp"
+            android:paddingBottom="30dp"
             tools:ignore="MissingConstraints">
 
             <LinearLayout
@@ -38,7 +38,7 @@
                     android:fontFamily="@font/jana"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="طلب صيانة دورية"
+                    android:text="طلب جدول الصيانة الدورية"
                     android:textColor="@color/black"
                     android:textSize="20dp"
                     android:textStyle="bold"
@@ -59,9 +59,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="3dp"
                 android:orientation="vertical"
-                android:padding="3dp">
+                android:padding="5dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -71,14 +70,23 @@
                     android:padding="3dp"
                     android:visibility="visible">
 
-                    <TextView
-                        android:id="@+id/textView42"
+
+                    <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_margin="3dp"
                         android:padding="3dp"
-                        android:text="بيانات الآليه "
-                        tools:ignore="HardcodedText" />
+                        app:boxStrokeWidth="0dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:drawableEnd="@drawable/ic_menu_camera"
+                            android:hint="العداد الحالى"
+                            tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
@@ -92,7 +100,25 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/formbackground"
-                            android:hint="وقت الطلب "
+                            android:hint="متبقى الساعات / الكيلومترات"
+                            android:inputType="number"
+                            tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        android:textColorHint="@color/green"
+                        app:boxStrokeWidth="0dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:hint=" عداد الغيار القادم "
                             android:inputType="number"
                             tools:ignore="HardcodedText,VisualLintTextFieldSize" />
                     </com.google.android.material.textfield.TextInputLayout>
@@ -102,26 +128,22 @@
                         android:layout_height="match_parent"
                         android:layout_margin="3dp"
                         android:padding="3dp"
-                        android:textColorHint="@color/black"
                         app:boxStrokeWidth="0dp">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/formbackground"
-                            android:drawableEnd="@drawable/ic_menu_camera"
-                            android:hint="العداد الحالى"
-                            android:inputType="number"
+                            android:hint="الرقم التعريفي"
                             tools:ignore="HardcodedText,VisualLintTextFieldSize" />
                     </com.google.android.material.textfield.TextInputLayout>
-
 
                     <com.google.android.material.textfield.TextInputLayout
                         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
-                        android:hint="طبيعه عمل الالية "
+                        android:hint="طبيعه عمل الالية"
                         app:boxStrokeWidth="0dp"
                         tools:ignore="HardcodedText">
 
@@ -131,78 +153,7 @@
                             android:layout_height="wrap_content"
                             android:background="@drawable/formbackground"
                             android:inputType="none"
-                            tools:ignore="LabelFor,SpeakableTextPresentCheck,VisualLintTextFieldSize">
-
-                        </AutoCompleteTextView>
-
-                    </com.google.android.material.textfield.TextInputLayout>
-
-
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="3dp"
-                        android:padding="3dp"
-                        android:textColorHint="@color/black"
-                        app:boxStrokeWidth="0dp">
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/formbackground"
-                            android:hint="  رقم هانف للمتابعة 1"
-                            tools:ignore="HardcodedText,VisualLintTextFieldSize" />
-                    </com.google.android.material.textfield.TextInputLayout>
-
-
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="3dp"
-                        android:padding="3dp"
-                        android:textColorHint="@color/black"
-                        app:boxStrokeWidth="0dp">
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/formbackground"
-                            android:hint=" رقم هانف للمتابعة 2"
-                            tools:ignore="HardcodedText,VisualLintTextFieldSize" />
-                    </com.google.android.material.textfield.TextInputLayout>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="3dp"
-                    android:orientation="vertical"
-                    android:padding="3dp">
-
-                    <TextView
-                        android:id="@+id/textView43"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="3dp"
-                        android:padding="3dp"
-                        android:text="بيانات الصيانة الدورية"
-                        tools:ignore="HardcodedText" />
-
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="3dp"
-                        android:padding="3dp"
-                        android:textColorHint="@color/green"
-                        app:boxStrokeWidth="0dp">
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/formbackground"
-                            android:hint="نوع الصيانة السابقة"
-                            tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+                            tools:ignore="LabelFor,SpeakableTextPresentCheck,VisualLintTextFieldSize" />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
@@ -210,73 +161,6 @@
                         android:layout_height="match_parent"
                         android:layout_margin="3dp"
                         android:padding="3dp"
-                        android:textColorHint="@color/green"
-                        app:boxStrokeWidth="0dp">
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/formbackground"
-                            android:hint="عداد الصيانة السابقة"
-                            android:inputType="number"
-                            tools:ignore="HardcodedText,VisualLintTextFieldSize" />
-                    </com.google.android.material.textfield.TextInputLayout>
-
-
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="3dp"
-                        android:padding="3dp"
-                        android:textColorHint="@color/green"
-                        app:boxStrokeWidth="0dp">
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/formbackground"
-                            android:hint="تاريخ الصيانة السابقة"
-                            tools:ignore="HardcodedText,VisualLintTextFieldSize" />
-                    </com.google.android.material.textfield.TextInputLayout>
-
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="3dp"
-                        android:padding="3dp"
-                        android:textColorHint="@color/green"
-                        app:boxStrokeWidth="0dp">
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/formbackground"
-                            android:hint="نوع الصيانة المطلوبة"
-                            tools:ignore="HardcodedText,TextContrastCheck,VisualLintTextFieldSize" />
-                    </com.google.android.material.textfield.TextInputLayout>
-
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="3dp"
-                        android:padding="3dp"
-                        android:textColorHint="@color/green"
-                        app:boxStrokeWidth="0dp">
-
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/formbackground"
-                            android:hint="المتبقى للصيانة (س,كم("
-                            tools:ignore="HardcodedText,VisualLintTextFieldSize" />
-                    </com.google.android.material.textfield.TextInputLayout>
-
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="3dp"
-                        android:padding="3dp"
-                        android:textColorHint="@color/black"
                         app:boxStrokeWidth="0dp">
 
                         <com.google.android.material.textfield.TextInputEditText
@@ -286,6 +170,8 @@
                             android:hint="الملاحظات"
                             tools:ignore="HardcodedText,VisualLintTextFieldSize" />
                     </com.google.android.material.textfield.TextInputLayout>
+
+
                 </LinearLayout>
 
                 <Button
@@ -293,11 +179,11 @@
                     android:id="@+id/button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="3dp"
+                    android:layout_margin="5dp"
                     android:background="@drawable/goaldround"
                     android:backgroundTint="@color/gold"
                     android:fontFamily="@font/jana"
-                    android:padding="3dp"
+                    android:padding="5dp"
                     android:text="تاكيد الطلب"
                     android:textColor="@color/black"
                     android:textStyle="bold"

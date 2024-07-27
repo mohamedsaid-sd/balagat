@@ -296,6 +296,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
                         android:hint="نوع الطلب"
+                        android:visibility="visible"
                         app:boxStrokeWidth="0dp"
                         tools:ignore="HardcodedText">
 
@@ -315,6 +316,7 @@
                         android:background="@drawable/round"
                         android:padding="3dp"
                         android:textColorHint="@color/green"
+                        android:visibility="visible"
                         app:boxStrokeWidth="0dp">
 
                         <com.google.android.material.textfield.TextInputEditText
@@ -331,6 +333,7 @@
                         android:layout_margin="3dp"
                         android:background="@drawable/round"
                         android:padding="3dp"
+                        android:visibility="visible"
                         app:boxStrokeWidth="0dp"
                         app:hintTextColor="@color/green">
 
@@ -348,6 +351,7 @@
                         android:layout_margin="3dp"
                         android:background="@drawable/round"
                         android:padding="3dp"
+                        android:visibility="visible"
                         app:boxStrokeWidth="0dp"
                         app:hintTextColor="@color/green">
 
@@ -355,7 +359,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/formbackground"
-                            android:hint="رقم المعدة "
+                            android:hint="الرقم التعريفي"
                             tools:ignore="HardcodedText,TextContrastCheck" />
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -368,11 +372,12 @@
                         android:visibility="visible"
                         app:boxStrokeWidth="0dp"
                         app:hintTextColor="@color/green">
+
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/formbackground"
-                            android:hint="ماركة المعدة "
+                            android:hint="الشركة المصنعة"
                             tools:ignore="HardcodedText,TextContrastCheck" />
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -385,6 +390,61 @@
                         android:visibility="visible"
                         app:boxStrokeWidth="0dp"
                         app:hintTextColor="@color/green">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:hint=" رقم الشاسيه"
+                            tools:ignore="HardcodedText,TextContrastCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/round"
+                        android:padding="3dp"
+                        android:visibility="visible"
+                        app:boxStrokeWidth="0dp"
+                        app:hintTextColor="@color/green">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:hint="رقم المحرك"
+                            tools:ignore="HardcodedText,TextContrastCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/round"
+                        android:padding="3dp"
+                        android:visibility="visible"
+                        app:boxStrokeWidth="0dp"
+                        app:hintTextColor="@color/green">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:hint="رقم اللوحة"
+                            tools:ignore="HardcodedText,TextContrastCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/round"
+                        android:padding="3dp"
+                        android:visibility="visible"
+                        app:boxStrokeWidth="0dp"
+                        app:hintTextColor="@color/green">
+
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -402,28 +462,12 @@
                         android:visibility="visible"
                         app:boxStrokeWidth="0dp"
                         app:hintTextColor="@color/green">
+
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/formbackground"
                             android:hint="سنه الصنع "
-                            tools:ignore="HardcodedText,TextContrastCheck" />
-                    </com.google.android.material.textfield.TextInputLayout>
-
-                    <com.google.android.material.textfield.TextInputLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="3dp"
-                        android:background="@drawable/round"
-                        android:padding="3dp"
-                        android:visibility="visible"
-                        app:boxStrokeWidth="0dp"
-                        app:hintTextColor="@color/green">
-                        <com.google.android.material.textfield.TextInputEditText
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/formbackground"
-                            android:hint=" رقم الشاسيه "
                             tools:ignore="HardcodedText,TextContrastCheck" />
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -470,7 +514,6 @@
                         android:layout_margin="3dp"
                         android:background="@drawable/round"
                         android:padding="3dp"
-                        android:textColorHint="@color/green"
                         app:boxStrokeWidth="0dp">
 
                         <com.google.android.material.textfield.TextInputEditText
@@ -487,7 +530,6 @@
                         android:layout_margin="3dp"
                         android:background="@drawable/round"
                         android:padding="3dp"
-                        android:textColorHint="@color/green"
                         app:boxStrokeWidth="0dp">
 
                         <com.google.android.material.textfield.TextInputEditText
@@ -504,7 +546,6 @@
                         android:layout_margin="3dp"
                         android:background="@drawable/round"
                         android:padding="3dp"
-                        android:textColorHint="@color/green"
                         app:boxStrokeWidth="0dp">
 
                         <com.google.android.material.textfield.TextInputEditText

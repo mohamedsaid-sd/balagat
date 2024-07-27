@@ -50,6 +50,8 @@ public class update_spare_fleet extends AppCompatActivity {
             if(ar_update_type.get(i).equals("موقع التخزين"))
                 update_value("موقع التخزين السابق" , "موقع التخزين الجديد");
 
+            if(ar_update_type.get(i).equals("الوحدة"))
+                update_value("الوحدة السابقة" , "الوحدة الجديدة");
 
         });
     }
@@ -78,6 +80,7 @@ public class update_spare_fleet extends AppCompatActivity {
         ar_update_type.add("المورد");
         ar_update_type.add("تاريخ الاستلام");
         ar_update_type.add("موقع التخزين");
+        ar_update_type.add("الوحدة");
     }
 
     private void link_update_type() {

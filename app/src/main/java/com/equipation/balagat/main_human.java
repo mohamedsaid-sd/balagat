@@ -27,7 +27,7 @@ public class main_human extends AppCompatActivity {
 
     LinearLayout lay_main ;
 
-    LinearLayout lay_human , lay_opration , lay_fleet , lay_supply  , lay_office, lay_clients ;
+    LinearLayout lay_human , lay_opration , lay_fleet , lay_supply  , lay_office, lay_clients , layout_default ;
 
     TextView txt_name ;
     String FLAG = "" ;
@@ -71,6 +71,7 @@ public class main_human extends AppCompatActivity {
         lay_office = findViewById(R.id.lay_office);
         lay_clients = findViewById(R.id.lay_clients);
         lay_main    = findViewById(R.id.lay_main);
+        layout_default = findViewById(R.id.layout_default);
 
     }
 
@@ -179,5 +180,13 @@ public class main_human extends AppCompatActivity {
 
     public void fun_fleet_spare(View view) {
         startActivity(new Intent( this , fleet_spare_main.class ));
+    }
+
+    public void fun_default(View view) {
+        if(layout_default.getVisibility() == View.GONE){
+            layout_default.setVisibility(View.VISIBLE);
+        }else{
+            layout_default.setVisibility(View.GONE);
+        }
     }
 }

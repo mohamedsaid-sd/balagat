@@ -322,7 +322,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/formbackground"
-                            android:hint="نوع القطعة"
+                            android:hint="اسم القطعة"
                             tools:ignore="HardcodedText,TextContrastCheck" />
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -344,6 +344,26 @@
                             android:hint="الوصف"
                             tools:ignore="HardcodedText,TextContrastCheck" />
                     </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/round"
+                        android:padding="3dp"
+                        android:textColorHint="@color/green"
+                        android:visibility="visible"
+                        app:boxStrokeWidth="0dp"
+                        app:hintTextColor="@color/green">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:hint="الوحدة"
+                            tools:ignore="HardcodedText,TextContrastCheck" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"

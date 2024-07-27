@@ -67,7 +67,22 @@
                     android:visibility="visible">
 
 
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        app:boxStrokeWidth="0dp">
 
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:drawableEnd="@drawable/ic_menu_camera"
+                            android:hint="العداد الحالي"
+                            android:inputType="textPersonName"
+                            tools:ignore="HardcodedText" />
+                    </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
@@ -79,11 +94,12 @@
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:hint="العداد الحالي"
-                            android:inputType="textPersonName"
                             android:background="@drawable/formbackground"
+                            android:hint="الرقم التعريفي"
+                            android:inputType="textPersonName"
                             tools:ignore="HardcodedText" />
                     </com.google.android.material.textfield.TextInputLayout>
+
 
                     <com.google.android.material.textfield.TextInputLayout
                         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
@@ -115,12 +131,13 @@
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
                             android:hint=" نوع الاسبير المطلوب"
                             android:inputType="textPersonName"
-                            android:background="@drawable/formbackground"
 
                             tools:ignore="HardcodedText" />
                     </com.google.android.material.textfield.TextInputLayout>
+
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
@@ -132,9 +149,28 @@
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:drawableEnd="@drawable/ic_menu_camera"
+                            android:hint=" صورة الاسبير القديم ان وجدت"
+
+                            android:inputType="textPersonName"
+                            tools:ignore="HardcodedText" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        app:boxStrokeWidth="0dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
                             android:hint=" وصف المشكلة  "
                             android:inputType="textPersonName"
-                            android:background="@drawable/formbackground"
 
                             tools:ignore="HardcodedText" />
                     </com.google.android.material.textfield.TextInputLayout>
@@ -149,9 +185,9 @@
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
                             android:hint="   مدة الصيانة المقترحة"
                             android:inputType="textPersonName"
-                            android:background="@drawable/formbackground"
                             tools:ignore="HardcodedText" />
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -165,9 +201,9 @@
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
                             android:hint=" فاتوره مبدئية"
                             android:inputType="textPersonName"
-                            android:background="@drawable/formbackground"
                             tools:ignore="HardcodedText" />
                     </com.google.android.material.textfield.TextInputLayout>
                 </LinearLayout>
@@ -245,8 +281,7 @@
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/formbackground"
 
-                                android:hint="  تحديد الزمن+المسافة     "
-                                />
+                                android:hint="  تحديد الزمن+المسافة     " />
                         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -262,8 +297,7 @@
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/formbackground"
 
-                                android:hint="    نثرية ترحيل  "
-                                />
+                                android:hint="    نثرية ترحيل  " />
                         </com.google.android.material.textfield.TextInputLayout>
 
 

@@ -89,6 +89,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/formbackground"
+                            android:drawableEnd="@drawable/ic_menu_camera"
                             android:hint="العداد الحالى"
                             android:inputType="number"
                             tools:ignore="HardcodedText,VisualLintTextFieldSize" />
@@ -106,10 +107,11 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/formbackground"
-                            android:hint=" حصر شنطه العدة"
+                            android:drawableEnd="@drawable/ic_menu_camera"
+                            android:hint=" صور الآلية من الاتجاهات ال 4"
+                            android:inputType="number"
                             tools:ignore="HardcodedText,VisualLintTextFieldSize" />
                     </com.google.android.material.textfield.TextInputLayout>
-
 
                     <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
@@ -123,9 +125,120 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/formbackground"
-                            android:hint="  حصر قطع الغيار الموجودة"
+                            android:drawableEnd="@drawable/ic_menu_camera"
+                            android:hint=" حصر شنطة العدة"
+                            android:inputType="number"
                             tools:ignore="HardcodedText,VisualLintTextFieldSize" />
                     </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        android:textColorHint="@color/black"
+                        app:boxStrokeWidth="0dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:drawableEnd="@drawable/ic_menu_camera"
+                            android:hint=" حصر قطع الغيار الموجودة"
+                            android:inputType="number"
+                            tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        android:textColorHint="@color/black"
+                        app:boxStrokeWidth="0dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:drawableEnd="@drawable/ic_menu_camera"
+                            android:hint="حالة ملحقات الآلية "
+                            android:inputType="number"
+                            tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        android:textColorHint="@color/black"
+                        app:boxStrokeWidth="0dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:drawableEnd="@drawable/ic_menu_camera"
+                            android:hint="مكان العمل"
+                            android:inputType="number"
+                            tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        android:textColorHint="@color/black"
+                        app:boxStrokeWidth="0dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:drawableEnd="@drawable/ic_menu_camera"
+                            android:hint=" حالة كابينة القيادة"
+                            android:inputType="number"
+                            tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        android:textColorHint="@color/black"
+                        app:boxStrokeWidth="0dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:drawableEnd="@drawable/ic_menu_camera"
+                            android:hint=" حالة الابواب + الجزء الخلفي"
+                            android:inputType="number"
+                            tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        android:textColorHint="@color/black"
+                        app:boxStrokeWidth="0dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:drawableEnd="@drawable/ic_menu_camera"
+                            android:hint=" حالة صاجات الحماية السفلية"
+                            android:inputType="number"
+                            tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
 
                 </LinearLayout>
 

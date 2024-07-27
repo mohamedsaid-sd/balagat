@@ -9,6 +9,7 @@ import android.view.View;
 import com.equipation.balagat.R;
 import com.equipation.balagat.fleet.maintenances.asper_request;
 import com.equipation.balagat.fleet.maintenances.periodic_maintenance_request;
+import com.equipation.balagat.fleet.maintenances.periodic_maintenance_table;
 import com.equipation.balagat.fleet.maintenances.therapeutic_maintenance_request;
 import com.equipation.balagat.fleet.maintenances.part_maintenance;
 import com.equipation.balagat.fleet.maintenances.pay_parts;
@@ -56,4 +57,7 @@ public class fleet_maintanance_main extends AppCompatActivity {
     }
 
 
+    public void fun_periodic_maintenance_table(View view) {
+        startActivity(new Intent(this , periodic_maintenance_table.class ));
+    }
 }

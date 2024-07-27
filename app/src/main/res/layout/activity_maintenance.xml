@@ -81,7 +81,7 @@
                             android:gravity="center"
                             android:onClick="fun_periodic_maintenance"
                             android:padding="5dp"
-                            android:text="الصيانة الدورية"
+                            android:text="الصيانة الدورية (الوقائية)"
                             android:textSize="12sp"
                             app:drawableTopCompat="@drawable/ic_baseline_home_repair_service_24"
                             tools:ignore="HardcodedText" />
@@ -192,6 +192,23 @@
                         android:orientation="horizontal">
 
                         <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/whiteroundblack"
+                            android:fontFamily="@font/jana"
+                            android:gravity="center"
+                            android:onClick="fun_periodic_maintenance_table"
+                            android:padding="5dp"
+                            android:text="جدول الصيانة الدورية"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:visibility="visible"
+                            app:drawableTopCompat="@drawable/ic_baseline_home_repair_service_24"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
                             android:id="@+id/textView35"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -207,17 +224,6 @@
                             android:visibility="visible"
                             app:drawableTopCompat="@drawable/ic_baseline_home_repair_service_24"
                             tools:ignore="HardcodedText" />
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="5dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/round"
-                            app:cardBackgroundColor="@color/white">
-
-
-                        </androidx.cardview.widget.CardView>
 
                     </LinearLayout>
 

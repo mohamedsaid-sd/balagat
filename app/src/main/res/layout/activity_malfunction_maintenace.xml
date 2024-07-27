@@ -297,13 +297,31 @@
                         android:layout_margin="3dp"
                         android:background="@drawable/round"
                         android:padding="3dp"
+                        android:visibility="visible"
                         app:boxStrokeWidth="0dp">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/formbackground"
+                            android:drawableEnd="@drawable/ic_menu_camera"
                             android:hint=" العداد الحالي " />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/round"
+                        android:padding="3dp"
+                        android:visibility="visible"
+                        app:boxStrokeWidth="0dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:hint="  الرقم التعريفى " />
                     </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -313,6 +331,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
                         android:hint="   طبيعه العمل      "
+                        android:visibility="visible"
                         app:boxStrokeWidth="0dp">
 
                         <AutoCompleteTextView
@@ -320,8 +339,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/formbackground"
-                            android:inputType="none">
-                        </AutoCompleteTextView>
+                            android:inputType="none"></AutoCompleteTextView>
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
@@ -330,6 +348,7 @@
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
                         android:hint="    نوع العطل      "
+                        android:visibility="visible"
                         app:boxStrokeWidth="0dp">
 
                         <AutoCompleteTextView
@@ -337,8 +356,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:background="@drawable/formbackground"
-                            android:inputType="none">
-                        </AutoCompleteTextView>
+                            android:inputType="none"></AutoCompleteTextView>
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout
@@ -354,6 +372,22 @@
                             android:layout_height="wrap_content"
                             android:background="@drawable/formbackground"
                             android:hint=" وصف العطل " />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/round"
+                        android:padding="3dp"
+                        app:boxStrokeWidth="0dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:drawableEnd="@drawable/ic_menu_camera"
+                            android:hint="  ارفاق صورة العطل " />
                     </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -466,6 +500,22 @@
                             android:layout_height="wrap_content"
                             android:background="@drawable/formbackground"
                             android:hint=" المدة المطلوبة للصيانة     " />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:background="@drawable/round"
+                        android:padding="3dp"
+                        android:textColorHint="@color/green"
+                        app:boxStrokeWidth="0dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:hint=" يتم تقديم الخدمة بواسطة " />
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <com.google.android.material.textfield.TextInputLayout

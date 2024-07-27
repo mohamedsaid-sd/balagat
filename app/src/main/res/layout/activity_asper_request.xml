@@ -37,7 +37,7 @@
                     android:fontFamily="@font/jana"
                     android:gravity="center"
                     android:padding="5dp"
-                    android:text="طلب توفير قطع غيار "
+                    android:text="طلب قطع غيار (سوائل\ ملحقات) "
                     android:textColor="@color/black"
                     android:textSize="20dp"
                     android:textStyle="bold"
@@ -73,6 +73,23 @@
                         android:layout_margin="3dp"
                         android:orientation="vertical">
 
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:padding="3dp"
+                            android:textColorHint="@color/green"
+                            app:boxStrokeWidth="0dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/formbackground"
+                                android:hint=" وقت الطلب"
+                                android:inputType="number"
+                                tools:ignore="HardcodedText,TextContrastCheck,VisualLintTextFieldSize" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
 
                         <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
@@ -85,6 +102,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/formbackground"
+                                android:drawableEnd="@drawable/ic_menu_camera"
                                 android:hint="العداد الحالى"
                                 android:inputType="number"
                                 tools:ignore="HardcodedText,TextContrastCheck,VisualLintTextFieldSize" />
@@ -117,7 +135,7 @@
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/formbackground"
                                 android:inputType="none"
-                                tools:ignore="LabelFor,SpeakableTextPresentCheck,VisualLintTextFieldSize"/>
+                                tools:ignore="LabelFor,SpeakableTextPresentCheck,VisualLintTextFieldSize" />
                         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -136,7 +154,7 @@
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/formbackground"
                                 android:inputType="none"
-                                tools:ignore="LabelFor,SpeakableTextPresentCheck,VisualLintTextFieldSize"/>
+                                tools:ignore="LabelFor,SpeakableTextPresentCheck,VisualLintTextFieldSize" />
                         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -155,7 +173,7 @@
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/formbackground"
                                 android:inputType="none"
-                                tools:ignore="LabelFor,SpeakableTextPresentCheck,VisualLintTextFieldSize"/>
+                                tools:ignore="LabelFor,SpeakableTextPresentCheck,VisualLintTextFieldSize" />
                         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -196,7 +214,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/formbackground"
-                                android:hint="نوع الأسبير المطلوب "
+                                android:hint="  اسم القطعة "
                                 tools:ignore="HardcodedText,TextContrastCheck,VisualLintTextFieldSize" />
                         </com.google.android.material.textfield.TextInputLayout>
 
@@ -211,7 +229,51 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/formbackground"
-                                android:hint=" وصف لقطعه الغيار"
+                                android:drawableEnd="@drawable/ic_menu_camera"
+                                android:hint=" صورة للاسبير القديم ان وجد "
+                                tools:ignore="HardcodedText,TextContrastCheck,VisualLintTextFieldSize" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:padding="3dp"
+                            app:boxStrokeWidth="0dp">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/formbackground"
+                                android:hint=" رقم القطعة "
+                                tools:ignore="HardcodedText,TextContrastCheck,VisualLintTextFieldSize" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:padding="3dp"
+                            app:boxStrokeWidth="0dp">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/formbackground"
+                                android:hint=" وصف لقطعه الغيار ( المقاسات ) "
+                                tools:ignore="HardcodedText,TextContrastCheck,VisualLintTextFieldSize" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="3dp"
+                            android:padding="3dp"
+                            app:boxStrokeWidth="0dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/formbackground"
+                                android:hint=" الوحدة "
                                 tools:ignore="HardcodedText,TextContrastCheck,VisualLintTextFieldSize" />
                         </com.google.android.material.textfield.TextInputLayout>
 

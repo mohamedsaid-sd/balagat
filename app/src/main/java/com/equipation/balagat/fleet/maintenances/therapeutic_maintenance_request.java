@@ -30,8 +30,8 @@ public class therapeutic_maintenance_request extends AppCompatActivity {
         ar_machine_type.add("تشوين");
 
 
-        ar_damage.add("   عاديه   ");
-        ar_damage.add("   عاجلة   ");
+        ar_damage.add("   عادي   ");
+        ar_damage.add("   عاجل   ");
         ar_damage.add(" عاجلة جدا  ");
 
 
@@ -40,7 +40,7 @@ public class therapeutic_maintenance_request extends AppCompatActivity {
         ar_damage_type.add("حركة");
         ar_damage_type.add("كهرباء");
         ar_damage_type.add("فرامل");
-        ar_damage_type.add("اإلطارات");
+        ar_damage_type.add("الإطارات");
         ar_damage_type.add("الهيكل العام");
 
 

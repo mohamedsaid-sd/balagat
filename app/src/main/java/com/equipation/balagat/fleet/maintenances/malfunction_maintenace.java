@@ -55,13 +55,16 @@ public class malfunction_maintenace extends AppCompatActivity {
 
 
 
-        ar_malfunction_type.add("ماكينة   ");
-        ar_malfunction_type.add("هيدروليك   ");
-        ar_malfunction_type.add("  حركة  ");
-        ar_malfunction_type.add("  كهرباء  ");
-        ar_malfunction_type.add("فرامل    ");
-        ar_malfunction_type.add("   الأطارات ");
-        ar_malfunction_type.add("  الهيكل العام  ");
+        ar_malfunction_type.add("المحرك");
+        ar_malfunction_type.add("الهيدروليك");
+        ar_malfunction_type.add("نظام نقل القدرة");
+        ar_malfunction_type.add("الكهرباء");
+        ar_malfunction_type.add("المكيف");
+        ar_malfunction_type.add("نظام التوجيه");
+        ar_malfunction_type.add("نظام التعليق");
+        ar_malfunction_type.add("الفرامل");
+        ar_malfunction_type.add("الإطارات");
+        ar_malfunction_type.add("الهيكل العام");
 
 
         ArrayAdapter<String> adapter_spinner_borrow_type = new ArrayAdapter<>(this,
