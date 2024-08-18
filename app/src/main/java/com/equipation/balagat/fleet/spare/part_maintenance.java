@@ -1,4 +1,4 @@
-package com.equipation.balagat.fleet.maintenances;
+package com.equipation.balagat.fleet.spare;
 
 import androidx.appcompat.app.AppCompatActivity;
 

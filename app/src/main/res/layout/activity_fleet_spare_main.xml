@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".fleet.fleet_spare_main">
+    tools:context=".fleet.spare.fleet_spare_main">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -66,13 +66,15 @@
                     android:layout_height="match_parent"
                     android:orientation="vertical">
 
+
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
 
                         <TextView
-                            android:id="@+id/textView15"
+                            android:id="@+id/textView17"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
@@ -80,29 +82,56 @@
                             android:background="@drawable/whiteroundblack"
                             android:fontFamily="@font/jana"
                             android:gravity="center"
-                            android:onClick="fun_available_spare_fleet"
+                            android:onClick="fun_asper_request"
                             android:padding="5dp"
-                            android:text="قطع الغيار المتوفرة"
+                            android:text=" طلب قطع غيار"
                             android:textSize="12sp"
-                            app:drawableTopCompat="@drawable/baseline_agriculture_24"
+                            app:drawableTopCompat="@drawable/ic_baseline_home_repair_service_24"
                             tools:ignore="HardcodedText" />
 
                         <TextView
-                            android:id="@+id/textView16"
+                            android:id="@+id/textView18"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/whiteroundblack"
+                            android:drawableTop="@drawable/ic_baseline_home_repair_service_24"
+                            android:fontFamily="@font/jana"
+
+                            android:gravity="center"
+                            android:onClick="fun_outlay_request"
+                            android:padding="5dp"
+                            android:text=" طلب صيانة قطع غيار"
+                            android:textSize="12sp"
+                            tools:ignore="HardcodedText,UseCompatTextViewDrawableXml" />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView20"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="5dp"
                             android:layout_weight="1"
                             android:background="@drawable/whiteroundblack"
                             android:fontFamily="@font/jana"
-
                             android:gravity="center"
-                            android:onClick="fun_update_spare_fleet"
+                            android:onClick="fun_pay_parts"
                             android:padding="5dp"
-                            android:text="تحديث"
+                            android:text="  طلب شراء قطع غيار"
                             android:textSize="12sp"
-                            app:drawableTopCompat="@drawable/baseline_airport_shuttle_24"
+                            android:visibility="visible"
+                            app:drawableTopCompat="@drawable/ic_baseline_home_repair_service_24"
                             tools:ignore="HardcodedText" />
+
+
 
                     </LinearLayout>
 

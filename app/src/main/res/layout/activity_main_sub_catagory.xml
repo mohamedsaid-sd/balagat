@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".main_human">
+    tools:context=".main_sub_catagory">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -89,7 +89,7 @@
                             android:gravity="center"
                             android:onClick="fun_cat_employee"
                             android:padding="5dp"
-                            android:text="التوظيف"
+                            android:text="الموظف"
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold"
@@ -194,9 +194,52 @@
                             android:background="@drawable/whiteroundblack"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
-                            android:onClick="fun_complant_request"
+                            android:onClick="fun_holiday"
                             android:padding="5dp"
-                            android:text="تقديم شكوي  "
+                            android:text=" الاجازات ونهاية الخدمة  "
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:visibility="visible"
+                            app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/whiteroundblack"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:onClick="fun_fun_complainAndsugg"
+                            android:padding="5dp"
+                            android:text=" الشكاوي والمقترحات"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
+                            tools:ignore="HardcodedText,NestedWeights" />
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/whiteroundblack"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="  "
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold"
@@ -205,7 +248,6 @@
                             tools:ignore="HardcodedText" />
 
                     </LinearLayout>
-
 
                 </LinearLayout>
 
@@ -252,6 +294,7 @@
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold"
+                            android:visibility="invisible"
                             app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
                             tools:ignore="HardcodedText" />
 
@@ -278,6 +321,7 @@
                             android:textSize="12sp"
                             android:textStyle="bold"
 
+                            android:visibility="visible"
                             app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
                             tools:ignore="HardcodedText,NestedWeights" />
 
@@ -321,160 +365,7 @@
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
-                    <LinearLayout
-                        android:id="@+id/layout_default"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_margin="5dp"
-                        android:background="@color/lite"
-                        android:orientation="vertical"
-                        android:visibility="gone">
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="البيانات الاساسية : "
-                            android:textColor="@color/black"
-                            android:textSize="14sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:id="@+id/textView5"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="3dp"
-                            android:background="@color/grayfont"
-                            android:padding="2dp"
-                            android:text="تاريخ الطلب"
-                            android:textColor="@color/white" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="3dp"
-                            android:background="@color/grayfont"
-                            android:padding="2dp"
-                            android:text="اسم مقدم الطلب"
-                            android:textColor="@color/white" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="3dp"
-                            android:background="@color/grayfont"
-                            android:padding="2dp"
-                            android:text="الوظيفة"
-                            android:textColor="@color/white" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="3dp"
-                            android:background="@color/grayfont"
-                            android:padding="2dp"
-                            android:text="رقم الموظف"
-                            android:textColor="@color/white" />
-
-                        <TextView
-                            android:id="@+id/textView7"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="3dp"
-                            android:background="@color/grayfont"
-                            android:padding="2dp"
-                            android:text="الآلية (مركز التكلفة)"
-                            android:textColor="@color/white" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="3dp"
-                            android:background="@color/grayfont"
-                            android:padding="2dp"
-                            android:text="موقع العمل"
-                            android:textColor="@color/white" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="بيانات العقد"
-                            android:textColor="@color/black"
-                            android:textSize="14sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="3dp"
-                            android:background="@color/grayfont"
-                            android:padding="2dp"
-                            android:text="رقم العقد"
-                            android:textColor="@color/white" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="3dp"
-                            android:background="@color/grayfont"
-                            android:padding="2dp"
-                            android:text="نوع العقد"
-                            android:textColor="@color/white" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="3dp"
-                            android:background="@color/grayfont"
-                            android:padding="2dp"
-                            android:text="مدة العقد "
-                            android:textColor="@color/white" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="3dp"
-                            android:background="@color/grayfont"
-                            android:padding="2dp"
-                            android:text="تاريخ نهاية العقد"
-                            android:textColor="@color/white" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="3dp"
-                            android:background="@color/grayfont"
-                            android:padding="2dp"
-                            android:text="عدد ساعات العقد"
-                            android:textColor="@color/white" />
-
-                        <TextView
-                            android:id="@+id/textView8"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="بيانات ساعات العمل"
-                            android:textColor="@color/black"
-                            android:textSize="14sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="3dp"
-                            android:background="@color/grayfont"
-                            android:padding="2dp"
-                            android:text="عدد ساعات العمل اليومية"
-                            android:textColor="@color/white" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="3dp"
-                            android:background="@color/grayfont"
-                            android:padding="2dp"
-                            android:text="مجموع من العمل الفعلية"
-                            android:textColor="@color/white" />
-
-                    </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -490,42 +381,17 @@
                             android:drawablePadding="0dp"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
-                            android:onClick="fun_fleet_heavy_equipment"
+                            android:onClick="fun_Monthly_inspection"
                             android:paddingTop="20dp"
                             android:paddingBottom="20dp"
-                            android:text=" الآليات الثقيلة"
+                            android:text="  التفتيش"
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold"
                             app:drawableTopCompat="@drawable/baseline_agriculture_24"
                             tools:ignore="HardcodedText" />
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="100dp"
-                            android:layout_margin="10dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/hegagon_bg"
-                            android:drawablePadding="0dp"
-                            android:fontFamily="sans-serif"
-                            android:gravity="center"
-                            android:onClick="fun_fleet_trucks"
-                            android:paddingTop="20dp"
-                            android:paddingBottom="20dp"
-                            android:text="الشاحنات والقلابات"
-                            android:textColor="@color/black"
-                            android:textSize="12sp"
-                            android:textStyle="bold"
-                            app:drawableTopCompat="@drawable/baseline_agriculture_24"
-                            tools:ignore="HardcodedText" />
 
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="0dp"
-                        android:layout_weight="1"
-                        android:orientation="horizontal">
 
                         <TextView
                             android:layout_width="match_parent"
@@ -545,6 +411,14 @@
                             android:textStyle="bold"
                             app:drawableTopCompat="@drawable/ic_baseline_home_repair_service_24"
                             tools:ignore="HardcodedText,NestedWeights" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
 
                         <TextView
                             android:layout_width="match_parent"
@@ -565,6 +439,28 @@
                             android:visibility="visible"
                             app:drawableTopCompat="@drawable/ic_baseline_home_repair_service_24"
                             tools:ignore="HardcodedText" />
+
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/hegagon_bg"
+                            android:drawablePadding="0dp"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:paddingTop="20dp"
+                            android:paddingBottom="20dp"
+                            android:visibility="visible"
+                            android:text="الملحقات"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            app:drawableTopCompat="@drawable/ic_baseline_home_repair_service_24"
+                            tools:ignore="HardcodedText,NestedWeights" />
 
                     </LinearLayout>
 
@@ -641,22 +537,7 @@
                             app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
                             tools:ignore="HardcodedText" />
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="10dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/whiteroundblack"
-                            android:fontFamily="sans-serif"
-                            android:gravity="center"
-                            android:onClick="fun_out_equipment_contract"
-                            android:padding="5dp"
-                            android:text="عقودات المعدات الخارجية"
-                            android:textColor="@color/black"
-                            android:textSize="12sp"
-                            android:textStyle="bold"
-                            app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
-                            tools:ignore="HardcodedText" />
+
 
                     </LinearLayout>
 
@@ -684,7 +565,7 @@
                             android:gravity="center"
                             android:onClick="fun_offices_atbara"
                             android:padding="5dp"
-                            android:text="مكتب عطبرة"
+                            android:text=" إدارة المكاتب"
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold"
@@ -699,12 +580,13 @@
                             android:background="@drawable/whiteroundblack"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
-                            android:onClick="fun_offices_atbara"
+                            android:onClick="fun_main_camp"
                             android:padding="5dp"
-                            android:text="موقع قبقبة"
+                            android:text="  إدارة المعسكر"
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold"
+                            android:visibility="invisible"
                             app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
                             tools:ignore="HardcodedText" />
 
@@ -713,7 +595,7 @@
                 </LinearLayout>
 
                 <LinearLayout
-                    android:id="@+id/lay_clients"
+                    android:id="@+id/lay_reports"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
@@ -733,7 +615,7 @@
                             android:fontFamily="sans-serif"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text=" التواصل المستمر "
+                            android:text="  بلاغات عن مشرف "
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold"
@@ -749,7 +631,7 @@
                             android:fontFamily="sans-serif"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text=" الشكاوى والمقترحات "
+                            android:text="  بلاغات عن سكن "
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold"
@@ -757,6 +639,88 @@
                             tools:ignore="HardcodedText" />
 
                     </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/whiteroundblack"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="  بلاغات عن المراحل "
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/whiteroundblack"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="  بلاغات عن الموفع "
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/whiteroundblack"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="  بلاغات عن المراحل "
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/whiteroundblack"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="  بلاغات عن المشغلين "
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
 
                 </LinearLayout>
 

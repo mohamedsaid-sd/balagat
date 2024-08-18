@@ -10,7 +10,8 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.equipation.balagat.fleet.fleet_maintanance_main;
+import com.equipation.balagat.fleet.maintenances.fleet_maintanance_main;
+import com.equipation.balagat.folderpurchases.purchases;
 import com.equipation.balagat.humans.Attendance;
 import com.equipation.balagat.humans.complaint_request;
 import com.equipation.balagat.humans.delegate_request;
@@ -26,6 +27,7 @@ import com.equipation.balagat.humans.resignation_request;
 import com.equipation.balagat.humans.request_vacation;
 import com.equipation.balagat.humans.shift_request;
 import com.equipation.balagat.humans.training_request;
+import com.equipation.balagat.stocks.stock;
 
 import java.util.Objects;
 
@@ -38,7 +40,7 @@ public class human extends AppCompatActivity {
     // Employee
     TextView txt_resignation , txt_complant , txt_profile ;
     // Borrow
-    TextView txt_salary , txt_borrow , txt_moretidy , txt_incentive , txt_delegate ,txt_attendacne,txt_policies;
+    TextView txt_salary , txt_borrow , txt_moretidy , txt_incentive , txt_delegate ,txt_attendacne,txt_policies,txt_suggestions;
     // Prose
     TextView txt_PPE , txt_prose ;
     // Trainig
@@ -70,17 +72,27 @@ public class human extends AppCompatActivity {
         txt_training.setVisibility(View.GONE);
         txt_attendacne.setVisibility(View.GONE);
         txt_policies.setVisibility(View.GONE);
+        txt_suggestions.setVisibility(View.GONE);
+
+
+
 
 
         if(FLAG.equals("employee")){
             txt_name.setText(" التوظيف ");
-            txt_resignation.setVisibility(View.VISIBLE);
-            txt_complant.setVisibility(View.VISIBLE);
-            txt_profile.setVisibility(View.VISIBLE);
-            txt_policies.setVisibility(View.VISIBLE);
 
+            txt_profile.setVisibility(View.VISIBLE);
+
+            txt_delegate.setVisibility(View.VISIBLE);
 
         }
+
+        if(FLAG.equals("holiday")){
+            txt_name.setText(" الاجازات ونهاية الخدمة ");
+            txt_vacation.setVisibility(View.VISIBLE);
+            txt_resignation.setVisibility(View.VISIBLE);
+        }
+
 
         if(FLAG.equals("borrow")){
             txt_name.setText(" المستحقات والسلفيات ");
@@ -88,7 +100,7 @@ public class human extends AppCompatActivity {
             txt_borrow.setVisibility(View.VISIBLE);
             txt_moretidy.setVisibility(View.VISIBLE);
             txt_incentive.setVisibility(View.VISIBLE);
-            txt_delegate.setVisibility(View.VISIBLE);
+
         }
 
         if(FLAG.equals("prose")){
@@ -97,10 +109,18 @@ public class human extends AppCompatActivity {
             txt_prose.setVisibility(View.VISIBLE);
         }
 
+        if(FLAG.equals("complainAndsugg")){
+            txt_name.setText(" الشكاوي والمقترحات ");
+            txt_complant.setVisibility(View.VISIBLE);
+            txt_suggestions.setVisibility(View.VISIBLE);
+        }
+
+
+
         if(FLAG.equals("trainig")){
             txt_name.setText(" الحضور والأداء ");
             txt_shift.setVisibility(View.VISIBLE);
-            txt_vacation.setVisibility(View.VISIBLE);
+
             txt_evaluation.setVisibility(View.VISIBLE);
             txt_attendacne.setVisibility(View.VISIBLE);
         }
@@ -137,6 +157,8 @@ public class human extends AppCompatActivity {
         txt_evaluation = findViewById(R.id.txt_evaluation);
         txt_attendacne = findViewById(R.id.txt_attendacne);
         txt_policies = findViewById(R.id.txt_policies);
+        txt_suggestions = findViewById(R.id.txt_suggestions);
+
 
 
 
@@ -178,34 +200,34 @@ public class human extends AppCompatActivity {
 
 
     public void fun_vacation_request(View view) {
-        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
-        startActivity(new Intent( this , request_vacation.class ) , b);
+
+        startActivity(new Intent( this , request_vacation.class ) );
     }
 
     public void fun_PPE_request(View view) {
-        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
-        startActivity(new Intent( this , PPE_request.class ) , b );
+
+        startActivity(new Intent( this , PPE_request.class )  );
     }
 
     public void fun_shift_request(View view) {
-        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
-        startActivity(new Intent( this , shift_request.class ) , b);
+
+        startActivity(new Intent( this , shift_request.class ) );
     }
 
     public void fun_prose_request(View view) {
-        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
-        startActivity(new Intent( this , prose_request.class ) , b);
+
+        startActivity(new Intent( this , prose_request.class ) );
     }
 
     public void fun_evaluation_request(View view) {
-        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
-        startActivity(new Intent( this , evaluation_request.class ) , b);
+
+        startActivity(new Intent( this , evaluation_request.class ) );
 
     }
 
     public void fun_complant_request(View view) {
-        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
-        startActivity(new Intent( this , complaint_request.class ) , b);
+
+        startActivity(new Intent( this , complaint_request.class ) );
 
     }
 
@@ -216,29 +238,28 @@ public class human extends AppCompatActivity {
     }
 
     public void fun_incentive_request(View view) {
-        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
-        startActivity(new Intent( this , incentive_request.class ) , b);
+
+        startActivity(new Intent( this , incentive_request.class ) );
     }
 
     public void fun_moretidy_request(View view) {
-        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
-        startActivity(new Intent( this , moretidy_request.class ) , b);
+
+        startActivity(new Intent( this , moretidy_request.class ) );
 
     }
 
 
     public void fun_profile_request(View view) {
-        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
-        startActivity(new Intent( this , edit_profile_request.class ) , b);
+
+        startActivity(new Intent( this , edit_profile_request.class ) );
     }
 
     public void fun_delegate_request(View view) {
-      //  Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
         startActivity(new Intent( this , delegate_request.class ) );
     }
 
     public void fun_maintenance(View view) {
-       // Bundle b = ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
+       //
         startActivity(new Intent(this , fleet_maintanance_main.class)  );
     }
 
@@ -248,18 +269,16 @@ public class human extends AppCompatActivity {
     }
 
     public void fiun_stock(View view) {
-        Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
-        startActivity(new Intent( this , stock.class ) , b);
+
+        startActivity(new Intent( this , stock.class ) );
     }
 
     public void fun_contract(View view) {
-      //  Bundle b = ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
         startActivity(new Intent(this , contract.class) );
     }
 
 
     public void fun_attendance_requeendancest(View view) {
-     //   Bundle b =  ActivityOptions.makeSceneTransitionAnimation(this).toBundle();
         startActivity(new Intent( this , Attendance.class ) );
 
 

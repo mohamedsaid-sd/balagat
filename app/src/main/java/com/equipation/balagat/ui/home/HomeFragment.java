@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -13,9 +12,10 @@ import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.equipation.balagat.R;
 import com.equipation.balagat.databinding.FragmentHomeBinding;
-import com.equipation.balagat.main_human;
+import com.equipation.balagat.main_sub_catagory;
+import com.equipation.balagat.opration.constraction_contract;
+
 public class HomeFragment extends Fragment {
 
     private FragmentHomeBinding binding;
@@ -42,17 +42,17 @@ public class HomeFragment extends Fragment {
 
 
         // الضغط علي الموارد البشرية
-        card1.setOnClickListener(view -> startActivity( new Intent( getActivity() , main_human.class ).putExtra("FLAG" , "الموارد البشرية") ));
+        card1.setOnClickListener(view -> startActivity( new Intent( getActivity() , main_sub_catagory.class ).putExtra("FLAG" , "الموارد البشرية") ));
         // الضغط علي التشغيل
-        card2.setOnClickListener(view -> startActivity( new Intent( getActivity() , main_human.class ).putExtra("FLAG" , "التشغيل")));
+        card2.setOnClickListener(view -> startActivity( new Intent( getActivity() , constraction_contract.class ).putExtra("FLAG" , "العقودات")));
         // الضغط علي الاسطول
-        card3.setOnClickListener(view -> startActivity( new Intent( getActivity() , main_human.class ).putExtra("FLAG" , "الاسطول") ));
+        card3.setOnClickListener(view -> startActivity( new Intent( getActivity() , main_sub_catagory.class ).putExtra("FLAG" , "الاسطول") ));
         // الضغط علي سلاسل الإمداد
-        card4.setOnClickListener(view -> startActivity( new Intent( getActivity() , main_human.class ).putExtra("FLAG" , "سلاسل الإمداد")  ));
+        card4.setOnClickListener(view -> startActivity( new Intent( getActivity() , main_sub_catagory.class ).putExtra("FLAG" , "الدعم اللوجيستي")  ));
         // الضغط علي المكاتب والمواقع
-        card5.setOnClickListener(view -> startActivity( new Intent( getActivity() , main_human.class ).putExtra("FLAG" , "المكاتب والمواقع")  ));
+        card5.setOnClickListener(view -> startActivity( new Intent( getActivity() , main_sub_catagory.class ).putExtra("FLAG" , "المكاتب والمعسكرات")  ));
         // الضغط علي إدارة العملاء والموردين
-        card6.setOnClickListener(view -> startActivity( new Intent( getActivity() , main_human.class ).putExtra("FLAG" , "إدارة العملاء والموردين")  ));
+        card6.setOnClickListener(view -> startActivity( new Intent( getActivity() , main_sub_catagory.class ).putExtra("FLAG" , "البلاغات")  ));
 
         // Add zoom in animation to cards ***************
         //card1.startAnimation(AnimationUtils.loadAnimation(getActivity() , R.anim.zoom_in));

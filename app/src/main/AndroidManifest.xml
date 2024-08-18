@@ -17,31 +17,16 @@
             android:name=".humans.Attendance"
             android:exported="false" />
         <activity
-            android:name=".fleet.spare.update_spare_fleet"
-            android:exported="false" />
-        <activity
-            android:name=".fleet.spare.available_spare_fleet"
-            android:exported="false" />
-        <activity
-            android:name=".fleet.heavy_equipment.update_heavy_fleet"
-            android:exported="false" />
-        <activity
-            android:name=".fleet.heavy_equipment.heavy_fleet"
-            android:exported="false" />
-        <activity
             android:name=".fleet.trucks.update_trucks_fleet"
             android:exported="false" />
         <activity
             android:name=".fleet.trucks.trucks_fleet"
             android:exported="false" />
         <activity
-            android:name=".fleet.fleet_spare_main"
+            android:name=".fleet.spare.fleet_spare_main"
             android:exported="false" />
         <activity
-            android:name=".fleet.fleet_trucks_main"
-            android:exported="false" />
-        <activity
-            android:name=".fleet.fleet_heavy_equioment"
+            android:name=".fleet.Monthly_inspection.Monthly_inspection"
             android:exported="false" />
         <activity
             android:name=".opration.constraction.main_tippers"
@@ -219,9 +204,6 @@
             android:name=".deportation.order_deportation"
             android:exported="false" />
         <activity
-            android:name=".out_equipment_contract.out_equipment_contract"
-            android:exported="false" />
-        <activity
             android:name=".folderpurchases.surplus_order"
             android:exported="false" />
         <activity
@@ -360,7 +342,7 @@
             android:name=".opration.production.production_renew_contract"
             android:exported="false" /> <!-- Maintenance requests -->
         <activity
-            android:name=".fleet.maintenances.monthly"
+            android:name=".fleet.Monthly_inspection.monthly"
             android:exported="false" />
         <activity
             android:name=".fleet.maintenances.malfunction_maintenace"
@@ -375,10 +357,10 @@
             android:name=".fleet.maintenances.periodic_maintenance_request"
             android:exported="false" />
         <activity
-            android:name=".fleet.maintenances.asper_request"
+            android:name=".fleet.spare.asper_request"
             android:exported="false" /> <!-- main departments -->
         <activity
-            android:name=".fleet.maintenances.part_maintenance"
+            android:name=".fleet.spare.part_maintenance"
             android:exported="false" /> <!-- 0000000000000000000000000000000000000000000000000000000000000000000 -->
         <activity
             android:name=".login"
@@ -387,17 +369,17 @@
             android:name=".expenses"
             android:exported="false" />
         <activity
-            android:name=".purchases"
+            android:name=".folderpurchases.purchases"
             android:exported="false" />
         <activity
-            android:name=".fleet.fleet_maintanance_main"
+            android:name=".fleet.maintenances.fleet_maintanance_main"
             android:exported="false" />
 
         <activity
             android:name=".location"
             android:exported="false" />
         <activity
-            android:name=".stock"
+            android:name=".stocks.stock"
             android:exported="false" />
         <activity
             android:name=".time"
@@ -422,7 +404,7 @@
             android:name=".human"
             android:exported="true" />
         <activity
-            android:name=".main_human"
+            android:name=".main_sub_catagory"
             android:exported="true" />
     </application>
 

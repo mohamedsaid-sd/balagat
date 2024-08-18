@@ -57,9 +57,5 @@ public class constraction_contract extends AppCompatActivity {
         startActivity(new Intent( this , main_time_sheet.class ));
     }
 
-    public void fun_main_camp(View view) {
-        startActivity(new Intent( this , main_camp.class ));
 
-
-    }
 }

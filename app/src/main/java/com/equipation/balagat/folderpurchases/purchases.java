@@ -1,4 +1,4 @@
-package com.equipation.balagat;
+package com.equipation.balagat.folderpurchases;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.equipation.balagat.R;
 import com.equipation.balagat.folderpurchases.purchase_order;
 import com.equipation.balagat.folderpurchases.refund_request;
 import com.equipation.balagat.folderpurchases.surplus_order;

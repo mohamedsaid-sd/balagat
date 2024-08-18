@@ -6,7 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-import com.equipation.balagat.fleet.fleet_maintanance_main;
+import com.equipation.balagat.fleet.maintenances.fleet_maintanance_main;
+import com.equipation.balagat.stocks.stock;
 
 public class home_sub2 extends AppCompatActivity {
 

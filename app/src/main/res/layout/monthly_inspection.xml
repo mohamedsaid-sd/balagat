@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".fleet.fleet_heavy_equioment">
+    tools:context=".fleet.Monthly_inspection.Monthly_inspection">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -42,7 +42,7 @@
                         android:fontFamily="@font/jana"
                         android:gravity="center"
                         android:padding="5dp"
-                        android:text="الآليات الثقيلة"
+                        android:text="التفتيش "
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold"
@@ -80,29 +80,13 @@
                             android:background="@drawable/whiteroundblack"
                             android:fontFamily="@font/jana"
                             android:gravity="center"
-                            android:onClick="fun_heavy_fleet"
+                            android:onClick="fun_Monthly_inspection"
                             android:padding="5dp"
-                            android:text="اسطول الآليات"
+                            android:text=" التفتيش الشهري الالكتروني"
                             android:textSize="12sp"
                             app:drawableTopCompat="@drawable/baseline_agriculture_24"
                             tools:ignore="HardcodedText" />
 
-                        <TextView
-                            android:id="@+id/textView16"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="5dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/whiteroundblack"
-                            android:fontFamily="@font/jana"
-
-                            android:gravity="center"
-                            android:onClick="fun_update_heavy_fleet"
-                            android:padding="5dp"
-                            android:text="تحديث وإضافة"
-                            android:textSize="12sp"
-                            app:drawableTopCompat="@drawable/baseline_airport_shuttle_24"
-                            tools:ignore="HardcodedText" />
 
                     </LinearLayout>
 
