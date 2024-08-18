@@ -71,6 +71,34 @@
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
 
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/round"
+                            android:foregroundGravity="center"
+                            android:onClick="fun_contract_location"
+                            android:padding="5dp">
+
+
+                            <TextView
+                                android:id="@+id/textView15"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/whiteroundblack"
+                                android:drawableTop="@drawable/ic_baseline_location_on_24"
+                                android:drawablePadding="10dp"
+                                android:fontFamily="sans-serif"
+                                android:gravity="center|center_vertical"
+                                android:padding="10dp"
+                                android:text="احتياجات الموقع "
+                                android:textSize="14sp" />
+                        </androidx.cardview.widget.CardView>
+
                         <androidx.cardview.widget.CardView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -100,6 +128,14 @@
 
                         </androidx.cardview.widget.CardView>
 
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
                         <androidx.cardview.widget.CardView
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -123,39 +159,6 @@
                                 android:gravity="center|center_vertical"
                                 android:padding="10dp"
                                 android:text=" احتياج الساعات  "
-                                android:textSize="14sp" />
-                        </androidx.cardview.widget.CardView>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-
-                        <androidx.cardview.widget.CardView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="center"
-                            android:layout_margin="5dp"
-                            android:layout_weight="1"
-                            android:background="@drawable/round"
-                            android:foregroundGravity="center"
-                            android:onClick="fun_contract_location"
-                            android:padding="5dp">
-
-
-                            <TextView
-                                android:id="@+id/textView15"
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/whiteroundblack"
-                                android:drawableTop="@drawable/ic_baseline_location_on_24"
-                                android:drawablePadding="10dp"
-                                android:fontFamily="sans-serif"
-                                android:gravity="center|center_vertical"
-                                android:padding="10dp"
-                                android:text="احتياجات الموقع "
                                 android:textSize="14sp" />
                         </androidx.cardview.widget.CardView>
 
@@ -340,24 +343,25 @@
                             android:layout_gravity="center"
                             android:layout_margin="5dp"
                             android:layout_weight="1"
-                            android:visibility="invisible"
                             android:background="@drawable/round"
                             android:foregroundGravity="center"
-                            android:onClick="fun_weekly_liquidation"
                             android:padding="5dp">
 
+
                             <TextView
+                                android:id="@+id/textView0"
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/whiteroundblack"
-                                android:drawableTop="@drawable/ic_baseline_access_time_filled_24"
+                                android:drawableTop="@drawable/ic_baseline_poll_24"
                                 android:drawablePadding="10dp"
                                 android:fontFamily="sans-serif"
                                 android:gravity="center|center_vertical"
                                 android:padding="10dp"
+                                android:text="  كمية  الاطنان والادوار المنتجة "
                                 android:textSize="14sp" />
-                        </androidx.cardview.widget.CardView>
 
+                        </androidx.cardview.widget.CardView>
                     </LinearLayout>
 
 

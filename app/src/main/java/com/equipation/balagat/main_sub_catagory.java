@@ -8,8 +8,10 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.equipation.balagat.deportation.deportation_main;
 import com.equipation.balagat.deportation.order_deportation;
 import com.equipation.balagat.fleet.Monthly_inspection.Monthly_inspection;
+import com.equipation.balagat.fleet.accessories.Accessories_main;
 import com.equipation.balagat.fleet.spare.fleet_spare_main;
 import com.equipation.balagat.fleet.maintenances.fleet_maintanance_main;
 import com.equipation.balagat.folderpurchases.purchases;
@@ -154,7 +156,7 @@ public class main_sub_catagory extends AppCompatActivity {
 
 
     public void fun_order_deportation(View view) {
-        startActivity(new Intent( this , order_deportation.class ) );
+        startActivity(new Intent( this , deportation_main.class ) );
     }
 
     @Override
@@ -197,6 +199,12 @@ public class main_sub_catagory extends AppCompatActivity {
     public void fun_main_camp(View view) {
         startActivity(new Intent( this , main_camp.class ));
 
+
+    }
+
+    public void fun_Accessories_main(View view) {
+
+        startActivity(new Intent( this , Accessories_main.class ));
 
     }
 }

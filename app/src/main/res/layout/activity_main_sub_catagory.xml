@@ -96,8 +96,10 @@
                             app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
                             tools:ignore="HardcodedText" />
 
+
+
                         <TextView
-                            android:id="@+id/textView16"
+                            android:id="@+id/txt_resignation"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="10dp"
@@ -105,9 +107,9 @@
                             android:background="@drawable/whiteroundblack"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
-                            android:onClick="fun_cat_borrow"
+                            android:onClick="fun_cat_trainig"
                             android:padding="5dp"
-                            android:text="المستحقات والسلفيات"
+                            android:text="الحضور والاداء"
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold"
@@ -140,8 +142,9 @@
                             android:textStyle="bold"
                             tools:ignore="HardcodedText,NestedWeights,UseCompatTextViewDrawableXml" />
 
+
                         <TextView
-                            android:id="@+id/txt_resignation"
+                            android:id="@+id/textView16"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_margin="10dp"
@@ -149,14 +152,15 @@
                             android:background="@drawable/whiteroundblack"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
-                            android:onClick="fun_cat_trainig"
+                            android:onClick="fun_cat_borrow"
                             android:padding="5dp"
-                            android:text="الحضور والاداء"
+                            android:text="المستحقات والسلفيات"
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold"
                             app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
                             tools:ignore="HardcodedText" />
+
 
                     </LinearLayout>
 
@@ -381,15 +385,17 @@
                             android:drawablePadding="0dp"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
-                            android:onClick="fun_Monthly_inspection"
+                            android:onClick="fun_fleet_spare"
                             android:paddingTop="20dp"
                             android:paddingBottom="20dp"
-                            android:text="  التفتيش"
+                            android:text="قطع الغيار"
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold"
-                            app:drawableTopCompat="@drawable/baseline_agriculture_24"
+                            android:visibility="visible"
+                            app:drawableTopCompat="@drawable/ic_baseline_home_repair_service_24"
                             tools:ignore="HardcodedText" />
+
 
 
 
@@ -420,6 +426,7 @@
                         android:orientation="horizontal">
 
 
+
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="100dp"
@@ -429,15 +436,14 @@
                             android:drawablePadding="0dp"
                             android:fontFamily="sans-serif"
                             android:gravity="center"
-                            android:onClick="fun_fleet_spare"
+                            android:onClick="fun_Monthly_inspection"
                             android:paddingTop="20dp"
                             android:paddingBottom="20dp"
-                            android:text="قطع الغيار"
+                            android:text="  التفتيش"
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold"
-                            android:visibility="visible"
-                            app:drawableTopCompat="@drawable/ic_baseline_home_repair_service_24"
+                            app:drawableTopCompat="@drawable/baseline_agriculture_24"
                             tools:ignore="HardcodedText" />
 
 
@@ -456,6 +462,7 @@
                             android:paddingBottom="20dp"
                             android:visibility="visible"
                             android:text="الملحقات"
+                            android:onClick="fun_Accessories_main"
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold"
@@ -615,7 +622,7 @@
                             android:fontFamily="sans-serif"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="  بلاغات عن مشرف "
+                            android:text="  بلاغات عن المشرف "
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold"
@@ -631,7 +638,7 @@
                             android:fontFamily="sans-serif"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="  بلاغات عن سكن "
+                            android:text="  بلاغات عن الموقع "
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold"
@@ -657,7 +664,7 @@
                             android:fontFamily="sans-serif"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="  بلاغات عن المراحل "
+                            android:text="  بلاغات عن السكن "
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold"
@@ -673,7 +680,7 @@
                             android:fontFamily="sans-serif"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="  بلاغات عن الموفع "
+                            android:text="  بلاغات عن المرحل "
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold"
@@ -696,7 +703,7 @@
                             android:fontFamily="sans-serif"
                             android:gravity="center"
                             android:padding="5dp"
-                            android:text="  بلاغات عن المراحل "
+                            android:text="  بلاغات عن رسوم "
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold"

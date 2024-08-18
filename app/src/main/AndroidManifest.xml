@@ -14,6 +14,12 @@
         android:theme="@style/Theme.Balagat.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".deportation.deportation_main"
+            android:exported="false" />
+        <activity
+            android:name=".fleet.accessories.Accessories_main"
+            android:exported="false" />
+        <activity
             android:name=".humans.Attendance"
             android:exported="false" />
         <activity
@@ -79,7 +85,6 @@
         <activity
             android:name=".offices.main_offices"
             android:exported="false" />
-
         <activity
             android:name=".opration.constraction.main_time_sheet"
             android:exported="false" />
@@ -374,7 +379,6 @@
         <activity
             android:name=".fleet.maintenances.fleet_maintanance_main"
             android:exported="false" />
-
         <activity
             android:name=".location"
             android:exported="false" />
