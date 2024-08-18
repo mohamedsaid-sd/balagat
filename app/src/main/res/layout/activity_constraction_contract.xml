@@ -69,7 +69,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
 
 
@@ -134,7 +134,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
                         <androidx.cardview.widget.CardView
                             android:layout_width="match_parent"
@@ -251,7 +251,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
 
                         <androidx.cardview.widget.CardView
@@ -309,7 +309,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="horizontal">
+                        android:orientation="vertical">
 
 
                         <androidx.cardview.widget.CardView

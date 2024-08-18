@@ -79,7 +79,7 @@ public class human extends AppCompatActivity {
 
 
         if(FLAG.equals("employee")){
-            txt_name.setText(" التوظيف ");
+            txt_name.setText(" الموظف ");
 
             txt_profile.setVisibility(View.VISIBLE);
 
