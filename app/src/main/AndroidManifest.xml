@@ -14,6 +14,18 @@
         android:theme="@style/Theme.Balagat.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".fleet.accessories.Lubricated"
+            android:exported="false" />
+        <activity
+            android:name=".fleet.accessories.Cumberson"
+            android:exported="false" />
+        <activity
+            android:name=".fleet.accessories.Bucket"
+            android:exported="false" />
+        <activity
+            android:name=".fleet.accessories.Jack_Hammer"
+            android:exported="false" />
+        <activity
             android:name=".deportation.deportation_main"
             android:exported="false" />
         <activity
