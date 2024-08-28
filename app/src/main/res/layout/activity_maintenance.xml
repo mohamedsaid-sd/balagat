@@ -121,8 +121,9 @@
                             android:background="@drawable/whiteroundblack"
                             android:fontFamily="@font/jana"
                             android:gravity="center"
-                            android:onClick="fun_periodic_maintenance_table"
+                            android:onClick="fun_Maintenance_review"
                             android:padding="5dp"
+
                             android:text="  مراجعه الصيانه الطارئه"
                             android:textSize="12sp"
                             android:textStyle="bold"

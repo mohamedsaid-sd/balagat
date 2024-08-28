@@ -14,7 +14,7 @@ import androidx.lifecycle.ViewModelProvider;
 
 import com.equipation.balagat.databinding.FragmentHomeBinding;
 import com.equipation.balagat.main_sub_catagory;
-import com.equipation.balagat.opration.constraction_contract;
+import com.equipation.balagat.opration.main_contract;
 
 public class HomeFragment extends Fragment {
 
@@ -44,7 +44,7 @@ public class HomeFragment extends Fragment {
         // الضغط علي الموارد البشرية
         card1.setOnClickListener(view -> startActivity( new Intent( getActivity() , main_sub_catagory.class ).putExtra("FLAG" , "الموارد البشرية") ));
         // الضغط علي التشغيل
-        card2.setOnClickListener(view -> startActivity( new Intent( getActivity() , constraction_contract.class ).putExtra("FLAG" , "العقودات")));
+        card2.setOnClickListener(view -> startActivity( new Intent( getActivity() , main_contract.class ).putExtra("FLAG" , "العقودات")));
         // الضغط علي الاسطول
         card3.setOnClickListener(view -> startActivity( new Intent( getActivity() , main_sub_catagory.class ).putExtra("FLAG" , "الاسطول") ));
         // الضغط علي سلاسل الإمداد

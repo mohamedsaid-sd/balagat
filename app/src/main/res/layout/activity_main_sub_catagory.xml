@@ -626,6 +626,7 @@
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold"
+                            android:onClick="fun_supervisor"
                             app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
                             tools:ignore="HardcodedText" />
 
@@ -638,6 +639,7 @@
                             android:fontFamily="sans-serif"
                             android:gravity="center"
                             android:padding="5dp"
+                            android:onClick="fun_location"
                             android:text="  بلاغات عن الموقع "
                             android:textColor="@color/black"
                             android:textSize="12sp"
@@ -667,6 +669,7 @@
                             android:text="  بلاغات عن السكن "
                             android:textColor="@color/black"
                             android:textSize="12sp"
+                            android:onClick="fun_housing"
                             android:textStyle="bold"
                             app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
                             tools:ignore="HardcodedText" />
@@ -683,6 +686,7 @@
                             android:text="  بلاغات عن المرحل "
                             android:textColor="@color/black"
                             android:textSize="12sp"
+                            android:onClick="fun_relay"
                             android:textStyle="bold"
                             app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
                             tools:ignore="HardcodedText" />
@@ -706,6 +710,7 @@
                             android:text="  بلاغات عن رسوم "
                             android:textColor="@color/black"
                             android:textSize="12sp"
+                            android:onClick="fun_Fees"
                             android:textStyle="bold"
                             app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
                             tools:ignore="HardcodedText" />
@@ -723,6 +728,7 @@
                             android:textColor="@color/black"
                             android:textSize="12sp"
                             android:textStyle="bold"
+                            android:onClick="fun_Operators"
                             app:drawableTopCompat="@drawable/ic_baseline_supervised_user_circle_24"
                             tools:ignore="HardcodedText" />
 

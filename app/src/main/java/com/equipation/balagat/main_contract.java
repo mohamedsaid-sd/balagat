@@ -25,7 +25,7 @@ public class main_contract extends AppCompatActivity {
     }
 
     public void fun_location(View view) {
-        startActivity(new Intent(  this, location.class ));
+        startActivity(new Intent(  this, emty.class ));
     }
 
     public void fiun_contract(View view) {

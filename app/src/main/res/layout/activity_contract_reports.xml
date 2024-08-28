@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".opration.constraction.contract_reports"
+    tools:context=".opration.contracts.contract_reports"
     android:background="@color/black">
 
     <ScrollView

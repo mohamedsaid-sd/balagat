@@ -14,6 +14,24 @@
         android:theme="@style/Theme.Balagat.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".reports.Operators"
+            android:exported="false" />
+        <activity
+            android:name=".reports.Fees"
+            android:exported="false" />
+        <activity
+            android:name=".reports.relay"
+            android:exported="false" />
+        <activity
+            android:name=".reports.housing"
+            android:exported="false" />
+        <activity
+            android:name=".reports.location"
+            android:exported="false" />
+        <activity
+            android:name=".reports.supervisor"
+            android:exported="false" />
+        <activity
             android:name=".fleet.accessories.Lubricated"
             android:exported="false" />
         <activity
@@ -47,10 +65,10 @@
             android:name=".fleet.Monthly_inspection.Monthly_inspection"
             android:exported="false" />
         <activity
-            android:name=".opration.constraction.main_tippers"
+            android:name=".opration.contracts.main_tippers"
             android:exported="false" />
         <activity
-            android:name=".opration.constraction.camp_security"
+            android:name=".opration.contracts.camp_security"
             android:exported="false" />
         <activity
             android:name=".opration.rental.rental_liq_pro_update_order"
@@ -65,10 +83,10 @@
             android:name=".opration.production.pro_liq_pro_weekly_liquidation"
             android:exported="false" />
         <activity
-            android:name=".opration.constraction.com_liq_pro_update_order"
+            android:name=".opration.contracts.com_liq_pro_update_order"
             android:exported="false" />
         <activity
-            android:name=".opration.constraction.com_liq_pro_weekly_liquidation"
+            android:name=".opration.contracts.com_liq_pro_weekly_liquidation"
             android:exported="false" />
         <activity
             android:name=".offices.offices_request_bills"
@@ -98,64 +116,64 @@
             android:name=".offices.main_offices"
             android:exported="false" />
         <activity
-            android:name=".opration.constraction.main_time_sheet"
+            android:name=".opration.contracts.main_time_sheet"
             android:exported="false" />
         <activity
-            android:name=".opration.constraction.con_liq_update_order"
+            android:name=".opration.contracts.con_liq_update_order"
             android:exported="false" />
         <activity
-            android:name=".opration.constraction.con_liq_weekly_liquidation"
+            android:name=".opration.contracts.con_liq_weekly_liquidation"
             android:exported="false" />
         <activity
-            android:name=".opration.constraction.main_liquidation"
+            android:name=".opration.contracts.main_liquidation"
             android:exported="false" />
         <activity
-            android:name=".opration.constraction.contract_reports"
+            android:name=".opration.contracts.contract_reports"
             android:exported="false" />
         <activity
-            android:name=".opration.constraction.contract_update_order"
+            android:name=".opration.contracts.contract_update_order"
             android:exported="false" />
         <activity
-            android:name=".opration.constraction.contract_weekly_liquidation"
+            android:name=".opration.contracts.contract_weekly_liquidation"
             android:exported="false" />
         <activity
-            android:name=".opration.constraction.main_reports"
+            android:name=".opration.contracts.main_reports"
             android:exported="false" />
         <activity
-            android:name=".opration.constraction.camp_complaint"
+            android:name=".opration.contracts.camp_complaint"
             android:exported="false" />
         <activity
-            android:name=".opration.constraction.camp_reports"
+            android:name=".opration.contracts.camp_reports"
             android:exported="false" />
         <activity
-            android:name=".opration.constraction.camp_challenges"
+            android:name=".opration.contracts.camp_challenges"
             android:exported="false" />
         <activity
-            android:name=".opration.constraction.camp_material_store"
+            android:name=".opration.contracts.camp_material_store"
             android:exported="false" />
         <activity
-            android:name=".opration.constraction.camp_fuel_store"
+            android:name=".opration.contracts.camp_fuel_store"
             android:exported="false" />
         <activity
-            android:name=".opration.constraction.camp_daily_operations"
+            android:name=".opration.contracts.camp_daily_operations"
             android:exported="false" />
         <activity
-            android:name=".opration.constraction.camp_exclusion"
+            android:name=".opration.contracts.camp_exclusion"
             android:exported="false" />
         <activity
-            android:name=".opration.constraction.camp_add_equipment"
+            android:name=".opration.contracts.camp_add_equipment"
             android:exported="false" />
         <activity
-            android:name=".opration.constraction.camp_change_location"
+            android:name=".opration.contracts.camp_change_location"
             android:exported="false" />
         <activity
-            android:name=".opration.constraction.camp_condiation_equipment"
+            android:name=".opration.contracts.camp_condiation_equipment"
             android:exported="false" />
         <activity
-            android:name=".opration.constraction.main_camp"
+            android:name=".opration.contracts.main_camp"
             android:exported="false" />
         <activity
-            android:name=".opration.constraction.camp_equipment_register"
+            android:name=".opration.contracts.camp_equipment_register"
             android:exported="false" />
         <activity
             android:name=".opration.production.production_sub_liquidation"
@@ -215,7 +233,7 @@
             android:name=".opration.rental.rental_renew_contract"
             android:exported="false" />
         <activity
-            android:name=".opration.rental.rental_time_sheet"
+            android:name=".opration.contracts.tons_quantity"
             android:exported="false" />
         <activity
             android:name=".deportation.order_deportation"
@@ -230,7 +248,7 @@
             android:name=".folderpurchases.purchase_order"
             android:exported="false" />
         <activity
-            android:name=".opration.constraction_contract"
+            android:name=".opration.main_contract"
             android:exported="false" />
         <activity
             android:name=".opration.Production_contract"
@@ -370,6 +388,11 @@
         <activity
             android:name=".fleet.maintenances.therapeutic_maintenance_request"
             android:exported="false" />
+
+        <activity
+            android:name=".fleet.maintenances.Maintenance_review"
+            android:exported="false" />
+
         <activity
             android:name=".fleet.maintenances.periodic_maintenance_request"
             android:exported="false" />
@@ -390,9 +413,6 @@
             android:exported="false" />
         <activity
             android:name=".fleet.maintenances.fleet_maintanance_main"
-            android:exported="false" />
-        <activity
-            android:name=".location"
             android:exported="false" />
         <activity
             android:name=".stocks.stock"

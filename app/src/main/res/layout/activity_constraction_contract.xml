@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/black"
 
-    tools:context=".opration.constraction_contract">
+    tools:context=".opration.main_contract">
 
     <LinearLayout
         android:layout_marginTop="20dp"
@@ -345,7 +345,9 @@
                             android:layout_weight="1"
                             android:background="@drawable/round"
                             android:foregroundGravity="center"
+                            android:onClick="fun_tons"
                             android:padding="5dp">
+
 
 
                             <TextView

@@ -9,7 +9,6 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.equipation.balagat.deportation.deportation_main;
-import com.equipation.balagat.deportation.order_deportation;
 import com.equipation.balagat.fleet.Monthly_inspection.Monthly_inspection;
 import com.equipation.balagat.fleet.accessories.Accessories_main;
 import com.equipation.balagat.fleet.spare.fleet_spare_main;
@@ -17,9 +16,15 @@ import com.equipation.balagat.fleet.maintenances.fleet_maintanance_main;
 import com.equipation.balagat.folderpurchases.purchases;
 import com.equipation.balagat.offices.main_offices;
 import com.equipation.balagat.opration.Production_contract;
-import com.equipation.balagat.opration.constraction.main_camp;
-import com.equipation.balagat.opration.constraction_contract;
+import com.equipation.balagat.opration.contracts.main_camp;
+import com.equipation.balagat.opration.main_contract;
 import com.equipation.balagat.opration.rental_contract;
+import com.equipation.balagat.reports.Fees;
+import com.equipation.balagat.reports.Operators;
+import com.equipation.balagat.reports.housing;
+import com.equipation.balagat.reports.location;
+import com.equipation.balagat.reports.relay;
+import com.equipation.balagat.reports.supervisor;
 import com.equipation.balagat.stocks.stock;
 
 import java.util.Objects;
@@ -150,7 +155,7 @@ public class main_sub_catagory extends AppCompatActivity {
 
 
     public void fun_constraction(View view) {
-        startActivity(new Intent( this , constraction_contract.class ).putExtra( "FLAG" , "" ) );
+        startActivity(new Intent( this , main_contract.class ).putExtra( "FLAG" , "" ) );
 
     }
 
@@ -205,6 +210,41 @@ public class main_sub_catagory extends AppCompatActivity {
     public void fun_Accessories_main(View view) {
 
         startActivity(new Intent( this , Accessories_main.class ));
+
+    }
+
+    public void fun_supervisor(View view) {
+        startActivity(new Intent( this , supervisor.class ));
+
+    }
+
+    public void fun_location(View view) {
+        startActivity(new Intent( this , location.class ));
+
+
+    }
+
+    public void fun_housing(View view) {
+        startActivity(new Intent( this , housing.class ));
+
+
+    }
+
+    public void fun_Fees(View view) {
+        startActivity(new Intent( this , Fees.class ));
+
+
+    }
+
+
+    public void fun_Operators(View view) {
+        startActivity(new Intent( this , Operators.class ));
+
+
+    }
+
+    public void fun_relay(View view) {
+        startActivity(new Intent( this , relay.class ));
 
     }
 }

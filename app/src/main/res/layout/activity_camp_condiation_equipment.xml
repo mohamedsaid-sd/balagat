@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/black"
 
-    tools:context=".opration.constraction.camp_condiation_equipment">
+    tools:context=".opration.contracts.camp_condiation_equipment">
 
 
     <LinearLayout

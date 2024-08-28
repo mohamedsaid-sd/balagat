@@ -24,7 +24,7 @@ public class home_sub1 extends AppCompatActivity {
     }
 
     public void fiun_location(View view) {
-        startActivity(new Intent(this , location.class));
+        startActivity(new Intent(this , emty.class));
     }
 
     public void fun_back(View view) {

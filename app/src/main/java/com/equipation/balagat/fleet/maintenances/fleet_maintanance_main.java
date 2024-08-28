@@ -31,7 +31,10 @@ public class fleet_maintanance_main extends AppCompatActivity {
     }
 
 
-    public void fun_periodic_maintenance_table(View view) {
-        //startActivity(new Intent(this , periodic_maintenance_table.class ));
+
+
+    public void fun_Maintenance_review(View view) {
+        startActivity(new Intent(this , Maintenance_review.class ));
+
     }
 }
