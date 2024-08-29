@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context=".stocks.add_items_request">
 
     <ScrollView
@@ -19,6 +20,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_margin="20dp"
                 android:orientation="horizontal"
                 tools:ignore="UseCompoundDrawables">
 
@@ -27,26 +29,26 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:background="@color/gold"
                     android:fontFamily="@font/jana"
+                    android:gravity="center"
                     android:padding="5dp"
-                    android:text="طلب إضافة عناصر"
+                    android:text="  طلب اضافة عناصر  "
                     android:textColor="@color/black"
                     android:textSize="20dp"
                     android:textStyle="bold"
-                    tools:ignore="HardcodedText,SpUsage" />
+                    tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
 
                 <ImageView
                     android:id="@+id/imageView2"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:background="@color/red"
+                    android:background="@drawable/whiteroundblack"
+                    android:contentDescription="@string/Image"
                     android:onClick="fun_back"
                     android:padding="5dp"
                     app:srcCompat="@drawable/ic_baseline_close_24"
-                    tools:ignore="ContentDescription" />
+                    tools:ignore="ContentDescription,TouchTargetSizeCheck" />
             </LinearLayout>
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -74,30 +76,41 @@
                             android:text="إضافة عناصر"
                             tools:ignore="HardcodedText,RtlSymmetry" />
 
+
+
                         <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_margin="5dp">
+                            android:layout_margin="3dp"
+                            android:padding="3dp"
+                            app:boxStrokeWidth="0dp">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:background="@drawable/formbackground"
                                 android:hint="المورد"
-                                tools:ignore="HardcodedText" />
+                                tools:ignore="HardcodedText,VisualLintTextFieldSize" />
                         </com.google.android.material.textfield.TextInputLayout>
+
 
                         <com.google.android.material.textfield.TextInputLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_margin="5dp">
+                            android:layout_margin="3dp"
+                            android:padding="3dp"
+                            app:boxStrokeWidth="0dp">
 
                             <com.google.android.material.textfield.TextInputEditText
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
+                                android:background="@drawable/formbackground"
                                 android:hint="رقم فاتورة المورد"
-                                android:inputType="number"
-                                tools:ignore="HardcodedText" />
+                                tools:ignore="HardcodedText,VisualLintTextFieldSize" />
                         </com.google.android.material.textfield.TextInputLayout>
+
+
+
 
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
@@ -125,111 +138,183 @@
                         android:text="بيانات العنصر  1"
                         tools:ignore="HardcodedText" />
 
-                    <EditText
-                        android:id="@+id/editTextTextPersonName"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:autofillHints=""
-                        android:ems="10"
-                        android:hint="المتسلسل"
-                        android:inputType="textPersonName"
-                        android:textColorHint="@color/green"
-                        tools:ignore="HardcodedText" />
 
-                    <EditText
-                        android:id="@+id/editTextTextPersonName10"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:autofillHints=""
-                        android:ems="10"
-                        android:hint="رمز العنصر"
-                        android:inputType="textPersonName"
-                        tools:ignore="HardcodedText" />
 
-                    <EditText
-                        android:id="@+id/editTextTextPersonName3"
+                    <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:hint="اسم العنصر"
-                        android:inputType="textPersonName"
-                        tools:ignore="Autofill,HardcodedText" />
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        app:boxStrokeWidth="0dp">
 
-                    <EditText
-                        android:id="@+id/editTextTextPersonName5"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:autofillHints=""
-                        android:ems="10"
-                        android:hint="الوحدة"
-                        android:inputType="textPersonName"
-                        tools:ignore="HardcodedText" />
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:hint="المتسلسل"
+                            tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+                    </com.google.android.material.textfield.TextInputLayout>
 
-                    <EditText
-                        android:id="@+id/editTextTextPersonName7"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:hint="رقم  المخزون"
-                        android:importantForAutofill="no"
-                        android:inputType="textPersonName"
-                        tools:ignore="HardcodedText" />
 
-                    <EditText
-                        android:id="@+id/editTextTextPersonName2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:ems="10"
-                        android:hint="الكمية الداخلة"
-                        android:importantForAutofill="no"
-                        android:inputType="textPersonName"
-                        tools:ignore="HardcodedText" />
 
-                    <EditText
-                        android:id="@+id/editTextTextPersonName6"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:autofillHints=""
-                        android:ems="10"
-                        android:hint="كمية المخزون"
-                        android:inputType="textPersonName"
-                        android:textColorHint="@color/green"
-                        tools:ignore="HardcodedText" />
 
-                    <EditText
-                        android:id="@+id/editTextTextPersonName9"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:autofillHints=""
-                        android:ems="10"
-                        android:hint="كمية المخزون الجديدة"
-                        android:inputType="textPersonName"
-                        android:textColorHint="@color/green"
-                        tools:ignore="HardcodedText" />
 
-                    <EditText
-                        android:id="@+id/editTextTextPersonName4"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:autofillHints=""
-                        android:ems="10"
-                        android:hint="السعر"
-                        android:inputType="textPersonName"
-                        tools:ignore="HardcodedText" />
 
-                    <EditText
-                        android:id="@+id/editTextTextPersonName8"
+                    <com.google.android.material.textfield.TextInputLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:autofillHints=""
-                        android:ems="10"
-                        android:hint="الوصف"
-                        android:inputType="textPersonName"
-                        tools:ignore="HardcodedText" />
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        app:boxStrokeWidth="0dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:hint="رمز العنصر"
+                            tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        app:boxStrokeWidth="0dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:hint="اسم العنصر"
+                            tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        app:boxStrokeWidth="0dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:hint="الوحدة"
+                            tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        app:boxStrokeWidth="0dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:hint="رقم  المخزون"
+                            tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        app:boxStrokeWidth="0dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:hint="الكمية الداخلة"
+                            tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        app:boxStrokeWidth="0dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:hint="كمية المخزون"
+                            tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        app:boxStrokeWidth="0dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:hint="كمية المخزون الجديدة"
+                            tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        app:boxStrokeWidth="0dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:hint="السعر"
+                            tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="3dp"
+                        android:padding="3dp"
+                        app:boxStrokeWidth="0dp">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/formbackground"
+                            android:hint="الوصف"
+                            tools:ignore="HardcodedText,VisualLintTextFieldSize" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
                 </LinearLayout>
 
                 <LinearLayout

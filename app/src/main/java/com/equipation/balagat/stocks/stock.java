@@ -25,18 +25,18 @@ public class stock extends AppCompatActivity {
     }
 
     public void fun_add_items(View view) {
-        //
-       // startActivity(new Intent(this , add_items_request.class));
+
+        startActivity(new Intent(this , add_items_request.class));
     }
 
     public void fun_return_bill(View view) {
-        //
-     //   startActivity(new Intent(this , return_bill_request.class));
+
+        startActivity(new Intent(this , return_bill_request.class));
     }
 
     public void fun_withdraw_bill(View view) {
         //
-      //  startActivity(new Intent(this , withdraw_bill_request.class));
+        startActivity(new Intent(this , withdraw_bill_request.class));
     }
 
 }

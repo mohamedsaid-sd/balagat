@@ -128,7 +128,6 @@
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/formbackground"
                                 android:hint=" ساعات العمل اليومية "
-                                android:inputType="number"
                                 tools:ignore="HardcodedText,VisualLintTextFieldSize" />
                         </com.google.android.material.textfield.TextInputLayout>
 
